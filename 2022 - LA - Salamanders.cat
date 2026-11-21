@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2040" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -4223,7 +4223,9 @@
           <description>Cassian Dracos Reborn has the Cybertheurgic Arcana: Artificia Machina (see Liber Mechanicum).</description>
         </rule>
         <rule id="34da-6158-0050-f6c2" name="Avatar of the Sacred Flames" publicationId="d0df-7166-5cd3-89fd" page="69" hidden="false">
-          <description>As long as no HQ choices other than Xiaphas Jurr and Nârik Dreygur are included in the same Detachment, Cassian Dracos Reborn may be selected as the army’s Warlord. If selected as the army’s Warlord, Cassian Dracos must use the Bloody-handed Warlord Trait.</description>
+          <description>As long as no HQ choices other than Xiaphas Jurr and Nârik Dreygur are included in the same Detachment, Cassian Dracos Reborn may be selected as the army’s Warlord. If selected as the army’s Warlord, Cassian Dracos must use the Bloody-handed Warlord Trait.
+
+In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a Blackshields Detachment, you can include Salamanders Adherents Squads as part of that Detachment as Elites Choices. If you do so, replace their Legiones Astartes (Salamanders) Special Rule with the Legiones Astartes (Blackshields) Special Rule, the unit gains the Line Sub-type, and remove their Support Squad Special Rule.</description>
         </rule>
         <rule name="Ferromantic Invulnerability" hidden="false" id="44f9-204b-935b-9547">
           <description>The effects of any variant of the Armourbane Special Rule or the Lance special rule are ignored when resolving attacks made against a model with this special rule.</description>
