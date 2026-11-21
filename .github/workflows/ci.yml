@@ -1,18 +1,27 @@
-# This action continuously checks all pushes and Pull requests
-# for validity, integrity and bugs in datafiles.
-# For details, visit https://github.com/BSData/check-datafiles
+# Checks every push and pull request: all datafiles must parse, ids must be
+# unique, and catalogue links must resolve. The built release assets are
+# uploaded as a downloadable artifact so they can be tried before a release.
+# (Replaces BSData/check-datafiles, which no longer resolves, and
+# actions/upload-artifact@v1, which GitHub has retired.)
 name: CI
 on: [ push, pull_request ]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - uses: BSData/check-datafiles@v1
-      id: check
-
-    - uses: actions/upload-artifact@v1
+    - uses: actions/setup-python@v5
       with:
-        name: artifact
-        path: ${{ steps.check.outputs.staging-path }}
+        python-version: '3.12'
+
+    - name: Check datafiles
+      run: python .github/scripts/build_datafiles.py check
+
+    - name: Build release assets (preview)
+      run: python .github/scripts/build_datafiles.py build --out dist --repo "$GITHUB_REPOSITORY" --tag preview
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: datafiles
+        path: dist/

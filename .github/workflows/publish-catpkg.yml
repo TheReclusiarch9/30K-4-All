@@ -1,12 +1,60 @@
-# This workflow adds the necessary assets to every release
-# For more details, visit https://github.com/BSData/publish-catpkg
+# Publishes a release with the files New Recruit and BattleScribe need.
+#
+# - Every push to the `release` branch (for example merging a pull request)
+#   creates a new release tagged YYYY.MM.DD-<run number> automatically.
+# - A release you publish by hand on GitHub gets the same files attached.
+#
+# The install link is always:
+#   https://github.com/<owner>/<repo>/releases/latest/download/<repo>.latest.bsi
+# (Replaces BSData/publish-catpkg, which no longer resolves.)
 name: Publish catpkg
 on:
+  push:
+    branches: [ release ]
   release:
     types: [ published, edited ]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: publish
+  cancel-in-progress: false
 jobs:
   publish:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
-    - uses: actions/checkout@v2
-    - uses: BSData/publish-catpkg@v1
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Pick the release tag
+      id: tag
+      run: |
+        if [ "${{ github.event_name }}" = "release" ]; then
+          echo "tag=${{ github.event.release.tag_name }}" >> "$GITHUB_OUTPUT"
+          echo "create=false" >> "$GITHUB_OUTPUT"
+        else
+          echo "tag=$(date -u +%Y.%m.%d)-${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+          echo "create=true" >> "$GITHUB_OUTPUT"
+        fi
+
+    - name: Build release assets
+      run: >
+        python .github/scripts/build_datafiles.py build --out dist
+        --repo "$GITHUB_REPOSITORY" --tag "${{ steps.tag.outputs.tag }}"
+        --notes "$(git log -1 --pretty=%s)"
+
+    - name: Create the release
+      if: steps.tag.outputs.create == 'true'
+      run: >
+        gh release create "${{ steps.tag.outputs.tag }}" dist/*
+        --target "$GITHUB_SHA" --title "${{ steps.tag.outputs.tag }}"
+        --notes "Automatic release of $(git log -1 --pretty=%s)" --latest
+
+    - name: Attach files to the release
+      if: steps.tag.outputs.create == 'false'
+      run: gh release upload "${{ steps.tag.outputs.tag }}" dist/* --clobber
