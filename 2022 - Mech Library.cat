@@ -751,6 +751,7 @@ Cruel Taskmaster – If any friendly unit with at least one model within 12&quot
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29cc-fe4b-bf22-197b" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="dbd0-77fe-be7d-671f" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
         <entryLink id="8389-c368-1fcf-bf97" name="Graviton Gun" hidden="false" collective="false" import="true" targetId="5303-5a3e-de51-1707" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e7c-54bb-3635-60c8" type="min"/>

@@ -12360,6 +12360,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
                   </costs>
                 </entryLink>
+                <entryLink id="3acc-3e57-3f3c-d013" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink id="aa97-ec31-3423-a275" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1493-f05c-a5b5-8006" type="max"/>
@@ -66180,6 +66181,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="971f-26aa-10df-fbb4" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="ef9f-c81d-7b2c-7222" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
@@ -66772,6 +66774,20 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
           </costs>
+        </entryLink>
+        <entryLink id="da4d-0eed-3dc6-8d54" name="Extrinsica Melee Weapon" hidden="true" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de73-2d79-156f-6f64" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a2f0-15d9-2b7a-2204" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </entryLink>
         <entryLink id="88b3-5058-e4a8-0d30" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
           <costs>

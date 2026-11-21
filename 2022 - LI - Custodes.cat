@@ -577,6 +577,7 @@
                 </entryLink>
                 <entryLink id="80d7-e8ea-f760-7c32" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="6909-d6c6-8d05-0e57" type="selectionEntry"/>
                 <entryLink id="9464-6576-ae15-0d36" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry"/>
+                <entryLink id="6557-645a-3d2b-aedc" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink id="0281-832b-19e6-50c1" name="Meridian Swords" hidden="false" collective="false" import="true" targetId="9664-33bc-927e-5ba3" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
@@ -861,6 +862,7 @@
                         <cost name="Pts" id="9a7b-5f6a-61d9-7d2b" hidden="false" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="d4e2-d0ab-855c-725f" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56f3-d809-8faf-a380" includeChildSelections="false"/>
@@ -902,6 +904,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="fb41-060a-4d92-b5fc" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink id="f114-1264-5f4d-862c" name="Pyrithite Spear" hidden="false" collective="false" import="true" targetId="4620-e360-7dd2-f908" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b66c-4a64-bd26-bc8e" type="max"/>
@@ -1487,6 +1490,7 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65b8-bb92-f031-44ba" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="4e40-2017-5240-bc84" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntry>
                 <selectionEntry id="8dc5-b5d6-e154-a8eb" name="Custodian Guard w/ Master-Crafted Power Lance &amp; Vexilla" hidden="false" collective="false" import="true" type="model">
@@ -2936,6 +2940,7 @@ the Front Armour during the same Phase.�</characteristic>
             </entryLink>
             <entryLink id="affd-2143-1c9e-17f6" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="6909-d6c6-8d05-0e57" type="selectionEntry"/>
             <entryLink id="1be3-d3ac-4975-5411" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry"/>
+            <entryLink id="df04-3669-3260-7db1" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
             <entryLink id="2fbc-0de5-8b8f-ca1d" name="Meridian Swords" hidden="false" collective="false" import="true" targetId="9664-33bc-927e-5ba3" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>

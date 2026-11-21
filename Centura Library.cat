@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="d76-4e81-2fef-caa1" name="[Centura] Legiones Astartes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="d76-4e81-2fef-caa1" name="[Centura] Legiones Astartes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry name="Legion Indomitus Praetor" type="unit" id="0293-aa91-4e32-bd5f" page="6" publicationId="3970-79bb-bdc6-9599">
       <categoryLinks>
@@ -121,6 +121,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4720-e411-4e15-8be4"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="7b43-5169-fc0c-588d" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink name="Chainfist" hidden="false" type="selectionEntry" targetId="9c9c-346a-4c47-8715" id="76b4-11bb-4c91-8a5f">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>

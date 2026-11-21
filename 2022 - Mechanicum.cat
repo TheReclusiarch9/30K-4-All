@@ -818,6 +818,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink id="b8bf-23f2-b55a-be13" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="de1b-c169-e406-509d" name="May take one of the following options:" hidden="false" collective="false" import="true">
@@ -1074,6 +1075,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink id="0424-b8f3-ec2b-4513" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7a33-fa4c-6c53-b688" name="May take any of the following options:" hidden="false" collective="false" import="true">
@@ -2535,6 +2537,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink id="441b-4195-90a2-ab21" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9d2b-4794-279e-3f3e" name="May take one of the following additional ranged weapons:" hidden="false" collective="false" import="true">

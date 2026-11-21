@@ -868,6 +868,7 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
+                <entryLink id="4256-e063-a0b4-48ff" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Archaeotech Pistol" hidden="false" id="8129-b104-c3dd-4864" collective="false" targetId="c22a-ed4d-af68-bf00" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" value="Master-crafted Archaeotech Pistol" field="name">

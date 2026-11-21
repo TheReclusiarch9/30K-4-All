@@ -916,6 +916,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
+                <entryLink id="ef9c-2de4-e475-9b3b" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink id="506a-61e7-02e4-b9d2" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Master-Crafted Close Combat Weapon">
