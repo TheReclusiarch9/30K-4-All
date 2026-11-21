@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2044" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
+    <entryLink id="8cbd-8250-3df3-465d" name="Blood Slaughterer" hidden="true" collective="false" import="true" targetId="2d70-676d-68aa-1973" type="selectionEntry">
+      <comment>Scion of Sarum: Blood Slaughterers as Troops (Fast Attack is the default slot)</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d3b-d7d4-b9e0-6f3b" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="20ef-cd01-a8da-376e"/>
+        <modifier type="remove" field="category" value="3c75-d5f8-1ad4-24e5"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="07b2-13a9-20c7-0366" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="f416-61ee-8121-735a" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0ea5-cafc-b3a9-5430" name="Decimator" hidden="true" collective="false" import="true" targetId="b1a5-42a-a6ee-2223" type="selectionEntry">
+      <comment>Æthertek: one Decimator per Æthertek model as a non-compulsory Troops choice</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d20-0563-981d-0630" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="7031-469a-1aeb-eab0"/>
+        <modifier type="remove" field="category" value="030f-3801-4f54-e7f8"/>
+        <modifier type="increment" field="ca72-e71f-c7ef-31d7" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d20-0563-981d-0630" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ca72-e71f-c7ef-31d7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c90c-a71c-e313-bbc5" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1fcf-4495-a53e-2eff" name="Infernus Abomination" hidden="true" collective="false" import="true" targetId="3928-63ee-20a9-f84b" type="selectionEntry">
+      <comment>Malamina: one Infernus Abomination per Malamina model as an Elites choice</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="484a-728a-963a-5d7c" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="484a-728a-963a-5d7c" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8560-d2a1-4735-66f4" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="1647-1dd0-6a26-4815" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="dadb-f5a9-20c8-f415" value="2">
@@ -3392,6 +3453,21 @@ This unit may be upgraded freely as described in their profile, though they may 
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="c211-0837-3b70-114d" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae3d-966f-e448-425f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
@@ -3654,6 +3730,21 @@ On a Game Turn in which a model armed with Stratos Thrusters activates them, th
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="2e13-aebf-81e1-a955" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d2-b6b3-cf0c-e6e9" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>

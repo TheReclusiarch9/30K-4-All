@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2049" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2050" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -57,6 +57,14 @@ When deployed onto the battlefield (either at the start of the battle or when ar
     </categoryEntry>
   </categoryEntries>
   <sharedSelectionEntries>
+    <selectionEntry id="4352-576e-6168-0de3" name="Bonds of Corruption (Ruinous Cybernetica)" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2903-6b09-5474-7a3a" name="Ruinous Cybernetica" hidden="false" targetId="0259-d5c0-a177-735c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="3c99-ff37-3369-466a" name="Machina Malefica" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ece-9f13-7430-6963" type="max"/>
@@ -4830,6 +4838,19 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b442-486a-dd6e-11f0" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="ae7c-c7fe-910f-4207" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b15f-35f8-d7ad-0c3a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -5057,6 +5078,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="c383-a210-c840-96e6" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85b1-aed5-c996-4b1f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
@@ -5517,6 +5553,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="72e9-3c68-9a6b-f92b" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1cb-a619-6ad6-1587" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -5742,6 +5793,19 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
+        </entryLink>
+        <entryLink id="831c-3311-46b8-240c" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89e-8bed-1c98-9814" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
