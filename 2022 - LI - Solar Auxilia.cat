@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="46c4-ffd6-affd-72f1" name="LI - Solar Auxilia" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="46c4-ffd6-affd-72f1" name="LI - Solar Auxilia" revision="2042" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -105,6 +105,172 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
+    <entryLink id="1c22-214a-2228-6956" name="Lord Marshal Ireton Masade" hidden="false" collective="false" import="false" targetId="bbfc-3ecc-4d10-b3de" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0acd-5ba6-1cab-3bbc" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="b217-3492-7703-edd8" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="96c1-e3a4-80a9-e57c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6aab-d55b-11ab-5d81" name="Solar Auxilia Battle Psyker" hidden="false" collective="false" import="false" targetId="aeec-9d3a-4d2b-b235" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="92fc-f93b-8831-a534" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="69a9-2ab1-6e35-c46c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8f3f-5456-d35e-1c75" name="Solar Auxilia Furibundus Dreadnought Talon" hidden="false" collective="false" import="false" targetId="2266-8662-4610-adab" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="94d0-eee2-4064-24a9" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="66fb-6e32-4c62-a49e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4b7a-003c-f4c2-ddfd" name="Possessed Auxilia" hidden="false" collective="false" import="false" targetId="022e-bce8-4a52-80cb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d954-a88d-2af2-7163" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="970d-1d74-1675-85d4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9d5b-310f-1d1b-7dac" name="Solar Auxilia Extremis Boarding Rig Section" hidden="false" collective="false" import="false" targetId="c9f5-c244-40bc-9cb1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e25f-737a-d5c7-67d4" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="1255-0b21-59ac-566c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8099-4e83-7836-81ae" name="Enginseer Auxilia Section" hidden="false" collective="false" import="false" targetId="5ec1-ae0c-4644-9810" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f45b-ec88-f278-27e9" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="58d1-283e-33d5-8d7b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2712-2704-f15d-ac73" name="Solar Auxilia Tempestor Land Speeder Squadron" hidden="false" collective="false" import="false" targetId="9510-1c96-4cfe-ae17" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4c1d-a214-2239-3546" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="a13b-f305-b8f8-73a0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da1c-4b66-de9e-b053" name="Solar Auxilia Hellhound Flame Tank Squadron" hidden="false" collective="false" import="false" targetId="522c-4262-4041-8226" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="498e-92fb-79ad-baf7" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="5712-fd5c-237a-1ac3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1adf-85c3-bef0-d83f" name="Divisio Aeronautica Avenger Strike Fighter" hidden="false" collective="false" import="false" targetId="bba1-0a9b-4dc3-b677" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2007-6e47-65b6-1355" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="b36b-5947-bf28-c627" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2311-ca3d-c495-4d39" name="Solar Auxilia Kelaino Squadron" hidden="false" collective="false" import="false" targetId="58df-6a8f-4d5c-9cd8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="48a8-4557-516c-dcda" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="4a8c-3071-7ac3-8ff5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9994-e608-de35-fce1" name="Solar Auxilia Aello Gunship Squadron" hidden="false" collective="false" import="false" targetId="f14b-9c7e-49a5-8d08" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="58cf-2cb3-626c-b193" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="3d09-460f-945f-c922" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1df9-fac8-079e-4cca" name="Solar Auxilia Ocypete Gunship Squadron" hidden="false" collective="false" import="false" targetId="38a3-8291-4911-a216" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bf5a-c67c-33b9-2211" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="0e21-acad-0bde-d75b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="11b4-1c0d-d9f3-3de5" name="Solar Auxilia Hades Breaching Drill" hidden="false" collective="false" import="false" targetId="6fe3-70e8-4c6e-bd58" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="957e-c43e-7b45-8224" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="8bb3-33ce-4afe-e73f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f16e-1b31-9500-a184" name="Solar Auxilia Macharius Omega Heavy Tank" hidden="false" collective="false" import="false" targetId="a91d-e612-47ee-9d84" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9685-efb4-aa54-5fbc" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="51b3-d71e-95d6-b1ea" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a2fa-11ef-ccd5-093b" name="Solar Auxilia Praetorian Heavy Tank Squadron" hidden="false" collective="false" import="false" targetId="1e6e-a529-48f3-a488" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7287-614b-f647-3c4f" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="6989-ff92-2cfb-1122" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a156-eeae-ffe4-2c63" name="Solar Auxilia Hydra Flak Tank Battery" hidden="false" collective="false" import="false" targetId="5bc1-68e3-45a4-9654" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="47d3-a45c-0ed5-cdea" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="4380-905c-aab7-20e9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5875-779e-8e11-e3dd" name="Solar Auxilia Manticore Missile Tank Battery" hidden="false" collective="false" import="false" targetId="dccf-1636-412a-9775" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b31a-a580-2023-11a6" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="5f35-26e0-82c2-f59b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee7d-ed99-56ae-c994" name="Solar Auxilia Deathstrike Missile Platform" hidden="false" collective="false" import="false" targetId="a3b7-9e16-452a-a23f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2e47-b283-bd17-7da6" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="0a37-9959-425d-2128" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3bd2-a7f9-6e46-b4cf" name="Divisio Aeronautica Marauder Bomber" hidden="false" collective="false" import="false" targetId="ff20-da37-490c-9baf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1cd4-eeb3-c932-6aff" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="ac7d-36a9-a13a-bc9b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6355-88a5-2ef1-70ab" name="Divisio Aeronautica Marauder Destroyer" hidden="false" collective="false" import="false" targetId="577a-ddee-48fc-9610" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="416b-540b-9492-131f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="a8d5-b5c4-3f68-a3f4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="24b0-0419-6918-21be" name="Auxilia Breacher Tercio" hidden="false" collective="false" import="false" targetId="4f6c-021b-a5cd-d9df" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6562-8360-ce27-c175" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="62aa-65f4-0320-d80c" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="43c4-9c57-1da0-968a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5432-97f2-d292-f906" name="Auxilia Infantry Support Tercio" hidden="false" collective="false" import="false" targetId="2ac4-da84-d8c2-6678" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a394-7ff5-ee5e-c0b6" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="ac62-6d71-a92d-c234" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cedb-b673-2d07-e2b4" name="Auxilia Verticalis Drop Tercio" hidden="false" collective="false" import="false" targetId="6fd7-301a-87a6-b365" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7a4e-fcad-55e2-c917" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="dded-4ef7-5db6-8693" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e9c8-3159-6366-00bf" name="Auxilia Light Armoured Tercio" hidden="false" collective="false" import="false" targetId="e506-78dc-fa8b-8ba1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0292-6072-db16-b6d2" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="f6d4-08c8-aab4-a2e0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d15e-c42b-8c74-43e2" name="Auxilia Carnodon Tercio" hidden="false" collective="false" import="false" targetId="3f4e-1ab9-f59f-e232" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5d60-e081-c6fd-4e1d" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="665b-55ee-0989-24a6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="5176-b5f9-93f1-f535" name="Solar Auxilia" hidden="false" collective="false" import="false" targetId="f689-fd0d-ffb0-c255" type="selectionEntry">
       <modifiers>
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
@@ -812,6 +978,232 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
+    <selectionEntry id="4f6c-021b-a5cd-d9df" name="Auxilia Breacher Tercio" publicationId="892-6266-f55f-1b9d" hidden="false" collective="false" import="true" type="unit">
+      <comment>Liber Imperatus p.144: a single Force Organisation choice of up to three units</comment>
+      <entryLinks>
+        <entryLink id="05a1-67c3-8f58-114e" name="Solar Auxilia Breacher Command Section" hidden="false" collective="false" import="true" targetId="3310-b0ef-4e41-9a06" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="143c-a123-fec4-f24d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c318-2f04-2aff-d945" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="edd1-de9c-7e69-3094" name="Dedicated Transport" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b19-496d-7180-9311" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2239-cc17-b2b9-9498" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
+                <entryLink id="71d1-7384-25bf-f4e4" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="b4b5-9c0a-9e86-3d38" type="selectionEntry"/>
+                <entryLink id="e995-1fc1-60a2-5eab" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
+                <entryLink id="6daa-703d-0e78-cade" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="be35-4c8a-776f-9761" name="Solar Auxilia Hades Breaching Drill" hidden="false" collective="false" import="true" targetId="6fe3-70e8-4c6e-bd58" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink id="5411-fdf1-fc36-92cd" name="Solar Auxilia Breacher Section" hidden="false" collective="false" import="true" targetId="db2d-343f-49a2-ab33" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45a6-f732-796a-a18b" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3db6-9e61-d9cf-1071" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1faf-c3c4-54d6-b52f" name="Dedicated Transport" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5962-f92a-1976-e6c5" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="cfb2-990c-efee-0d17" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
+                <entryLink id="2ab7-a30f-44e8-0164" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="b4b5-9c0a-9e86-3d38" type="selectionEntry"/>
+                <entryLink id="c65b-5c88-2922-66af" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
+                <entryLink id="9c08-fa29-1cf2-4b0f" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="896b-210a-5616-bce2" name="Solar Auxilia Hades Breaching Drill" hidden="false" collective="false" import="true" targetId="6fe3-70e8-4c6e-bd58" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2ac4-da84-d8c2-6678" name="Auxilia Infantry Support Tercio" publicationId="892-6266-f55f-1b9d" hidden="false" collective="false" import="true" type="unit">
+      <comment>Liber Imperatus p.148 (non-compulsory): a single Force Organisation choice of up to three units</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="86c5-d2a6-caa9-1fa6" name="1-3 of the following, in any combination" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1970-94c5-2f43-b567" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9182-3f47-9b3c-8afa" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8757-4053-5a62-0e02" name="Solar Auxilia Pioneer Section" hidden="false" collective="false" import="true" targetId="f72d-5f43-4d86-973f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dfe-aee7-b941-018a" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="457d-90e8-cd37-2d8a" name="Dedicated Transport" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d07-94a7-43fc-9313" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f4fb-476b-5867-cc05" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
+                    <entryLink id="68e0-f721-ad6f-b878" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="b4b5-9c0a-9e86-3d38" type="selectionEntry"/>
+                    <entryLink id="9cc1-61fd-56f5-c837" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
+                    <entryLink id="e4bd-bb4a-bbd7-3f0d" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                    <entryLink id="ba2e-0ace-884f-b205" name="Solar Auxilia Hades Breaching Drill" hidden="false" collective="false" import="true" targetId="6fe3-70e8-4c6e-bd58" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink id="5196-04f4-9401-e4bc" name="Solar Auxilia Special Weapons Section" hidden="false" collective="false" import="true" targetId="8a36-a3d0-44a6-a8ac" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9d6-f9d1-017b-0c6a" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="27a5-ccff-d940-7b89" name="Dedicated Transport" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fd7-db89-a74f-b114" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="78d5-9507-b7ff-393e" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
+                    <entryLink id="2a9c-4878-6f7c-7249" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
+                    <entryLink id="634e-ace4-6f4c-dc78" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+            <entryLink id="4a1a-69c6-101b-4154" name="Solar Auxilia Heavy Weapons Section" hidden="false" collective="false" import="true" targetId="ca94-82b2-438f-ab63" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="932a-6fda-1d7e-dd9e" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="b228-2666-cfcb-85ae" name="Dedicated Transport" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e00-35f6-1686-9b52" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="05d0-cff7-23b1-ac17" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
+                    <entryLink id="2391-d838-b592-0cb8" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
+                    <entryLink id="cef0-e9a1-154e-ddb0" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c336-3ccf-28a5-f33e" name="Solar Auxilia Ancillary Command Section" hidden="false" collective="false" import="true" targetId="6fad-1e31-42a4-90ba" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cde-67a1-60a7-f2e1" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8169-4e5a-52ec-c052" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7add-b4e7-7001-9aa7" name="Dedicated Transport" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="546f-01b1-c262-5a37" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="efc4-420a-a19f-2393" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
+                <entryLink id="a986-a2c8-7c5b-4111" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="b4b5-9c0a-9e86-3d38" type="selectionEntry"/>
+                <entryLink id="6a1d-32ec-82d9-65bb" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
+                <entryLink id="d3a3-ff26-2293-1569" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="d46f-01cd-3b1f-f7f5" name="Solar Auxilia Hades Breaching Drill" hidden="false" collective="false" import="true" targetId="6fe3-70e8-4c6e-bd58" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="6fd7-301a-87a6-b365" name="Auxilia Verticalis Drop Tercio" publicationId="892-6266-f55f-1b9d" hidden="false" collective="false" import="true" type="unit">
+      <comment>Liber Imperatus p.158: a single Force Organisation choice of up to three units</comment>
+      <entryLinks>
+        <entryLink id="2a05-df2b-a825-752a" name="Solar Auxilia Verticalis Drop Command Section" hidden="false" collective="false" import="true" targetId="124a-f32d-4442-b42b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fff4-8694-8fe8-8e0b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="139b-0d98-a5fe-6c41" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="fa04-c9f6-fff8-194a" name="Dedicated Transport" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e985-859a-6729-5d9f" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="c9dd-6228-2fcc-1f33" name="Arvus Transport" hidden="false" collective="false" import="true" targetId="5041-9403-02b7-af14" type="selectionEntry"/>
+                <entryLink id="3e96-842e-156f-306c" name="Solar Auxilia Kelaino Squadron" hidden="false" collective="false" import="true" targetId="58df-6a8f-4d5c-9cd8" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink id="efd0-0fbc-37c8-41af" name="Solar Auxilia Verticalis Drop Section" hidden="false" collective="false" import="true" targetId="ac43-ffce-4f42-8220" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="188b-4196-c1a0-ce4d" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa84-43cd-3ccb-ef2b" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="70bc-f692-8338-4c83" name="Dedicated Transport" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee9-edf0-4fc2-28eb" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="03e1-6331-ae26-a390" name="Arvus Transport" hidden="false" collective="false" import="true" targetId="5041-9403-02b7-af14" type="selectionEntry"/>
+                <entryLink id="4fc0-3c30-1da2-8995" name="Solar Auxilia Kelaino Squadron" hidden="false" collective="false" import="true" targetId="58df-6a8f-4d5c-9cd8" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink id="2645-9ab9-2da6-d26d" name="Solar Auxilia Verticalis Drop Sentinel Squadron" hidden="false" collective="false" import="true" targetId="d795-a6df-4632-a2b3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c795-629d-5b11-b056" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b96f-ca10-6336-1799" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e506-78dc-fa8b-8ba1" name="Auxilia Light Armoured Tercio" publicationId="892-6266-f55f-1b9d" hidden="false" collective="false" import="true" type="unit">
+      <comment>Liber Imperatus p.162: a single Force Organisation choice of up to three units</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cb1e-9051-f13c-3b20" name="1-3 of the following, in any combination" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d28-5931-bc83-3c4b" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="714b-353b-dc9d-5157" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2227-b06d-d173-6ed2" name="Solar Auxilia Salamander Scout Squadron" hidden="false" collective="false" import="true" targetId="3bc7-43f4-4f0a-a5cb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7283-b605-8562-a9db" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="35d8-ec49-ac86-1eb8" name="Solar Auxilia Pegasus Assault Squadron" hidden="false" collective="false" import="true" targetId="ba90-233d-4f93-a1f0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d24d-37f4-f4ca-8538" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6991-927b-bbcb-c4c9" name="Solar Auxilia Salamander Command Vehicle" hidden="false" collective="false" import="true" targetId="a520-ed43-4d78-b257" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddce-a878-3c32-dfca" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="234f-10b3-5379-bed1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="3f4e-1ab9-f59f-e232" name="Auxilia Carnodon Tercio" publicationId="892-6266-f55f-1b9d" hidden="false" collective="false" import="true" type="unit">
+      <comment>Liber Imperatus p.165: a single Force Organisation choice of up to three units</comment>
+      <entryLinks>
+        <entryLink id="14ef-b248-62d4-1f7c" name="Solar Auxilia Carnodon Command Section" hidden="false" collective="false" import="true" targetId="b287-36c9-40a2-abc5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f291-b073-f819-328c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e8f-f1fd-025a-191c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0a28-bd25-ead6-634d" name="Carnodon Strike Squadron" hidden="false" collective="false" import="true" targetId="2918-e98d-0ab1-811b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c846-5787-4c2d-35f0" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4bf-a270-d525-f1e4" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry id="9dd4-325a-c1cb-fac2" name="Legate Marshal" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="1e4f-7988-a075-90b2" name="Field Officer" hidden="false" targetId="4822-41d5-e563-1f09" type="rule"/>
@@ -2133,6 +2525,7 @@
               <entryLinks>
                 <entryLink id="4d4b-4bd3-10c6-44f4" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
                 <entryLink id="ee8e-8f36-5d0c-a2dd" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="399d-e0a3-ff09-c674" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2117-2813-1879-809d" name="One Auxilia Companion in the unit may be upgraded to have a:" hidden="false" collective="false" import="true">
@@ -2575,6 +2968,7 @@
               <entryLinks>
                 <entryLink id="ed5a-006a-2bd9-3b7a" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
                 <entryLink id="0ef4-6f77-7615-2346" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="5944-4113-3c7c-4b87" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2161-77d2-5365-5423" name="One Auxilia Companion in the unit may be upgraded to have a:" hidden="false" collective="false" import="true">
@@ -2956,6 +3350,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="d26d-3a71-2a0b-7184" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ff50-83d5-369f-f7ca" name="One Veletarii in the unit may be upgraded to have a:" hidden="false" collective="false" import="true">
@@ -3957,6 +4352,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="32df-85ba-5731-ce6c" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -4364,6 +4760,7 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="2161-191f-dd54-11b3" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5536,6 +5933,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               <entryLinks>
                 <entryLink id="ab7d-4c16-aad9-3d38" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
                 <entryLink id="e6d3-88d2-2407-9269" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="1050-a2f6-9aa8-7a84" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9eed-3e6d-fa6e-17ef" name="One Auxilia Companion in the unit may be upgraded to have a:" hidden="false" collective="false" import="true">
@@ -6138,6 +6536,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </modifiers>
                 </entryLink>
                 <entryLink id="77f5-573a-7cdb-c441" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="320d-f15e-0631-661b" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="bc4a-9998-2da4-e061" name="Auxilia" hidden="false" collective="false" import="true" defaultSelectionEntryId="516d-d14f-b11d-2879">
@@ -7857,6 +8256,7 @@ While at least one model with a Command Vox is present on the battlefield and n
               <entryLinks>
                 <entryLink id="8190-f182-1847-dec1" name="Aurox Transport" hidden="false" collective="false" import="true" targetId="071b-79e5-7b5b-c9cd" type="selectionEntry"/>
                 <entryLink id="0ecc-ad28-43db-b72a" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" targetId="496b-a01b-3726-0a44" type="selectionEntry"/>
+                <entryLink id="cc56-0010-de22-7f38" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -8285,6 +8685,14 @@ While at least one model with a Command Vox is present on the battlefield and n
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink id="203f-bbcf-218e-0bb2" name="Solar Auxilia Sabre Battery" hidden="false" collective="false" import="true" targetId="5a26-d499-4251-a65c" type="selectionEntry">
+              <comment>Liber Imperatus p.181: Auxilia Artillery Tercio Additions</comment>
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="500e-c289-f064-91b8" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -8930,6 +9338,7 @@ While at least one model with a Command Vox is present on the battlefield and n
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="458f-9ad5-05b9-f15a" name="Solar Auxilia Chimera Transport" hidden="false" collective="false" import="true" targetId="c052-5fc4-48d3-8edc" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -12776,6 +13185,7 @@ When an Allied Detachment drawn from the Solar Auxilia Army List has a version o
     </rule>
   </sharedRules>
   <catalogueLinks>
+    <catalogueLink id="51a4-0abe-fa55-f529" name="[Imperatus] Solar Auxilia" targetId="e960-66e8-21db-ebb4" type="catalogue" importRootEntries="false"/>
     <catalogueLink id="e048-9e5e-507c-5bac" name="LI - Assassins and Agents" targetId="2dde-e269-90db-8d33" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="60d6-cab6-4580-b772" name="Mech Library" targetId="7265-8b7a-50ae-51ec" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="60d6-cab6-4580-b4256" name="Imperium Library" targetId="4ab9-6c13-4d80-2f7d" type="catalogue" importRootEntries="true"/>
