@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="faad-692f-723b-fbb4" name="[Antiquia] Asuryani" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="faad-692f-723b-fbb4" name="[Antiquia] Asuryani" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
+    <selectionEntry id="d899-0621-4c1e-9a7b" name="Asuryani" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Army faction marker. The Crusade and Allied charts expect two Allegiance selections: Loyalist/Traitor plus the army's faction.</comment>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9a9-8948-ab10-8626" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8428-01ed-e398-ba54" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry name="Autarch" type="unit" id="082e-6f97-41e2-9a13" page="28" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="60dc-ddd3-427a-9c49"/>
@@ -956,6 +966,15 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="c049-57b7-924d-6b1f" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.37</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c097-52fa-828d-b1a7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1c03-339b-5bd1-b0e2" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="The unit may have all models in it upgraded to (the whole unit must be so upgraded):" id="f673-5d4e-46bb-b978">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4aea-469d-472e-bb66"/>
@@ -1138,6 +1157,15 @@ Could not find wargear Melta Bombs
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="120d-8f14-f6e3-2bab" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.39</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8878-a20d-7328-373c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7229-ee2c-459b-29e2" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One model in the unit may take a:" id="be5a-5b37-4c8d-9dfe">
           <entryLinks>
             <entryLink name="Craftworld Standard" hidden="false" type="selectionEntry" targetId="7217-515a-4e3e-94c6" id="d0b1-54e0-4ae9-b79a">
@@ -1257,6 +1285,15 @@ Could not find wargear Melta Bombs
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="acda-9c98-f89e-f2dd" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.40</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9a5-9821-4488-d07f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ca6b-0fe9-c23e-8216" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One model in the unit may take a:" id="8183-562c-40d8-b99b">
           <entryLinks>
             <entryLink name="Craftworld Standard" hidden="false" type="selectionEntry" targetId="7217-515a-4e3e-94c6" id="80f6-fc2e-4595-829e">
@@ -1378,6 +1415,15 @@ Could not find wargear Melta Bombs
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="9ab5-1ad1-a848-dc32" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.41</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea68-b7f2-f9b1-f5d5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cf33-420e-fdb1-a801" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One model in the unit may take a:" id="99eb-3a29-4963-a18e">
           <entryLinks>
             <entryLink name="Craftworld Standard" hidden="false" type="selectionEntry" targetId="7217-515a-4e3e-94c6" id="1226-6261-46c9-bf17">
@@ -1518,6 +1564,25 @@ Could not find type or subtype &apos;Automata&apos;</comment>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6ed5-77dd-575f-27e2" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.42</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d918-8261-f2c9-2232" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6e0e-7c6d-6c42-8f69" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="7333-3dd6-4e7f-bb51" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Wraithguard" type="unit" id="3ac1-e5ed-43b2-b4d8" page="43" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
@@ -1576,6 +1641,23 @@ Could not find type or subtype &apos;Automata&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="ebc0-0c5b-7246-5981" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.43</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d11f-6925-f3e6-af9b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1df3-e7ab-fbdc-cdad" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="3ac1-e5ed-43b2-b4d8" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="The entire squad may exchange their Wraithcannons for one of the following options (all models in the unit must take the same option):" id="058e-835b-44eb-985d">
           <entryLinks>
             <entryLink name="D-Scythe" hidden="false" type="selectionEntry" targetId="4a93-ea93-4dbd-b637" id="66ad-ca21-415f-8cd6">
@@ -1896,6 +1978,23 @@ Could not find wargear in Any Defender Platform in the unit may exchange its Shu
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="f459-dab9-8a32-2177" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.48</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="207b-1e63-5b07-a0e5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4a46-897c-2d8a-acd2" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="050e-8ab5-4abb-8615" value="12" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One model in the unit may take a:" id="8c1d-63f4-4bdd-85c7">
           <entryLinks>
             <entryLink name="Craftworld Standard" hidden="false" type="selectionEntry" targetId="7217-515a-4e3e-94c6" id="19a4-af37-4182-8f52">
@@ -2140,6 +2239,23 @@ Could not find wargear in Any Defender Platform in the unit may exchange its Shu
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="2ca3-5640-d5e6-7b0b" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.49</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24e0-b52c-dc82-218c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="755b-24a4-b9b3-bedf" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ea5d-22b9-4ce3-8ca0" value="12" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One model in the unit may take a:" id="2355-3923-4179-ab61">
           <entryLinks>
             <entryLink name="Craftworld Standard" hidden="false" type="selectionEntry" targetId="7217-515a-4e3e-94c6" id="2a85-0fbc-4071-9a72">
@@ -2399,6 +2515,15 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="ea1d-6c43-7e03-9e69" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.51</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d934-043c-99ec-bfa9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a0ba-724d-a0be-89c3" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One model in the unit may take a:" id="90a4-99e3-4e52-9da8">
           <entryLinks>
             <entryLink name="Craftworld Standard" hidden="false" type="selectionEntry" targetId="7217-515a-4e3e-94c6" id="1763-b8de-48de-934d">
@@ -4189,6 +4314,15 @@ Could not find wargear Reaper Launcher (with Starswarm, Starshot, and Starhawk M
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="112f-a168-5bbf-97d3" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.69</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8452-a978-cbb3-0214" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6e3d-0950-1b9d-4783" name="Wave Serpent" hidden="false" collective="false" import="true" targetId="c097-2ee7-4399-b876" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One model in the unit may take a:" id="dc18-a7a0-4b68-9d48">
           <entryLinks>
             <entryLink name="Craftworld Standard" hidden="false" type="selectionEntry" targetId="7217-515a-4e3e-94c6" id="72f0-7c72-4b07-8bd8">
@@ -7033,4 +7167,407 @@ Could not find profile for Double Holo-Field Sections in [&apos;Holo-Field Defen
   <catalogueLinks>
     <catalogueLink id="38a-c90-44da-9571" name="Panoptica Library" targetId="69b7-3f60-9f7f-8ce5" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink id="45c6-f4ea-79b0-a92c" name="Asuryani" hidden="false" collective="false" import="false" targetId="d899-0621-4c1e-9a7b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ba1-c381-6a73-ee79" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="98b8-ba31-9846-5f87" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dc10-0481-6817-c2a5" name="Autarch" hidden="false" collective="false" import="false" targetId="082e-6f97-41e2-9a13" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df57-0876-243e-e95d" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4d3c-e9b5-fc4e-1680" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="cf1d-58af-02f6-91c8" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="cffa-328c-1a5c-af0d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="248b-8080-4073-d570" name="Aspect Exarchs" hidden="false" collective="false" import="false" targetId="ee1a-07fa-45ce-947c" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddd4-301b-3e24-cb14" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1702-99db-bac3-8153" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="4268-01fa-c5b0-cf0f" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="27dd-6988-5b10-e735" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="efde-66d4-aeac-363f" name="Farseer" hidden="false" collective="false" import="false" targetId="d27e-b782-40c3-9f57" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="82ce-7581-c551-7eb3" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="5534-0203-4933-a10e" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="4baa-0e6f-53d8-0337" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f03a-681d-e84f-8ead" name="Wraith Guide" hidden="false" collective="false" import="false" targetId="4952-5d86-4bfc-bf65" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="320a-ff93-1c44-2d55" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="c0b7-98e2-55f4-bbea" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="0704-8aec-3156-3f5d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="71e2-0757-e126-7066" name="Eldrad Ulthran" hidden="false" collective="false" import="false" targetId="9007-5ead-4e48-9c5f" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a8-06b0-ffbf-ead3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ded9-bc36-e720-8702" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="9bfe-7587-941b-d001" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="e9f4-ea75-87f5-5e90" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="acf9-ea2a-5665-386b" name="Guardian Officer Cadre" hidden="false" collective="false" import="false" targetId="dec9-1989-4538-9d8b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59c0-39f4-1560-0f00" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="af5a-ee80-01d3-d535" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="456e-f3be-ec39-c0bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a2d7-0c04-d9af-7c4a" name="Seer Council" hidden="false" collective="false" import="false" targetId="ed4b-f763-4c7c-b5ba" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0704-d838-93bf-9501" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7001-4e57-25d1-f5e4" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="2b40-0fea-85e5-2e84" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b510-78ec-f69d-8f6d" name="Bonesinger Conclave" hidden="false" collective="false" import="false" targetId="c9e7-1839-4058-907d" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4f5-86cb-fc21-c139" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bfba-73af-2df1-0bce" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="e8e6-6cf4-7ebc-ef51" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="95bf-f78e-05ba-c22a" name="Fire Dragons" hidden="false" collective="false" import="false" targetId="3140-5af7-4454-b680" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="430f-13a4-924b-ab6d" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="c3f0-ecc8-ae38-eb97" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="95cd-1f42-ea8f-8cdf" name="Striking Scorpions" hidden="false" collective="false" import="false" targetId="ae63-b800-4718-a0e8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7fed-2bfa-f4ee-a3a4" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="e81e-163e-8bd5-939d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="05e0-5d5e-e942-d2f0" name="Howling Banshees" hidden="false" collective="false" import="false" targetId="49e3-d22f-4bdb-a003" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9843-f838-ae82-e0f7" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="657a-a382-0740-6721" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="33ea-3100-33fa-c895" name="Wraithblades" hidden="false" collective="false" import="false" targetId="7333-3dd6-4e7f-bb51" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1b60-9f88-4107-b7c0" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="966c-15ca-162f-4cc1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8927-8d57-b316-85eb" name="Wraithguard" hidden="false" collective="false" import="false" targetId="3ac1-e5ed-43b2-b4d8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5673-75e8-bece-2eab" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="0e42-f3c7-69f7-cd6a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a33a-a5c2-9a3b-5ab2" name="War Walker Squadron" hidden="false" collective="false" import="false" targetId="86dc-cfbe-4d75-9e36" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7575-c0d2-d3d9-c082" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="516b-ccab-aefa-e903" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="92d4-c88b-59ae-ff0a" name="Guardian Defenders" hidden="false" collective="false" import="false" targetId="050e-8ab5-4abb-8615" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7123-0624-bf56-2a71" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="1293-51ac-a8b6-6a9d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="8f1c-2a07-26d2-9426" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bf29-cdca-58fa-8713" name="Storm Guardians" hidden="false" collective="false" import="false" targetId="ea5d-22b9-4ce3-8ca0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="47e8-056e-939a-d035" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="75cd-28f0-d041-dbd1" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="5d2e-8a16-c345-bccf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8a57-7aa5-41f2-89c9" name="Dire Avengers" hidden="false" collective="false" import="false" targetId="68c8-9047-42b8-a074" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3311-2793-8bae-ce91" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="caab-2fff-174f-2628" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="1291-8af5-4865-dd19" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a035-ea73-a5d4-65f1" name="Rangers" hidden="false" collective="false" import="false" targetId="ba05-34d9-4669-8dc7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e990-aa3c-8886-93e1" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="cca1-4305-4f9a-50bc" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="0a62-3f3f-68a1-5f62" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="842a-f7e1-d924-f641" name="Windriders" hidden="false" collective="false" import="false" targetId="c07d-74e4-4b5d-8e25" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7217-4860-5b9b-c3b1" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="85ac-2b51-f17e-9a1f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c9e5-c73a-311b-02a4" name="Shadow Spectres" hidden="false" collective="false" import="false" targetId="76bc-ff96-454f-9fd9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="32c3-dcff-0576-0e43" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="108f-adef-f593-b5fd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1db8-52cb-55d8-aa2f" name="Swooping Hawks" hidden="false" collective="false" import="false" targetId="8b86-7f9d-4b34-ae0e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5a99-66e0-9999-9f37" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="407d-5457-b204-1005" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2263-53a7-f2ac-4fd6" name="Shining Spears" hidden="false" collective="false" import="false" targetId="381b-4d55-42cd-843d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4fd3-056d-fcad-4cf5" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="6bcb-31cc-c6fe-b051" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="836f-e457-745b-10f5" name="Warp Spiders" hidden="false" collective="false" import="false" targetId="2cf6-8e98-4cca-bd3d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c070-d281-f2dd-1d80" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="5810-4cab-5b1e-c5b4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="273f-3a97-c0c4-39af" name="Shroud Runners" hidden="false" collective="false" import="false" targetId="2c92-0bb4-4344-9205" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e875-f900-f961-3faa" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="48a4-c171-7745-ebeb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="440f-48f2-a9e9-c4e2" name="Vyper Squadron" hidden="false" collective="false" import="false" targetId="e6c2-0f8c-420f-ab7d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1957-d630-43f7-21ec" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="54f3-2af5-56c1-6842" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f081-7853-ebbf-e821" name="Nightshade Interceptor Squadron" hidden="false" collective="false" import="false" targetId="048e-950c-4ea1-9f1d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ff13-a4e3-fe2e-d40e" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="6b10-e476-d4a3-9cbd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="43ee-0160-d158-9b83" name="Nightwing Interceptor Squadron" hidden="false" collective="false" import="false" targetId="de08-f758-4fb0-8b2b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1e0e-d26d-49c7-8105" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="222a-b67b-9c9c-065f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="473e-1f8e-5a91-6f0a" name="Phoenix Bomber Squadron" hidden="false" collective="false" import="false" targetId="33bd-0c50-4164-98c8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d5b0-713d-0a6f-f32e" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="66df-2e22-b844-7b8b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a55f-922a-8a13-f91d" name="Vaul’s Wrath Support Battery" hidden="false" collective="false" import="false" targetId="3cf4-0740-4ca0-bfe3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="758d-0459-2035-d68a" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="a7ab-f99b-1379-9fab" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0629-4f52-85ec-6e80" name="Dark Reapers" hidden="false" collective="false" import="false" targetId="c209-eaae-48fe-9594" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="31fd-e310-6bfc-3799" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="b824-093e-2b24-16f6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9f7e-7403-8851-e49a" name="Falcon Squadron" hidden="false" collective="false" import="false" targetId="aabc-4947-4b27-bc32" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0a31-dc68-57fa-d79a" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="4fc3-a5f1-c66c-2cd3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="69d3-7925-0daf-a138" name="Fire Prism Squadron" hidden="false" collective="false" import="false" targetId="1ee4-1f45-4ceb-ae54" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ebc6-f0c7-9569-a96f" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="7f53-3b72-4e79-0ac3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="54f6-c7a8-8a31-7dd6" name="Night Spinner Squadron" hidden="false" collective="false" import="false" targetId="f5bb-719f-416b-863c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4bb4-804b-f3d2-4acd" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="1a54-8ea4-83d6-4396" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2256-e8f7-88a3-05be" name="Firestorm Squadron" hidden="false" collective="false" import="false" targetId="c07a-61d5-4b27-92db" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c2db-4036-aca7-eb86" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="fefb-851a-13ea-40cd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2417-fc53-ab30-ddda" name="Wraithlord Conclave" hidden="false" collective="false" import="false" targetId="2562-7375-44f5-abe9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3f29-87a6-c637-6da8" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="b3cb-f564-b873-978c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="77b1-09a2-d94a-3def" name="Wraithseer" hidden="false" collective="false" import="false" targetId="88ae-ed67-44ed-8a2e" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dfa-c462-8441-0807" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0464-3c93-ea9d-83e3" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="bb92-fd09-e9fe-25ea" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f445-6b6b-c863-b255" name="Wraithknight" hidden="false" collective="false" import="false" targetId="250c-6721-4d92-81ed" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="acc8-9286-5071-e78d" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="a68f-c17d-2869-11b2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a8c6-258a-4a64-320b" name="Skathach Wraithknight" hidden="false" collective="false" import="false" targetId="e80a-7edf-434c-a146" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f83b-d7e8-b8ee-cf92" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="15e2-29b3-3540-199c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7716-a83e-4521-281a" name="Vampire Hunter" hidden="false" collective="false" import="false" targetId="455a-ad9c-419e-8d3a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a7de-a7f8-afbe-056b" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="8ef2-8a99-bcc3-7ab5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f36f-1191-eb66-e624" name="Vampire Raider" hidden="false" collective="false" import="false" targetId="ad19-d09c-475c-9668" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1d5d-1ef8-547c-72b5" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="abe3-e234-7a24-097d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c198-2342-25b8-7292" name="Phantom Titan" hidden="false" collective="false" import="false" targetId="d9cc-ad45-4095-bba8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4f31-4bee-018c-bd59" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="55ce-7fee-5b9d-a233" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="071e-1eb8-5f24-ae83" name="Revenant Titan" hidden="false" collective="false" import="false" targetId="c05c-a32e-448f-8e51" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f07e-60d9-a710-e71d" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="e98e-2d53-defc-90ab" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5643-2abd-5802-15f4" name="Scorpion" hidden="false" collective="false" import="false" targetId="6f09-ee0b-496c-ac8a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7b35-4be8-c531-6045" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="547c-8e5a-efe7-f01e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dc1e-fda0-449a-a747" name="Cobra" hidden="false" collective="false" import="false" targetId="ab35-0c30-4117-a4c6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d8d0-5359-3665-3454" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="30b8-d2a5-eef8-39de" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="96a8-2ca8-9d2e-5847" name="Lynx" hidden="false" collective="false" import="false" targetId="f52a-95f7-491e-8687" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d5b8-1b1a-082f-3906" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="02d7-faac-de2d-00ac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4c8f-ddba-058e-e125" name="Avatar Of Khaine" hidden="false" collective="false" import="false" targetId="d57e-c1b7-40c5-bfa5" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="144e-c17f-2f84-ae66" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="be7e-b13e-a7c8-aa1d" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="fc18-6806-b44e-6a25" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d7a5-32f3-163f-7c84" name="Asurmen" hidden="false" collective="false" import="false" targetId="8277-f14b-4518-a299" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f8e-49ea-31ea-1c1d" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2abb-3d9a-e0d2-4c30" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="06c8-ea7b-eb30-c751" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="74da-fe88-7285-68b2" name="Baharroth" hidden="false" collective="false" import="false" targetId="7964-447c-4193-8be4" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a9-7771-10a2-4da2" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c834-e889-d276-98b0" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="47cd-ce3b-fdf2-7e0e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8cb3-2169-bc39-5381" name="Drastanta" hidden="false" collective="false" import="false" targetId="4eaf-2579-49cb-94f2" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cff-5e90-931f-c664" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3360-2df9-35a1-5ca9" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="358f-e64d-fc9a-ca74" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="62a4-dff6-dcf5-2c7e" name="Fuegan" hidden="false" collective="false" import="false" targetId="56df-208a-47bb-838f" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="647d-41fa-9698-5109" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5007-5869-90ec-1a72" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="48f7-0039-7181-c923" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6179-ab29-a2ef-0123" name="Irillyth" hidden="false" collective="false" import="false" targetId="759e-52c7-4a25-883f" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf15-1c18-fc9e-2a1a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="88f0-1e38-4ad0-e45d" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="9377-2e37-5c93-0154" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1a92-8d0c-1a28-828f" name="Karandras" hidden="false" collective="false" import="false" targetId="3e09-2df2-4b12-8bf1" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d34c-3572-1a6f-6c55" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dba4-2102-815f-6ab2" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="1236-7b76-54de-c4e3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="df23-163e-a314-814c" name="Maugan Ra" hidden="false" collective="false" import="false" targetId="0c97-c091-4c31-b74e" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d74-f494-6465-29ff" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="22ab-fc77-c9fe-f373" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="51ea-83de-383a-5b4b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a184-1cfd-aa48-edaf" name="Jain Zar" hidden="false" collective="false" import="false" targetId="1f68-59c6-4d76-b682" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c67-9128-bcbe-7bf6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d890-3ccd-8386-61af" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="b259-87a9-4715-d083" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bd4a-4099-5c58-3665" name="Webway Gate" hidden="false" collective="false" import="false" targetId="b996-22c3-4113-adfe" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1e41-ccb5-658e-ec1f" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="347a-71e4-5c60-1315" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2cb2-3dce-7c06-d1bf" name="Holo-Field Defence Line" hidden="false" collective="false" import="false" targetId="bb11-e4d2-4b1b-b08c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3125-760e-cc83-25a9" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="1539-4412-ef67-209d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
