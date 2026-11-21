@@ -10032,7 +10032,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ac07-b6dd-489c-45ec" name="Dedicated Transport" hidden="false" collective="false" import="true">
-          <comment>Liber Imperatus p.197 (Ogryn Conscripts) and p.222</comment>
+          <comment>Liber Imperatus p.198 (Ogryn Conscripts) and p.222</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="494e-3466-5998-5ba2" type="max"/>
           </constraints>
