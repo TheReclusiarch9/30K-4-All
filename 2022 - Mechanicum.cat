@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2042" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -3951,6 +3951,11 @@ On a Game Turn in which a model armed with Stratos Thrusters activates them, th
           <profiles>
             <profile id="0d8f-f51e-e76b-e6aa" name="Krios Battle Tank" publicationId="bde1-6db1-163b-3b76" page="49" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
               <modifiers>
+                <modifier type="set" field="name" value="Krios Irradiator">
+                  <conditions>
+                    <condition field="selections" scope="a6c8-1f76-580d-d901" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11e2-53db-262c-ac81" type="equalTo"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="name" value="Krios Venator Tank Destroyer">
                   <conditions>
                     <condition field="selections" scope="a6c8-1f76-580d-d901" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="566b-4fc6-9d5c-10cd" type="equalTo"/>
@@ -3996,6 +4001,46 @@ On a Game Turn in which a model armed with Stratos Thrusters activates them, th
                   </costs>
                 </entryLink>
               </entryLinks>
+              <selectionEntries>
+                <selectionEntry id="11e2-53db-262c-ac81" name="Irradiation Blaster" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="98a1-46e3-4004-9467" name="Irradiation blaster - Focused" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">16&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Fleshbane, Rad-phage, Radiation Beam</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="5a3c-bbce-bed7-9a99" name="Irradiation blaster - Dispersed" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Hellstorm</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Fleshbane, Rad-phage</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="27df-3663-a66b-e2f2" name="Radiation Beam" publicationId="3780-2e0c-1c08-df47" hidden="false">
+                      <description>When the weapon profile with this special rule is used to make a Shooting Attack, draw an imaginary 1mm wide line from the end of the gun barrel up to the listed range of the weapon – this is the beam area. The initial target for the weapon (the model in the beam area closest to the attacking model) must be an enemy model.
+• All models (friendly and enemy) caught in the beam area (excepting the firing model) suffer a Hit with the listed profile of the weapon, except models with the Flyer Sub-type which cannot be affected or targeted.
+• Units with any models in the beam area receive a number of Hits equal to the number of their models caught in the path of the beam; casualties are removed from affected units using the normal rules for removing casualties.
+• If a Terrain piece, Building, model with the Vehicle Unit Type or any model with 6 or more starting Wounds is in the beam area, the attack is blocked and its line of effect will go no further than that model. The blocking model will, however, suffer D3 separate Hits, rather than just 1.
+• If a model with the Vehicle Unit Type and the Transport Sub-type suffers a Penetrating Hit from a weapon with this special rule, each unit Embarked on it suffers D6 Str 2 AP - Hits with the Fleshbane special rule, in addition to any other effects. Any Wounds caused are allocated by the target unit’s controlling player.
+
+All weapons listed here are counted as ‘Rad’ weapons for those rules that affect such weapons.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="7b9a-f4f2-9f11-5025" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+                    <infoLink id="16c9-d3a1-1b95-9440" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="cc12-3552-7c4b-7d3b" name="Any Krios in the squadron may take any of the following options:" hidden="false" collective="false" import="true">
               <selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="64c8-badb-7d2a-890a" name="LA - XIX: Raven Guard" revision="2034" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="64c8-badb-7d2a-890a" name="LA - XIX: Raven Guard" revision="2035" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="84cc-e59c-174e-fb25" name="Mor Deythan Squad" hidden="false" collective="false" import="false" targetId="c268-08ac-5b90-d034" type="selectionEntry">
       <categoryLinks>
@@ -7,14 +7,7 @@
         <categoryLink id="b955-7a72-615e-214c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="495b-4009-800a-2446" name="Moritat-Prime Kaedes Nex" hidden="true" collective="false" import="false" targetId="5be0-17a1-bb08-670f" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <entryLink id="495b-4009-800a-2446" name="Moritat-Prime Kaedes Nex" hidden="false" collective="false" import="false" targetId="5be0-17a1-bb08-670f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="de3b-7a9e-8db8-3522" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="9642-f478-08f5-086c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -3007,7 +3000,9 @@
     <selectionEntry id="5be0-17a1-bb08-670f" name="Moritat-Prime Kaedes Nex" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="1bd3-f8f0-d234-1ecf" name="Ill-omened" hidden="false">
-          <description>Moritat-Prime Kaedes Nex may not be taken as a Compulsory HQ choice, only as a non-Compulsory HQ choice. He may never be an army’s Warlord, and may not join other units except Legion Seeker Squads or Mor Deythan Squads.</description>
+          <description>Moritat-Prime Kaedes Nex may not be taken as a Compulsory HQ choice, only as a non-Compulsory HQ choice. He may never be an army’s Warlord, and may not join other units.
+
+In addition, Kaedes Nex can be included as part of a Blackshields Detachment (see Campaigns of the Age of Darkness: The Battle for Beta-Garmon). If you include him in such a Detachment, replace his Legiones Astartes (Raven Guard) special rule with the Legiones Astartes (Blackshields) special rule.</description>
         </rule>
         <rule id="1dae-23f1-96b3-6901" name="The Blood Crow" hidden="false">
           <description>When Moritat-Prime Kaedes Nex makes any attacks as part of a Shooting Attack, the range of any weapons is not restricted or affected by the Night Fighting rules, shroud bombs or any other special rule. In addition, Moritat-Prime Kaedes Nex never suffers any penalty to his Ballistic Skill from Night Fighting or any other special rules, always makes To Hit rolls using his full Ballistic Skill (including Snap Shots) and no model may make Shrouded rolls to negate Wounds inflicted by their  attacks.</description>
@@ -3031,18 +3026,15 @@
             <modifier type="set" field="name" value="Rampage (3)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="f88b-223f-d2ee-2c83" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Sudden Strike (1)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="7ce2-9d41-128b-ed58" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Shrouded (5+)"/>
+            <modifier type="set" field="name" value="Shrouded (4+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="5f03-968d-7f7b-976c" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
-        <infoLink id="6d1d-134b-6029-5438" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+        <infoLink id="4a2c-9784-e7b4-d10e" name="Legiones Astartes (Raven Guard)" hidden="false" targetId="9924-9434-baa1-0894" type="rule"/>
+        <infoLink id="3848-4bdb-cc84-1758" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+        <infoLink id="8ebc-fb1d-63e9-4bc8" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d770-1c5b-320d-4c12" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3061,7 +3053,7 @@
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Light, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
@@ -3091,7 +3083,7 @@
           <profiles>
             <profile id="b620-0e76-f6ab-4a7e" name="Pinpoint Strike" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
                 <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Brutal (2), Concussive (1), Pinning, Sniper</characteristic>
@@ -3110,12 +3102,12 @@
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Precision Strikes (4+), Specialist Weapon</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Precision Strikes (4+), Rending (5+)</characteristic>
               </characteristics>
             </profile>
             <profile id="e67f-453c-7cb4-82ad" name="Fulcrim Hand Cannon" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Fulcrum hand cannon are ‘Auto’ weapons for special rules that affect such weapons, and possess multiple profiles. When making a Shooting Attack the controlling player must select either Pinpoint Strike or Empty the Chambers and makes all attacks with both weapons using the same profile. In close assault the Point-blank profile must be used instead (note that in melee Moritat-Prime Kaedes Nex fighting with his Fulcrum hand cannon counts as having two weapons and gains the appropriate bonuses).</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Fulcrum hand cannon are ‘Auto’ weapons for special rules that affect such weapons, and possess multiple profiles. When making a Shooting Attack, the controlling player must select either Pinpoint Strike or Empty the Chambers and makes all Shooting Attacks with both weapons using the same profile. In the Fight Sub-phase, the Point Blank profile must be used instead.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3137,7 +3129,11 @@
                 <modifier type="set" field="name" value="Precision Strikes (4+)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="5302-e885-f90b-f64f" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+            <infoLink id="5302-e885-f90b-f64f" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (5+)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3145,10 +3141,16 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="969e-db81-f9a2-f3aa" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
+        <entryLink id="7093-ff34-fb7a-fe50" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d75-aa12-4b59-981e" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c0-111c-1be9-f99a" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f696-f726-0062-f797" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28fc-8662-a0f3-cc4f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5f29-759e-f3c1-db48" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4471-87ab-18db-b3de" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2cc-cd94-37eb-7765" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="cd07-b7ce-87fe-fee5" name="Shroud Bombs" hidden="false" collective="false" import="true" targetId="5d4d-36b7-6bf5-fc92" type="selectionEntry">
