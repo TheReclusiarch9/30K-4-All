@@ -1,14 +1,14 @@
 30K-4-All: A Horus Heresy + Panoptica Repository
 ============
 
-[![Latest release](https://img.shields.io/github/release/LeonisAstra/30K-4-All.svg?style=flat-square)](https://github.com/LeonisAstra/30K-4-All/releases/latest)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/LeonisAstra/30K-4-All/latest.svg?style=flat-square)](https://github.com/LeonisAstra/30K-4-All/releases)
-[![Open bugs](https://img.shields.io/github/issues/LeonisAstra/30K-4-All/bug.svg?style=flat-square&label=bugs)](https://github.com/LeonisAstra/30K-4-All/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+[![Latest release](https://img.shields.io/github/release/TheReclusiarch9/30K-4-All.svg?style=flat-square)](https://github.com/TheReclusiarch9/30K-4-All/releases/latest)
+[![Commits (since latest release)](https://img.shields.io/github/commits-since/TheReclusiarch9/30K-4-All/latest.svg?style=flat-square)](https://github.com/TheReclusiarch9/30K-4-All/releases)
+[![Open bugs](https://img.shields.io/github/issues/TheReclusiarch9/30K-4-All/bug.svg?style=flat-square&label=bugs)](https://github.com/TheReclusiarch9/30K-4-All/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
 
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
-[![Contributors](https://img.shields.io/github/contributors/LeonisAstra/30K-4-All.svg?style=flat-square)](https://github.com/LeonisAstra/30K-4-All/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/LeonisAstra/30K-4-All.svg?style=flat-square)](https://github.com/LeonisAstra/30K-4-All/pulse/monthly)
+[![Contributors](https://img.shields.io/github/contributors/TheReclusiarch9/30K-4-All.svg?style=flat-square)](https://github.com/TheReclusiarch9/30K-4-All/graphs/contributors)
+[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/TheReclusiarch9/30K-4-All.svg?style=flat-square)](https://github.com/TheReclusiarch9/30K-4-All/pulse/monthly)
 
 
 
@@ -26,7 +26,7 @@ We strongly recommend you use NewRecruit over Battlescribe, as Battlescribe is c
 
 To install this repository and allow it to update whenever there is a new release, please include the following BSI file in the relevant location on your app of choice.
 
-[https://github.com/LeonisAstra/30K-4-All/releases/latest/download/30K-4-All.latest.bsi](https://github.com/LeonisAstra/30K-4-All/releases/latest/download/30K-4-All.latest.bsi)
+[https://github.com/TheReclusiarch9/30K-4-All/releases/latest/download/30K-4-All.latest.bsi](https://github.com/TheReclusiarch9/30K-4-All/releases/latest/download/30K-4-All.latest.bsi)
 
 ### Current Inclusions
 
@@ -114,4 +114,4 @@ We didn't maintain the template so it's not recommended to re-run bscopy
 * [BSData organization homepage][BSData.net]
 
 [BSData.net]: https://www.bsdata.net/
-[bug report]: https://github.com/LeonisAstra/30K-4-All/issues/new/choose
+[bug report]: https://github.com/TheReclusiarch9/30K-4-All/issues/new/choose
