@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="f65b-5341-4b66-c32f" name="[Imperatus] Custodes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="f65b-5341-4b66-c32f" name="[Imperatus] Custodes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry name="Custodian Host-Master" type="unit" id="c9d0-c3e7-4175-a227" page="60" publicationId="892-6266-f55f-1b9d">
       <categoryLinks>
@@ -150,6 +150,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98a5-9ee8-aeb3-ad37" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="2257-04f4-fc13-e45b" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddd1-87e6-4005-81b8"/>
@@ -330,6 +331,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="626f-b986-4837-3c64" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="2360-ae8e-7fc9-42fa" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc6d-6905-4fca-b93f"/>
@@ -534,6 +536,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfe5-22e9-7747-e7" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="147c-3fd8-bbcb-a87c" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6cc-0b03-4c8c-b542"/>
@@ -729,6 +732,7 @@ Could not find wargear Salvo Launcher
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="808b-12e2-4f10-228d" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="00b5-5b6c-4abe-2e6c" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e586-3968-40d4-93d2"/>
@@ -933,6 +937,7 @@ Could not find wargear Salvo Launcher
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6625-1148-d071-ee40" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="70a3-01c4-487f-a98f" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ddc-8e54-4fc0-a17a"/>
@@ -1168,6 +1173,7 @@ Could not find wargear Salvo Launcher
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c58f-ea2f-26e1-76ac" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="feb5-bc3d-6831-e280" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Tarsus Buckler" hidden="false" id="7d3a-1117-490a-8979" type="selectionEntry" targetId="5c98-2aec-4cca-867f">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="839c-c143-4b49-8416"/>
@@ -1359,6 +1365,7 @@ Could not find wargear Pytherite Spear
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="1e0f-2292-abda-d4bc" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                     <entryLink import="true" name="Power Weapon" hidden="false" id="f79d-10bd-28df-4b38" type="selectionEntry" targetId="d2db-7598-f55f-86fe">
                       <infoLinks>
                         <infoLink name="Master-crafted" id="efd8-4269-1fa1-f759" hidden="false" type="rule" targetId="6de0-55b0-bf21-48b9"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2003" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2004" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -17201,6 +17201,234 @@ All enemy models gain Hatred (Traders Militant) when fighting against an army th
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce52-a77c-176b-d7cd"/>
           </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="842a-9c2b-c86c-434c" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true">
+      <comment>Liber Panoptica v5.3 p.140: only for models that may buy a Paragon Blade; never more than one Extrinsica Melee Weapon per army; a model with one may not also have a Paragon Blade.</comment>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5480-6e0f-0d0d-fe50" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b7bc-b7c3-44e5-d29a" name="Arcanite Shock Maul" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d520-5f77-7357-0329" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9b6d-345b-023f-8470" name="Arcanite Shock Maul" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Concussive (2), Haywire, Specialist Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2f38-a46e-e81d-9138" name="Two-Handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="0d4e-47c0-8107-4163" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Concussive (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="d590-8a42-cf7e-5fa3" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+            <infoLink id="1dac-8fa7-a9c0-b8cd" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="21aa-6903-9f02-bce8" name="Biocore Shatterblade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8746-fd82-2fc5-59f3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="deba-dab7-9400-ab0c" name="Biocore Shatterblade" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brittle, Reach (1), Specialist Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c096-9ad4-3991-6f65" name="Brittle" hidden="false" targetId="b325-1f3d-84ad-0ec8" type="rule"/>
+            <infoLink id="1ef0-631b-17f8-c296" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reach (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="74bd-164a-760c-5852" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6d6f-ddb8-729f-c02a" name="Paired Mirrorblades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfd8-20a3-fc8b-7700" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1ed9-2450-7db3-d69d" name="Paired Mirrorblades" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Riposte (1), Paired Weapons, Two-Handed, Breaching (5+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0566-5be1-8f5e-1c56" name="Riposte (X)" hidden="false" targetId="74b4-fe3c-8ad6-3940" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Riposte (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="6795-8287-c778-641f" name="Paired Weapons" hidden="false" targetId="6a8f-6ca1-72f4-5be0" type="rule"/>
+            <infoLink id="01ec-c761-d19d-b226" name="Two-Handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="8379-9827-382b-0b76" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Breaching (5+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e05b-10f0-1c97-1bd5" name="Aetheric Whisper-Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e2-71da-7cd3-288b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3c79-cbe2-3123-a1f9" name="Aetheric Whisper-Blade" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Dimensional Edge (5+), Specialist Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7b56-cc4d-a607-ee04" name="Dimensional Edge (X)" hidden="false" targetId="dbed-7708-c5d8-865e" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Dimensional Edge (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="31e3-83a1-0dac-3b60" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d877-cf65-419c-e164" name="Gyrocyclic Reaper Blade" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a77-483b-dd08-cbc6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a08c-6508-fa85-3fb8" name="Gyrocyclic Reaper Blade" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reaping Blow (1), Felling Blow, Specialist Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e5ab-e091-0c6a-c848" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaping Blow (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="aa68-cb2a-5b66-9f9b" name="Felling Blow" hidden="false" targetId="ad54-95a5-f4b3-d8a8" type="rule"/>
+            <infoLink id="e110-122c-3931-e7f1" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="060e-9357-1a9d-0200" name="Accelerator Hammer" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f741-f1b5-3b81-d61f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="81e2-be4b-814c-e948" name="Accelerator Hammer" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Reach (1), Sunder</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="38aa-f7f9-3d96-d554" name="Two-Handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="352e-e1f6-c693-c1df" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reach (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="42da-973c-0d78-f9f3" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7b1a-f09d-bc01-6824" name="Hydragyric Executioner" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="421a-d8db-a55e-313b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a056-e8b3-fc0a-f351" name="Hydragyric Executioner" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Gyrocoil Charge, Brutal (2)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="72c3-73ae-7396-5545" name="Two-Handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="efc5-50b5-c9e8-8e6c" name="Gyrocoil Charge" hidden="false" targetId="1443-0133-1cc7-825f" type="rule"/>
+            <infoLink id="4573-9b05-f02d-e531" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Brutal (2)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a625-d29f-bbd5-e955" name="Nanofractal Falchion" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c1-8542-c53e-df09" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="12cd-197d-e4a7-0556" name="Nanofractal Falchion" publicationId="9fab-fea7-a93c-2074" page="140" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (5+), Two-Handed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1f6c-ad98-5f0d-f649" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Murderous Strike (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="b05c-91b8-2fe5-de51" name="Two-Handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
