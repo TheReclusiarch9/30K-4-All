@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2007" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2008" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1221,7 +1221,8 @@ Primarch, or Daemon Primarch Unit Types.</description>
     <categoryEntry id="cdaa-645b-fda7-8556" name="Third-line Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
       <rules>
         <rule id="7754-b90f-cde4-f3e3" name="Third-line Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
-          <description>• When an Armour Penetration roll would inflict a Glancing Hit on a model with this Unit Sub-type, it instead inflicts a Penetrating Hit.
+          <description>The following rules apply to all models with the Third-Line Sub-type:
+• When an Armour Penetration roll would inflict a Glancing Hit on a model with this Unit Sub-type, it instead inflicts a Penetrating Hit.
 • An enemy player may never score Victory points for the destruction of a model with this Unit Sub-type, this includes models with this Unit Sub-type that are selected as Lords of War.</description>
         </rule>
       </rules>
@@ -15558,7 +15559,7 @@ For the purposes of Movement, Shooting Attacks, and Charges, a model deployed v
           </constraints>
           <rules>
             <rule id="8d20-f35d-f6d9-1186" name="Clanfolk Levy" publicationId="9fab-fea7-a93c-2074" page="152" hidden="false">
-              <description>A Detachment with this Provenance may choose to fill Compulsory Troops choices only with Imperialis Militia Cavalry Squads. In addition, all models in Imperialis Militia Cavalry Squads gain a bonus of +1 to their Leadership Characteristic. In addition, a Detachment with this Provenance may include four additional Fast Attack choices – but these additional choices may only be used to select Imperialis Militia Cavalry Squads.</description>
+              <description>A Detachment with this Provenance may choose to fill Compulsory Troops choices only with Imperialis Militia Cavalry Squads Units selected in this manner gain the Line Sub-type. In addition, all models in Imperialis Militia Cavalry Squads gain a bonus of +1 to their Leadership Characteristic . In addition, a Detachment with this Provenance may include four additional Fast Attack choices – but these additional choices may only be used to select Imperialis Militia Cavalry Squads.</description>
             </rule>
           </rules>
           <costs>
@@ -15648,7 +15649,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
           </constraints>
           <rules>
             <rule id="2b3e-1985-202a-b31f" name="Cyber-augmetics" publicationId="9fab-fea7-a93c-2074" page="152" hidden="false">
-              <description>All eligible units and models gain the Feel No Pain (6+) Special Rule, and any eligible unit may be given the Slow and Purposeful Special Rule at no additional points cost. This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
+              <description>All eligible units and models gain the Feel No Pain (6+) Special Rule, and any eligible unit may be given the Slow and Purposeful Special Rule at no additional points cost. In addition, any unit which includes a Militia Medicae improves the Feel No Pain (6+) Special Rule provided by their Auto-Medicus to a (5+). This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -18249,13 +18250,7 @@ If no such target is in range, then the Controlling Player may select a target 
       <description>A unit that includes at least one model with the Psyker Unit Sub-type or Daemon Unit Type, and which suffers one of more unsaved Wound from a weapon with this special rule also suffers Perils of the Warp (see page 201 of the Horus Heresy: Age of Darkness rulebook). Any given unit may only suffer Perils of the Warp once per Phase due to the effects of this special rule, regardless of how many enemy units attack that unit or how many weapons with this special rule are present in the attacking units.</description>
     </rule>
     <rule id="64ca-719e-b563-e3df" name="Independent Fire Control" publicationId="15a4-fc68-502d-48a9" hidden="false">
-      <description>After a model with this special rule (for a unit composed entirely of models with this special rule) has resolved a Shooting Attack targeting an enemy unit, any weapons that were not used to attack (either dur to being out of line of sight or range of the enemy units, or because the controlling player voluntarily opted not to attack with them) may make a number of Secondary Shooting Attacks using those weapons that did not fire as part of its initial Shooting Attack. Each weapon not fired as part of the initial Shooting Attack may be fired once, either all of them in a single Secondary Shooting Attack, each in a separate Secondary Shooting Attack targeting a different enemy unit of any combination - however, each weapon may only be used to attack once and in no more than one Secondary Shooting Attack. All Secondary Shooting Attacks obey all the normal rules for range and line of sight and are with a modifier of -1 on all To Hit rolls.
-
-
-A model with this Special Rule must be assigned to another unit made up entirely of models with the Vehicle Unit Type purchased as part of the same Tercio.
-
-
-In addition, a model with this Special Rule may still make Shooting Attacks as normal in a turn in which they use their Cognis-Signum to provide +1 Ballistic Skill to all other models in their unit, even though this would normally be prevented by using this Wargear.</description>
+      <description>A model with this Special Rule may remain stationary, move at Combat Speed, or Cruising Speed, and still fire all of its weapons as though it had the Super-Heavy Sub-type. Note that this does not grant any of the other benefits of the Super-Heavy Sub-type.</description>
     </rule>
     <rule id="71fa-da0d-0056-9072" name="Kharash" hidden="false">
       <modifiers>

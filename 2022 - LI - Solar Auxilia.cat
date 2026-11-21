@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="46c4-ffd6-affd-72f1" name="LI - Solar Auxilia" revision="2040" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="46c4-ffd6-affd-72f1" name="LI - Solar Auxilia" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -813,6 +813,9 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9dd4-325a-c1cb-fac2" name="Legate Marshal" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="1e4f-7988-a075-90b2" name="Field Officer" hidden="false" targetId="4822-41d5-e563-1f09" type="rule"/>
+      </infoLinks>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="154d-0b2b-1215-38bb" type="max"/>
       </constraints>
@@ -1538,6 +1541,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cac8-3d71-1e24-b2d5" type="max"/>
           </constraints>
           <infoLinks>
+            <infoLink id="4ed3-f1fa-27be-250e" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
             <infoLink id="5230-3fb3-9a54-806d" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
             <infoLink id="757d-235a-4b25-3f27" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
             <infoLink id="5819-c046-47d8-2379" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
@@ -2457,7 +2461,7 @@
                     <entryLink id="3772-71f9-6c12-ca51" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
                     <entryLink id="0bc6-c9c5-729d-139d" name="Magna Combi-weapon" hidden="false" collective="false" import="true" targetId="4d02-259d-fa50-ef3a" type="selectionEntry">
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </entryLink>
                     <entryLink id="bca6-8ff1-3a59-ab03" name="Minor Combi-weapon" hidden="false" collective="false" import="true" targetId="53c0-b5d7-f001-b816" type="selectionEntry">
@@ -2606,6 +2610,12 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
+            <entryLink id="f0b1-0045-c1bc-e1e0" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aba3-a403-6983-eb22" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e673-6beb-8d47-8239" type="min"/>
+              </constraints>
+            </entryLink>
             <entryLink id="1e72-1a86-cb39-b3a5" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec03-f5db-e0b4-83eb" type="max"/>
@@ -2973,12 +2983,12 @@
             <selectionEntryGroup id="092d-2397-8f02-c431" name="Veletarii" hidden="false" collective="false" import="true" defaultSelectionEntryId="c39a-711f-3566-712d">
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1168-de26-e5bc-3a25" type="min"/>
-                <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ed-c168-0aa5-e59a" type="max"/>
+                <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ed-c168-0aa5-e59a" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="0e92-6f2e-8f92-40bf" name="Veletarii w/ Power Sword" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1011-7d26-c096-6d0c" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1011-7d26-c096-6d0c" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="d55c-a815-fca3-ee7a" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3007,7 +3017,7 @@
                 </selectionEntry>
                 <selectionEntry id="6e26-de36-1442-bf11" name="Veletarii w/ Power Lance" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff05-f5f1-0f4d-d019" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff05-f5f1-0f4d-d019" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="c3fa-1bf1-90fe-5ff3" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3036,7 +3046,7 @@
                 </selectionEntry>
                 <selectionEntry id="2ccc-2dc8-9580-f134" name="Veletarii w/ Power Maul" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af2-bcc2-ec38-96e0" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af2-bcc2-ec38-96e0" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="e672-dd79-0784-b7ec" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3065,7 +3075,7 @@
                 </selectionEntry>
                 <selectionEntry id="c39a-711f-3566-712d" name="Veletarii w/ Volkite Charger" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60ff-babf-7da4-a70a" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60ff-babf-7da4-a70a" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="b46b-492a-7e17-61de" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3094,7 +3104,7 @@
                 </selectionEntry>
                 <selectionEntry id="0797-e0e8-65b9-9a4a" name="Veletarii w/ Power Axe" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd6-dd94-5d41-dfcf" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acd6-dd94-5d41-dfcf" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="f81e-a329-ec72-2a89" name="Veletarii" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -3161,7 +3171,7 @@
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a240-87f4-1ad8-9ce2" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a240-87f4-1ad8-9ce2" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="d542-cb70-04d1-4169" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3197,7 +3207,7 @@
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="280a-f343-5c76-96be" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="280a-f343-5c76-96be" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="bea6-1566-1daa-d125" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3233,7 +3243,7 @@
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33c4-2ecd-2399-57b3" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33c4-2ecd-2399-57b3" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="6ff5-6ca2-b290-6622" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3269,7 +3279,7 @@
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ad4-ac3d-65f6-873f" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ad4-ac3d-65f6-873f" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="5dcb-b922-a27e-c565" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -3305,7 +3315,7 @@
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9153-294f-4c90-b9c8" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9153-294f-4c90-b9c8" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="dbae-36d4-0282-452f" name="Veletarii" hidden="false" targetId="f81e-a329-ec72-2a89" type="profile"/>
@@ -5562,12 +5572,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <selectionEntryGroup id="1eaf-bbe0-04a5-22c1" name="Auxilia Veterans" hidden="false" collective="false" import="true" defaultSelectionEntryId="38fa-8a5c-8183-737e">
               <constraints>
                 <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3215-57f3-1211-43fb" type="min"/>
-                <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac8-ebed-57d9-9346" type="max"/>
+                <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ac8-ebed-57d9-9346" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="38fa-8a5c-8183-737e" name="Auxilia Veteran w/ Lasrifle" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9a5-bdd1-9156-35d0" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9a5-bdd1-9156-35d0" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="1588-db82-569c-00c0" name="Auxilia Veteran" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -5617,7 +5627,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </selectionEntry>
                 <selectionEntry id="88a5-af55-4a9b-63bf" name="Auxilia Veteran w/ Lasrifle and Bayonet" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c02b-237d-2b57-034f" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c02b-237d-2b57-034f" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="3afc-f5af-1577-970a" name="Auxilia Veteran" hidden="false" targetId="1588-db82-569c-00c0" type="profile"/>
@@ -5654,7 +5664,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed1-5136-f4bf-a5af" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed1-5136-f4bf-a5af" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="4f7d-da15-e34f-7825" name="Auxilia Veteran" hidden="false" targetId="1588-db82-569c-00c0" type="profile"/>
@@ -5685,7 +5695,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d127-1aa4-adfe-35d8" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d127-1aa4-adfe-35d8" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="c792-4200-5e45-8947" name="Auxilia Veteran" hidden="false" targetId="1588-db82-569c-00c0" type="profile"/>
@@ -5716,7 +5726,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e1-ac80-a81a-8e6c" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5e1-ac80-a81a-8e6c" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="5f1e-dade-67d6-13c8" name="Auxilia Veteran" hidden="false" targetId="1588-db82-569c-00c0" type="profile"/>
@@ -5747,7 +5757,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8688-4f80-c216-97d9" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8688-4f80-c216-97d9" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="f119-5753-9ded-4a5c" name="Auxilia Veteran" hidden="false" targetId="1588-db82-569c-00c0" type="profile"/>
@@ -5778,7 +5788,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5cb-f801-c441-0f24" type="max"/>
+                    <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5cb-f801-c441-0f24" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="a5d1-730e-57e4-45e0" name="Auxilia Veteran" hidden="false" targetId="1588-db82-569c-00c0" type="profile"/>
@@ -7276,6 +7286,7 @@ While at least one model with a Command Vox is present on the battlefield and n
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="433f-7808-30ad-90be" type="max"/>
           </constraints>
           <infoLinks>
+            <infoLink id="5cac-5abc-1f0e-7b2c" name="Artillery Spotters" hidden="false" targetId="a373-9d03-0a41-339e" type="rule"/>
             <infoLink id="61df-12fa-6484-e177" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
             <infoLink id="3aaa-3eaf-abb4-0334" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
               <modifiers>
@@ -9772,7 +9783,7 @@ While at least one model with a Command Vox is present on the battlefield and n
                   <rules>
                     <rule id="38c8-414f-35c2-bf17" name="Field Repair (X)" hidden="false">
                       <modifiers>
-                        <modifier type="set" field="name" value="Field Repair (4+)">
+                        <modifier type="set" field="name" value="Field Repair (3+)">
                           <comment>Panoptica 150</comment>
                         </modifier>
                       </modifiers>
@@ -10997,7 +11008,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="525"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d0b-9f37-cd30-0db7" name="Stormsword" hidden="false" collective="false" import="true" type="unit" publicationId="9fab-fea7-a93c-2074" page="151">
@@ -11214,7 +11225,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Praetor Launcher" hidden="false" id="aae7-cba1-91ac-8636" type="selectionEntry" targetId="c123-e9f7-ee20-c4f9"/>
+        <entryLink import="true" name="Praetor Launcher" hidden="false" id="aae7-cba1-91ac-8636" type="selectionEntry" targetId="c123-e9f7-ee20-c4f9">
+          <modifiers>
+            <modifier type="set" field="name" value="Centreline Mounted Praetor Launcher"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="8cec-2913-77a0-c4e4" name="Crassus Armoured Assault Transport" hidden="false" collective="false" import="true" type="unit">
@@ -11460,6 +11475,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     <infoLink id="61d2-82ad-1e8c-60aa" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
                     <infoLink id="9a1a-2dda-d32f-597c" name="Artillery Platform" targetId="d976-3125-68a5-8ac2" type="profile"/>
                     <infoLink id="e773-78ae-d47c-56e7" name="Auxilia Static Artillerists" targetId="6056-96bf-7e43-8734" type="rule"/>
+                    <infoLink id="e9fd-5886-2165-e790" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Bulky (5)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="e698-8f01-ac6b-ea3c" name="Immobile" hidden="false" targetId="a676-e911-8581-8a72" type="rule"/>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="1efe-49b2-407f-0977" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
@@ -11531,7 +11552,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry name="Aethon Heavy Sentinel Squadron" type="unit" id="a67f-63df-43c3-8e3c" page="182" publicationId="d882-d2a-5da1-92c4">
@@ -12725,11 +12746,14 @@ The 2nd bullet point about Veletaris Assault Squadrons getting Outflank is not i
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
+    <rule id="4822-41d5-e563-1f09" name="Field Officer" hidden="false">
+      <description>When this model with this Special Rule joins a unit with the Close-Order Unit Sub-Type, it automatically gains the Close-Order Unit Sub-Type for as long as it remains part of that unit.</description>
+    </rule>
     <rule id="25f0-12ed-08dd-0781" name="Auxilia Artillerists" publicationId="15a4-fc68-502d-48a9" page="130" hidden="false">
       <description>A Solar Auxilia Rapier Battery must have one Auxilia Gunner per Rapier Carrier in order for all Rapier Carriers to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Solar Auxilia Rapier Battery contains fewer Auxilia Gunners than Rapier Carriers, then only a number of Rapier Carriers equal to the number of  Auxilia Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Rapier Carriers, then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled (this benefit is lost immediately once the number of Auxilia Gunners is reduced to less than the number of Rapier Carriers in the unit).</description>
     </rule>
     <rule id="a217-f49a-7a73-981d" name="Demolition Vehicle" publicationId="15a4-fc68-502d-48a9" page="131" hidden="false">
-      <description>A model with this Special Rule may declare and make charge moves, even if it would normally be prevented from doing so by any Unit Types or Sub-types. When a model with this Special Rule is in combat, at Initiative step 10 it inflicts one automatic hit using the profile below on any one enemy model it is in base contact with (chosen by the player that controls the model with this Special Rule). Once this Hit is resolved, the model with this special rule is automatically removed as a casualty (the removal of this model does not add any Wounds to the total used to determine which side has won the Assault).
+      <description>A model with this Special Rule may declare and make charge moves, even if it would normally be prevented from doing so by any Unit Types or Sub-types. At Initiative step 10, instead of rolling To Hit as normal, a model with this Special Rule instead inflicts one automatic Hit using the profile below on any one enemy model it is in base contact with (chosen by the player that controls the model with this Special Rule). Once this Hit is resolved, the model with this special rule is automatically removed as a casualty (the removal of this model does not add any Wounds to the total used to determine which side has won the Assault).
 
 Weapon Range Str AP Type
 Demo charge - 10 1 Melee, Armourbane (Melee), Instant Death, Brutal (2)</description>

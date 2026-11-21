@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="4ab9-25ad-4d80-2f7d" name="Militia Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2002" revision="1" authorName="LeonisAstra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="4ab9-25ad-4d80-2f7d" name="Militia Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2002" revision="2" authorName="LeonisAstra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="f02b-00e7-b68c-3be0" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -86,7 +86,7 @@ All units selected in this manner count as part of the same Troops choice for th
 
 Once deployed onto the battlefield, all units selected in this manner are treated as separate and distinct units or choices for any Primary or Secondary Objectives or other special rules and operate as separate units in all ways. Units selected as part of the same Troops choice may have different options selected for them, and are not required to be identical.
 
-When assigning additional models to units using the Among the Ranks and Militia Medicae Support special rules, each unit selected using the Strength in Numbers special rule is considered separate and may have models assigned to it as per the normal rules as the controlling player chooses.</description>
+When assigning additional models to units using any Special Rules, each unit selected using the Strength in Numbers Special Rule is considered separate and may have models assigned to it as per the normal rules as the Controlling Player chooses.</description>
     </rule>
   </sharedRules>
 </catalogue>

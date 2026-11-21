@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f887-2c56-4cb0-2e9c" name="Imperialis Militia" revision="2039" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f887-2c56-4cb0-2e9c" name="Imperialis Militia" revision="2040" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -5992,7 +5992,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <entryLink id="502f-76e9-4101-f1c5" name="Provenance Options" hidden="false" collective="false" import="true" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="69d4-e221-a0cb-e428" name="IM - Field Gun Battery" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
@@ -6863,7 +6863,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             </entryLink>
             <entryLink id="d279-597c-f7b6-33e2" name="Militia Lance" hidden="false" collective="false" import="true" targetId="2304-c98f-01a8-f0c1" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
                     <repeat field="selections" scope="ffb1-4b4b-b88c-832c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
@@ -7735,7 +7735,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             <infoLink id="d440-93c9-a2fa-1d83" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b86e-0b1e-454a-88c8" name="Infantry:" primary="false"/>
@@ -7836,6 +7836,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink id="2c7f-7f8b-8fa5-16cb" name="Divisio Aeronautica Air Superiority" hidden="false" targetId="85b0-b34a-80bf-641b" type="rule"/>
         <infoLink id="32ca-4d47-eb6b-d372" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -9427,6 +9428,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                   </costs>
                 </entryLink>
                 <entryLink id="4bdb-22e5-ea96-f338" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Boarding Shield (and the Heavy Sub-type)"/>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
@@ -9749,6 +9753,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Boarding Shield" hidden="false" id="34d3-8301-bd1-4b9f" collective="false" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Boarding Shield (and the Heavy Sub-type)"/>
+                  </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a497-35e7-ffe8-adb2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -9807,6 +9814,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Boarding Shield" hidden="false" id="f673-e9b0-d924-8fe8" collective="false" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Boarding Shield (and the Heavy Sub-type)"/>
+                  </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8b04-73a5-1fc7-17a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
@@ -11174,7 +11184,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
               <profiles>
                 <profile id="bccd-681c-4acc-d9dd" name="Merchant Princeling" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All of the weapons possessed by a Warlord with this Trait gain the Master-crafted special rule. Before any models are placed onto the battlefield as part of deployment, the controlling player of this Warlord may select a single unit under their control – designated as the ‘Lifeguard’ unit. The Lifeguard unit must be composed entirely of models with the Militia Unit Sub-type, and all models in the Lifeguard unit gain the Heavy Unit Sub-type, if they did not already have it, and may re-roll all failed To Hit rolls of ‘1’ made in any phase or as part of a Reaction. The Warlord with this Trait must be deployed as part of the Lifeguard unit and may not voluntarily leave that unit during play. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty. If the Warlord has a Retinue unit of any kind, this unit is instead automatically designated as the Warlord’s Lifeguard unit.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All of the weapons possessed by a Warlord with this Trait gain the Master-crafted special rule. Before any models are placed onto the battlefield as part of deployment, the controlling player of this Warlord may select a single unit under their control – designated as the ‘Lifeguard’ unit. The Lifeguard unit must be composed entirely of models with the Militia Unit Sub-type, and all models in the Lifeguard unit gain the Heavy Unit Sub-type, if they did not already have it, and may re-roll all failed To Hit rolls of ‘1’ made in any phase or as part of a Reaction. The Warlord with this Trait must be deployed as part of the Lifeguard unit and may not voluntarily leave that unit during play. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty. If the Warlord has a Retinue unit of any kind, this unit is instead automatically designated as the Warlord’s Lifeguard unit. A Warlord with this Trait also gains the Heavy Unit Sub-Type.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
