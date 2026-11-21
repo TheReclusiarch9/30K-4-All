@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3ecd-fb2c-3822-1e2a" name="LA -   IV: Iron Warriors" revision="2042" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3ecd-fb2c-3822-1e2a" name="LA -   IV: Iron Warriors" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="true" collective="false" import="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <modifiers>
@@ -3423,7 +3423,7 @@
       <profiles>
         <profile id="d7c2-8ef5-2d96-cfae" name="Ferrum Occularis" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="9fab-fea7-a93c-2074" page="135">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Shooting Attacks made using a weapon with the Heavy type by a model with a Ferrum Occularius gain the Sunder Special Rule, as long as the attack is not made as part of a Reaction or a Snap Shot.”</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Shooting Attacks made using a weapon with the Heavy type by a model with a Ferrum Occularis gain the Sunder Special Rule, as long as the attack is not made as part of a Reaction or a Snap Shot.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4218,7 +4218,7 @@
             <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy, Transport, Unique)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">5</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
