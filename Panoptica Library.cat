@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="69b7-3f60-9f7f-8ce5" name="Panoptica Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="69b7-3f60-9f7f-8ce5" name="Panoptica Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
   <sharedRules>
     <rule name="Emperor’s Chosen" id="ffcf-8b72-43dd-8009" page="165" publicationId="9fab-fea7-a93c-2074">
       <description>A model with this Special Rule that suffers an unsaved wound with the Instant Death Special Rule is not immediately removed as a casualty, but instead loses D3 wounds instead of one for each unsaved wound with the Instant Death Special Rule inflicted on it.</description>
@@ -670,7 +670,7 @@ The Repulsor Grid cannot be activated by any weapon which does not roll to Hit.<
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">36&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">6</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">3</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Heavy 10, Pinning, Shell Shock (1), Reactor Overload</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Heavy 15, Pinning, Shell Shock (1), Twin-Linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -724,10 +724,17 @@ Could not find rule: Harrower</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">24&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">6</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="1b8f-6956-23f7-131f" name="Rupture (X)" hidden="false" targetId="d8bf-5365-1a09-8303" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="0&quot;-" type="upgrade" id="b391-2ed5-455d-be0b">
       <infoLinks>
@@ -804,10 +811,17 @@ Could not find rule: †Graviton Collapse</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">24&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">6</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="790f-f0f0-7e64-1144" name="Rupture (X)" hidden="false" targetId="d8bf-5365-1a09-8303" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Grenade Launcher - Krak" type="upgrade" id="8177-b3d1-4044-a5db">
       <profiles>
@@ -816,10 +830,17 @@ Could not find rule: †Graviton Collapse</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">24&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">6</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="f0c5-101a-8b00-fd15" name="Rupture (X)" hidden="false" targetId="d8bf-5365-1a09-8303" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Arachnus Storm Cannon" type="upgrade" id="2710-f86d-4537-bd37">
       <infoLinks>
@@ -936,7 +957,7 @@ Could not find rule: Apocalyptic Blast (10&quot;)</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">36&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">9</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">1</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 3, Twin-Linked, Exoshock (6+), Sunder, Gets Hot</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 2, Twin-Linked, Exoshock (5+), Sunder, Gets Hot</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1049,7 +1070,7 @@ Could not find rule: Apocalyptic Blast (10&quot;)</comment>
           <characteristics>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">48&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">6</characteristic>
-            <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
+            <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">6</characteristic>
             <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 1, Barrage, Large Blast (5&quot;), Ignores Cover, Pinning,Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
@@ -1119,7 +1140,7 @@ Could not find rule: Apocalyptic Blast (10&quot;)</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">72&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">9</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">3</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 1, Massive Blast (7&quot;), Rending (4+), Reactor Overload</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 1, Massive Blast (7&quot;), Rending (4+), Reactor Overload, Plasma Burn</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1308,6 +1329,11 @@ Could not find rule: Apocalyptic Blast (10&quot;)</comment>
     </selectionEntry>
     <selectionEntry name="Heavy Chainsword" type="upgrade" id="31bb-957a-4e86-b6ca">
       <infoLinks>
+        <infoLink id="dd72-1900-e3f3-9cde" name="Rupture (X)" hidden="false" targetId="d8bf-5365-1a09-8303" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (6+)"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Shred" hidden="false" type="rule" targetId="5e7e-1628-8174-6f2c" id="8111-6845-4534-9af1"/>
         <infoLink name="Two-handed" hidden="false" type="rule" targetId="4c23-e863-a569-7617" id="1a18-9e09-4b91-8c9c">
           <modifiers>
@@ -1326,7 +1352,7 @@ Could not find rule: Apocalyptic Blast (10&quot;)</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">-</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">+2</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">-</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Melee, Shred, Two-Handed, Rending (6+)</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Melee, Shred, Two-Handed, Rupture (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1676,7 +1702,7 @@ Could not find rule: Apocalyptic Blast (10&quot;)</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">-</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">x2</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">2</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Melee, Unwieldy, Haywire</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Melee, Unwieldy, Haywire, Two-Handed</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1734,7 +1760,7 @@ Could not find rule: Apocalyptic Blast (10&quot;)</comment>
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">-</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">+3</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">3</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Melee, Two-Handed, Rending (6+), Murderous Strike (6+)</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Melee, Two-Handed, Rending (5+), Murderous Strike (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5763,7 +5789,7 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">12&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">5</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">3</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1, Instant Death, Armourbane (Ranged), Gets Hot,Breaching (5+)</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Assault 1, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5820,7 +5846,7 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">24&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">12</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">3</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 1, Blast (3&quot;), Sunder, Rending (6+), Brutal (3), Wrecker</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 1, Blast (3&quot;), Sunder, Rending (5+), Brutal (3), Wrecker</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5847,7 +5873,7 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">12 -240&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">9</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 2, Barrage, Large Blast (5&quot;), Shred, Pinning, Breaching (6+)</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 2, Barrage, Large Blast (5&quot;), Shred, Pinning, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5874,7 +5900,7 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">12 -240&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">9</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning, Breaching (6+)</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning, Breaching (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6001,7 +6027,7 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
       <profiles>
         <profile name="Praetor Launcher - Foehammer Munitions" typeName="Weapon" hidden="false" typeId="1a1a-e592-2849-a5c0" id="f131-b780-49aa-86a7" page="294" publicationId="892-6266-f55f-1b9d">
           <characteristics>
-            <characteristic typeId="95ba-cda7-b831-6066" name="Range">72&quot;</characteristic>
+            <characteristic typeId="95ba-cda7-b831-6066" name="Range">12&quot; - 72&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">8</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">3</characteristic>
             <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Heavy 12, Guided Fire, Breaching (5+), Ignores Cover</characteristic>
@@ -6261,6 +6287,11 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
     </selectionEntry>
     <selectionEntry name="Macharius Battle Cannon" type="upgrade" id="aeaa-f771-41e6-b5cb">
       <infoLinks>
+        <infoLink id="2ae3-2c8a-16d9-c875" name="Rupture (X)" hidden="false" targetId="d8bf-5365-1a09-8303" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rupture (4+)"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Blast" hidden="false" type="rule" targetId="1d9a-73ef-5f4f-8bd8" id="5929-29e6-4948-9525">
           <modifiers>
             <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
@@ -6289,7 +6320,7 @@ When any enemy unit is deployed to the battlefield from Reserves, a unit that in
             <characteristic typeId="95ba-cda7-b831-6066" name="Range">48&quot;</characteristic>
             <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">8</characteristic>
             <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
-            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Heavy 1, Large Blast (5&quot;), Twin-Linked, Pinning, Shell Shock (1),Breaching (6+)</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Heavy 2, Large Blast (5&quot;), Rupture (4+), Breaching (6+), Pinning, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
