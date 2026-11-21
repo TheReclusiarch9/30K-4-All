@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="faad-692f-723b-fbb4" name="[Antiquia] Asuryani" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
+    <selectionEntry id="d899-0621-4c1e-9a7b" name="Asuryani" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Army faction marker. The Crusade and Allied charts expect two Allegiance selections: Loyalist/Traitor plus the army's faction.</comment>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9a9-8948-ab10-8626" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8428-01ed-e398-ba54" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry name="Autarch" type="unit" id="082e-6f97-41e2-9a13" page="28" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="60dc-ddd3-427a-9c49"/>
@@ -7158,6 +7168,14 @@ Could not find profile for Double Holo-Field Sections in [&apos;Holo-Field Defen
     <catalogueLink id="38a-c90-44da-9571" name="Panoptica Library" targetId="69b7-3f60-9f7f-8ce5" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
+    <entryLink id="45c6-f4ea-79b0-a92c" name="Asuryani" hidden="false" collective="false" import="false" targetId="d899-0621-4c1e-9a7b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ba1-c381-6a73-ee79" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="98b8-ba31-9846-5f87" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="dc10-0481-6817-c2a5" name="Autarch" hidden="false" collective="false" import="false" targetId="082e-6f97-41e2-9a13" type="selectionEntry">
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df57-0876-243e-e95d" type="max"/>
