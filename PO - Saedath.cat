@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="bd2b-c57-2ddd-4b7c" name="[Antiquia] Saedath" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="bd2b-c57-2ddd-4b7c" name="[Antiquia] Saedath" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
+    <selectionEntry id="19aa-08b7-786c-b6b9" name="Saedathii Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Liber Antiquia p.107. Replaces an Allied Detachment; the Grand Performance sets which units may be taken. Also fills the second Allegiance slot the force charts expect.</comment>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1f6-9852-b44c-dc8f" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="4fb9-5d1b-21a4-1033" name="Saedathii Detachment" page="107" hidden="false">
+          <description>Instead of taking an Allied Detachment as normal, in order to select models of the Saedath Sub-faction, you must instead select a Saedathii Detachment. A Saedathii Detachment entirely replaces an Allied Detachment, though is counted as an Allied Detachment for the purposes of all Special Rules, Limitations, and Gameplay Interactions, including the Allies Matrix. A Detachment with the Saedath Sub-faction may not be taken as a Primary Detachment. Units listed as Pivotal Roles are Compulsory, and must be selected as part of the Saedathii Detachment. Units listed as Additional Players may be optionally selected, in addition to the Pivotal Roles.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8364-f83a-e31c-3590" name="Grand Performance" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18d9-ddb4-1d45-c3d8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a375-44ff-30b3-57d9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6aa2-5c88-7b23-a40c" name="Grand Performance: The Trials of Khaine" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="ec6c-95c6-239e-606f" name="The Bloodied Blade" page="107" hidden="false">
+                  <description>At the end of the game, if the Controlling Player has destroyed three or more units in the Assault Phase by a unit composed entirely of models with the Rillietann Sub-type, then the Controlling Player immediately gains +D3 Victory Points, in addition to any awarded by any other source.</description>
+                </rule>
+                <rule id="2182-d878-1bf3-9fb5" name="Amateur Performance" page="107" hidden="false">
+                  <description>If, at the end of the game, no units have been destroyed in the Assault Phase by a unit composed entirely of models with the Rillietann Sub-type, then the Opposing Player immediately gains +D3 Victory Points, in addition to any awarded by any other source.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="87d0-3bc5-c489-0c54" name="Grand Performance: The Heroes Path" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="9ad1-06e0-f4aa-f9f6" name="The Sin of Pride" page="108" hidden="false">
+                  <description>All models with the Character Sub-type and The Sin of Pride Special Rule must issue or accept any Challenge, wherever it is possible for them to do so. At the end of the game, if the Controlling Player has destroyed three or more models in Challenges with any model with the Character Sub-type and The Sin of Pride Special Rule, then the Controlling Player immediately gains +D3 Victory Points, in addition to any awarded by any other source.</description>
+                </rule>
+                <rule id="29f7-506e-d474-5d99" name="Amateur Performance" page="108" hidden="false">
+                  <description>If, at the end of the game, no models have been destroyed in Challenges by any model with the Character Sub-type and The Sin of Pride Special Rule, then the Opposing Player immediately gains +D3 Victory Points, in addition to any awarded by any other source.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2b8b-4fff-1820-6acf" name="Grand Performance: Faolchu’s Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="606e-2ae4-2ee7-035e" name="The Falcon’s Wing" page="108" hidden="false">
+                  <description>All models with the Infantry Unit Type and The Falcon’s Wing Special Rule must begin the game embarked upon a Transport. In addition, before the game begins, total up the number of units from the Controlling Player’s Primary Detachment with the Independent Character Special Rule. At the end of the game, if at least half (rounding up) of these units are still in play, and at least one friendly unit with The Falcon’s Wing Special Rule is also still in play, then the Controlling Player immediately gains +D3+1 Victory Points, in addition to any awarded by any other source.</description>
+                </rule>
+                <rule id="6349-779f-ad61-f52e" name="Amateur Performance" page="108" hidden="false">
+                  <description>If, at the end of the game, no Victory Points have been scored as a result of The Falcon’s Wing Special Rule, then the Opposing Player immediately gains +D3 Victory Points.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="30da-5c46-1d61-714f" name="Grand Performance: Cegorach’s Jest" hidden="false" collective="false" import="true" type="upgrade">
+              <rules>
+                <rule id="0f24-aa1e-4486-3631" name="The Last Laugh" page="109" hidden="false">
+                  <description>At the end of the game, the Controlling Player gains +D3 Victory Points if they have three or more units of Starweavers, Voidweavers, or Skyweaver Jetbikes (in any combination) in the Opposing Player’s Deployment Zone, in addition to any awarded by any other source.</description>
+                </rule>
+                <rule id="699f-667e-7323-4883" name="Amateur Performance" page="109" hidden="false">
+                  <description>If, at the end of the game, there are no units of Starweavers, Voidweavers, or Skyweaver Jetbikes in the Opposing Player’s Deployment Zone, then the Opposing Player immediately gains +D3 Victory Points.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0a10-7a32-e41a-f899" name="Grand Performance: Cegorach’s Lament" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <rules>
+                <rule id="fc33-0c22-e4b9-b947" name="The Curtain Falls" page="109" hidden="false">
+                  <description>At the end of the game, if the Controlling Player has destroyed three or more units with the Daemon or Daemon Primarch Unit Types, or the Corrupted Sub-type, with units composed entirely of models with the Rillietann Sub-type, then the Controlling Player immediately gains +D3+1 Victory Points, in addition to any awarded by any other source. In addition, if during the course of the game, the Arebennian successfully slays the enemy Warlord, the Controlling Player immediately gains +2 Victory Points. If the enemy Warlord is removed as a casualty by any other means, then no additional Victory Points are awarded, but the Victory Point penalty inflicted by the Amateur Performance Special Rule is not applied.</description>
+                </rule>
+                <rule id="4e39-d3ba-e3c7-4402" name="Amateur Performance" page="109" hidden="false">
+                  <description>If, at the end of the game, no Victory Points have been scored as a result of The Curtain Falls Special Rule, then the Opposing Player immediately gains +D3 Victory Points.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry name="Troupe Master" type="unit" id="f0cf-4f35-42db-b967" page="114" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="e854-5ebd-434f-af02"/>
@@ -819,6 +915,25 @@ Could not find wargear in The Lead Player may select:</comment>
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Power Sword is in two option lists for Lead Player, you will need to combine them by hand.</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f8cc-f96d-2006-cab4" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Antiquia p.124</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b72-ab73-06f7-6cf1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="61a4-d61e-6ed5-2668" name="Starweaver" hidden="false" collective="false" import="true" targetId="5698-f326-4032-b58d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="3d96-f4c2-4c4c-a467" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Starweaver" type="unit" id="5698-f326-4032-b58d" page="125" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
@@ -1191,4 +1306,322 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
   <catalogueLinks>
     <catalogueLink id="5f24-4626-0547-71c3" name="Panoptica Library" targetId="69b7-3f60-9f7f-8ce5" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <entryLinks>
+    <entryLink id="1af9-227c-98d3-5e10" name="Saedathii Detachment" hidden="false" collective="false" import="false" targetId="19aa-08b7-786c-b6b9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="d926-652f-8436-30ce" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d18-0b7f-9f13-f95c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="600a-87dd-130e-b197" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="824c-2757-092e-44ff" name="Troupe Master" hidden="false" collective="false" import="false" targetId="f0cf-4f35-42db-b967" type="selectionEntry">
+      <comment>Liber Antiquia pp.107-109: Pivotal Roles (min) and Additional Players (max) of the chosen Grand Performance</comment>
+      <modifiers>
+        <modifier type="set" field="583d-a28b-1747-39c5" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="f4de-714c-d81f-e6da" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="583d-a28b-1747-39c5" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87d0-3bc5-c489-0c54" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="f4de-714c-d81f-e6da" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87d0-3bc5-c489-0c54" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="583d-a28b-1747-39c5" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="f4de-714c-d81f-e6da" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="583d-a28b-1747-39c5" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="f4de-714c-d81f-e6da" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="583d-a28b-1747-39c5" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="f4de-714c-d81f-e6da" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="583d-a28b-1747-39c5" type="min"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4de-714c-d81f-e6da" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="55c8-adf8-6fd2-a120" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="36ee-c40b-b03f-10e3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4603-bd4e-dfaa-9a5d" name="Troupe" hidden="false" collective="false" import="false" targetId="3d96-f4c2-4c4c-a467" type="selectionEntry">
+      <comment>Liber Antiquia pp.107-109: Pivotal Roles (min) and Additional Players (max) of the chosen Grand Performance</comment>
+      <modifiers>
+        <modifier type="set" field="ae64-ae04-641d-16cc" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6ed7-0d33-add8-7f64" value="4">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ae64-ae04-641d-16cc" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87d0-3bc5-c489-0c54" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6ed7-0d33-add8-7f64" value="4">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87d0-3bc5-c489-0c54" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ae64-ae04-641d-16cc" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6ed7-0d33-add8-7f64" value="3">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6ed7-0d33-add8-7f64" value="3">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ae64-ae04-641d-16cc" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6ed7-0d33-add8-7f64" value="3">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae64-ae04-641d-16cc" type="min"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ed7-0d33-add8-7f64" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cad0-cab6-9fa4-22ac" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="c4f0-f9e7-4a57-1da1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="87b4-080a-5b74-8bce" name="Death Jester" hidden="false" collective="false" import="false" targetId="e26c-73c8-46d2-a456" type="selectionEntry">
+      <comment>Liber Antiquia pp.107-109: Pivotal Roles (min) and Additional Players (max) of the chosen Grand Performance</comment>
+      <modifiers>
+        <modifier type="set" field="6bda-e1c3-b819-bab3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6bda-e1c3-b819-bab3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87d0-3bc5-c489-0c54" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6bda-e1c3-b819-bab3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6bda-e1c3-b819-bab3" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a85c-9fd9-de02-3847" type="min"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bda-e1c3-b819-bab3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="418b-8fae-64fd-6dc2" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="5604-62bf-5e99-4faa" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="225f-dd86-3f89-6b17" name="Shadowseer" hidden="false" collective="false" import="false" targetId="b139-833d-4e60-bf19" type="selectionEntry">
+      <comment>Liber Antiquia pp.107-109: Pivotal Roles (min) and Additional Players (max) of the chosen Grand Performance</comment>
+      <modifiers>
+        <modifier type="set" field="87fc-505d-2529-c465" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d1f6-52ad-93a8-a3e3" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87d0-3bc5-c489-0c54" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="87fc-505d-2529-c465" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87d0-3bc5-c489-0c54" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="87fc-505d-2529-c465" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="87fc-505d-2529-c465" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="87fc-505d-2529-c465" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1f6-52ad-93a8-a3e3" type="min"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87fc-505d-2529-c465" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="130f-0246-3893-b7ce" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="5367-ecd0-9fc7-17b2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="10b6-023d-5616-90c0" name="Skyweavers" hidden="false" collective="false" import="false" targetId="be40-55f4-4220-963c" type="selectionEntry">
+      <comment>Liber Antiquia pp.107-109: Pivotal Roles (min) and Additional Players (max) of the chosen Grand Performance</comment>
+      <modifiers>
+        <modifier type="set" field="d144-5570-79d5-dfee" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="52d0-1840-a329-88a1" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d144-5570-79d5-dfee" value="3">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="52d0-1840-a329-88a1" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d144-5570-79d5-dfee" value="3">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d144-5570-79d5-dfee" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d0-1840-a329-88a1" type="min"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d144-5570-79d5-dfee" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ebd3-dc6b-8629-5a97" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="3511-a69e-5664-430b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fece-9361-05e1-f390" name="Voidweaver" hidden="false" collective="false" import="false" targetId="c813-68bb-40e1-8053" type="selectionEntry">
+      <comment>Liber Antiquia pp.107-109: Pivotal Roles (min) and Additional Players (max) of the chosen Grand Performance</comment>
+      <modifiers>
+        <modifier type="set" field="e85d-5de6-0266-a5d6" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6aa2-5c88-7b23-a40c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e85d-5de6-0266-a5d6" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b8b-4fff-1820-6acf" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="0fbc-ce01-8e1a-860e" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e85d-5de6-0266-a5d6" value="3">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30da-5c46-1d61-714f" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e85d-5de6-0266-a5d6" value="2">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fbc-ce01-8e1a-860e" type="min"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e85d-5de6-0266-a5d6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="874e-432b-2327-24da" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="2a32-dc37-1178-f0c6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8309-ad68-c43e-47f4" name="Arebennian" hidden="false" collective="false" import="false" targetId="9e18-8453-4172-84ed" type="selectionEntry">
+      <comment>Liber Antiquia pp.107-109: Pivotal Roles (min) and Additional Players (max) of the chosen Grand Performance</comment>
+      <modifiers>
+        <modifier type="set" field="580d-a148-51f9-830d" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7882-73d4-22f6-4f77" value="1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a10-7a32-e41a-f899" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="580d-a148-51f9-830d" type="min"/>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7882-73d4-22f6-4f77" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="105d-dabf-9294-213b" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="ba72-0c60-5fec-00a3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
 </catalogue>
