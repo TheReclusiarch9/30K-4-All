@@ -3015,11 +3015,6 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="37d5-e850-9037-489b" name="Consul (X)" hidden="false" targetId="eaa8-00f0-e3b1-ea62" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Consul (Moritat)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="d3b0-bade-3cd1-8209" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="8126-35df-6e38-8928" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
           <modifiers>
@@ -3060,7 +3055,7 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3165,7 +3160,12 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32b3-6dd2-b6b4-02d6" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Artificer Armour" hidden="false" id="b26c-d89-85c1-9c27" type="selectionEntry" targetId="583e-62cb-53f1-f952"/>
+        <entryLink id="0f26-d368-b3c4-2ad3" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae2e-7ef3-30c8-668c" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0d4-c12e-2f39-b9f2" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
