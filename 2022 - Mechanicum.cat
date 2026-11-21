@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2040" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -3217,7 +3217,7 @@ This unit may be upgraded freely as described in their profile, though they may 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b178-7d35-136f-d305" name="Arlatax Battle-Automata Maniple" publicationId="bde1-6db1-163b-3b76" page="40" hidden="false" collective="false" import="true" type="unit">
@@ -3342,7 +3342,7 @@ This unit may be upgraded freely as described in their profile, though they may 
                     </rule>
                   </rules>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3410,7 +3410,7 @@ This unit may be upgraded freely as described in their profile, though they may 
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">2</characteristic>
@@ -4186,6 +4186,7 @@ The area under the Apocalyptic Blast marker (10&quot;) is treated as Difficult T
         </rule>
       </rules>
       <infoLinks>
+        <infoLink id="65b1-50c2-4e8e-4bbf" name="Transport Bay" hidden="false" targetId="0662-8b8d-38e8-60f8" type="rule"/>
         <infoLink id="b76e-7891-6614-2e18" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="It Will Not Die (6+)"/>
@@ -4244,7 +4245,7 @@ At the beginning of each of the controlling player’s Shooting phases for the r
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="800"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="700"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Ordinatus Dispersion Shield" hidden="false" id="61cc-128d-787d-2ce2" type="selectionEntry" targetId="808a-6ab8-6d40-6006"/>
@@ -5703,8 +5704,8 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
       <profiles>
         <profile id="bf44-a73f-e84f-2132" name="Macrocarid Explorator" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" publicationId="9fab-fea7-a93c-2074" page="143">
           <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Reinforced)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
             <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
@@ -5722,6 +5723,7 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
       <categoryLinks>
         <categoryLink id="cfaa-e6aa-efcd-a369" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="2fa0-e6a3-e7c8-efb0" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="21d2-e367-72c3-66d1" name="Reinforced Sub-type:" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="9fcc-a5f0-7ac8-b1c2" name="May take:" hidden="false" collective="false" import="true">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2005" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2006" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -9356,7 +9356,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <description>Rather than deploying this Fortification as per the usual rules for Fortifications, you may choose instead to assign it to a Drop Pod Assault or Deep Strike Assault as normal. If assigned in this manner to one of the specified deployment methods, the Hammerfall Bunker gains the Orbital Assault Vehicle, Inertial Guidance System, and Deep Strike Special Rules. This does allow you to place the Hammerfall Bunker outside of your Deployment Zone. 
 
 
-Note that this is an exception to the normal rules for Fortifications, and if assigned in this way, you may choose to select a Hammerfall Bunker in a Rite of War: Drop Pod Assault detachment.”</description>
+Note that this is an exception to the normal rules for Fortifications, and if assigned in this way, you may choose to select a Hammerfall Bunker in a Rite of War: Drop Pod Assault detachment.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -17966,22 +17966,10 @@ Assault Phase).
       <description>When destroyed, a model with this special rule resolves Catastrophic Damage at AP 2</description>
     </rule>
     <rule id="1f93-c765-f7b2-a025" name="Destructor" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
-      <description>When a model is allocated a Wound or Hull Point Loss inflicted by a weapon with this Special Rule, it does not suffer only one Wound or Hull Point of damage, but instead suffers D6 Wounds or Hull Points of damage instead, with all of the Wounds or Hull Points inflicted using the same AP and special rules as that of the initial Wound. Roll to save against each Wound or Hull Point of damage inflicted separately, but note that Wounds or Hull Points of damage caused in excess of a given model’s remaining Wounds or Hull Points do not spill over to other models and are lost.
-
-
-In addition, if the target of this attack is a model with the Knight, Titan, Gargantuan, Super-Heavy Vehicle, or Building or Fortification Unit Type, or the Monstrous Unit Sub-type, increase the number of Wounds suffered or Hull Points lost to 2D6.</description>
+      <description>Any model which suffers an unsaved Wound or Hull Point loss from a weapon with this Special Rule does not suffer only one Wound or Hull Point of damage, but instead suffers D6 Wounds or Hull Points of damage instead, with all of the Wounds or Hull Points inflicted using the same AP and special rules as that of the initial Wound. Roll to save against each Wound or Hull Point of damage inflicted separately, but note that Wounds or Hull Points of damage caused in excess of a given model’s remaining Wounds or Hull Points do not spill over to other models and are lost. In addition, if the target of this attack is a model with the Knight, Titan, Gargantuan, Super-Heavy Vehicle, or Building or Fortification Unit Type, or the Monstrous Unit Sub-type, increase the number of Wounds suffered or Hull Points lost to 2D6.</description>
     </rule>
     <rule id="4eb9-9e5e-bb27-3644" name="Disruption (X)" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
-      <description>To Hit rolls of the value X indicated made by a weapon with this Special Rule cause an automatic Glancing Hit against models with the Vehicle Unit Type instead of rolling for Armour Penetration, and an automatic Wound against models with the Dreadnought, Automata, or Armiger Unit Types, instead of rolling To Wound.
-
-
-On weapons which do not roll to Hit, such as Template or Blast Weapons, a D6 should be rolled for every applicable target - a roll of X or higher causes an automatic Glancing Hit against models with the Vehicle Unit Type instead of rolling for Armour Penetration, and an automatic Wound against models with the Dreadnought, Automata, or Armiger Unit Types.
-
-
-Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds or Hull Points of damage inflicted automatically by this Special Rule.
-
-
-If a model armed with a weapon with this Special Rule receives a Ballistic Skill modifier (such as Night Fighting or being forced to make Snap Shots, etc), then they may only gain the benefit of the Disruption (X) Special Rule on a successful Hit (provided the Hit Roll is equal to or better than the value X).</description>
+      <description>To Hit rolls of the value X indicated made by a weapon with this Special Rule cause an automatic Glancing Hit against models with the Vehicle Unit Type instead of rolling for Armour Penetration, and an automatic Wound against models with the Dreadnought, Automata, or Armiger Unit Types, instead of rolling To Wound. On weapons which do not roll to Hit, such as Template or Blast Weapons, a D6 should be rolled for every applicable target - a roll of X or higher causes an automatic Glancing Hit against models with the Vehicle Unit Type instead of rolling for Armour Penetration, and an automatic Wound against models with the Dreadnought, Automata, or Armiger Unit Types. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds or Hull Points of damage inflicted automatically by this Special Rule.</description>
     </rule>
     <rule id="1cc2-eaee-8bcf-96d3" name="Grav Wave" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
       <description>Any successful Charge that targets a unit containing a model with a weapon with this special rule is always counted as a Disordered Charge.</description>

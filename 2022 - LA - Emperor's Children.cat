@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9025-fdec-da16-541a" name="LA -   III: Emperor&apos;s Children" revision="2042" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9025-fdec-da16-541a" name="LA -   III: Emperor&apos;s Children" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="a119-3943-4b8b-b651" name="Captain Lucius" hidden="true" collective="false" import="false" targetId="0707-1e4b-27da-9cd4" type="selectionEntry">
       <modifiers>
@@ -4701,6 +4701,7 @@ then he gains +1 to his Attacks Characteristic.</description>
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink id="9202-b53c-2979-684a" name="Shattered Legionary" hidden="false" targetId="c945-2e01-a167-7734" type="rule"/>
         <infoLink id="d4b7-14c2-70f2-06a4" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
         <infoLink id="8fff-2cd7-b38c-e631" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
         <infoLink name="The Honored One" hidden="false" id="1443-b375-1e03-a465" type="rule" targetId="130d-ed6f-db5f-94ef"/>
