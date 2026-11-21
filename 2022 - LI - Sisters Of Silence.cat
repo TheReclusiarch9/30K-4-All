@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee0f-23d3-8682-53c4" name="LI - Sisters of Silence" revision="2023" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee0f-23d3-8682-53c4" name="LI - Sisters of Silence" revision="2024" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="7e5d-d73e-8ff4-7345" name="Anathema Sub-type" publicationId="15a4-fc68-502d-48a9" page="129" hidden="false">
       <rules>
@@ -4473,7 +4473,7 @@ No more than one Knight Vestal may be assigned to any given unit. Once assigned
         <categoryLink id="c81b-2a93-d091-3f92" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
         <categoryLink id="a8ad-9b44-f397-f115" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
         <categoryLink id="d300-24f4-6452-4ad4" name="Anathema Sub-type" hidden="false" targetId="7e5d-d73e-8ff4-7345" primary="false"/>
-        <categoryLink id="2e13-4669-f5a8-771a" name="Silent Sisterhood (Chamber of Obivion)" hidden="false" targetId="a7e3-4559-7267-8bf6" primary="false"/>
+        <categoryLink id="2e13-4669-f5a8-771a" name="Silent Sisterhood (Chamber of Vigilance)" hidden="false" targetId="b6d7-6924-37fb-dd32" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cc46-771e-9470-f9e9" name="1) Vigilator Mistress" hidden="false" collective="false" import="true" type="model">
@@ -5063,7 +5063,7 @@ No more than one Knight Vestal may be assigned to any given unit. Once assigned
                 <entryLink id="2d50-9e7a-dea2-5788" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
                 <entryLink id="3594-9ff8-50e4-f721" name="Execution Blade" hidden="false" collective="false" import="true" targetId="adc6-3519-204d-2921" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -5487,7 +5487,7 @@ No more than one Knight Vestal may be assigned to any given unit. Once assigned
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
       <comment>Updated to Imperatus</comment>
     </selectionEntry>
