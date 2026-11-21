@@ -12,6 +12,11 @@
 
 
 
+> **This is a separate fork.** It is maintained by TheReclusiarch9 and is based on
+> [LeonisAstra/30K-4-All](https://github.com/LeonisAstra/30K-4-All), which is itself a fork of
+> [BSData/horus-heresy](https://github.com/BSData/horus-heresy). Changes here are not sent back to
+> either of those repositories, and problems found in this fork should be reported here, not to them.
+
 ## Overview ##
 
 ### What's this?
@@ -48,7 +53,9 @@ When there is a major release of the BSData Horus Heresy repository, we will swi
 
 ## Thanks & Disclosures ##
 
-This repository is a fork of the [BSData/horus-heresy](https://github.com/BSData/horus-heresy). This project would not be possible without the herclean effort put forward by this dedicated volunteer team. If you are interested in joining their team at their [Discord Community](https://www.bsdata.net/discord)
+This repository is a fork of [LeonisAstra/30K-4-All](https://github.com/LeonisAstra/30K-4-All), the original 30K-4-All repository, which LeonisAstra built on top of [BSData/horus-heresy](https://github.com/BSData/horus-heresy). Thank you to LeonisAstra for the original Panoptica work this fork continues.
+
+BSData/horus-heresy is the foundation for both. This project would not be possible without the herclean effort put forward by this dedicated volunteer team. If you are interested in joining their team at their [Discord Community](https://www.bsdata.net/discord)
 
 We'd also like to thank the Panoptica Team for all of their continued hard-work in providing the community a fantastic set of expansions; all of which have been playtested extensively by their international collaboration. 
 
@@ -107,7 +114,7 @@ We didn't maintain the template so it's not recommended to re-run bscopy
 * [Liber Astartes Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf)
 * [Liber Hereticus Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf)
 * [Liber Mechanicum Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf)
-* [Liber Panoptica v5.2](https://hh-ageofdarkness.itch.io/liberpanoptica)
+* [Liber Panoptica v5.2](https://hh-ageofdarkness.itch.io/liberpanoptica) (the original data), updated in this fork to v5.3
 
 ## Links ##
 
