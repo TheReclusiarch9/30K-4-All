@@ -9783,7 +9783,7 @@ While at least one model with a Command Vox is present on the battlefield and n
                   <rules>
                     <rule id="38c8-414f-35c2-bf17" name="Field Repair (X)" hidden="false">
                       <modifiers>
-                        <modifier type="set" field="name" value="Field Repair (4+)">
+                        <modifier type="set" field="name" value="Field Repair (3+)">
                           <comment>Panoptica 150</comment>
                         </modifier>
                       </modifiers>
@@ -11008,7 +11008,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="475"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="525"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d0b-9f37-cd30-0db7" name="Stormsword" hidden="false" collective="false" import="true" type="unit" publicationId="9fab-fea7-a93c-2074" page="151">
@@ -11225,7 +11225,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Praetor Launcher" hidden="false" id="aae7-cba1-91ac-8636" type="selectionEntry" targetId="c123-e9f7-ee20-c4f9"/>
+        <entryLink import="true" name="Praetor Launcher" hidden="false" id="aae7-cba1-91ac-8636" type="selectionEntry" targetId="c123-e9f7-ee20-c4f9">
+          <modifiers>
+            <modifier type="set" field="name" value="Centreline Mounted Praetor Launcher"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry id="8cec-2913-77a0-c4e4" name="Crassus Armoured Assault Transport" hidden="false" collective="false" import="true" type="unit">
@@ -11471,6 +11475,12 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     <infoLink id="61d2-82ad-1e8c-60aa" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
                     <infoLink id="9a1a-2dda-d32f-597c" name="Artillery Platform" targetId="d976-3125-68a5-8ac2" type="profile"/>
                     <infoLink id="e773-78ae-d47c-56e7" name="Auxilia Static Artillerists" targetId="6056-96bf-7e43-8734" type="rule"/>
+                    <infoLink id="e9fd-5886-2165-e790" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Bulky (5)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="e698-8f01-ac6b-ea3c" name="Immobile" hidden="false" targetId="a676-e911-8581-8a72" type="rule"/>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="1efe-49b2-407f-0977" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
@@ -11542,7 +11552,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry name="Aethon Heavy Sentinel Squadron" type="unit" id="a67f-63df-43c3-8e3c" page="182" publicationId="d882-d2a-5da1-92c4">
