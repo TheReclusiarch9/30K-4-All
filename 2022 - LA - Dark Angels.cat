@@ -3732,7 +3732,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="28ab-ad48-d8b3-0d5d" name="Farith Redloss" publicationId="d0df-7166-5cd3-89fd" page="45" hidden="false" collective="false" import="true" type="unit">

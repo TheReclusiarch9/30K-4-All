@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2187" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2188" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -42564,7 +42564,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
         <entryLink id="b031-3409-ff82-a945" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="550"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c123-bdc6-a6ba-79a2" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" type="upgrade">
@@ -44144,7 +44144,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
                 </entryLink>
                 <entryLink id="e844-44ed-af33-4c9f" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink id="d00e-7fbc-c412-122b" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -44234,7 +44234,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
                 </entryLink>
                 <entryLink id="f5fb-ee23-cf29-4383" name="Gravis Melta Cannon" hidden="false" collective="false" import="true" targetId="ef6c-f656-171a-03e1" type="selectionEntry" publicationId="9fab-fea7-a93c-2074" page="132">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
                 <entryLink id="bb47-c453-cff3-e7ff" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -44534,7 +44534,6 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
-                    <condition field="selections" scope="aa7f-bd4c-5231-d459" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
@@ -44546,6 +44545,13 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
           </constraints>
           <entryLinks>
             <entryLink id="eae9-225f-a0ac-2e0d" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="aa7f-bd4c-5231-d459" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="015b-a670-8d49-c677" type="max"/>
               </constraints>
@@ -47077,7 +47083,7 @@ An Argyrum Pattern Boarding Shield counts as a Boarding Shield for all intents 
                 <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Legion Spatha attack bike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
 
 
-A model equipped with a Legion Spatha Attack Bike must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. In addition, the model must change its Movement Characteristic to 14 and gains the Firing Protocols (2), Battle-Hardened (1), Skilled Rider, and Hammer of Wrath (1) Special Rules.”</characteristic>
+A model equipped with a Legion Spatha Attack Bike must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had, and may choose to gain the Skirmish Unit Sub-type. In addition, the model must change its Movement Characteristic to 14 and gains the Firing Protocols (2), Battle-Hardened (1), Skilled Rider, and Hammer of Wrath (1) Special Rules.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -47176,7 +47182,7 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
             </entryLink>
             <entryLink id="419d-bad9-4d79-8bd6" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
             <entryLink id="f74a-5170-5a72-22a2" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
@@ -50506,7 +50512,7 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-20"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9346-19d2-3fa3-ad2a" name="Hyperios Missile Launcher" hidden="false" collective="true" import="true" type="upgrade">
@@ -51361,7 +51367,7 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">11</characteristic>
             <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">Two at the front of the hull.</characteristic>
           </characteristics>
         </profile>
@@ -65568,9 +65574,10 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
             <rule id="0223-2170-627b-c5a2" name="Primus Nullificator" publicationId="d0df-7166-5cd3-89fd" page="9" hidden="false">
               <description>Primus Nullificator Consul +45 Points
 A Legion Cataphractii Centurion may take the Legion Primus Nullificator Consul type.
+A model with this Legiones Consularis upgrade increases his Leadership Characteristic to 10.
 
 Wargear
-A Legion Primus Nullificator Consul must exchange their power weapon for an Aethershock maul* for no additional points cost.
+A Legion Primus Nullificator may exchange their Power Weapon for an Aether-Shock Maul at no additional points cost.
 
 • A Legion Primus Nullificator Consul may exchange their combi-bolter for one of the following:
 - Toxiferran flamer +10 points
@@ -68480,7 +68487,7 @@ Once assigned to a unit, the Legion Apothecary is considered part of that unit a
 Any apothecary which selects a Legion Scimitar Jetbike may choose to join any unit equipped with any other pattern of Jetbikes, as long as that unit also meets the other stipulations and requirements of this rule.</description>
     </rule>
     <rule id="5529-bb7a-9448-b1f5" name="Hexagrammatic Wards" publicationId="9fab-fea7-a93c-2074" page="132" hidden="false">
-      <description>When a model with this Special Rule suffers a wound from a Psychic Weapon or a Psychic Power, or from any attack made by a model with the Daemon or Corrupted Sub-type, the model may re-roll any failed Invulnerable Saves it makes.</description>
+      <description>When a model with this Special Rule suffers a wound from a Psychic Weapon or a Psychic Power, or from any attack made by a model with the Daemon or Corrupted Unit Type or Sub-type, the model may re-roll any failed Invulnerable Saves it makes.</description>
     </rule>
     <rule id="a2ef-63a4-3531-db91" name="Legiones Cybernetica" publicationId="a716-c1c4-7b26-8424" page="115" hidden="false">
       <description>An army that includes a model with this special rule may take a single Castellax Battle-automata Maniple or a single Vorax Battle-automata Maniple as part of the same Force Organisation choice as the model with this special rule. Any models in the Castellax Battle-automata Maniple or Vorax Battle-automata Maniple included in an army due to this special rule gain the same Legiones Astartes (X) special as the Legion Praevian they share a Force Organization choice with, but may not select any Legion specific Wargear or other options.</description>
