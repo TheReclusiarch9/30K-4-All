@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2dde-e269-90db-8d33" name="LI - Assassins and Agents" revision="2013" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="2dde-e269-90db-8d33" name="LI - Assassins and Agents" revision="2014" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="c1fd-3919-f4bf-a990" name="Clade Adamus Assassin" publicationId="15a4-fc68-502d-48a9" page="120" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1737,6 +1737,7 @@ Note that weapons selected to fire in this manner must still follow the rules a
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab93-4d7d-18a-781f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
+        <entryLink id="3611-629d-2753-acb9" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
         <entryLink import="true" name="Warlord" hidden="false" id="76ff-3805-ddb8-72c5" collective="false" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1ab-dc59-1e70-3e5a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>

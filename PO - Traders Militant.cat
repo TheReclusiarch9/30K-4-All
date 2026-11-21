@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="e35e-69b8-25a9-26e1" name="Traders Militant" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="e35e-69b8-25a9-26e1" name="Traders Militant" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry name="Rogue Trader Militant" type="unit" id="6fcb-0846-49d7-9b10" page="14-15" publicationId="892-6266-f55f-1b9d">
       <categoryLinks>
@@ -480,6 +480,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
                 </entryLink>
+                <entryLink id="b396-9df1-5a86-fa41" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Kinetic Destoyer" hidden="false" id="a0c5-74ca-459e-6e3d" type="selectionEntry" targetId="e525-c925-da58-c511" sortIndex="17">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a14d-5a3d-b3e7-feea"/>
@@ -653,6 +654,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
                 </entryLink>
+                <entryLink id="97b9-1e93-85c2-6e04" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Kinetic Destoyer" hidden="false" id="1da3-7554-779e-e7fa" type="selectionEntry" targetId="e525-c925-da58-c511" sortIndex="17">
                   <constraints>
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f6a-eb-170b-6b12"/>
@@ -1959,6 +1961,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f04-0b34-4f41-b4fc"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="0954-7ea6-fe03-5d37" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Charnabal Weapon" hidden="false" id="69f7-d709-9a4c-8248" type="selectionEntry" targetId="e749-ba9b-bb76-a7d9" sortIndex="1">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="772c-ca62-43af-86fd"/>
@@ -3761,6 +3764,7 @@ Could not find wargear Grenade Launcher (with Frag and Krak Rounds)
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db81-73ec-45f4-9d4c"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="2cdc-b68d-d2bc-0faa" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
                 <entryLink name="Paragon Glaive" hidden="false" type="selectionEntry" targetId="a9fc-4298-7b35-8ef4" id="d197-5cbb-4fae-a68d" sortIndex="8">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>

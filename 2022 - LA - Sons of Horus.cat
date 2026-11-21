@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="db61-af86-a1bc-6c06" name="LA -  XVI: Sons of Horus" revision="2040" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="db61-af86-a1bc-6c06" name="LA -  XVI: Sons of Horus" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <modifiers>
@@ -4666,6 +4666,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c10f-86af-ac28-4659" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="da09-2ace-a94b-6842" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
         <entryLink id="7651-956e-11f3-f994" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
         <entryLink id="61b2-faf9-6930-9f3a" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -4775,6 +4776,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="350b-ecc5-2fda-6467" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="ed50-7f2f-fd53-fac3" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
         <entryLink id="d476-ad29-0a41-707e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9200-4f65-64e8-4fd6" type="max"/>
