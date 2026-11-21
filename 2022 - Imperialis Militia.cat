@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f887-2c56-4cb0-2e9c" name="Imperialis Militia" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f887-2c56-4cb0-2e9c" name="Imperialis Militia" revision="2042" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -51,6 +51,299 @@
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
+    <entryLink id="d66c-b3f4-ea5b-ac6d" name="Imperialis Militia Astropath" hidden="false" collective="false" import="false" targetId="515c-288b-4eb7-a839" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d1b3-51fd-cd7f-7435" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="75b6-8c02-d0c5-d5c3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="284d-3d3d-b5f0-e238" name="Imperialis Militia Ascendant Rogue Psyker" hidden="false" collective="false" import="false" targetId="0136-cc67-438a-94ea" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a69c-f5ab-930e-c8a1" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="877e-6349-185d-c166" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="40f6-5517-dbc1-be00" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2cee-70e0-5d0a-0b04" name="Imperialis Militia Mounted Command Cadre" hidden="false" collective="false" import="false" targetId="4d75-865c-455d-b3d2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="abba-9447-6819-465c" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="eb68-8acb-cdf9-54a4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="70e8-0139-f5b2-0e37" name="Imperialis Militia Demagogue Cadre" hidden="false" collective="false" import="false" targetId="78ac-7086-4f68-966c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8bfb-0c9b-18a4-56b8" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="e41f-6285-9107-984e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6d5b-5bf2-0162-b69e" name="Imperialis Militia Ratling Squad" hidden="false" collective="false" import="false" targetId="0c7f-3ef1-46e1-bfac" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="67b4-d4eb-04b0-6d9b" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="b22c-e539-8ea2-6a0e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d6ce-7c5d-cb83-bda5" name="Enginseer Auxilia Detachment" hidden="false" collective="false" import="false" targetId="cea3-578e-47da-9a00" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ee44-dbfc-49db-0111" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="756e-0167-e4e4-9bac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="99c8-1899-197c-846f" name="Imperialis Militia Kinfolk Exo-Driller Team" hidden="false" collective="false" import="false" targetId="eda0-7dd7-49f7-b031" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="10be-a77a-dc9a-2040" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="5659-588d-2c84-f2a2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5b21-fe80-684e-1fda" name="Imperialis Militia Ogryn Beastmasters" hidden="false" collective="false" import="false" targetId="c3ce-4dd3-43e8-9956" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="05d2-b2db-303b-e336" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="426f-e1cb-0a42-b998" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b36c-417f-1604-188a" name="Imperialis Militia Ogryn Beastmasters" hidden="false" collective="false" import="false" targetId="c3ce-4dd3-43e8-9956" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8688-d9da-010d-c923" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="aa7a-e0ec-4c9d-4763" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="341b-47a4-f08e-d1c4" name="Imperialis Militia Voidjumpers" hidden="false" collective="false" import="false" targetId="1b54-66fa-45cd-9fbd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0c87-3dc6-6ded-ae24" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="ac44-0bc9-9c42-149d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="df8e-3357-092a-07ec" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6a48-efcf-d879-2651" name="Mutated Spawn" hidden="false" collective="false" import="false" targetId="5964-cd1a-453d-99f4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="3a07-87cf-67a4-db8e" value="-1">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a07-87cf-67a4-db8e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0e15-fc03-70d0-e38f" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="40c9-5628-bcf7-61ee" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="29f7-6e35-860f-379b" name="Imperialis Militia Hellhound Flame Tank Squadron" hidden="false" collective="false" import="false" targetId="ad96-66c6-483d-b0d4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fcbb-f7eb-0946-b4ed" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="ec7c-052c-0416-0aca" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5d1b-dda1-4493-1de0" name="Imperialis Militia Centaur Combat Tractor Squadron" hidden="false" collective="false" import="false" targetId="e3da-795a-4712-a769" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4f76-a1f5-5826-e521" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="c7b2-9454-64ef-700f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="56e8-720d-a248-6ee3" name="Imperialis Militia Salamander Scout Squadron" hidden="false" collective="false" import="false" targetId="a511-8df6-456c-83bd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7c50-d6f1-015c-1e33" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="88d7-d242-9a95-226d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="604c-83c9-c0e9-3140" name="Imperialis Militia Pegasus Assault Squadron" hidden="false" collective="false" import="false" targetId="ee4a-52b3-4b39-a64f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8d78-466d-df36-4ae9" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="6655-d5ca-825e-afe8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e435-0cee-f792-0b55" name="Imperialis Militia Kelaino Squadron" hidden="false" collective="false" import="false" targetId="5fe3-efab-460c-be83" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f9cb-4a26-8e55-d248" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="f7d4-3380-cfac-b2b1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b5a6-0be4-ee94-d4cb" name="Imperialis Militia Kelaino Sky-Talon Squadron" hidden="false" collective="false" import="false" targetId="b63d-3270-48a4-9e16" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1b45-62d6-16e7-9a7c" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="bfab-3567-38ec-8805" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ea45-6d40-4303-fe48" name="Imperialis Militia Wolf Rapid Response Section" hidden="false" collective="false" import="false" targetId="0ad5-c0fa-4c69-bd38" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3d2d-6c5b-8c06-467b" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="e54a-30a1-69af-3680" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="555b-fbc0-da74-937e" name="Imperialis Militia Achilles Light Vehicle Squadron" hidden="false" collective="false" import="false" targetId="ba1b-6b50-4ed7-8ac6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="424d-3b0c-b993-999e" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="4b22-f167-5da6-fe3d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9bfe-bc76-355a-6007" name="Imperialis Militia Venator Medium Vehicle Squadron" hidden="false" collective="false" import="false" targetId="ef6c-e2a7-4eeb-bd60" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e363-7f08-1047-38fa" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="6135-6cce-a5b2-3350" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ce6d-8b9f-db5d-ac25" name="Imperialis Militia Carnodon Squadron" hidden="false" collective="false" import="false" targetId="27d4-51f9-44e2-9203" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3f56-f0b9-9b90-d902" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="f485-8e67-ec0a-3c82" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ff37-6885-adfe-22f9" name="Imperialis Militia Hades Breaching Drill" hidden="false" collective="false" import="false" targetId="24a2-dac8-4e7b-ae3a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="87c1-cfd4-364c-0901" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="5c73-28d6-0669-0f69" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fa3f-7859-108b-19c0" name="Greater Mutated Spawn" hidden="false" collective="false" import="false" targetId="ea17-f999-4ad1-b225" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="549e-08f6-67bb-58b5" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="39b0-1cdb-a0bb-62ef" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d1a9-e76a-9c93-55cb" name="Imperialis Militia Sabre Battery" hidden="false" collective="false" import="false" targetId="3d07-2086-48a9-a3b2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fb50-39ed-87e7-c8d4" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="3ea1-31f1-f60c-00ad" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9a84-168a-5c8e-93f9" name="Imperialis Militia Macharius Heavy Tank Squadron" hidden="false" collective="false" import="false" targetId="0484-1a5a-4808-a0b0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9cec-2ec3-6688-7eac" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="abc0-3494-6d05-f445" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="31f0-2fde-a5c7-3643" name="Imperialis Militia Macharius Omega Heavy Tank" hidden="false" collective="false" import="false" targetId="c292-11b6-45dc-a2b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dc4e-94a1-1a91-fc0c" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="23f5-d401-8ad2-9174" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5f08-8428-77f3-dc71" name="Imperialis Militia Malcador Defensor Heavy Tank Squadron" hidden="false" collective="false" import="false" targetId="5eb2-0c6b-4845-9c1c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e464-84b1-cde3-b83d" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="ecd3-f6ee-9e39-c093" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="93e9-07af-6e80-4ce7" name="Imperialis Militia Minotaur Battery" hidden="false" collective="false" import="false" targetId="c4f7-e4ad-434e-981c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1ff8-81cc-34d8-3f4a" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="f122-09df-a881-a4dc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4faa-6d0a-a321-367a" name="Imperialis Militia Praetorian Heavy Tank" hidden="false" collective="false" import="false" targetId="cddb-d2a6-4e3a-94f3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2855-fb1a-2fcb-aa6f" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="8a2a-1e4f-b571-3437" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a147-11b2-ffaf-640f" name="Imperialis Militia Hydra Flak Tank Squadron" hidden="false" collective="false" import="false" targetId="ab48-7a56-4e6c-9238" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e6bd-1d6a-e1e9-a4a4" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="862f-770d-9090-9a37" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4b8f-4058-b750-f629" name="Imperialis Militia Manticore Missile Tank Battery" hidden="false" collective="false" import="false" targetId="9507-4d55-4e20-bc77" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bb07-f261-92c0-3222" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="592e-e296-c2d8-8f31" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3104-44bb-ac2e-a59a" name="Imperialis Militia Helios Ordnance Carrier Squadron" hidden="false" collective="false" import="false" targetId="6855-6a40-4dd8-aa7f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0df1-7e29-6e8b-9d81" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="1357-eda2-ba2c-d6a0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="73bf-ec54-ffd6-901d" name="Imperialis Militia Goliath Heavy Vehicle Squadron" hidden="false" collective="false" import="false" targetId="569a-c745-4007-99de" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1c75-5c7a-9a40-766f" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="70eb-df22-ceff-e080" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="973e-ca9e-ae54-02c4" name="Imperialis Militia Ironcrawler Squadron" hidden="false" collective="false" import="false" targetId="680d-71d3-4d99-a73a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="348c-98d2-b781-7191" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="46a5-418c-5eea-7111" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cab5-3c27-e25e-d059" name="Imperialis Militia Artillery Battery" hidden="false" collective="false" import="false" targetId="540e-9e01-437e-8388" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1775-0427-422b-7af5" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="8e57-e28c-6a71-c551" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="05aa-04b5-1063-155b" name="Imperialis Militia Marauder Bomber" hidden="false" collective="false" import="false" targetId="0ced-831d-4c63-9e2b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a409-5960-8c12-6a0d" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="f926-1d2b-cb8a-617d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a2db-b15c-c3b4-bfd6" name="Imperialis Militia Marauder Destroyer" hidden="false" collective="false" import="false" targetId="1427-76c2-46b3-ad32" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8c54-9116-44ea-4eaf" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="6e7d-9aeb-2a31-30b0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="63c9-ee12-56a4-a6e1" name="Imperialis Militia Praetor Armoured Assault Launcher" hidden="false" collective="false" import="false" targetId="9f75-4af7-447d-a352" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7c55-020e-e3f7-c5cb" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="4fcd-1432-44b7-21b8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9727-da4a-e425-0f4c" name="Imperialis Militia Crassus Armoured Assault Transport" hidden="false" collective="false" import="false" targetId="dfce-5857-4f9e-bc43" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ece5-057f-a375-5041" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="eb93-19a7-395a-0a7f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="4f2e-c08a-8adb-0ae9" name="Imperialis Militia" hidden="false" collective="false" import="false" targetId="5522-4fd9-12d5-460afds" type="selectionEntry">
       <modifiers>
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
@@ -2860,6 +3153,38 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="9b63-531b-7a21-efee" name="Imperialis Militia Chimera Transport" hidden="false" collective="false" import="true" targetId="f8e7-cdb0-4847-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="b179-24bb-a4b0-3eb4" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="7643-c3a5-f529-ed67" name="Imperialis Militia Aurox Transport" hidden="false" collective="false" import="true" targetId="89ee-290d-402e-88d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="b179-24bb-a4b0-3eb4" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4eec-bc79-84e0-ad26" name="Imperialis Militia Rhino Advancer" hidden="false" collective="false" import="true" targetId="9e5c-fa0f-4dd7-8519" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="b179-24bb-a4b0-3eb4" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5147,6 +5472,38 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="b8d9-d581-ed91-f4d3" name="Imperialis Militia Chimera Transport" hidden="false" collective="false" import="true" targetId="f8e7-cdb0-4847-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="c201-6fbc-a792-0509" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="70b2-9821-9493-5d86" name="Imperialis Militia Aurox Transport" hidden="false" collective="false" import="true" targetId="89ee-290d-402e-88d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="c201-6fbc-a792-0509" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="2854-94a7-191a-8461" name="Imperialis Militia Rhino Advancer" hidden="false" collective="false" import="true" targetId="9e5c-fa0f-4dd7-8519" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="c201-6fbc-a792-0509" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5253,6 +5610,46 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink name="SA or IM Unit" hidden="false" id="e0c9-5208-41a0-6e1" targetId="4aca-2849-7f41-0200" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
+        <selectionEntryGroup id="5990-aa22-705e-4cd3" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Imperatus pp.219, 220, 222</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca56-9e1a-1c91-a4ae" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4654-92b2-250f-702f" name="Imperialis Militia Chimera Transport" hidden="false" collective="false" import="true" targetId="f8e7-cdb0-4847-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="3f92-41db-02f5-d0cd" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8ce2-81de-dfff-5123" name="Imperialis Militia Aurox Transport" hidden="false" collective="false" import="true" targetId="89ee-290d-402e-88d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="3f92-41db-02f5-d0cd" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4721-e248-ad71-a5ed" name="Imperialis Militia Rhino Advancer" hidden="false" collective="false" import="true" targetId="9e5c-fa0f-4dd7-8519" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="3f92-41db-02f5-d0cd" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="adbf-df44-516d-b49d" name="1) Militia Fire Teams" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ff1-5b17-ca8b-0676">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7755-2045-9f38-66d8" type="min"/>
@@ -5836,6 +6233,46 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="edc8-5879-eb14-c34c" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Imperatus pp.219, 220, 222</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="897c-0505-4f3a-1e0e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="75f5-0665-f1fe-c6bd" name="Imperialis Militia Chimera Transport" hidden="false" collective="false" import="true" targetId="f8e7-cdb0-4847-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="6a90-6dc5-1e0b-9eaf" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="d30e-6c18-1d61-7799" name="Imperialis Militia Aurox Transport" hidden="false" collective="false" import="true" targetId="89ee-290d-402e-88d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="6a90-6dc5-1e0b-9eaf" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ae13-c2bc-2811-f16e" name="Imperialis Militia Rhino Advancer" hidden="false" collective="false" import="true" targetId="9e5c-fa0f-4dd7-8519" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="6a90-6dc5-1e0b-9eaf" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="c24f-db02-4785-7e76" name="3) All models in the unit may exchange their shotguns for one of the following" hidden="false" collective="false" import="true" defaultSelectionEntryId="56fb-b3cd-51ac-8862">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b72-00f8-5cb3-712b" type="min"/>
@@ -7160,6 +7597,46 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
     </selectionEntry>
     <selectionEntry id="173c-2148-c3ce-9c5c" name="IM - Beastmasters" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <selectionEntryGroups>
+        <selectionEntryGroup id="c246-0f02-7536-f34c" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Imperatus pp.219, 220, 222</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bfc-41c6-a248-ecf7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="deec-07fc-5905-e6f5" name="Imperialis Militia Chimera Transport" hidden="false" collective="false" import="true" targetId="f8e7-cdb0-4847-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="173c-2148-c3ce-9c5c" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5b9f-850a-b7d2-0a85" name="Imperialis Militia Aurox Transport" hidden="false" collective="false" import="true" targetId="89ee-290d-402e-88d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="173c-2148-c3ce-9c5c" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="37f5-a1be-a329-928c" name="Imperialis Militia Rhino Advancer" hidden="false" collective="false" import="true" targetId="9e5c-fa0f-4dd7-8519" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="173c-2148-c3ce-9c5c" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="bde6-309c-ecbe-8a2e" name="2) War Beasts" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="0c4b-9d08-44c9-d554" value="1">
@@ -9554,6 +10031,42 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="ac07-b6dd-489c-45ec" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Imperatus p.198 (Ogryn Conscripts) and p.222</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="494e-3466-5998-5ba2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4c3f-41f6-7ba8-67de" name="Imperialis Militia Chimera Transport" hidden="false" collective="false" import="true" targetId="f8e7-cdb0-4847-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="equalTo"/>
+                        <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="c421-a9bd-37a3-e562" name="Imperialis Militia Rhino Advancer" hidden="false" collective="false" import="true" targetId="9e5c-fa0f-4dd7-8519" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="173e-26aa-855e-475d" name="3) Unit Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="052b-2311-0da2-0b3f">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e64-11b5-2971-1b22" type="min"/>
@@ -10242,6 +10755,59 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d262-ce8e-0ca5-27ad" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Imperatus pp.219, 220, 222</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc11-0a4d-60d4-f421" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="031c-f38d-3961-0575" name="Imperialis Militia Chimera Transport" hidden="false" collective="false" import="true" targetId="f8e7-cdb0-4847-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="5fd6-8371-e5e5-7f0f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c449-8722-a7ab-4f45" type="equalTo"/>
+                        <condition field="selections" scope="5fd6-8371-e5e5-7f0f" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8ee1-0daf-f926-1476" name="Imperialis Militia Aurox Transport" hidden="false" collective="false" import="true" targetId="89ee-290d-402e-88d8" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="5fd6-8371-e5e5-7f0f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c449-8722-a7ab-4f45" type="equalTo"/>
+                        <condition field="selections" scope="5fd6-8371-e5e5-7f0f" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ba58-157e-fdf9-73b8" name="Imperialis Militia Rhino Advancer" hidden="false" collective="false" import="true" targetId="9e5c-fa0f-4dd7-8519" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="5fd6-8371-e5e5-7f0f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c449-8722-a7ab-4f45" type="equalTo"/>
+                        <condition field="selections" scope="5fd6-8371-e5e5-7f0f" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="dd91-0c2e-0890-1673" name="Militia Vexilla" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -11446,6 +12012,7 @@ A model with the Infantry Unit Type that selects a Militia cavalry mount as an u
     </rule>
   </sharedRules>
   <catalogueLinks>
+    <catalogueLink id="f111-c59b-8c16-3026" name="[Imperatus] Militia" targetId="fe6-832a-e16c-408e" type="catalogue" importRootEntries="false"/>
     <catalogueLink id="5f24-4626-71c3-0511" name="Mech Library" targetId="7265-8b7a-50ae-51ec" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="e048-9e5e-507c-5b11" name="LI - Assassins and Agents" targetId="2dde-e269-90db-8d33" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="e123-456e-507c-5t11" name="Daemons - Bound Daemons" targetId="d114-c205-18d5-4e95" type="catalogue" importRootEntries="true"/>
