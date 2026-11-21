@@ -1092,7 +1092,7 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2515-41af-4431-5c7e" name="Praetorian Retinue" hidden="false" collective="false" import="true">
-          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186b-5ec8-e0fd-3b1f" type="max"/>
           </constraints>
@@ -1417,7 +1417,7 @@
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="fb65-e842-79f6-0d7f" name="Praetorian Retinue" hidden="false" collective="false" import="true">
-          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d4-59df-8226-e0e1" type="max"/>
           </constraints>
@@ -2244,7 +2244,7 @@
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="a72c-73bc-88ac-839e" name="Praetorian Retinue" hidden="false" collective="false" import="true">
-          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af7a-5d80-03d1-92c5" type="max"/>
           </constraints>
@@ -4955,7 +4955,7 @@ In addition, Archmagos Anacharis Scoria provides all effects, benefits, and rul
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="c41a-53e1-ec53-b126" name="Praetorian Retinue" hidden="false" collective="false" import="true">
-          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b54-f4be-291c-810b" type="max"/>
           </constraints>

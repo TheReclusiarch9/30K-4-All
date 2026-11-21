@@ -780,7 +780,7 @@ Could not find rule: Command Protocols (Skitarius)</comment>
       </rules>
       <selectionEntryGroups>
         <selectionEntryGroup id="db2a-78c9-1175-1a97" name="Praetorian Retinue" hidden="false" collective="false" import="true">
-          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea44-c952-089d-96d9" type="max"/>
           </constraints>
@@ -1081,7 +1081,7 @@ Taser Goad is in two option lists for Sicarian Clademaster, you will need to com
 Stubcarbine is in two option lists for Sicarian Clademaster, you will need to combine them by hand.</comment>
       <selectionEntryGroups>
         <selectionEntryGroup id="9501-c0b2-2f88-1a2d" name="Praetorian Retinue" hidden="false" collective="false" import="true">
-          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1866-3195-e944-a56e" type="max"/>
           </constraints>
@@ -1468,7 +1468,7 @@ Could not find rule: Independent Character
 Could not find rule: Warlord: The Logic of Victory*</comment>
       <selectionEntryGroups>
         <selectionEntryGroup id="ef72-7479-2fab-00bf" name="Praetorian Retinue" hidden="false" collective="false" import="true">
-          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47e-0a62-5ba6-f939" type="max"/>
           </constraints>
