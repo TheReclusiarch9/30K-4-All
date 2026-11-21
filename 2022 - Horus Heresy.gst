@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2010" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2011" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -1953,6 +1953,18 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
             </modifier>
+            <modifier type="set" value="0" field="a59f-bf8a-6c0a-c006">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
+            </modifier>
+            <modifier type="set" value="-1" field="e335-2401-dec4-2d28">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e335-2401-dec4-2d28" type="max"/>
@@ -1975,6 +1987,12 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="-1" field="7cc0-0be3-0046-e962">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
+            </modifier>
           </modifiers>
         </categoryLink>
         <categoryLink id="7838-d570-4570-89ad" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
@@ -1994,6 +2012,18 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
               <comment>Pride is Our Armour</comment>
+            </modifier>
+            <modifier type="set" value="0" field="53f0-9a02-8039-c7d5">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
+            </modifier>
+            <modifier type="set" value="-1" field="ced6-f029-0392-ae11">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
             </modifier>
           </modifiers>
         </categoryLink>
@@ -2042,6 +2072,12 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="-1" field="2ede-2dee-1530-5c26">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ede-2dee-1530-5c26" type="max"/>
@@ -2059,6 +2095,12 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
               <conditions>
                 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="-1" field="0bc1-40ca-638b-3578">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
             </modifier>
           </modifiers>
           <constraints>
@@ -2097,6 +2139,12 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
             </modifier>
+            <modifier type="set" value="0" field="efa5-391f-c0d5-86f2">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="efa5-391f-c0d5-86f2" type="min"/>
@@ -2114,6 +2162,12 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
               <comment>Pride is Our Armour</comment>
+            </modifier>
+            <modifier type="set" value="0" field="3965-7b5b-1e0b-d284">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-08b7-786c-b6b9" type="atLeast"/>
+              </conditions>
+              <comment>Saedathii Detachment (Liber Antiquia p.107)</comment>
             </modifier>
           </modifiers>
           <constraints>
