@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="64c8-badb-7d2a-890a" name="LA - XIX: Raven Guard" revision="2035" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="64c8-badb-7d2a-890a" name="LA - XIX: Raven Guard" revision="2036" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
+    <entryLink id="cbf9-db80-4539-1a62" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="20b5-67f3-8ab8-0030" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="e00a-bd06-5879-aeb0" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="948f-65ff-2d9f-8138" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a2f0-60a9-1496-426d" name="Retinue" hidden="false" collective="false" import="true" targetId="5a61-7572-048d-9bb4" type="selectionEntryGroup"/>
+        <entryLink id="1495-3538-7292-726d" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="0ef8-74a3-9dcb-3e49" name="Legion Indomitus Centurion" hidden="false" collective="false" import="false" targetId="4d40-5fee-4219-8354" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="68be-078f-6206-362c" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="e0bb-146c-f1f1-42b2" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="8f2e-e8b5-5a69-c897" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0c4b-a94f-07d4-17f2" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="81a8-b00e-6db3-0361" name="Legion Saturnine Centurion" hidden="false" collective="false" import="false" targetId="3e29-1bf1-48c9-b302" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="774e-4a29-b64d-5c82" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="ee01-ee7f-b183-6b19" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="3405-0855-2c13-deb6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e385-db17-c396-b1fe" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="d65d-ebc1-0ed7-64a2" name="Legion Contemptor Centurion" hidden="false" collective="false" import="false" targetId="af55-3d23-4179-b438" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="bd3a-57e4-ddab-2f90" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="3744-3283-a70d-55d5" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="732f-d412-1ec1-02cc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2c62-d286-db47-2b7a" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="7e6d-261d-a66c-e73a" name="Legion Castra Ferrum Centurion" hidden="false" collective="false" import="false" targetId="7cbb-4e3a-4030-b935" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6d10-b29c-a83b-31b6" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="f579-f5f8-b2ca-8660" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="0217-e9fd-d51c-3e03" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9394-4658-370e-3ed0" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="40ca-b143-a04e-4083" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="c914-10ac-5471-1100" name="Legion Land Raider Dionysus" hidden="false" collective="false" import="false" targetId="4f0d-7dbb-4d94-a26e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9027-60ed-a77b-69d9" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="346d-e9a0-12ac-ac3d" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="b8f0-3b88-85a7-51e9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="84cc-e59c-174e-fb25" name="Mor Deythan Squad" hidden="false" collective="false" import="false" targetId="c268-08ac-5b90-d034" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="2e94-0345-48a1-212d" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
@@ -538,6 +596,33 @@
         </categoryLink>
         <categoryLink id="25b6-6e9d-426f-9ae4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_82e3-36e1-4e85-8fcb</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="733c-a972-5200-c74a" name="Legion Land Raider Tartaros" hidden="false" collective="false" import="false" targetId="9919-c7b2-474e-bb78" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_8396-e51c-4e2b-bada</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_13bb-9fb5-4580-92cf</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>node_id_bfb8-8125-4548-92f5</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>node_id_25e3-b8f5-4448-a7c8</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a11f-4863-8654-7193" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+        </categoryLink>
+        <categoryLink id="eb69-8a32-d744-43f6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
         </categoryLink>
       </categoryLinks>
     </entryLink>
@@ -3394,6 +3479,21 @@ This model counts as having a LegionWarhawk Jump Pack for rules and interaction
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="3680-dcde-b54c-370a" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="aae2-c86e-309f-8a14" name="Storm Eagle Gunship" hidden="false" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -4020,6 +4120,19 @@ This model counts as having a LegionWarhawk Jump Pack for rules and interaction
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41f2-d19e-99a1-2f92" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34da-b29e-f77e-cd1e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="da24-1e06-85f2-8edc" name="Legion Whispercutter" hidden="true" collective="false" import="true" targetId="b176-b2c5-477c-9200" type="selectionEntry">
+          <comment>Dedicated Transport (Liber Centura p.31): units of Infantry (Skirmish) composed of 5 models</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65af-ba4d-f145-3e54" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4898,6 +5011,7 @@ When in base to base contact with an enemy Infantry or Cavalry model whose Weapo
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4f8e-0e7a-b3fe-1e3c" type="max"/>
       </constraints>
       <entryLinks>
+        <entryLink id="afb8-f5fb-d97f-2be8" name="Legion Indomitus Command Squad" hidden="false" collective="false" import="true" targetId="10a1-9ca0-40bd-81fd" type="selectionEntry"/>
         <entryLink id="d33b-21f8-f253-f312" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
           <modifiers>
             <modifier type="append" field="name" value="(Reserve Only)">
@@ -4918,6 +5032,7 @@ When in base to base contact with an enemy Infantry or Cavalry model whose Weapo
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
+    <catalogueLink id="e600-5157-3944-352b" name="[Centura] Legiones Astartes" targetId="d76-4e81-2fef-caa1" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="25e4-c9e5-8165-1337" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2191" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2192" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -673,11 +673,6 @@ Additional rules are given to units based on Legion and Unit.</description>
         <categoryLink id="16b4-94e4-54ff-37e5" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="6a12-c3bc-3bfe-1a72" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="e01a-d42a-4baf-af1d" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="11af-ef33-df63-a7a8" name="Legion Saturnine Centurion" hidden="false" collective="false" import="true" targetId="3e29-1bf1-48c9-b302" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="4cfc-ba32-eb87-0823" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d8a4-aee2-2edd-9a6e" name="Legion Saturnine Terminator Squad" hidden="false" collective="false" import="true" targetId="9900-7087-c807-c082" type="selectionEntry">
@@ -5264,6 +5259,22 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="98f4-dd80-3933-08ae" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="728f-12dc-1f72-8263" name="Land Raider Proteus Carrier" hidden="true" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -7817,6 +7828,21 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
           </constraints>
           <entryLinks>
             <entryLink id="b209-a1e4-dc99-c1e3" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="c7d1-292b-c3ee-3df1" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -19808,6 +19834,22 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="a006-50d0-ff5c-07eb" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="4357-930e-165a-a6e3" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="a881-5426-080f-db0f" name="Land Raider Proteus Carrier" hidden="true" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -22146,6 +22188,22 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="d47c-5de8-e0a9-2a8e" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="ad97-c090-fa67-696f" value="9" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7baf-18d9-aa70-9ba8" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="16b2-2bdd-6e01-1684" name="1) Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
@@ -23815,6 +23873,21 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="c407-6d18-6abb-fbfc" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="37e5-4016-d614-a02e" name="Storm Eagle Gunship" hidden="false" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -23978,6 +24051,19 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bed7-dab3-364f-1d07" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6499-3621-7e83-1951" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6d0c-0748-3e88-a159" name="Legion Whispercutter" hidden="true" collective="false" import="true" targetId="b176-b2c5-477c-9200" type="selectionEntry">
+          <comment>Dedicated Transport (Liber Centura p.31): units of Infantry (Skirmish) composed of 5 models</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce4b-ef46-c230-3ef5" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -24905,6 +24991,19 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1251-57ab-0ee4-6fe3" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aa5-e473-00e5-b92d" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="cb19-1704-557e-cfa5" name="Legion Whispercutter" hidden="true" collective="false" import="true" targetId="b176-b2c5-477c-9200" type="selectionEntry">
+          <comment>Dedicated Transport (Liber Centura p.31): units of Infantry (Skirmish) composed of 5 models</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade3-ec1b-ac5e-62d3" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -26311,6 +26410,22 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="7285-ad59-c62d-f9ce" name="Legion Land Raider Tartaros" hidden="false" collective="false" import="true" targetId="9919-c7b2-474e-bb78" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="514d-d9f2-5e0a-c62a" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="ff2f-56ee-76a6-a856" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -26327,6 +26442,21 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </modifiers>
             </entryLink>
             <entryLink id="69aa-fe4f-cd55-f848" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="aac3-fccb-30ef-1497" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -27976,6 +28106,32 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
               </modifiers>
               <infoLinks>
                 <infoLink name="Augmetic Transport Bay" id="7d06-e23a-efdf-8e47" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="a715-0951-2252-05a9" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Augmetic Transport Bay" id="7e11-ed06-ddf5-9d97" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
@@ -31529,6 +31685,21 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="5299-8cc8-737a-e299" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="4ad5-f4a0-ff8c-f1ba" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -31627,6 +31798,19 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
           </constraints>
         </entryLink>
         <entryLink id="5005-ee29-0096-ad8f" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="5ae6-d1b4-db1e-4a77" name="Legion Whispercutter" hidden="true" collective="false" import="true" targetId="b176-b2c5-477c-9200" type="selectionEntry">
+          <comment>Dedicated Transport (Liber Centura p.31): units of Infantry (Skirmish) composed of 5 models</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f7-c42d-a24f-758b" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
@@ -37630,6 +37814,21 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
           </constraints>
           <entryLinks>
             <entryLink id="9eec-7413-bebc-2a48" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="6636-304e-bf66-96b9" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -59257,6 +59456,21 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="8ef4-9e79-dc22-a2a0" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="ae43-2810-1a33-3ba2" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -64515,6 +64729,21 @@ If the Psychic check is successful then until that Shooting Attack is resolved, 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Legion Rhino Advancer" hidden="false" id="1365-54b5-73d9-57bb" collective="false" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="ed1f-9473-df70-4544" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a621-2c8c-3df0-89d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Drop Pod" hidden="false" id="a931-13af-9c09-84e8" collective="false" targetId="83ac-f9cf-cc29-00a3" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
@@ -68730,6 +68959,11 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
             <entryLink id="8835-17eb-32a5-7ec6" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36cb-4814-3f01-a949" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7ebc-05fc-8f3a-fd49" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a4-35f1-a045-48c2" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="b4ba-2619-d0fd-3de6" name="Drop Pod" hidden="false" collective="false" import="true" targetId="83ac-f9cf-cc29-00a3" type="selectionEntry">

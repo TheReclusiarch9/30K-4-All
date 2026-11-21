@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2042" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
+    <entryLink id="049c-5f69-2ca1-4f94" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5f97-37de-e76b-554b" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="09c8-8e6c-d665-a0eb" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="894e-b6ab-9cb7-4670" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2065-408f-f0d6-a358" name="Retinue" hidden="false" collective="false" import="true" targetId="ec53-0911-52b7-dafa" type="selectionEntryGroup"/>
+        <entryLink id="4181-6b15-fd5e-541a" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4ef8-ecc8-b821-c604" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="7de2-a6b6-dd32-7e5e" name="Legion Indomitus Centurion" hidden="false" collective="false" import="false" targetId="4d40-5fee-4219-8354" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="afb4-d155-bd45-8031" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="267f-2f88-39e9-56a7" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="c8b9-0d75-88e6-7f75" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3164-eca5-6887-7053" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4ef8-ecc8-b821-c604" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="09f2-c789-96a3-b980" name="Legion Saturnine Centurion" hidden="false" collective="false" import="false" targetId="3e29-1bf1-48c9-b302" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="326b-4c33-5202-0c84" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="14f3-f277-3490-f3be" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="ef5d-c3a4-8bc9-d0b0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0073-22c7-7a2e-b005" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4ef8-ecc8-b821-c604" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="ad34-4008-c16a-32fb" name="Legion Contemptor Centurion" hidden="false" collective="false" import="false" targetId="af55-3d23-4179-b438" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2190-08b8-a6a1-2ae7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="fd3c-d623-ddfd-a83d" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="38b1-c76a-a25c-8bfc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e377-5a88-cb00-6133" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4ef8-ecc8-b821-c604" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="20f4-36f2-c58d-6074" name="Legion Castra Ferrum Centurion" hidden="false" collective="false" import="false" targetId="7cbb-4e3a-4030-b935" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ac17-3fbc-3e58-3a87" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="cf72-ae69-b3e6-645e" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="107f-4202-7f2d-7784" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cee1-6868-0187-fb9b" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="4ef8-ecc8-b821-c604" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="8b04-968d-6f69-84d3" name="Legion Land Raider Dionysus" hidden="false" collective="false" import="false" targetId="4f0d-7dbb-4d94-a26e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6352-a7a0-1a88-b711" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="bd28-7aa7-9abb-3297" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="6576-f138-b432-fd1f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
@@ -621,6 +679,33 @@
         </categoryLink>
         <categoryLink id="cd18-7307-4146-a32a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_82e3-36e1-4e85-8fcb</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b570-58cf-912f-d5f3" name="Legion Land Raider Tartaros" hidden="false" collective="false" import="false" targetId="9919-c7b2-474e-bb78" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_8396-e51c-4e2b-bada</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_13bb-9fb5-4580-92cf</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>node_id_bfb8-8125-4548-92f5</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>node_id_25e3-b8f5-4448-a7c8</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7e5d-e5c0-c203-7715" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+        </categoryLink>
+        <categoryLink id="71ce-8775-92d6-c44b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
         </categoryLink>
       </categoryLinks>
     </entryLink>
@@ -3697,6 +3782,21 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="d007-2743-a41b-dd92" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="15c8-31e7-c135-afe9" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -4984,6 +5084,21 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="0815-ed50-0c75-2c52" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="877b-f89e-fd55-695b" name="Storm Eagle Gunship" hidden="true" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -5328,6 +5443,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
               </modifiers>
             </entryLink>
             <entryLink id="a04c-8da9-1566-b4fa" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
+            <entryLink id="bc6d-a0ec-295b-aede" name="Legion Rhino Advancer" hidden="false" collective="false" import="true" targetId="83d6-bbaa-416c-9de9" type="selectionEntry"/>
             <entryLink id="3000-3c10-01a9-f1ab" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry"/>
             <entryLink id="df4-de3f-bae7-883f" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
@@ -5839,6 +5955,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="467b-133a-c09c-b969" type="max"/>
       </constraints>
       <entryLinks>
+        <entryLink id="fcd1-7cf0-559a-8195" name="Legion Indomitus Command Squad" hidden="false" collective="false" import="true" targetId="10a1-9ca0-40bd-81fd" type="selectionEntry"/>
         <entryLink id="420e-70d3-d9fe-a868" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
           <modifiers>
             <modifier type="append" field="name" value="(Reserve Only)">
@@ -5906,6 +6023,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
+    <catalogueLink id="6353-f860-840e-1538" name="[Centura] Legiones Astartes" targetId="d76-4e81-2fef-caa1" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="25e4-c9e5-8165-1337" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Mech Library" id="5e16-9e11-1492-d139" targetId="7265-8b7a-50ae-51ec"/>
   </catalogueLinks>

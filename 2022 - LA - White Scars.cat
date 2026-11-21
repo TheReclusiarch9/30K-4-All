@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8b8a-6a95-2974-215a" name="LA -   V: White Scars" revision="2043" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8b8a-6a95-2974-215a" name="LA -   V: White Scars" revision="2044" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
+    <entryLink id="2c00-0c71-1c89-97cf" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5334-92fc-34e2-6a8b" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="3558-f9b6-9ae0-7d57" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="0a39-820e-4a6b-bcec" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a69b-2f79-c3e1-6b0e" name="Retinue" hidden="false" collective="false" import="true" targetId="f874-317d-d582-11d5" type="selectionEntryGroup"/>
+        <entryLink id="f8ab-d244-d88b-1355" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="834b-fcb6-78e5-2099" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="43a4-f521-ddbf-49e5" name="Legion Indomitus Centurion" hidden="false" collective="false" import="false" targetId="4d40-5fee-4219-8354" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7445-d8b9-4540-6fa6" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="e8ec-5ebc-41d5-7ef4" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="6b26-bc20-cfce-2fea" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5a28-4513-634b-0b32" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="834b-fcb6-78e5-2099" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="6e07-2d67-c120-d0e6" name="Legion Saturnine Centurion" hidden="false" collective="false" import="false" targetId="3e29-1bf1-48c9-b302" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8be5-b30c-09ae-8382" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="ea24-c322-f438-239a" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="aa01-795a-3e59-1e75" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4aef-9676-9562-2848" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="834b-fcb6-78e5-2099" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="885e-0519-a311-d7f0" name="Legion Contemptor Centurion" hidden="false" collective="false" import="false" targetId="af55-3d23-4179-b438" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c835-8d0c-1c2f-43d3" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="fe27-dd02-94bc-5421" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="c7c9-62a6-20ac-1b1d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3099-5c48-8555-1115" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="834b-fcb6-78e5-2099" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="2eba-b585-ec85-0d76" name="Legion Castra Ferrum Centurion" hidden="false" collective="false" import="false" targetId="7cbb-4e3a-4030-b935" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7a8b-c284-5981-f0bc" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="c1a5-4724-a9f7-e000" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="3439-1910-87be-4455" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2576-2155-44a6-d6ea" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="834b-fcb6-78e5-2099" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="dbc1-25a8-377f-6821" name="Legion Land Raider Dionysus" hidden="false" collective="false" import="false" targetId="4f0d-7dbb-4d94-a26e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b3c0-3d3a-78c1-c8a9" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="ec05-4364-1de1-ae84" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="3036-15db-7354-dd90" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="a738-6a11-dfe7-286c" name="V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <modifiers>
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
@@ -617,6 +675,33 @@
         </categoryLink>
         <categoryLink id="48c7-78d6-4680-9bed" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_82e3-36e1-4e85-8fcb</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9993-0517-755c-48a8" name="Legion Land Raider Tartaros" hidden="false" collective="false" import="false" targetId="9919-c7b2-474e-bb78" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_8396-e51c-4e2b-bada</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_13bb-9fb5-4580-92cf</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>node_id_bfb8-8125-4548-92f5</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>node_id_25e3-b8f5-4448-a7c8</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ad64-edc9-a991-c370" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+        </categoryLink>
+        <categoryLink id="6c77-1b47-9a33-ea04" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
         </categoryLink>
       </categoryLinks>
     </entryLink>
@@ -4221,6 +4306,19 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3771-7ae3-11e3-c65f" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="a637-a94d-d798-dd55" name="Legion Whispercutter" hidden="true" collective="false" import="true" targetId="b176-b2c5-477c-9200" type="selectionEntry">
+          <comment>Dedicated Transport (Liber Centura p.31): units of Infantry (Skirmish) composed of 5 models</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7da1-5d95-a01d-eb2a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="31"/>
@@ -5934,6 +6032,7 @@ A Wind Rider Squadron selected as a Retinue Squad must be deployed with the mode
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6552-af51-1e7a-1399" type="max"/>
       </constraints>
       <entryLinks>
+        <entryLink id="13c7-d624-38bc-8c87" name="Legion Indomitus Command Squad" hidden="false" collective="false" import="true" targetId="10a1-9ca0-40bd-81fd" type="selectionEntry"/>
         <entryLink id="dd19-c562-7b59-f446" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
           <modifiers>
             <modifier type="append" field="name" value="(Reserve Only)">
@@ -6056,6 +6155,7 @@ A Wind Rider Squadron selected as a Retinue Squad must be deployed with the mode
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
+    <catalogueLink id="b11c-54ff-16dc-7da7" name="[Centura] Legiones Astartes" targetId="d76-4e81-2fef-caa1" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="25e4-c9e5-8165-1337" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="b5fe-774b-8da-c21e" name="LI - Sisters of Silence" targetId="ee0f-23d3-8682-53c4" type="catalogue" importRootEntries="false"/>
   </catalogueLinks>
