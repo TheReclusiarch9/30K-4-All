@@ -1,6 +1,330 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2044" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2045" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
+    <entryLink id="74a2-d058-1bb1-ba0d" name="Magos Prime" hidden="false" collective="false" import="false" targetId="9a5a-a411-463d-b98a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="48e8-0aee-f4c6-e036" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="06a2-e126-32a1-6570" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="ea1f-3a61-c31c-5222" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2902-2e53-55f8-c2a5" name="Magos Prime On Abeyant" hidden="false" collective="false" import="false" targetId="6ef6-3412-4083-82ca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c635-2287-7d9e-b3e9" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="bd7f-eb13-a666-9853" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="6b53-6775-b893-792b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="86e0-a190-8549-00bb" name="Skitarii Centurius" hidden="false" collective="false" import="false" targetId="3283-a0b5-40b2-b42b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9fa9-6668-9999-df06" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="a725-8039-156e-df92" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="ed7c-a171-fe2b-c9f4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8b2a-d09e-4f62-0b97" name="Sicarian Clademaster" hidden="false" collective="false" import="false" targetId="0e52-17c2-4d08-9b49" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="df00-2342-9a26-8893" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="5e1a-a407-c4a7-1041" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="236d-5876-7ccf-24e6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="14a3-e9c5-1640-6cf6" name="Arkhan Land" hidden="false" collective="false" import="false" targetId="d09a-1b47-44b2-8770" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14b7-b7de-4f17-d6f0" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="068d-492c-0267-bd48" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="5292-c3d3-f897-680b" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="3879-c43d-7b71-7959" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="89f0-1205-425a-be34" name="Remiare" hidden="false" collective="false" import="false" targetId="f3d1-035f-45e4-9200" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3678-53b0-cf77-f872" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6e54-6f9a-6f30-c124" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="3ae4-aad1-d66a-564a" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="daab-ca2d-b438-4f98" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="de80-bccd-9bc3-8f9a" name="Koriel Zeth" hidden="false" collective="false" import="false" targetId="2d75-642e-452f-9819" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b672-b6b5-c3bc-188a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1ab3-4606-6b6f-399f" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="63be-5356-544c-456d" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="be92-83c0-902b-cda7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e657-4c65-a374-fcce" name="Kelbor-Hal" hidden="false" collective="false" import="false" targetId="7d76-881f-4660-aeae" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b06a-4dd5-3fa1-20e3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0c42-19a8-3acc-cf76" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="5c4e-aebc-8325-ed24" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="04cd-a65b-c8e3-50d3" name="Sarumiat Battle-Automata Maniple" hidden="false" collective="false" import="false" targetId="98ec-1704-49af-a944" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="adfb-ff7f-b884-8bd3" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="8c54-2af9-f991-5916" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f1da-4793-e996-8cfb" name="Cydonian Dragoons" hidden="false" collective="false" import="false" targetId="4328-d2e2-4958-9832" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6b3a-74d6-1313-5d8f" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="ec06-cc3c-a4bc-fe0d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a5e3-2f1a-1304-311a" name="Skitarii Liquidator Cohort" hidden="false" collective="false" import="false" targetId="bbcc-1014-4233-b4ca" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="820d-8032-8fd6-22d2" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="c0e4-8f87-cad3-3c9e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b002-03a5-e474-497a" name="Sicarian Kill-Clade" hidden="false" collective="false" import="false" targetId="018f-666c-4720-a52c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1455-051a-a659-0618" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="9f72-8e23-c53a-f28f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eb3b-f0f8-7789-ed0c" name="Kataphron Breacher Servitor Maniple" hidden="false" collective="false" import="false" targetId="63c2-289d-4951-bbab" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b926-ced5-e664-927f" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="055a-9080-3363-791b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ed9b-d851-fbdb-d031" name="Kataphron Destructor Servitor Maniple" hidden="false" collective="false" import="false" targetId="4860-763a-4d5f-a100" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1bc7-c91d-ed2d-5920" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="1ed3-a434-686c-9346" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4777-f669-7852-b578" name="Cydonian Sisterhood Clade" hidden="false" collective="false" import="false" targetId="ebde-170b-4d3a-8ec6" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4042-bea4-fd45-90e6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="32ca-914b-515e-452e" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="04b4-d2f6-7370-d30d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2019-6660-0451-776f" name="Triaros Guardian" hidden="false" collective="false" import="false" targetId="5c45-e837-4481-a21f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b5e2-dbd7-9e1c-1fa2" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="caf8-5587-d4a5-0045" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="82c8-687b-8c17-69db" name="Skitarii Vanguard Cohort" hidden="false" collective="false" import="false" targetId="ac2d-8025-4c68-9ecb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="13ea-abe9-a9cd-3a7c" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="80b1-e3ff-debe-f684" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="1c08-b664-c96f-d99d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5a6f-cfb1-4db2-a333" name="Skitarii Ranger Cohort" hidden="false" collective="false" import="false" targetId="5d5e-9998-45ab-a2b1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7436-ce76-b4c6-c020" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="312f-27c2-e841-1483" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="a39e-67e9-3481-0cd2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eeba-aa24-2297-7349" name="Skitarii Decimator Cohort" hidden="false" collective="false" import="false" targetId="47e1-1640-4c1b-9868" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2493-3703-c9cf-1c0f" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="87b6-4dc1-4a98-35e5" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="223e-23ae-689c-0519" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f200-a9ea-00e0-7c43" name="Electro-Priest Conclave" hidden="false" collective="false" import="false" targetId="2048-5044-4f8a-92aa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d357-80f6-361b-ce93" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="f493-79b0-864a-fef8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d555-fd33-fdd3-1da6" name="Kastelan Battle-Automata Maniple" hidden="false" collective="false" import="false" targetId="5e9e-ee9e-4109-b184" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4ec9-4b5a-4e3f-6487" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="fceb-ef5c-8917-a808" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b549-2cd6-79fc-d9d9" name="Cyber-Carnivora Pack" hidden="false" collective="false" import="false" targetId="0d7f-d87f-4035-909d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="df03-b734-7e28-7ea4" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="5068-ea84-ceb9-83b5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="836a-a6c2-a3e0-45a8" name="Pteraxii Skyhunter Cohort" hidden="false" collective="false" import="false" targetId="0e07-d492-497f-8794" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="426f-0c2b-6c0d-be72" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="1bbb-d084-6436-27bc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c6df-9094-fa87-e2de" name="Serberys Tormentor Conclave" hidden="false" collective="false" import="false" targetId="8b68-e97f-46a6-8e74" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7a84-8253-6c54-5681" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="612f-e662-e98c-2495" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="85ba-6056-7321-6a7c" name="Herax Battle-Automata Maniple" hidden="false" collective="false" import="false" targetId="20c7-aa8c-4353-9c50" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4657-df19-6125-feb9" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="fdab-8f51-d3a0-4acb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="92b8-1337-86cf-eb43" name="Mechanicum Lightning Strike Fighter" hidden="false" collective="false" import="false" targetId="3352-b09c-4de6-b9f6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d591-6fd8-df68-2a88" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="ed36-a977-3229-1e06" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ee11-0a86-6857-50a3" name="Mechanicum Avenger Strike Fighter" hidden="false" collective="false" import="false" targetId="a679-61e5-4837-a32d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2e76-8a1b-2a9c-7266" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="d384-9d8a-3bc3-7951" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="333e-22d9-a3f2-f592" name="Archaeopter Transvector Squadron" hidden="false" collective="false" import="false" targetId="89cb-bac1-4fed-839e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="26f9-3742-dd2b-735f" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="5946-4a38-7ec7-22d0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1001-76b9-5fc8-57cb" name="Archaeopter Imperator Squadron" hidden="false" collective="false" import="false" targetId="3c6b-3763-4bf8-8b9d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="18aa-6faf-319f-19b8" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="cfa6-fd8e-1a0b-f500" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="122c-e098-3ebf-b41d" name="Mechanicum Arvus Lighter" hidden="false" collective="false" import="false" targetId="ea18-0635-4e8c-9819" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b7b5-e44b-dacd-04b2" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="92c1-9703-a679-6dde" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c2b6-e347-25e1-a093" name="Thanatar-Cynis Siege-Automata Maniple" hidden="false" collective="false" import="false" targetId="836a-80d6-4875-852e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b28a-391f-3ba7-29f2" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="cd9a-8e20-a2a1-cc68" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8d6b-58dc-c959-ffda" name="Kharax Siege-Automata Maniple" hidden="false" collective="false" import="false" targetId="0b39-bf03-4745-b30d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6a3f-bf09-b216-d442" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="1ecd-7935-d95d-62c0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3b86-4e3f-fc5d-e4e4" name="Sepketar Siege-Automata Maniple" hidden="false" collective="false" import="false" targetId="f48f-c003-413e-872f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9e58-735c-c15e-12f9" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="0b2a-8e73-1e0f-47d5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3a2c-f61e-6525-3c5c" name="Ironstrider Ballistarii" hidden="false" collective="false" import="false" targetId="cca2-87b6-4284-9887" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0e09-84d4-100b-8d64" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="39c6-31d4-e8ff-a276" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5337-2f18-d9fc-6f9e" name="Onager Dunecrawler Squadron" hidden="false" collective="false" import="false" targetId="2eea-26db-47fe-9273" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7a27-3a6f-effc-9a91" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="abef-404b-3d81-f9ef" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4cc9-2418-c199-9fbf" name="Skorpius Disintegrator Squadron" hidden="false" collective="false" import="false" targetId="bf41-5ec2-4e06-9dd8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dcfa-5921-caf2-59a3" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="93bd-fc55-1103-8347" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="aac8-2d94-ab3b-6321" name="Ordinatus-Exemplar War Construct" hidden="false" collective="false" import="false" targetId="3142-53ad-4a7d-8790" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0f2-ee39-450c-39db" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3821-7503-6139-3054" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc89-e0eb-2b73-443d" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="60e2-4553-ddc8-7ee6" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="99b6-e608-995f-af78" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="88bf-e51c-bcd4-d018" name="The Kaban Machine" hidden="false" collective="false" import="false" targetId="3957-dc7c-4d9f-9019" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="529a-2437-d85f-73ec" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="adb3-2b42-a471-7ad4" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="5503-feeb-68fe-b9a0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8537-4d60-5d0b-409a" name="Hierarch Siege-Automata" hidden="false" collective="false" import="false" targetId="451c-344d-4195-8398" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="14f4-5b7a-9122-babc" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="0600-13f2-6f4a-2383" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c80e-2746-1c43-4292" name="Oppressor Super-Heavy Siege Tank" hidden="false" collective="false" import="false" targetId="fa5b-ff06-4971-8feb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a53d-54e6-6cdb-e255" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="7224-b13c-30ac-e94c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="27c5-d625-8e36-5625" name="Ordinatus-Minoris Macro Engine" hidden="false" collective="false" import="false" targetId="f17f-69a7-413a-bbb5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="58e5-d404-da86-d3e4" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="5e04-8fe6-a293-4ded" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="8cbd-8250-3df3-465d" name="Blood Slaughterer" hidden="true" collective="false" import="true" targetId="2d70-676d-68aa-1973" type="selectionEntry">
       <comment>Scion of Sarum: Blood Slaughterers as Troops (Fast Attack is the default slot)</comment>
       <modifiers>
@@ -767,6 +1091,15 @@
         <categoryLink id="9c62-aa7d-142d-51f5" name="Feudal Hierarchy (On Foot)" hidden="false" targetId="ff97-e64e-506b-0587" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
+        <selectionEntryGroup id="2515-41af-4431-5c7e" name="Praetorian Retinue" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186b-5ec8-e0fd-3b1f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="58ad-e601-3f59-4000" name="Praetorian Servitor Maniple" hidden="false" collective="false" import="true" targetId="3ad7-7e46-47b0-a70d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="2ab1-bffc-d310-dee2" name="May take any of the following options:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="100c-29a9-e126-e082" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1083,6 +1416,15 @@
         <categoryLink id="4699-a334-97a9-2479" name="Feudal Hierarchy (On Abeyant)" hidden="false" targetId="4c2b-03e9-abb7-7209" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
+        <selectionEntryGroup id="fb65-e842-79f6-0d7f" name="Praetorian Retinue" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d4-59df-8226-e0e1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="eb78-6632-d3ac-fa66" name="Praetorian Servitor Maniple" hidden="false" collective="false" import="true" targetId="3ad7-7e46-47b0-a70d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="b1be-d5bb-2751-7b63" name="May exchange either their Volkite Serpenta and/or Power Weapon each for one of the following options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7676-9e72-ebf6-5df9">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdf9-bd60-0935-0abe" type="min"/>
@@ -1901,6 +2243,15 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="a72c-73bc-88ac-839e" name="Praetorian Retinue" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af7a-5d80-03d1-92c5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9a3e-f071-d3a7-67a1" name="Praetorian Servitor Maniple" hidden="false" collective="false" import="true" targetId="3ad7-7e46-47b0-a70d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="0ad9-b637-48ef-d9ca" name="Guardian Retinue" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3bd-333f-c92b-7cca" type="max"/>
@@ -2438,6 +2789,16 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+            </entryLink>
+            <entryLink id="6171-0d7e-35da-23ca" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="95d4-05b4-4256-beea" type="selectionEntry"/>
+            <entryLink id="3262-9785-78a0-02c8" name="Porphetian Armoured Carrier" hidden="false" collective="false" import="true" targetId="fca2-504c-4bf1-b816" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="0eae-0c52-1087-a3b0" value="8" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -4593,6 +4954,15 @@ In addition, Archmagos Anacharis Scoria provides all effects, benefits, and rul
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="c41a-53e1-ec53-b126" name="Praetorian Retinue" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.92: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b54-f4be-291c-810b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d0bf-84d8-535d-5f64" name="Praetorian Servitor Maniple" hidden="false" collective="false" import="true" targetId="3ad7-7e46-47b0-a70d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup id="ba3d-94b3-3823-4d39" name="Rites of the Beast Cybertheurgic Arcana" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="363b-da90-3afa-4e61" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
@@ -7006,6 +7376,7 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
+    <catalogueLink id="a86c-0cb5-84c4-bb34" name="[Ingenium] Mechanicum" targetId="4f40-72d0-2942-778b" type="catalogue" importRootEntries="false"/>
     <catalogueLink id="5f24-4626-71c3-0547" name="Mech Library" targetId="7265-8b7a-50ae-51ec" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="e048-9e5e-507c-5bae" name="LI - Assassins and Agents" targetId="2dde-e269-90db-8d33" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="e123-456e-507c-5trc" name="Daemons - Bound Daemons" targetId="d114-c205-18d5-4e95" type="catalogue" importRootEntries="true"/>
