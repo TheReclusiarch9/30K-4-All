@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d371-14a7-bf2b-1f20" name="LA -   VII: Imperial Fists" revision="2037" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d371-14a7-bf2b-1f20" name="LA -   VII: Imperial Fists" revision="2038" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="b3e4-1487-4ab7-7515" name="Alexis Polux" hidden="false" collective="false" import="false" targetId="9229-b4f9-2213-9672" type="selectionEntry">
       <modifiers>
@@ -3734,6 +3734,20 @@
         <entryLink id="2281-dab9-2cfc-e097" name="Retinue" hidden="false" collective="false" import="true" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
+    <entryLink id="3659-7af8-3dc1-af20" name="Camba Diaz" hidden="false" collective="false" import="false" targetId="b3af-0bef-50c4-2202" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c8e3-5516-5111-b379" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="2378-5b2d-fe0b-bf23" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="cb0e-834c-7c07-ba75" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="false" name="Optae" hidden="false" id="cee6-df45-d2fc-2821" type="selectionEntry" targetId="5585-b5f3-4640-894b">
       <entryLinks>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="82b5-9627-9e16-806f" type="selectionEntryGroup" targetId="164e-db98-d506-d2d9"/>
@@ -3809,6 +3823,147 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
+    <selectionEntry id="b3af-0bef-50c4-2202" name="Camba Diaz" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="b7e3-f76a-66f3-9c19" name="Defiant to the End" publicationId="3780-2e0c-1c08-df47" hidden="false">
+          <description>While Camba Diaz only has one Wound remaining, he gains the Feel No Pain (4+) special rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="51d0-d2ed-7d7d-1d5d" name="LA (IF)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
+        <infoLink id="676a-1c24-4f54-ecc0" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
+        <infoLink id="023b-c082-f7f7-e77e" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+        <infoLink id="1a50-4fc8-95ef-dad1" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="0d3e-7ad5-c199-018d" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9cdb-bd1b-9e61-e22c" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="9397-14c0-603d-3d60" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d423-e9b3-97e1-2d16" name="Camba Diaz" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a59c-25cc-1110-4486" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d74-beee-8884-8918" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="532f-f167-7448-c83c" name="Camba Diaz" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="8617-1c08-de53-f8fa" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+            <categoryLink id="d25a-ab2a-5406-da26" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+            <categoryLink id="2f72-e288-1af9-8051" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+            <categoryLink id="11dd-8516-8a56-c2f5" name="Unique Sub-type" hidden="false" targetId="aa94-5c65-d1f1-46a4" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="41eb-991b-8e74-2564" name="Durenda" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f81-47ad-1289-a93f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f04e-f5e7-f055-d594" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="37c9-8bc7-61fa-6c81" name="Durenda" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Two-handed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="7fee-219e-8af5-0fe6" name="Durenda" publicationId="3780-2e0c-1c08-df47" hidden="false">
+              <description>Counted as a ‘Power’ weapon for those rules that affect such weapons.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="94f8-39b6-2ff4-000c" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="e9be-6daa-219b-4726" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7200-0f1c-4685-0e7c" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5da-84ab-a618-b9b6" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad52-e77d-b2db-9e75" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2a86-119b-2096-e549" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="043a-856f-cd01-857f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="983b-c123-1334-30b6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4d4f-71ef-5b04-1bc6" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2617-10ce-cb0a-2902" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f37-793d-b5a1-c280" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6bc8-3f7d-06e9-b085" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2eb-36f5-f8a8-d7e8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d629-8243-cda4-f0cf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bfa1-0174-b5e6-f7b6" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4da5-d83c-9372-06d5" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb5c-5cb9-9152-b4dd" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9881-deda-7afa-9ad1" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ccc-b095-bfc3-5914" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd3-93c0-f607-d77d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="032f-99f1-af10-1550" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32aa-9418-fb01-eb4f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9a6c-5caa-4db0-44ab" name="Warlord: The Line Unbroken" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Camba Diaz automatically has the The Line Unbroken Warlord Trait and may not select any other.
+
+The Line Unbroken – At the end of the controlling player’s turn, if a Warlord with this Trait is within 3&quot; of an Objective marker that they control, the controlling player can declare that this Warlord will activate The Line Unbroken. Until the end of the battle, while this Warlord is within 3&quot; of that Objective marker, they have the Fearless and Counter-attack (1) special rules.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="19ce-b8dc-dd40-fee9" name="Phalanx Warder Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">

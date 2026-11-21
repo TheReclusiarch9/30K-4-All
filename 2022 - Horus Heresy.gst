@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2009" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2010" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
+    <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>

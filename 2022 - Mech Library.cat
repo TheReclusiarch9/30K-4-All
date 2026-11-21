@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2048" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2049" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -57,6 +57,109 @@ When deployed onto the battlefield (either at the start of the battle or when ar
     </categoryEntry>
   </categoryEntries>
   <sharedSelectionEntries>
+    <selectionEntry id="3c99-ff37-3369-466a" name="Machina Malefica" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ece-9f13-7430-6963" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="0093-ca1a-4d81-1256" name="Indicium Malefica (Cybertheurgic Rite)" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f52-4d25-1cd6-55ee" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="571d-b01e-27aa-8017" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="d10a-6169-4834-e4d0" name="Indicium Malefica (Cybertheurgic Rite)" publicationId="3780-2e0c-1c08-df47" hidden="false">
+              <description>A Cybertheurgist with this Cybertheurgic Rite may use it instead of making a Shooting Attack in the controlling player’s Shooting phase. When they do, the controlling player may select a single enemy unit and roll a D6 for each model (excluding model with the Vehicle Unit Type) in that unit that is within 6&quot; of the Cybertheurgist model. For each result that equals or beats that model’s Save characteristic, that model’s unit suffers one Wound, allocated by the Active player. Saving Throws and Damage Mitigation rolls can be taken against this Wound as normal. The controlling player then rolls a D6 for each affected model with the Vehicle Unit Type. For each result of 6, one affected model with the Vehicle Unit Type suffers a Crew Stunned result from the Vehicle Damage table.
+
+The Cybertheurgist may choose to make a Cybertheurgy check before using this Cybertheurgic Rite. If successful, every enemy model within 6&quot; of the Cybertheurgist model is affected instead.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e514-eafd-2a55-095b" name="Diabolis Quiritatus (Cybertheurgic Weapon)" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74a3-305a-77cb-90a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc85-401c-487d-860b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6fb9-384c-a522-1ee6" name="Diabolis Quiritatus (Cybertheurgic Weapon)" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Data-djinn, Rending (5+), Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f7cd-bff1-b8a9-d1e3" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (5+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="287c-89e9-8ad2-170f" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c549-f222-f26a-77b2" name="Ephemera Nekrotek" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="544a-c8f3-6f7f-8d28" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="dfa3-7c4d-b3c8-602a" name="Viteum Adficio (Cybertheurgic Rite)" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fe7-945d-5fda-9e9b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a96-06fe-a8d4-1421" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="cf70-5601-4465-0b46" name="Viteum Adficio (Cybertheurgic Rite)" publicationId="3780-2e0c-1c08-df47" hidden="false">
+              <description>A Cybertheurgist with this Cybertheurgic Rite may use it at the end of the controlling player’s Movement phase. When they do, the controlling player may select one friendly unit from the Mechanicum Faction that is within 6&quot; of the Cybertheurgist and roll up to three D6. For each result of 4+, one model in that unit suffers 1 Wound (or loses 1 Hull Point if it is a Vehicle unit), and the Cybertheurgist regains 1 lost Wound. Saving Throws and Damage Mitigation rolls cannot be taken against these Wounds.
+
+The Cybertheurgist may choose to make a Cybertheurgy check before using this Cybertheurgic Rite. If successful, the controlling player can re-roll any of the three D6 when using this Cybertheurgic Rite.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="08c1-26d2-09f1-d1b7" name="Tactus Mors (Cybertheurgic Weapon)" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c7a-2f08-03bb-f371" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e4-fc5e-0d06-449e" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="43be-615d-c05d-e492" name="Tactus Mors (Cybertheurgic Weapon)" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Haywire, Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ec4a-936e-893a-8f23" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+            <infoLink id="af19-4eba-fe2c-3584" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+            <infoLink id="a888-c33d-13d5-dcf8" name="Cybertheurgic Focus" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="e825-c60e-e6c3-60f0" name="Photon Gauntlet" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="b2b5-230a-997f-7f0c" name="Photon Gauntlet" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -7892,6 +7995,127 @@ This ability may not be used on any unit which is locked in combat, and may only
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="5930-3cd0-3a3f-4e3b" name="Malefikite" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="3723-ef0b-21b2-32fa" name="Malefikite" publicationId="3780-2e0c-1c08-df47" hidden="false">
+              <description>Proscribed Techno-arcana: A model with the Traitor Allegiance and the Orders of High Techno-arcana special rule can select one of the following Proscribed Techno-arcana instead of a High Techno-arcana as described in Liber Mechanicum. Unless otherwise stated, all effects must be applied to models and units that are selected as part of the Detachment that contains a model with that Proscribed Techno-arcana. Unlike Warlord Traits, effects granted to units within a Detachment by the Proscribed Techno-arcana persist should the model that possesses the Orders of Proscribed Techno-arcana rule be removed from play.
+
+• Bonds of Corruption: Any unit with the Cybernetica Unit Sub-type that is in the same Detachment as a model with this Proscribed Techno-arcana may be upgraded to have the Ruinous Cybernetica special rule for +10 points.
+
+• Magister Malefica: A model with this Proscribed Techno-arcana gains the Machina Malefica Cybertheurgic Arcana (see page 151), but the controlling player may not select any other Cybertheurgic Arcana from those available for it.
+
+• Malignant Vector: During any Shooting phase, instead of making a Shooting Attack, the controlling player of a model with this Proscribed Techno-arcana may select any friendly unit with the Cybernetica Unit Sub-type that has at least one model within 2&quot; of model with this Proscribed Techno-arcana and roll a D6 for it on the following table:
+1: The selected model suffers no further effect.
+2-3: All models in the selected unit gain the Ruinous Cybernetica special rule until the start of the controlling player’s next player turn.
+4+: All models in the selected unit gain the Ruinous Cybernetica special rule until the end of the battle.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="7ab8-8fa4-2dff-56bb" name="Ruinous Cybernetica" hidden="false" targetId="0259-d5c0-a177-735c" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1408-66d3-9542-c509" name="Nekrotek" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="f838-305d-9d7a-368a" name="Nekrotek" publicationId="3780-2e0c-1c08-df47" hidden="false">
+              <description>Proscribed Techno-arcana: A model with the Traitor Allegiance and the Orders of High Techno-arcana special rule can select one of the following Proscribed Techno-arcana instead of a High Techno-arcana as described in Liber Mechanicum. Unless otherwise stated, all effects must be applied to models and units that are selected as part of the Detachment that contains a model with that Proscribed Techno-arcana. Unlike Warlord Traits, effects granted to units within a Detachment by the Proscribed Techno-arcana persist should the model that possesses the Orders of Proscribed Techno-arcana rule be removed from play.
+
+• Mekanika Exanimate: Any unit composed entirely of models with the Cybernetica Unit Sub-type in the same Detachment as a model with this Proscribed Techno-arcana gains the It Will Not Die (5+) special rule.
+
+• Magos Necroteknica: A model with this Proscribed Techno-arcana gains the Ephemera Nekrotek Cybertheurgic Arcana, but may not select any other Cybertheurgic Arcana from those available to it.
+
+• Nekromorphic Locus: Increase the Wounds Characteristic of a model with this Proscribed Techno-arcana by 1.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fc55-5726-dc5d-cd96" name="Malamina" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="ebdb-72ed-0b06-37e6" name="Abomination blades" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Rampage (1), Breaching (4+), Bloodthirsty</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="586c-a0e4-0aff-fa0e" name="Malamina" publicationId="3780-2e0c-1c08-df47" hidden="false">
+              <description>Proscribed Techno-arcana: A model with the Traitor Allegiance and the Orders of High Techno-arcana special rule can select one of the following Proscribed Techno-arcana instead of a High Techno-arcana as described in Liber Mechanicum. Unless otherwise stated, all effects must be applied to models and units that are selected as part of the Detachment that contains a model with that Proscribed Techno-arcana. Unlike Warlord Traits, effects granted to units within a Detachment by the Proscribed Techno-arcana persist should the model that possesses the Orders of Proscribed Techno-arcana rule be removed from play.
+
+• Magos Abominatio: For each model with this Proscribed Techno-arcana in a Detachment, the controlling player can include one Infernus Abomination unit (see Campaigns of the Age of Darkness: The Siege of Cthonia) in the same Detachment as an Elites choice.
+
+• Armatus Malevolus: Any model in the same Detachment as a model with this Proscribed Techno-arcana can replace a power weapon or power blade array with abomination blades for +10 points per model.
+
+Bloodthirsty (abomination blades): Add +1 to To Hit rolls made for this weapon if any models in the target unit that have not been removed as a casualty are below their starting Wounds Characteristic.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="cf89-9f95-3410-b716" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+            <infoLink id="3c0c-9972-9815-77ed" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rampage (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="bda8-3ebf-7d9f-ec52" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Breaching (4+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3d20-0563-981d-0630" name="Æthertek" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="3fdf-1738-ae97-b7f6" name="Æthertek" publicationId="3780-2e0c-1c08-df47" hidden="false">
+              <description>Proscribed Techno-arcana: A model with the Traitor Allegiance and the Orders of High Techno-arcana special rule can select one of the following Proscribed Techno-arcana instead of a High Techno-arcana as described in Liber Mechanicum. Unless otherwise stated, all effects must be applied to models and units that are selected as part of the Detachment that contains a model with that Proscribed Techno-arcana. Unlike Warlord Traits, effects granted to units within a Detachment by the Proscribed Techno-arcana persist should the model that possesses the Orders of Proscribed Techno-arcana rule be removed from play.
+
+• Mechanika Ætherika: For each model with this Proscribed Techno-arcana in a Detachment, the controlling player can include one Decimator unit in the same Detachment as a non-compulsory Troops choice.
+
+• Opus Malefica: A model with this Proscribed Techno-arcana gains the Anima Malefica Cybertheurgic Arcana (see page 155), but may not select any other Cybertheurgic Arcana from those available to it.
+
+• Magos Invocatus: While a unit composed entirely of models with the Corrupted Engine Unit Sub-type is within 6&quot; of a model with this Proscribed Techno-arcana, all models in that unit are not affected by special rules that negatively modify their Characteristics (other than Wounds or Hull Points).</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="bd27-d2a1-da2b-f649" name="Cybertheurgic Arcana" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="false" import="true">
@@ -7919,6 +8143,9 @@ This ability may not be used on any unit which is locked in combat, and may only
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1408-66d3-9542-c509" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d20-0563-981d-0630" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
@@ -7933,6 +8160,9 @@ This ability may not be used on any unit which is locked in combat, and may only
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1408-66d3-9542-c509" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d20-0563-981d-0630" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
@@ -7947,6 +8177,9 @@ This ability may not be used on any unit which is locked in combat, and may only
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1408-66d3-9542-c509" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d20-0563-981d-0630" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                     <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="86dd-51d8-3669-68ca" type="instanceOf"/>
                   </conditions>
@@ -7982,10 +8215,30 @@ This ability may not be used on any unit which is locked in combat, and may only
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                     <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="aa94-5c65-d1f1-46a4" type="instanceOf"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1408-66d3-9542-c509" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="248e-daeb-a192-5684" name="Machina Malefica" hidden="true" collective="false" import="true" targetId="3c99-ff37-3369-466a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="98fe-4cd0-66ce-444f" name="Ephemera Nekrotek" hidden="true" collective="false" import="true" targetId="c549-f222-f26a-77b2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1408-66d3-9542-c509" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
@@ -8144,6 +8397,117 @@ This ability may not be used on any unit which is locked in combat, and may only
                 <profile id="db47-e617-14ca-4bdb" name="Master of the Household" publicationId="bde1-6db1-163b-3b76" page="88" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly model with the Vehicle Unit Type and the Knight Unit Sub-type within 8&quot; of a Warlord with this Warlord Trait may make Reactions as per the standard rules, ignoring the usual restriction for Knights and Titans. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="34b8-7269-b49b-1927" name="Scion of Cyclothrathe" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f9ed-0771-843d-c134" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2adb-ad71-2a76-1bad" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="58de-4bde-6386-7b8b" name="Scion of Cyclothrathe" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord selected from a Detachment that has the Mechanicum Faction and the Traitor Allegiance may select one of the following Warlord Traits instead of a Core Warlord Trait.
+
+When rolling to determine the effect of a weapon with the Haywire special rule against a model with the Corrupted Engine Unit Sub-type in an army whose Warlord has this trait, use the following Haywire Dampening table instead of that found on page 240 of the Warhammer Horus Heresy: Age of Darkness rulebook. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.
+
+Haywire Dampening Table: When a weapon with this special rule Hits a model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:
+1-3: No Effect.
+4-5: Vehicles suffer a Glancing Hit, whilst other models suffer 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.
+6: Vehicles suffer a Penetrating Hit, whilst Dreadnoughts and Automata suffer 1 Wound. No Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d885-cc76-2de1-7554" name="Scion of Xana II" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="43ec-87a7-bcd2-6bee" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a09-f7b2-0a3e-9619" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1904-27d1-e1a1-b885" name="Scion of Xana II" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord selected from a Detachment that has the Mechanicum Faction and the Traitor Allegiance may select one of the following Warlord Traits instead of a Core Warlord Trait.
+
+An army that includes a Warlord that has this Trait gains the following Advanced Reaction:
+
+Xanite Artifice – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase, when an enemy unit makes a Shooting Attack targeting a unit that includes any models with the Corrupted Engine Unit Sub-type controlled by the Reactive player. Improve the value in brackets of the Malefic Aegis (X) on all models in the targeted unit that already have a variant of that special rule by 1, to a maximum of 4+, until the end of the Shooting phase. This takes effect before any Armour Saves are rolled for models in the targeted unit (this Reaction does not grant the Malefic Aegis (X) special rule to any models that do not already have that special rule).
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="faec-7340-8553-6dd2" name="Scion of Retlaxi" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb5a-dca7-7678-ed7e" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c1d-4902-0178-af9e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3569-3c67-834c-1e12" name="Scion of Retlaxi" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord selected from a Detachment that has the Mechanicum Faction and the Traitor Allegiance may select one of the following Warlord Traits instead of a Core Warlord Trait.
+
+When a model with the Corrupted Engine Unit Sub-type that is part of the same Detachment as a Warlord with this Trait loses its last Wound or Hull Point, it is not immediately removed as a casualty. Instead, resolve a Strength 5+D3, AP 5 Hit against every model, friendly or enemy, within 3+D3&quot; of the model or the Vehicle’s Hull. Any unit that suffers one or more Hits due to this Warlord Trait must also take an immediate Pinning test (no unit may take more than a single Pinning test from the effects of this Warlord Trait). If another rule or effect would cause a similar set of attacks when a model controlled by this Warlord’s controlling player is removed from play, such as taking Catastrophic Damage or rolling on the Vehicle Damage table, the model’s controlling player chooses one of those effects to resolve and may not inflict more than a single set of Hits due to the removal of a single model.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3d3b-d7d4-b9e0-6f3b" name="Scion of Sarum" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8a11-34f9-45fb-5219" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cda4-2778-30c6-e502" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a8e5-0d7b-8815-34a9" name="Scion of Sarum" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord selected from a Detachment that has the Mechanicum Faction and the Traitor Allegiance may select one of the following Warlord Traits instead of a Core Warlord Trait.
+
+An army that includes a Warlord that has this Trait may select Blood Slaughterers as Troops and/or Fast Attack choices in the Detachment which includes the Warlord only. Any Blood Slaughterer units taken as Compulsory Troops choices gain the Line Unit Sub-type. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8326,6 +8690,15 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
+    <rule id="0259-d5c0-a177-735c" name="Ruinous Cybernetica" publicationId="3780-2e0c-1c08-df47" hidden="false">
+      <description>At the start of the controlling player’s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
+
+If that test is passed, until the end of the turn:
+• All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
+• At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 12&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
+
+If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
+    </rule>
     <rule id="41ab-227d-9d91-8001" name="Flank Speed" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
       <description>A model with this special rule may increase its Movement Distance by 4&quot; in any Movement phase, but if it does so it may not make any Shooting Attacks in the subsequent Shooting phase. Note this model may still Charge in the Assault phase. In addition, when declaring a Charge after making a Shooting Attack, a model with this special rule may Charge a unit that it did not target in that turn’s Shooting phase, provided that the target of the Charge meets all other criteria of a valid Charge target.</description>
     </rule>
