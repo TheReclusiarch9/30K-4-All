@@ -68782,6 +68782,7 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3294-1c9f-b79c-503a" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="b139-c8b7-a490-ab58" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
