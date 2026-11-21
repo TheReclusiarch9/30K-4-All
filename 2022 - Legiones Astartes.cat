@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2186" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2187" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -1488,7 +1488,7 @@ A model with the Infantry Unit Type that selects a Legion Spatha combat bike as 
       <profiles>
         <profile id="c404-06d0-257b-4814" name="Vigil Storm Shield" publicationId="817a-6288-e016-7469" page="228" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Vigil Storm Shield provides a 5+ Invulnerable Save or increases an Invulnerable Save the model already has by one step (for example, from 5+ to 4+, to a maximum of 3+). A model with a Vigil Storm Shield may not claim an additional attack for a second weapon in close combat or make attacks with any weapon that has the Two-handed Special Rule.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any model with both the Independent Character and Legiones Astartes (Imperial Fists) Special Rule that does not also have the Unique Unit Sub-type may take a Vigil Storm Shield for +15 points. Any model with the Legiones Astartes (Imperial Fists) Special Rule and Legion Cataphractii or Legion Tartaros Terminator Armour may exchange a Combi-Bolter for a Vigil Storm Shield for +10 points each. A Vigil Storm Shield provides a 5+ Invulnerable Save or increases an Invulnerable Save the model already has by one step (for example, from 5+ to 4+, to a maximum of 3+). A model with a Vigil Storm Shield may not claim an additional attack for a second weapon in close combat or make attacks with any weapon that has the Two-handed Special Rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -11061,7 +11061,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="4a0d-5c7f-74ad-bcf0" name="Kheres Assault Cannon" hidden="false" collective="false" import="true" targetId="fe77-2e74-160d-c7af" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink id="c0ea-6da3-9def-1e46" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
@@ -11140,7 +11140,7 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                 </entryLink>
                 <entryLink id="8616-94be-8027-2ccf" name="Kheres Assault Cannon" hidden="false" collective="false" import="true" targetId="fe77-2e74-160d-c7af" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
                 <entryLink id="2b44-5245-ee32-ee5b" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
@@ -34835,7 +34835,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Bombard)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
                 <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
@@ -35797,7 +35797,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
                 <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Bombard, Reinforced)</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
                 <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
                 <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
                 <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
@@ -40885,7 +40885,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
         <entryLink id="094c-f7a4-5641-78db" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="575"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8754-3a4f-213b-bdc0" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="unit">
@@ -41430,7 +41430,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
         <entryLink id="2cdb-cbf5-4e51-606a" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="600"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f24-2b72-9128-5330" name="Mastodon" hidden="false" collective="false" import="true" type="unit">
@@ -42044,7 +42044,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
         <entryLink id="b0b2-e4e6-4eb0-2f88" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="625"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f403-630f-71ae-5a7d" name="Sokar Stormbird" hidden="false" collective="false" import="true" type="model">
@@ -46726,7 +46726,7 @@ It is not know if this is a mistake or not, as previously like with the Mech boo
               <characteristics>
                 <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
                 <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">-</characteristic>
-                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">2</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
                 <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
                 <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
                 <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>

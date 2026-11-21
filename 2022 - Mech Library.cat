@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2045" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2046" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -7210,6 +7210,11 @@ A model with an activated Utan Jump Booster may move over both friendly and ene
             </profile>
           </profiles>
           <infoLinks>
+            <infoLink id="a2a1-8aaa-0225-8e34" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rage (2)"/>
+              </modifiers>
+            </infoLink>
             <infoLink id="8120-33f9-444b-326b" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
             <infoLink id="6ba9-579b-8358-6fe2" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
               <modifiers>

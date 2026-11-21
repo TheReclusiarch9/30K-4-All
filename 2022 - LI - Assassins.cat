@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2dde-e269-90db-8d33" name="LI - Assassins and Agents" revision="2012" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="2dde-e269-90db-8d33" name="LI - Assassins and Agents" revision="2013" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="c1fd-3919-f4bf-a990" name="Clade Adamus Assassin" publicationId="15a4-fc68-502d-48a9" page="120" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1661,6 +1661,7 @@ Note that weapons selected to fire in this manner must still follow the rules a
         </rule>
       </rules>
       <infoLinks>
+        <infoLink id="cbc0-8714-1a96-a1fc" name="Shattered Legionary" hidden="false" targetId="c945-2e01-a167-7734" type="rule"/>
         <infoLink name="Legiones Astartes (Sons of Horus)" id="9716-9048-e5e8-8b63" hidden="false" targetId="f4a2-e4ca-b8b2-35a1" type="rule"/>
         <infoLink name="Relentless" id="17f7-a503-78b3-7f48" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
       </infoLinks>
