@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="97bf-ffdb-3d04-a0ef" name="Questoris Household" revision="2008" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="97bf-ffdb-3d04-a0ef" name="Questoris Household" revision="2009" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <forceEntries>
     <forceEntry id="28d3-4be2-608d-bf8a" name="0. Questoris Household Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -36,6 +36,63 @@
     </forceEntry>
   </forceEntries>
   <entryLinks>
+    <entryLink id="5daa-f06a-310d-dd4a" name="Questoris Knight Moirax Talon" hidden="false" collective="false" import="false" targetId="1057-b62a-4343-9be8" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb61-e601-ab47-fb20" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="78b3-5224-b51e-2237" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="0b11-1426-483a-8b26" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1d13-7dec-b1ba-54ba" name="Knight Maeliviax" hidden="false" collective="false" import="false" targetId="1a0b-82a7-4c82-9fe0" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="2eaf-32d6-9d1d-d906">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="961c-6ffc-7e91-adb6" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="d21b-ab39-4ddf-9619" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="e59b-e81b-5ce1-0b02" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b343-920c-74e3-dac4" name="Knight Dominus" hidden="false" collective="false" import="false" targetId="9bba-0f55-47ac-8530" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="2eaf-32d6-9d1d-d906">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d926-652f-8436-30ce" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58a7-8821-3cd9-c73" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="5f7-c0fa-4d3-180c" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="28d3-4be2-608d-bf8a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="476c-866d-73cf-3c2f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="aca6-730a-b5a1-0231" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="58e1-3188-4fbd-e0a0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="f32d-4f08-ccfa-21bb" name="Divisio Tactica: Questoris Household" hidden="false" collective="false" import="false" targetId="807e-0cf8-7f28-7b6d" type="selectionEntry">
       <modifiers>
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
@@ -326,6 +383,7 @@
     </entryLink>
   </entryLinks>
   <catalogueLinks>
+    <catalogueLink id="e3f0-cbef-fdf4-da70" name="[Ingenium] Knights" targetId="ee7c-1a71-edb-acbd" type="catalogue" importRootEntries="false"/>
     <catalogueLink id="f98f-e172-8ed2-4bef" name="Mech Library" targetId="7265-8b7a-50ae-51ec" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="e123-456e-507c-5trb" name="Daemons - Bound Daemons" targetId="d114-c205-18d5-4e95" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="d37a-a16f-fc51-2b60" name="LI - Assassins and Agents" targetId="2dde-e269-90db-8d33" type="catalogue" importRootEntries="true"/>

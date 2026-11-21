@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="4f40-72d0-2942-778b" name="[Ingenium] Mechanicum" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="4f40-72d0-2942-778b" name="[Ingenium] Mechanicum" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="3" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry name="Magos Prime" type="unit" id="9a5a-a411-463d-b98a" page="6" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -778,6 +778,17 @@ Could not find rule: Command Protocols (Skitarius)</comment>
           <description>Once per game, at the start of the Controlling Player’s Shooting phase, you may nominate one unit with the Skitarii Sub-type unit within 12” of this model. This unit can re-roll failed to Hit rolls of 1 during that Shooting Phase.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="db2a-78c9-1175-1a97" name="Praetorian Retinue" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea44-c952-089d-96d9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="74bd-ad03-d092-f7eb" name="Praetorian Servitor Maniple" hidden="false" collective="false" import="true" targetId="3ad7-7e46-47b0-a70d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Sicarian Clademaster" type="unit" id="0e52-17c2-4d08-9b49" page="11" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -1068,6 +1079,17 @@ Could not find rule: Independent Character
 Could not find rule: Command Protocols (Kill-Clade)
 Taser Goad is in two option lists for Sicarian Clademaster, you will need to combine them by hand.
 Stubcarbine is in two option lists for Sicarian Clademaster, you will need to combine them by hand.</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9501-c0b2-2f88-1a2d" name="Praetorian Retinue" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1866-3195-e944-a56e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2bfe-92fd-ba92-1f10" name="Praetorian Servitor Maniple" hidden="false" collective="false" import="true" targetId="3ad7-7e46-47b0-a70d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Praetorian Servitor Maniple" type="unit" id="3ad7-7e46-47b0-a70d" page="12" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -1444,6 +1466,17 @@ Could not find wargear Personal Void
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Independent Character
 Could not find rule: Warlord: The Logic of Victory*</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ef72-7479-2fab-00bf" name="Praetorian Retinue" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.87: Praetorian Retinue (Independent Character with Feudal Hierarchy or Command Node)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47e-0a62-5ba6-f939" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="88b2-dfc6-b8ae-91ab" name="Praetorian Servitor Maniple" hidden="false" collective="false" import="true" targetId="3ad7-7e46-47b0-a70d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Kelbor-Hal" type="unit" id="7d76-881f-4660-aeae" page="16" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -2314,6 +2347,32 @@ Could not find rule: Marksman Teams (Vectorii Team only)</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="a5de-0af9-a366-d52c" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.23</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="643d-8b53-6c43-0a0a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4417-c22c-d8f3-9fae" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="95d4-05b4-4256-beea" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="018f-666c-4720-a52c" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="9211-c434-88ea-4271" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="018f-666c-4720-a52c" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="The Kill-Clade must select one of the following upgrades:" id="c3c9-cc9f-46de-86c5">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="540b-2c00-43ae-9462"/>
@@ -2780,6 +2839,16 @@ Could not find wargear Machinator Array with in-built Prehensile Data-spike
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="688c-9aff-0260-bcaa" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.26</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5900-ebfd-cabb-55ce" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a9c9-41f0-e636-9989" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="95d4-05b4-4256-beea" type="selectionEntry"/>
+            <entryLink id="1438-a64d-0e70-9f7f" name="Porphetian Armoured Carrier" hidden="false" collective="false" import="true" targetId="fca2-504c-4bf1-b816" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="The unit may purchase:" id="6882-76d3-4319-89fc">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="374f-0b66-48b1-8bd1"/>
@@ -3103,6 +3172,32 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="db7e-dd81-9419-d202" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.32</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f6-894f-7aed-a1a6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1dae-d243-c928-d94a" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="95d4-05b4-4256-beea" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ac2d-8025-4c68-9ecb" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="9e1e-9ecb-6980-7b0a" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="ac2d-8025-4c68-9ecb" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One Skitarii Vanguard may take a:" id="3d9e-63d4-4529-93b3">
           <entryLinks>
             <entryLink name="Augury Scanner" hidden="false" type="selectionEntry" targetId="595f-ed8a-4597-8890" id="4c57-e10d-4bfc-91a0">
@@ -3340,6 +3435,32 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="b802-576d-7dff-cb68" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.33</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5df7-f8f5-1521-0395" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9c26-6a33-675d-f701" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="95d4-05b4-4256-beea" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="5d5e-9998-45ab-a2b1" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="0690-d9eb-dd13-ddf5" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="5d5e-9998-45ab-a2b1" value="20" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One Skitarii Ranger may take a:" id="a0c8-aae3-4e79-a48a">
           <entryLinks>
             <entryLink name="Augury Scanner" hidden="false" type="selectionEntry" targetId="595f-ed8a-4597-8890" id="8c83-30f8-46b2-ae69">
@@ -3501,6 +3622,24 @@ Could not find type or subtype &apos;Frag Grenades&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="1f57-9564-8c86-d859" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.34</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df67-aee6-5020-b354" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cdbc-a284-0552-a0d4" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="95d4-05b4-4256-beea" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="47e1-1640-4c1b-9868" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e6d6-a215-b0c6-7476" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="One Skitarii Decimator may take a:" id="3876-e2f8-41a8-9968">
           <entryLinks>
             <entryLink name="Augury Scanner" hidden="false" type="selectionEntry" targetId="595f-ed8a-4597-8890" id="f311-a926-4cf9-bd20">
@@ -3640,6 +3779,24 @@ The option &apos;Arcana Potentis&apos; may need a &apos;multiply by number of mo
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
+        <selectionEntryGroup id="57cb-640f-8e61-1576" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <comment>Liber Ingenium p.35</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5224-c777-9b6b-b8f0" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="4018-b646-c1db-05a0" name="Skorpius Dunerider" hidden="false" collective="false" import="true" targetId="95d4-05b4-4256-beea" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="2048-5044-4f8a-92aa" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b2a6-0e39-8003-ea92" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
         <selectionEntryGroup name="The entire squad must select one of the following options (all models in the unit must take the same option):" id="8230-315a-40b0-8452">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb46-4c6d-4c0a-b4d2"/>
