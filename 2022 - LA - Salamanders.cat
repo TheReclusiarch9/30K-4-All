@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2042" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -5327,6 +5327,8 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="a04c-8da9-1566-b4fa" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
+            <entryLink id="3000-3c10-01a9-f1ab" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry"/>
             <entryLink id="df4-de3f-bae7-883f" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -5543,15 +5545,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
                       </entryLinks>
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f21-ec64-f803-96bd"/>
-                        <constraint type="max" value="0" field="selections" scope="3720-9b50-f599-76ea" shared="true" id="9b92-8d89-15af-a7db" includeChildSelections="true"/>
                       </constraints>
-                      <modifiers>
-                        <modifier type="increment" value="1" field="9b92-8d89-15af-a7db">
-                          <repeats>
-                            <repeat value="5" repeats="1" field="selections" scope="3720-9b50-f599-76ea" childId="model" shared="true" roundUp="false" id="675c-c57a-e464-ed28" includeChildSelections="true"/>
-                          </repeats>
-                        </modifier>
-                      </modifiers>
                     </selectionEntry>
                   </selectionEntries>
                   <constraints>

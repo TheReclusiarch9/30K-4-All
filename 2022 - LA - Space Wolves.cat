@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6454-e18-28f-fbfb" name="LA -   VI: Space Wolves" revision="2036" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6454-e18-28f-fbfb" name="LA -   VI: Space Wolves" revision="2037" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="ff53-69d9-ec0b-9caa" name="VI: Space Wolves" hidden="false" collective="false" import="false" targetId="4916-965e-8339-44f6" type="selectionEntry">
       <modifiers>
@@ -6420,6 +6420,8 @@
         </rule>
       </rules>
       <infoLinks>
+        <infoLink id="f536-8fde-1ee5-f5da" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
+        <infoLink id="4eaa-83ae-08c3-e58d" name="Skirmish Sub-type" hidden="false" targetId="e02b-5fd3-aa3b-4fc4" type="rule"/>
         <infoLink id="afa9-1075-837c-87d1" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
         <infoLink id="693a-d7ee-ebb9-7fb5" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
         <infoLink id="f47d-7db5-4357-2fd8" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
@@ -6437,7 +6439,7 @@
           <profiles>
             <profile id="08d2-a1d4-0fd8-f9e5" name="Hunter" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -6456,6 +6458,7 @@
           </costs>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="a61a-c1fb-4dcb-a91a" name="Infantry:" primary="false"/>
+            <categoryLink targetId="59a4-7b61-600a-c457" id="9b11-d685-3c1e-04a1" name="Skirmish Sub-type:" primary="false"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry id="0a7d-31ab-699e-1377" name="Hunt-master" hidden="false" collective="false" import="true" type="model">
@@ -6473,7 +6476,7 @@
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Skirmish)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -6490,6 +6493,7 @@
           <categoryLinks>
             <categoryLink id="4660-da5d-c2a4-9da0" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="5353-ae48-478f-a300" name="Infantry:" primary="false"/>
+            <categoryLink targetId="59a4-7b61-600a-c457" id="e97f-e206-acf8-5603" name="Skirmish Sub-type:" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="7f67-db6e-5008-8432" name="4) May take:" hidden="false" collective="false" import="true">
