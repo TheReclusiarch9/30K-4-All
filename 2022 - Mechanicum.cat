@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="eb19-d768-b767-c84b" name="Mechanicum" revision="2044" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
+    <entryLink id="8cbd-8250-3df3-465d" name="Blood Slaughterer" hidden="true" collective="false" import="true" targetId="2d70-676d-68aa-1973" type="selectionEntry">
+      <comment>Scion of Sarum: Blood Slaughterers as Troops (Fast Attack is the default slot)</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d3b-d7d4-b9e0-6f3b" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="20ef-cd01-a8da-376e"/>
+        <modifier type="remove" field="category" value="3c75-d5f8-1ad4-24e5"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="07b2-13a9-20c7-0366" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="f416-61ee-8121-735a" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0ea5-cafc-b3a9-5430" name="Decimator" hidden="true" collective="false" import="true" targetId="b1a5-42a-a6ee-2223" type="selectionEntry">
+      <comment>Æthertek: one Decimator per Æthertek model as a non-compulsory Troops choice</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d20-0563-981d-0630" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="7031-469a-1aeb-eab0"/>
+        <modifier type="remove" field="category" value="030f-3801-4f54-e7f8"/>
+        <modifier type="increment" field="ca72-e71f-c7ef-31d7" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d20-0563-981d-0630" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ca72-e71f-c7ef-31d7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c90c-a71c-e313-bbc5" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1fcf-4495-a53e-2eff" name="Infernus Abomination" hidden="true" collective="false" import="true" targetId="3928-63ee-20a9-f84b" type="selectionEntry">
+      <comment>Malamina: one Infernus Abomination per Malamina model as an Elites choice</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="484a-728a-963a-5d7c" value="1">
+          <repeats>
+            <repeat field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="484a-728a-963a-5d7c" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8560-d2a1-4735-66f4" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="1647-1dd0-6a26-4815" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="dadb-f5a9-20c8-f415" value="2">
@@ -819,6 +880,16 @@
               </costs>
             </entryLink>
             <entryLink id="b8bf-23f2-b55a-be13" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
+            <entryLink id="e64d-5f4b-264c-6a6f" name="Abomination Blades (Armatus Malevolus)" hidden="true" collective="false" import="true" targetId="75a6-35c5-4355-3911" type="selectionEntry">
+              <comment>Malamina: Armatus Malevolus, replaces a power weapon or power blade array for +10 points</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="de1b-c169-e406-509d" name="May take one of the following options:" hidden="false" collective="false" import="true">
@@ -1076,6 +1147,16 @@
               </costs>
             </entryLink>
             <entryLink id="0424-b8f3-ec2b-4513" name="Extrinsica Melee Weapon" hidden="false" collective="false" import="true" targetId="842a-9c2b-c86c-434c" type="selectionEntryGroup"/>
+            <entryLink id="add1-f3da-26a0-ac1a" name="Abomination Blades (Armatus Malevolus)" hidden="true" collective="false" import="true" targetId="75a6-35c5-4355-3911" type="selectionEntry">
+              <comment>Malamina: Armatus Malevolus, replaces a power weapon or power blade array for +10 points</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7a33-fa4c-6c53-b688" name="May take any of the following options:" hidden="false" collective="false" import="true">
@@ -1434,6 +1515,16 @@
             <entryLink id="ee3c-f2ec-2b2f-3a59" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
             <entryLink id="add4-8e01-caf8-ac0e" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
             <entryLink id="d346-3f15-034c-2f55" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+            <entryLink id="ef5d-5b12-42fc-68f1" name="Abomination Blades (Armatus Malevolus)" hidden="true" collective="false" import="true" targetId="75a6-35c5-4355-3911" type="selectionEntry">
+              <comment>Malamina: Armatus Malevolus, replaces a power weapon or power blade array for +10 points</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1663,6 +1754,16 @@
             <entryLink id="9638-717a-ccf5-7361" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
             <entryLink id="f755-06ff-0135-eeac" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
             <entryLink id="f388-cb25-32e1-4576" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+            <entryLink id="cf73-7f81-dd90-1ef2" name="Abomination Blades (Armatus Malevolus)" hidden="true" collective="false" import="true" targetId="75a6-35c5-4355-3911" type="selectionEntry">
+              <comment>Malamina: Armatus Malevolus, replaces a power weapon or power blade array for +10 points</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2159,9 +2260,34 @@
               </constraints>
             </entryLink>
             <entryLink id="6e5f-7dde-4dcd-2546" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="5c76-1331-6466-5f98" value="0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a6-35c5-4355-3911" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="8003-704b-9ba6-5aa0" value="0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a6-35c5-4355-3911" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c76-1331-6466-5f98" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8003-704b-9ba6-5aa0" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5ce5-da21-dd2f-2a62" name="Abomination Blades (Armatus Malevolus)" hidden="true" collective="false" import="true" targetId="75a6-35c5-4355-3911" type="selectionEntry">
+              <comment>Malamina: Armatus Malevolus, replaces a power weapon or power blade array for +10 points</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3527-13f4-590b-db99" type="max"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="a260-ae95-5b91-6696" targetId="bd27-d2a1-da2b-f649">
@@ -3392,6 +3518,21 @@ This unit may be upgraded freely as described in their profile, though they may 
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="c211-0837-3b70-114d" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae3d-966f-e448-425f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
@@ -3654,6 +3795,21 @@ On a Game Turn in which a model armed with Stratos Thrusters activates them, th
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="2e13-aebf-81e1-a955" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d2-b6b3-cf0c-e6e9" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>

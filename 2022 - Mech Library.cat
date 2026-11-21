@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2049" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2050" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -57,6 +57,47 @@ When deployed onto the battlefield (either at the start of the battle or when ar
     </categoryEntry>
   </categoryEntries>
   <sharedSelectionEntries>
+    <selectionEntry id="75a6-35c5-4355-3911" name="Abomination Blades (Armatus Malevolus)" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1a37-28b2-f826-5a93" name="Abomination blades" publicationId="3780-2e0c-1c08-df47" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Rampage (1), Breaching (4+), Bloodthirsty</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="436f-43f7-b442-232e" name="Bloodthirsty" publicationId="3780-2e0c-1c08-df47" hidden="false">
+          <description>Add +1 to To Hit rolls made for this weapon if any models in the target unit that have not been removed as a casualty are below their starting Wounds Characteristic.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="7828-784d-eb55-33f5" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="f3fb-d69b-abfd-01f4" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rampage (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3bf0-774e-0fb3-2f6a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4352-576e-6168-0de3" name="Bonds of Corruption (Ruinous Cybernetica)" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2903-6b09-5474-7a3a" name="Ruinous Cybernetica" hidden="false" targetId="0259-d5c0-a177-735c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="3c99-ff37-3369-466a" name="Machina Malefica" publicationId="3780-2e0c-1c08-df47" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ece-9f13-7430-6963" type="max"/>
@@ -4720,9 +4761,34 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   </rules>
                   <entryLinks>
                     <entryLink id="53f7-0e77-0d69-7639" name="Power Blade Array" hidden="false" collective="false" import="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="decrement" field="ef6c-fd23-95da-b815" value="1">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a6-35c5-4355-3911" type="greaterThan"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="decrement" field="8428-80d0-ef90-ce59" value="1">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a6-35c5-4355-3911" type="greaterThan"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef6c-fd23-95da-b815" type="min"/>
                         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8428-80d0-ef90-ce59" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4695-a9d9-dcb9-fbf2" name="Abomination Blades (Armatus Malevolus)" hidden="true" collective="false" import="true" targetId="75a6-35c5-4355-3911" type="selectionEntry">
+                      <comment>Malamina: Armatus Malevolus, replaces a power weapon or power blade array for +10 points</comment>
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5b6-8987-1853-5b0c" type="max"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -4828,6 +4894,19 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b442-486a-dd6e-11f0" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ae7c-c7fe-910f-4207" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b15f-35f8-d7ad-0c3a" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -5057,6 +5136,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="c383-a210-c840-96e6" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85b1-aed5-c996-4b1f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
@@ -5517,6 +5611,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="72e9-3c68-9a6b-f92b" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1cb-a619-6ad6-1587" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -5670,9 +5779,34 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
           <entryLinks>
             <entryLink id="c311-0ae9-b3d6-2ca4" name="Power Blade Array" hidden="false" collective="true" import="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
+              <modifiers>
+                <modifier type="decrement" field="a932-5045-69d6-37cb" value="1">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a6-35c5-4355-3911" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="1500-724d-9062-8de1" value="1">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a6-35c5-4355-3911" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a932-5045-69d6-37cb" type="min"/>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1500-724d-9062-8de1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2c38-8f15-0c27-3339" name="Abomination Blades (Armatus Malevolus)" hidden="true" collective="false" import="true" targetId="75a6-35c5-4355-3911" type="selectionEntry">
+              <comment>Malamina: Armatus Malevolus, replaces a power weapon or power blade array for +10 points</comment>
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fc55-5726-dc5d-cd96" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b9f-e00f-af58-faa2" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="f4fc-e562-6969-7d11" name="Rotor Cannon" hidden="false" collective="true" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
@@ -5742,6 +5876,19 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
+        </entryLink>
+        <entryLink id="831c-3311-46b8-240c" name="Bonds of Corruption (Ruinous Cybernetica)" hidden="true" collective="false" import="true" targetId="4352-576e-6168-0de3" type="selectionEntry">
+          <comment>Malefikite: Bonds of Corruption, +10 points per unit</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5930-3cd0-3a3f-4e3b" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f89e-8bed-1c98-9814" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
