@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d6af-8c96-7a52-cbfa" name="LA -  X: Iron Hands" revision="2047" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d6af-8c96-7a52-cbfa" name="LA -  X: Iron Hands" revision="2048" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="d63b-a09a-df7b-fb46" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -4119,6 +4119,50 @@
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="9283-1898-4a3b-8f5f" name="Infantry:" primary="false"/>
                 <categoryLink targetId="9231-183c-b97b-63f9" id="8350-35d1-49db-8dbc" name="Heavy Sub-type:" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry id="e460-b7d0-5c06-d6b2" name="Immortal w/Power Weapon (1 in 5)" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="increment" field="ae07-5c71-540a-951c" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="f9e4-0da2-5049-df81" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="f9e4-0da2-5049-df81" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae07-5c71-540a-951c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ccbb-44ca-6e0f-8602" name="Immortal" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="ea52-f641-8712-3968" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35be-b091-48e6-5c81" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c296-31ad-4590-97c8" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="28"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="cc6d-c239-f1e1-a2c5" name="Infantry:" primary="false"/>
+                <categoryLink targetId="9231-183c-b97b-63f9" id="bfe2-097c-062c-300f" name="Heavy Sub-type:" primary="false"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="e55b-24af-5f9c-7361" name="Immortal w/Volkite Charger" hidden="false" collective="false" import="true" type="model">
