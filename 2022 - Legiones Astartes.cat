@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2195" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2196" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -70399,6 +70399,83 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6a95-5d4c-4ce5-cc44" name="Psychic Discipline: Sinistrum" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1851-464e-b5a6-ac9e" name="Ancient Fury" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">6</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Heavy Beam, Breaching (5+), Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d542-73f8-a7fa-114a" name="Wrathful Fire" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Blast (3&quot;), Crawling Fire, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e60-efd9-bf27-140f" name="Veil of Time" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may choose to take a Psychic Test. If the test is passed, select a single friendly unit within 6” – this unit gains the Shrouded (5+) and Fleet (2) Special Rules until the start of the Controlling Player’s Next Game Turn. If the test is failed, then the target unit gains no benefit and the Psyker suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7ba0-07ea-3971-b414" name="Psychic Discipline: Sinistrum" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false">
+          <description>A model with the Psyker Sub-type and the Legiones Astartes (Thousand Sons) Special Rule which would normally be permitted to select a Psychic Discipline from the options presented in the Horus Heresy: Age of Darkness Core Rulebook may instead select one of the following unique disciplines. Magnus the Red always knows these Psychic Disciplines.
+
+A Psyker with this Discipline gains all the listed Powers, weapons and other Special Rules, as well as the Aetheric Lightning Psychic Weapon.
+
+Ancient Fury (Psychic Weapon)
+Wrathful Fire (Psychic Weapon)
+Veil of Time (Psychic Power)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="c9e8-cc26-7b13-b6ec" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="3b96-04db-bc58-c974" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="167a-87c8-ec56-40d3" name="Psychic Discipline: Geomancy" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="88b6-855e-8687-889f" name="Sundered Earth" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Barrage, Ignores Cover, Massive Blast (7&quot;), Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="49d8-a205-9861-d605" name="Warp Quake" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may choose to take a Psychic Test. If the test is passed, select a single enemy unit, Building, Ruin, or Fortification within 24”. If this unit is a Vehicle, Building, Fortification, or ruin, roll a D6 – on a roll of 1, nothing happens. On a roll of 2-4, it suffers an immediate Glancing Hit. On a roll of a 5 or 6, it suffers an immediate Penetrating Hit. Attacks with this weapon have no AP value. If the selected unit is not any of the types listed above, each model must take an immediate Initiative Test with a -1 modifier. If they fail, they suffer a single wound with an AP value of 4, and the unit they are in is immediately counted as having failed a Pinning Test. If the test is failed, then a target unit may not be selected, and the Psyker suffers Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bd39-364b-af81-48f4" name="Psychic Discipline: Geomancy" publicationId="3970-79bb-bdc6-9599" page="178" hidden="false">
+          <description>A model with the Psyker Sub-type and the Legiones Astartes (Thousand Sons) Special Rule which would normally be permitted to select a Psychic Discipline from the options presented in the Horus Heresy: Age of Darkness Core Rulebook may instead select one of the following unique disciplines. Magnus the Red always knows these Psychic Disciplines.
+
+A Psyker with this Discipline gains all the listed Powers, weapons and other Special Rules, as well as the Aetheric Lightning Psychic Weapon.
+
+Sundered Earth (Psychic Weapon)
+Warp Quake (Psychic Power)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="35fe-ae86-c229-1f96" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="652b-0ede-ad79-d49c" name="Aetheric Lightning" hidden="false" targetId="3d0c-e779-247f-0332" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -72149,6 +72226,71 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="931b-a2b1-2b20-98f7" name="Terran-Born Crusader" publicationId="3970-79bb-bdc6-9599" page="70" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                  <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="dc34-6267-f7bd-cc69" name="Terran-Born Crusader" publicationId="3970-79bb-bdc6-9599" page="70" hidden="false">
+              <description>A Legion Centurion, Legion Cataphractii Centurion, Legion Tartaros Centurion, or Legion Indomitus Centurion with the Loyalist Allegiance may select this option instead of the Legiones Consularis Consul upgrades found elsewhere, for a cost of +30 points.
+
+Special Rules: The Terran-Born Crusader gains the Blood of a Thousand Worlds and In the Light of the Emperor Special Rules.
+
+Wargear: The Terran-Born Crusader may grant the Master-Crafted Special Rule to a single weapon they are armed with at no additional points cost.
+
+Blood of a Thousand Worlds: The Terran-Born Crusader, and any unit he joins, gain the Preferred Enemy (Traitor) and Stubborn Special Rules.
+
+In the Light of the Emperor: The Terran-Born Crusader gains the Adamantium Will (5+) Special Rule. When any unit with either the Corrupted or Daemon Unit Sub-types is within 12” of the Terran-Born Crusader, that unit receives a -1 penalty to its Leadership for all Morale tests it takes. In addition, when determining what bonuses or penalties a unit with the Daemon Sub-type receives as a result of the current Game Turn, any unit within 12” of the Terran-Born Crusader counts the turn counter as one higher than its true value.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="9d7c-7a9b-83bd-1644" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1010-6827-b18a-aab6" name="Lodge Master" publicationId="3970-79bb-bdc6-9599" page="71" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                  <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="5809-7ea9-73d4-24f3" name="Lodge Master" publicationId="3970-79bb-bdc6-9599" page="71" hidden="false">
+              <description>A Legion Centurion, Legion Cataphractii Centurion, Legion Tartaros Centurion, or Legion Indomitus Centurion with the Traitor Allegiance may select this option instead of the Legiones Consularis Consul upgrades found elsewhere, for a cost of +30 points.
+
+Special Rules: The Lodge Master gains the Preferred Enemy (Loyalists), Exemplar of Treason, and I Can’t Say Special Rules.
+
+Exemplar of Treason: The Lodge Master has a Leadership Characteristic of 10. In addition, the Lodge Master and any unit they have joined automatically pass any Leadership Tests they are required to make.
+
+I Can’t Say: Before the game begins, a Detachment which contains a Lodge Master must select a secret objective from the list below. This should be noted down, and only revealed to your opponent after the game ends. If at the end of the game, this objective has not been achieved, your opponent gains 1 Victory Point.
+• Mentor to All - Select a friendly Independent Character from the same Detachment as the Lodge Master (note this cannot be the Lodge Master himself). If that model survives the game, you gain 1 Victory Point.
+• Hand of the Warmaster – At the end of the game, whilst totalling up Victory Points, the Lodge Master is counted as having the Line Sub-type for the purposes of determining whether they are controlling Objectives. If the Lodge Master is holding an Objective outside of your deployment zone at the end of the game, you gain 1 Victory Point.
+• Killer of Gods and Kings – If an enemy model with the Primarch Unit type is slain by a model with the same Legiones Astartes (X) Special Rule as the Lodge Master, you gain 1 Victory Point.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="c5ba-a1ef-d0a4-5b7c" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e909-feba-d9e9-1efa" name="Perdition Weapon" hidden="false" collective="false" import="true">
@@ -73632,6 +73774,24 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b1a0-babc-ffa4-d4ec" name="Psychic Discipline: Sinistrum (Thousand Sons)" hidden="false" collective="false" import="true" targetId="6a95-5d4c-4ce5-cc44" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="cbcb-dfe3-64c0-5846" name="Psychic Discipline: Geomancy (Thousand Sons)" hidden="false" collective="false" import="true" targetId="167a-87c8-ec56-40d3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
