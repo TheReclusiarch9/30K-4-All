@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2193" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2194" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -859,6 +859,13 @@ Additional rules are given to units based on Legion and Unit.</description>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Legion Saturnine Centurion may purchase one of the following shoulder-mounted weapons:" id="26cd-6a9a-40bb-87af">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="5695-24a2-4914-b66f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5775-0d94-8e13-8c1f" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink name="Heavy Bolter" hidden="false" type="selectionEntry" targetId="6024-6953-b8f4-ce63" id="2074-cc77-49cc-8273">
                   <costs>
@@ -906,6 +913,13 @@ Additional rules are given to units based on Legion and Unit.</description>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Legion Saturnine Centurion that has also selected the Legion Forge Lord Legiones Consularis upgrade may instead purchase the following shoulder-mounted weapon:" id="3f0a-30d0-4e78-aa97">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="3e29-1bf1-48c9-b302" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink name="Conversion Beam Cannon" hidden="false" type="selectionEntry" targetId="5775-0d94-8e13-8c1f" id="debf-78e0-4b8e-8fe9">
                   <costs>
@@ -971,6 +985,33 @@ Could not find wargear Legion Saturnine Terminator Armour
 ● Legion Forge Lord................................................. +40 points ● Legion Siege Breaker ............................................ +45 points ● Legion Mortificator .............................................. +25 points</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2f87-8fdd-bc5f-165c" name="Legiones Consularis" hidden="false" collective="false" import="true" publicationId="3970-79bb-bdc6-9599" page="8">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df4f-46aa-fd20-5ae4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ca9c-849f-a345-ba31" name="Legiones Consularis" hidden="false" targetId="5a1d-d2f6-692b-d834" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+          <entryLink id="b1ad-c486-73a9-7ea9" name="Forge Lord" hidden="false" collective="false" import="true" targetId="62c8-8f27-9673-8450" type="selectionEntry">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83fb-0c00-a675-3313" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="0f7f-23e5-05ff-2a44" name="Siege Breaker" hidden="false" collective="false" import="true" targetId="9335-7da8-087e-30de" type="selectionEntry">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b2-a8d6-e76a-853a" type="max"/>
+            </constraints>
+          </entryLink>
+          <entryLink id="4197-2f93-6b6f-36ab" name="Mortificator" hidden="false" collective="false" import="true" targetId="368d-0cdc-5ce6-eb38" type="selectionEntry">
+            <constraints>
+              <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d57c-6ce5-ca8f-ca70" type="max"/>
+            </constraints>
+          </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Battle Hardened (1)
 Could not find rule: Independent Character
