@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2017" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2018" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -4367,6 +4367,44 @@ This option replaces the weapon it is taken on.</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d4c9-0d25-d88a-3a71" name="Upgrade to Gravis Shrapnel Cannon Battery" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5613-6f49-2170-0113" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9805-d064-cdb7-47f5" name="Gravis Shrapnel Cannon Battery" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 7, Twin-Linked, Pinning</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="6fc2-f8b3-53ba-9422" name="Olympian Shrapnel Weapons" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Iron Warriors) Special Rule may upgrade all Gravis Heavy Bolter Batteries in the unit for Gravis Shrapnel Cannon Batteries for a cost of +10 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="949e-312e-bb9e-c382" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+            <infoLink id="ec89-902d-ed04-408f" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7391,6 +7429,44 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
               </modifiers>
             </infoLink>
             <infoLink id="c44a-c797-4690-5088" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4bd4-697f-e919-7f8e" name="Upgrade to Twin-Linked Shrapnel Cannon" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16e1-d79e-fe20-c427" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8e5a-08df-f861-af95" name="Twin-Linked Shrapnel Cannon" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Twin-Linked, Pinning</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="3091-855f-58af-5d58" name="Olympian Shrapnel Weapons" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Iron Warriors) Special Rule may upgrade all Twin-Linked Heavy Bolters in the unit for Twin-Linked Shrapnel Cannons for a cost of +2 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="f72b-0a01-b140-37e2" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+            <infoLink id="6cb8-ffe8-c64b-e8ea" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
