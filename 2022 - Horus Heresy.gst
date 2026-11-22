@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2015" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2016" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -3967,6 +3967,49 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry id="791d-6d65-fcfc-d00f" name="Upgrade to Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85c7-d404-3a2e-2117" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5426-4ec4-5f08-356a" name="Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Poisoned (3+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="9f5d-f5b5-4ca0-8929" name="Xenobane Cannons" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Dark Angels) Special Rule may upgrade all Heavy Bolters in the unit for Xenobane Cannons for a cost of +2 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="3316-6a37-488d-eeee" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Poisoned (3+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -3985,6 +4028,50 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       <infoLinks>
         <infoLink id="bd24-d650-5310-824d" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="a4de-d35f-0432-f701" name="Upgrade to Gravis Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4d5-2ac7-1dd9-4307" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ec37-e913-9a80-a56f" name="Gravis Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Poisoned (3+), Twin-Linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="1dd8-4956-7098-8358" name="Xenobane Cannons" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Dark Angels) Special Rule may upgrade all Gravis Bolt Cannons in the unit for Gravis Xenobane Cannons for a cost of +5 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="3a9f-0c6d-5961-7d41" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Poisoned (3+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="0f93-9a17-8806-cce2" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -4003,6 +4090,50 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       <infoLinks>
         <infoLink id="30ef-c174-b73a-7da0" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="d333-0875-846a-6634" name="Upgrade to Gravis Xenobane Cannon Battery" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a196-5228-b0e1-fd3b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="79d3-3ae8-93af-921d" name="Gravis Xenobane Cannon Battery" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Poisoned (3+), Twin-Linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="e145-837f-f6d5-209d" name="Xenobane Cannons" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Dark Angels) Special Rule may upgrade all Gravis Heavy Bolter Batteries in the unit for Gravis Xenobane Cannon Batteries for a cost of +5 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="62b2-d393-85ed-983e" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Poisoned (3+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="bf04-de2c-1bd2-4895" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -6988,6 +7119,50 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
       <infoLinks>
         <infoLink id="5dd3-ef0d-30a1-50a4" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="652f-2523-e83b-51c3" name="Upgrade to Twin-linked Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c638-6ed7-ecc2-4588" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4f30-95a1-5ed9-6d1e" name="Twin-linked Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Poisoned (3+), Twin-linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="5911-eae5-f234-0800" name="Xenobane Cannons" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Dark Angels) Special Rule may upgrade all Twin-Linked Heavy Bolters in the unit for Twin-Linked Xenobane Cannons for a cost of +2 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="3901-2cb9-3fdd-fda3" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Poisoned (3+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c44a-c797-4690-5088" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -9146,6 +9321,49 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
       <infoLinks>
         <infoLink id="ac43-e1ed-5a3d-8820" name="Heavy Bolter" hidden="false" targetId="d96e-a893-dc91-7f8b" type="profile"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="cc68-74e4-1c87-b278" name="Upgrade to Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50f5-1286-9e1b-bac5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0665-dbfc-7bcf-8eb8" name="Xenobane Cannon" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Poisoned (3+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="72dc-2c20-7f35-1abf" name="Xenobane Cannons" publicationId="3970-79bb-bdc6-9599" page="98" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Dark Angels) Special Rule may upgrade all Heavy Bolters in the unit for Xenobane Cannons for a cost of +2 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="558e-0421-de7e-ceeb" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Poisoned (3+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
