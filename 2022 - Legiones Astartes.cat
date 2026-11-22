@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2200" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2201" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -13423,6 +13423,25 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
+                <entryLink id="3fc7-a9a1-bf46-c12b" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dbe-823f-23f7-786f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="3952-66ed-93ea-27ee" name="Spatha Combat Bike" hidden="false" collective="false" import="true" targetId="e8a8-b526-beab-bb82" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
@@ -16596,6 +16615,25 @@ This is a Damage Mitigation roll – any model may make only a single Damage Mit
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="776f-7d5d-954c-331b" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86e8-26e9-9b47-2059" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
                 </entryLink>
                 <entryLink id="f152-51f5-b509-2d9c" name="Spatha Combat Bike" hidden="false" collective="false" import="true" targetId="e8a8-b526-beab-bb82" type="selectionEntry">
@@ -26845,6 +26883,25 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="4346-0383-c068-65b8" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ab2-fc5b-284b-11e0" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+            </entryLink>
             <entryLink id="7d27-5184-9dbf-b6fe" name="Spatha Combat Bike" hidden="false" collective="false" import="true" targetId="e8a8-b526-beab-bb82" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
@@ -30837,6 +30894,25 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </entryLink>
+                <entryLink id="b3bd-93c1-fbf6-ec7e" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c743-aac3-9446-a9fc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="eaa3-3358-4d3c-d682" name="Spatha Combat Bike" hidden="false" collective="false" import="true" targetId="e8a8-b526-beab-bb82" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
@@ -32902,6 +32978,25 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5004-7bdd-dfdc-554b" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="208e-576d-7b64-2209" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
                 </entryLink>
                 <entryLink id="8f37-5066-a403-58ff" name="Spatha Combat Bike" hidden="false" collective="false" import="true" targetId="e8a8-b526-beab-bb82" type="selectionEntry">
@@ -56077,6 +56172,25 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de20-e888-1bae-6085" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="9536-15f6-10cc-c31b" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a55f-5e28-7b9a-bc7b" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70"/>
@@ -57549,6 +57663,25 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76a5-39a4-639c-7f9f" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aaf-64ad-f43b-9637" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="6073-ce94-9288-c0a5" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb0f-b3b9-1345-7121" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -65053,6 +65186,25 @@ If the Psychic check is successful then until that Shooting Attack is resolved, 
                     <cost name="Pts" id="dc2c-b90d-5ced-4780" hidden="false" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
+                <entryLink id="e7d9-5bc0-d4bb-08c3" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e456-3a2d-5181-eacb" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
                 <entryLink import="true" name="Spatha Combat Bike" hidden="false" id="a37-24a7-d62c-7966" collective="false" targetId="e8a8-b526-beab-bb82" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
@@ -71002,6 +71154,35 @@ Access Points: A Rhino Castellan has one Access Point on either side of the hull
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f2ef-3bf0-47bd-95fc" name="Angelus Pattern Jump Pack" publicationId="3970-79bb-bdc6-9599" page="144" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="1285-fa5f-f3b1-decc" name="Angelus Pattern Jump Pack" publicationId="3970-79bb-bdc6-9599" page="144" hidden="false">
+          <description>Any model with the Legiones Astartes (Blood Angels) and Independent Character Special Rules which could normally purchase a Legion Warhawk Jump Pack may instead purchase an Angelus Pattern Jump Pack for +25 points.
+
+At the start of the Controlling Player's Movement phase or when this unit is set up from a Deep Strike Assault, a model armed with an Angelus Pattern Jump Pack may set their Movement Characteristic to 14 for the duration of the Controlling Player's turn (this is referred to as 'activating' the Jump Pack). This allows the unit to move up to 14&quot;, regardless of the Movement Characteristic shown on their profile and gain any benefits of a Movement Characteristic of 14 (including the benefit to Charge distance). In addition the unit may move over Impassable Terrain, vertical terrain or friendly and enemy models without penalty while using the Jump Pack, but may not end their movement within Impassable Terrain or within 1&quot; of any friendly or enemy models from another unit. If the unit ends or begins their movement within Dangerous terrain they must take a Dangerous Terrain test when using the Jump Pack and treats all Difficult Terrain as Dangerous Terrain.
+
+The unit may still Run on a turn where their Jump Packs have been activated. When making a Run move after having activated their Jump Packs, add their Initiative to 14 to determine how far they can move, ignoring terrain and other models when making a Run move as noted above, but they may not make Shooting attacks or declare a charge in the same turn in which they have Run as per the normal rules of Running. Their Jump Pack may not be activated to gain any bonus movement to their Movement Characteristic during a reaction.
+
+A model equipped with an Angelus Pattern Jump Pack gains the Bulky (3), Deep Strike, and Hammer of Wrath (2) Special Rules. In addition, a model with this wargear counts as having a Legion Warhawk Jump Pack for rules that affect that wargear (Like Sanguinius’s Warlord Trait).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f982-957f-9204-fcf4" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0c1c-452a-1dbc-88c9" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="ddb2-3899-0bc8-0c60" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -73092,6 +73273,46 @@ Legiones Thallaxes (as in the existing data): An army that includes one or model
           </entryLinks>
           <categoryLinks>
             <categoryLink id="f016-bad1-4c36-9cf2" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5b44-d33f-6f87-8ed1" name="Seraphim Majoris" publicationId="3970-79bb-bdc6-9599" page="144" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="a5a3-e81f-917f-2056" name="Seraphim Majoris" publicationId="3970-79bb-bdc6-9599" page="144" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (Blood Angels) Special Rule may be upgraded to a Seraphim Majoris Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules: The Seraphim Majoris gains the Flaring Heavenfall and Bloodlust of the Damned Special Rules.
+
+Wargear: The Seraphim Majoris gains an Angelus Pattern Jump Pack at no additional points cost.
+
+Flaring Heavenfall: When a unit containing a Seraphim Majoris successfully completes a Deep Strike, all enemy units within 6” of a model with this Special Rule must take an immediate Blind test with a -1 modifier to their Initiative Characteristic.
+
+Bloodlust of the Damned: When a unit containing a Seraphim Majoris successfully destroys an enemy unit with the Infantry or Cavalry Unit Type, the unit gains the Rage (2) Special Rule. For each additional unit destroyed in this way, increase the Rage Special Rule by +1 – to a maximum of Rage (4).</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink id="5ee4-696b-9954-b0e7" name="Angelus Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="f2ef-3bf0-47bd-95fc" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cd3-92ac-5a0a-5eba" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b0b-0ab5-d199-e85e" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink id="fb91-d6ea-8310-88d3" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
