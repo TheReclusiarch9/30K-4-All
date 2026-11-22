@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2050" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2051" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -8257,6 +8257,38 @@ Bloodthirsty (abomination blades): Add +1 to To Hit rolls made for this weapon i
 • Opus Malefica: A model with this Proscribed Techno-arcana gains the Anima Malefica Cybertheurgic Arcana (see page 155), but may not select any other Cybertheurgic Arcana from those available to it.
 
 • Magos Invocatus: While a unit composed entirely of models with the Corrupted Engine Unit Sub-type is within 6&quot; of a model with this Proscribed Techno-arcana, all models in that unit are not affected by special rules that negatively modify their Characteristics (other than Wounds or Hull Points).</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2f09-6299-626f-093a" name="Skitariiax-Primus" publicationId="f856-58d6-ef02-7d3e" page="87" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                  <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3821-7503-6139-3054" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="037e-d3cb-bfe4-090a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="e29c-affe-0ca5-fee8" name="Skitariiax-Primus" publicationId="f856-58d6-ef02-7d3e" page="87" hidden="false">
+              <description>An Archmagos Prime may select this option instead of the Orders of Higher Techno-Arcana upgrades found elsewhere.
+
+A model with this Special Rule gains the Skitariiax-Protectorate and Data Inviolate Special Rules.
+
+Skitariiax-Protectorate: The Archmagos Prime gains the Datasphere Uplink, Command Node, and Feel No Pain (5+) Special Rules. They also gain the Skitarii Unit Sub-Type. A Detachment which contains an Archmagos Prime with the Skitariiax-Primus Order of Higher Techno-Arcana must have its Compulsory Troops Choices composed of Skitarii Ranger Cohorts or Skitarii Vanguard Cohorts. In addition, any Triaros Armoured Conveyors or Tech-Priest Auxilia units taken in a Detachment which contains an Archmagos Prime with the Skitariiax-Primus gain the Datasphere Uplink Special Rule.
+
+Data Inviolate: When selecting the Datasphere Uplink Protocols to use before the battle begins, you may select two instead of the normal one permitted; you may activate both during the battle, but these may not be activated during the same Game Turn. You cannot select the same protocol twice.
+
+No High Order of Techno-Arcana may be chosen more than once in a single army.</description>
             </rule>
           </rules>
           <costs>

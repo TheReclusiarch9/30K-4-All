@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="d76-4e81-2fef-caa1" name="[Centura] Legiones Astartes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="d76-4e81-2fef-caa1" name="[Centura] Legiones Astartes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="7" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink id="cd67-43ed-908c-1921" name="Legion Assault Veteran Squad" hidden="false" collective="false" import="true" targetId="bbbd-1956-4682-9ea4" type="selectionEntry"/>
     <entryLink id="8dc9-9253-6dc8-c594" name="Legion Contemptor-Cortus Dreadnought Talon" hidden="false" collective="false" import="true" targetId="970a-bd04-4d61-ae08" type="selectionEntry"/>
@@ -1087,6 +1087,9 @@ Could not find type or subtype &apos;Dreadnought&apos;</comment>
 ●   Pater Consularis Librarian .................................. +50 points ●   Pater Consularis Master of Signals .................... +40 points ●   Pater Consularis Forge Lord ............................... +50 points ●   Pater Consularis Siege Breaker ........................... +55 points ●   Pater Consularis Chaplain................................... +50 points ●   Pater Consularis Armistos................................... +30 points ●   Pater Consularis Herald....................................... +40 points</description>
         </rule>
       </rules>
+      <entryLinks>
+        <entryLink id="021e-2e04-98bf-43b6" name="Pater Consularis" hidden="false" collective="false" import="true" targetId="63f7-09ba-e25c-7db6" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Legion Castra Ferrum Centurion" type="unit" id="7cbb-4e3a-4030-b935" page="11" publicationId="3970-79bb-bdc6-9599">
       <categoryLinks>
@@ -1324,6 +1327,9 @@ Could not find type or subtype &apos;Dreadnought&apos;</comment>
 ●    Pater Consularis Librarian .................................. +50 points ●    Pater Consularis Master of Signals .................... +40 points ●    Pater Consularis Forge Lord ............................... +50 points ●    Pater Consularis Siege Breaker ........................... +55 points ●    Pater Consularis Chaplain................................... +50 points ●    Pater Consularis Armistos................................... +30 points ●    Pater Consularis Herald....................................... +40 points</description>
         </rule>
       </rules>
+      <entryLinks>
+        <entryLink id="ee40-1628-db29-6fa2" name="Pater Consularis" hidden="false" collective="false" import="true" targetId="63f7-09ba-e25c-7db6" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Legion Land Raider Dionysus" type="unit" id="4f0d-7dbb-4d94-a26e" page="12" publicationId="3970-79bb-bdc6-9599">
       <categoryLinks>
@@ -6060,6 +6066,108 @@ Could not find type or subtype &apos;Battlements&apos;</comment>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="63f7-09ba-e25c-7db6" name="Pater Consularis" publicationId="3970-79bb-bdc6-9599" page="74" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08a5-843f-4edf-1ec4" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0132-bcfd-c61b-18a6" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="aa71-ad06-a3b5-936f" name="Pater Consularis: Librarian" publicationId="3970-79bb-bdc6-9599" page="74" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3531-21de-7615-a4f5" name="Pater Consularis: Librarian" publicationId="3970-79bb-bdc6-9599" page="74" hidden="false">
+              <description>A Pater Consularis Librarian gains the Psyker Sub-type and may select a single Core Psychic Discipline from the following list, or from any Legion-specific Disciplines available (as long as the Pater Consularis Librarian has the appropriate variant of the Legiones Astartes (X) Special Rule): Biomancy, Divination, Pyromancy, Telekinesis, Telepathy, Thaumaturgy.
+
+Wargear: A Pater Consularis Librarian may replace a Gravis Power Fist with a Gravis Force Weapon at no additional points cost. In addition, a Pater Consularis Librarian may select a Psychic Hood for +15 points.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4a2d-c1e1-e79e-c40c" name="Pater Consularis: Master of Signals" publicationId="3970-79bb-bdc6-9599" page="74" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="79c2-7422-d6f7-af5b" name="Pater Consularis: Master of Signals" publicationId="3970-79bb-bdc6-9599" page="74" hidden="false">
+              <description>A Pater Consularis Master of Signals gains the Strategic Comms Special Rule.
+
+Wargear: A Pater Consularis Master of Signals must replace a single Gravis Power Fist for a Full-Spectra Comms Array at no additional points cost.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bf72-f1b1-4595-3f40" name="Pater Consularis: Forge Lord" publicationId="3970-79bb-bdc6-9599" page="74" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="abc7-1305-6bc8-8605" name="Pater Consularis: Forge Lord" publicationId="3970-79bb-bdc6-9599" page="74" hidden="false">
+              <description>A Pater Consularis Forge Lord gains the Battlesmith (4+), Master of Automata, Firing Protocols (2), and Legiones Thallaxes Special Rules.
+
+Wargear: A Pater Consularis Forge Lord gains a Machinator Array at no additional points cost, and may select a Cortex Controller for +15 points and/or a Cyber-Familiar for +15 points.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ee90-65d3-cc6c-79b4" name="Pater Consularis: Siege Breaker" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="2cf4-b415-a481-2de2" name="Pater Consularis: Siege Breaker" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false">
+              <description>A Pater Consularis Siege Breaker gains the Sunder and Art of Destruction Special Rules.
+
+Wargear: A Pater Consularis Siege Breaker gains a Nuncio Vox and a Phosphex Discharger for no additional points cost.
+
+Any model which unlocks an upgrade via the presence of a model with the Legiones Consularis: Siege Breaker upgrade may purchase that upgrade if a Pater Consularis: Siege Breaker is present in the same Detachment.
+
+In addition, at the start of your turn, a Pater Consularis Siege Breaker may grant a single friendly unit within 3” the ability to ignore the -1 penalty to Leadership imposed by the Night Fighting rules until the start of your next turn.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ebe7-ef3b-931d-f709" name="Pater Consularis: Chaplain" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f3a7-3f64-f5b5-9aa7" name="Pater Consularis: Chaplain" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false">
+              <description>A Pater Consularis Chaplain gains the Hatred (Everything!) Special Rule. They also increase their Leadership Characteristic to 10.
+
+In addition, at the start of your turn, a Pater Consularis Chaplain may grant a single friendly unit within 3” the Hatred (Everything!) and Stubborn Special Rules until the start of your next turn.
+
+Wargear: A Pater Consularis Chaplain with a Power Weapon may grant that weapon the Master-Crafted Special Rule for no additional points cost, representing the Crozius Arcanum that is the symbol of the Chaplain’s authority.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0657-4a00-c6ca-bbfe" name="Pater Consularis: Armistos" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="8394-01c5-8e40-3592" name="Pater Consularis: Armistos" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false">
+              <description>A Pater Consularis Armistos’ ranged weapons all gain the Master-Crafted Special Rule.
+
+Wargear: A Pater Consularis Armistos gains an Augury Scanner and a Signum-Primus at no extra points cost.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1b23-54cd-1f68-c801" name="Pater Consularis: Herald" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="6f06-262c-5636-df84" name="Pater Consularis: Herald" publicationId="3970-79bb-bdc6-9599" page="75" hidden="false">
+              <description>A Pater Consularis Herald gains the Fear (2) Special Rule.
+
+Wargear: A Pater Consularis Herald gains a Legion Standard at no additional points cost.
+
+In addition, at the start of your turn, they may grant the bonuses of the Legion Standard to a single friendly unit within 3” until the start of your next turn.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="5f24-4626-0547-71c3" name="Panoptica Library" targetId="69b7-3f60-9f7f-8ce5" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="5f24-4242-71c3-0547" name="Mech Library" targetId="7265-8b7a-50ae-51ec" type="catalogue" importRootEntries="true"/>
