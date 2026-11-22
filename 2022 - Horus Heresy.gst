@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2018" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2019" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -3955,6 +3955,52 @@ This option replaces the weapon it is taken on.</description>
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry id="7f71-7aa4-d131-901a" name="Exchange for Helfrost Pistol" publicationId="3970-79bb-bdc6-9599" page="132" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eea2-365f-e8fb-cd81" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c7e6-d5ac-5170-61a5" name="Helfrost Pistol" publicationId="3970-79bb-bdc6-9599" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Blind, Breaching (3+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="43be-d59d-742c-2617" name="Helfrost Pistol" publicationId="3970-79bb-bdc6-9599" page="132" hidden="false">
+              <description>Any model with the Legiones Astartes (Space Wolves) Special Rule and the Character Sub-type may exchange a bolt pistol for a Helfrost Pistol for +20 points.
+
+This option replaces the Bolt Pistol it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="5993-a6d4-08b9-a672" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+            <infoLink id="252b-52d3-6e49-47f1" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Breaching (3+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
