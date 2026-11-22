@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3ecd-fb2c-3822-1e2a" name="LA -   IV: Iron Warriors" revision="2048" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3ecd-fb2c-3822-1e2a" name="LA -   IV: Iron Warriors" revision="2049" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="6695-3c3d-1ee7-cb99" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -3305,6 +3305,44 @@
         <categoryLink id="cd49-6462-b157-663f" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="4888-2ea9-f937-2ee1" name="Warsmith Berossus" hidden="false" collective="false" import="false" targetId="7d3a-c719-4d95-baa7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ae2-14b6-9759-b5b7" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e208-d773-3f38-65ba" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4c53-84ba-e59d-2d35" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="5d3a-86aa-09da-4772" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="710c-6460-09b4-9e2c" name="Berossus, Interred" hidden="false" collective="false" import="false" targetId="4ae2-14b6-9759-b5b7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d3a-c719-4d95-baa7" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e41a-6b8b-caee-3d0f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="47a5-1f01-e505-ae1a" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="1dfa-a645-d577-5d7f" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ac97-c8ce-16ba-9c49" name="Nârik Dreygur" hidden="false" collective="false" import="true" type="model">
@@ -5848,6 +5886,274 @@ In addition, an army with Warsmith Toramino as the warlord gains an additional r
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6bb7-e493-1a4b-b555" name="Olympian Reaper" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a8e5-1f6e-a2f4-272c" name="Olympian Reaper" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Shred</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ba2b-480f-7e4e-96f1" name="Olympian Reaper" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false">
+          <description>All weapons listed here are counted as ‘Chain’ weapons for those rules that affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="69a3-1eea-19fc-e0d8" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ef40-6b53-4b0d-6d2a" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d3a-c719-4d95-baa7" name="Warsmith Berossus" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4043-fdb5-6c39-6b34" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5da5-00a5-e07a-35af" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="b0cc-96d5-25d3-834d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="764d-0b6e-9481-cd1a" name="Warsmith Berossus" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1043-9441-1cb0-0787" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6adb-130b-3832-1c48" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8f43-e390-9110-50e2" name="Warsmith Berossus" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique*)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="fa9b-6952-8b50-839a" name="Two Time-frames" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false">
+              <description>Berossus’ two profiles represent him as he was in two different time-frames. As a result, an army that contains Warsmith Berossus may never also contain Berossus Interred, and visa versa.</description>
+            </rule>
+            <rule id="3846-5c97-da85-e60c" name="Warsmith and Siege Breaker" publicationId="3970-79bb-bdc6-9599" page="116" hidden="false">
+              <description>For the purposes of Rites of War and mandatory unit selections only, Warsmith Berossus counts as a Warsmith and a Siege Breaker.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="dc4e-4e3c-6d9d-cf25" name="Legiones Astartes (Iron Warriors)" hidden="false" targetId="c77b-f3fc-5dc8-1330" type="rule"/>
+            <infoLink id="a3be-46a0-42a4-5b54" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+            <infoLink id="ae4b-81d4-d73e-ad5f" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
+            <infoLink id="e019-4905-29da-918f" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Battlesmith (3+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="4c54-0f9b-2c95-ec31" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="8b19-113b-c09e-880d" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8849-6f7b-4af7-0c93" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdea-45a8-1f9a-5ca5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink id="7d9d-5431-3fdc-b986" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+            <categoryLink id="a9a6-ba6c-56f3-2250" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+            <categoryLink id="8aba-43d6-1b2e-62a8" name="Unique Sub-type" hidden="false" targetId="aa94-5c65-d1f1-46a4" primary="false"/>
+            <categoryLink id="15cd-69dd-de2f-dc3d" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8430-2057-7724-c1a5" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e73-8265-7501-7325" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de4-0bb0-9c24-41bc" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6069-aede-9c15-5ea2" name="Olympian Reaper" hidden="false" collective="false" import="true" targetId="6bb7-e493-1a4b-b555" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01ce-288b-854e-1a9f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8146-fa36-18fb-dd90" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f6b3-e5bb-f94f-1741" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b8e-214b-342e-7500" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6773-3000-a692-1a00" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="105c-05e4-4c81-2230" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2a6-50d7-918b-b92c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4344-d4dd-b198-2ee8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="748e-6651-5095-8629" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8382-1c42-376c-9598" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4e0-6da4-4314-d928" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4502-058b-4139-9698" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adfd-d135-83f3-0745" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0393-829a-af22-c7f8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="edf1-3f72-1abd-e51e" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebcf-c4d1-fde9-abd9" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef5-9341-edbb-7778" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="835f-89d9-3778-fcae" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a754-60c0-0f7a-1ea1" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0881-d2e3-e2bb-64e9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="70a6-1d3d-616c-8995" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c506-6d72-aa48-9f73" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4ae2-14b6-9759-b5b7" name="Berossus, Interred" publicationId="3970-79bb-bdc6-9599" page="117" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="369e-52e1-a587-787a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e892-8f80-3e33-f79b" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="a541-e70b-c714-0ba1" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a2f2-3389-1571-8b71" name="Berossus, Interred" publicationId="3970-79bb-bdc6-9599" page="117" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85c1-c47d-0d3c-8f03" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4979-8948-8006-f2bb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2b27-8912-bfc2-ca91" name="Berossus, Interred" publicationId="3970-79bb-bdc6-9599" page="117" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Character, Unique*)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="f5e1-d560-0aae-9f65" name="Ferromantic Deflector" publicationId="3970-79bb-bdc6-9599" page="117" hidden="false">
+              <description>Ferromantic Deflector (text as in the existing data): A model with an ferromantic deflector gains a 5+ Invulnerable Save and any model with a ferromantic deflector and a Wounds Characteristic that suffers an unsaved Wound with the Instant Death special rule is not immediately removed as a casualty, but instead loses three Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it. In addition, when a model with a ferromantic deflector loses its last Wound or Hull Point, but before it is removed as a casualty or replaced with a Wreck, all models both friendly and enemy within D6&quot; suffer an automatic Hit at Str 6, AP -.</description>
+            </rule>
+            <rule id="5eb6-1aa0-c896-5d6c" name="Frag Launchers" publicationId="3970-79bb-bdc6-9599" page="117" hidden="false">
+              <description>Frag Launchers (text as in the existing data): If a model charges a unit armed with Frag Launchers, that charge is counted as Disordered.</description>
+            </rule>
+            <rule id="dc1c-ade7-3ea5-5de9" name="Two Time-frames" publicationId="3970-79bb-bdc6-9599" page="117" hidden="false">
+              <description>Berossus’ two profiles represent him as he was in two different time-frames. As a result, an army that contains Warsmith Berossus may never also contain Berossus Interred, and visa versa.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="d266-98d9-f04d-f486" name="Legiones Astartes (Iron Warriors)" hidden="false" targetId="c77b-f3fc-5dc8-1330" type="rule"/>
+            <infoLink id="3d2d-ca71-2649-cd1e" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaping Blow (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="0f79-e882-1dc1-0873" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+            <infoLink id="2fb8-b1ba-5f4d-94b0" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a498-7798-4f26-1061" name="Dreadnought Unit-type:" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
+            <categoryLink id="eea9-ebac-0b0c-3612" name="Unique Sub-type" hidden="false" targetId="aa94-5c65-d1f1-46a4" primary="false"/>
+            <categoryLink id="ace3-ae93-498c-9b15" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2a6a-a4c1-5c05-e6dc" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6d9-0a27-24b0-4366" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="4e94-4f6d-e048-b25d" name="Dedicated Transport" publicationId="3970-79bb-bdc6-9599" page="117" hidden="false">
+              <description>Berossus, Interred may take a Legion Dreadnought Drop Pod as Dedicated Transport. If taken this way, a transport does not use up an additional Force Organisation slot, but its points cost must still be paid for as part of the army.</description>
+            </rule>
+          </rules>
+          <entryLinks>
+            <entryLink id="ec25-4069-17bb-5879" name="Legion Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7d84-0c8f-c194-38f2" name="Gravis Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="ce7e-4548-10b5-8762" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4894-8975-9e3a-9ad0" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ad-2b49-3846-896f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fbdc-b56c-27c1-c773" name="Graviton Maul" hidden="false" collective="false" import="true" targetId="b254-abfc-a57f-ab28" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54ba-a203-13c8-c921" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7156-47d3-2d03-f8fb" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3e65-f8d8-48a0-1ea8" name="Twin-Linked Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="fddc-1065-a54c-bede" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9793-5b09-5679-a48c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0202-62a0-9157-a20c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="aaca-d47e-8ef2-12c6" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f0-90d1-fb5e-beab" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce43-70a1-720b-199b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="408b-4914-c34a-9e0a" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fc7-8444-b02c-d738" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="190"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
