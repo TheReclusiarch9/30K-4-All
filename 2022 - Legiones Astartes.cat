@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2199" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2200" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -70979,6 +70979,29 @@ Access Points: A Rhino Castellan has one Access Point on either side of the hull
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3ee9-5ea0-e881-2b22" name="Helfrost Pistol" publicationId="3970-79bb-bdc6-9599" page="132" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3479-85f6-70a6-590c" name="Helfrost Pistol" publicationId="3970-79bb-bdc6-9599" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Blind, Breaching (3+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="acf5-1b9e-b1cf-55d0" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+        <infoLink id="a640-640d-535e-c216" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (3+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -73002,6 +73025,76 @@ Any unit composed entirely of models with the Legiones Astartes (Emperor’s Chi
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e599-0d79-882e-ba75" name="Priest of Iron" publicationId="3970-79bb-bdc6-9599" page="132" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="40f2-4ede-5c74-dc3c" name="Priest of Iron" publicationId="3970-79bb-bdc6-9599" page="132" hidden="false">
+              <description>A Legion Centurion, Legion Tartaros Centurion, Legion Cataphractii Centurion, or Legion Indomitus Centurion with the Legiones Astartes (Space Wolves) Special Rule may be upgraded to a Priest of Iron Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules: A Priest of Iron gains the Battlesmith (4+), Master of Automata, Legiones Thallaxes, and Runis Machinitor Special Rules.
+
+Wargear: A Priest of Iron gains a Machinator Array and a Helfrost Pistol at no additional points cost, and may select a Cortex Controller for +15 points. A Priest of Iron may also select a Cyber Familiar for +20 points.
+
+Runis Machinitor: Before the game begins, you may select up to two vehicles in the same detachment as the Priest of Iron. For the duration of the game, these vehicles can move at up to Crusing speed in the movement phase, but are counted as not having moved for the purposes of their shooting attacks.
+
+Legiones Thallaxes (as in the existing data): An army that includes one or models with this special rule may take up to three Thallax Cohorts as a non-Compulsory Elites choice in the same detachment as the model with this special rule - these units may not select a Dedicated Transport of any kind. Any models in a Thallax Cohort which are included in an army due to this special rule gain the same Legiones Astartes (X) special rule as the Legion Forge Lord it shares a Detachment with, but may not select any Legion specific Wargear or other options.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4698-6e46-1f71-0e4e" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Battlesmith (4+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="b959-0ddb-6104-2e4d" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="82e2-f66d-b540-8bde" name="Machinator Array" hidden="false" collective="false" import="true" targetId="66f5-697c-605c-f1bb" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb3-f01b-5c05-c078" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9117-0da9-6df4-3855" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="01af-b78a-2fbe-4980" name="Helfrost Pistol" hidden="false" collective="false" import="true" targetId="3ee9-5ea0-e881-2b22" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6578-29e4-5ff1-1c11" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6de-eb7c-7752-384a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1cd6-96cb-b0d7-bb11" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45bc-4d16-dc16-0db8" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink id="15b8-a203-4fdb-ffc0" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47cd-1d5c-7bec-3f9f" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink id="f016-bad1-4c36-9cf2" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
