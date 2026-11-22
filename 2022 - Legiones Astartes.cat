@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2208" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2209" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -75023,6 +75023,14 @@ Wargear: The Pyre Guard replaces their Refractor Field for an Iron Halo, and the
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a450-f255-5c2a-7e71" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe8-b04c-2185-754b" type="max"/>
               </constraints>
+            </entryLink>
+            <entryLink id="94ee-bc6e-e34f-1220" name="Dragonscale Storm Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92d3-d16a-52e2-b8c7" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
             </entryLink>
           </entryLinks>
           <categoryLinks>
