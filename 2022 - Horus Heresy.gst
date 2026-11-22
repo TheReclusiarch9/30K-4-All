@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2020" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2021" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -5198,6 +5198,53 @@ This option replaces the weapon it is taken on.</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="59f0-f8b4-99d2-8e9f" name="Exchange for Conflagration Meltagun" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0830-35aa-a975-8d4a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c830-ac9d-6a05-47ea" name="Conflagration Meltagun" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="70ba-9eac-c20b-6cc1" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+              <description>Any model with the Legiones Astartes (Salamanders) Special Rule may exchange a Meltagun for a Conflagration Meltagun for +5 points.
+
+All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.
+
+This option replaces the Meltagun it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="2b93-4108-bb8a-eab0" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Armourbane (Melta)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -5221,6 +5268,54 @@ This option replaces the weapon it is taken on.</description>
         </infoLink>
         <infoLink id="9dd5-53ba-3729-4d46" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="0b5c-3601-fd4b-803f" name="Exchange for Conflagration Multi-Melta" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d7b-c4a8-fab2-f310" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f9f8-da08-c2c7-ca66" name="Conflagration Multi-Melta" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Melta), Twin-Linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="7d98-dde8-df63-e27b" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+              <description>Any model with the Legiones Astartes (Salamanders) Special Rule may exchange a Multi-Melta for a Conflagration Multi-Melta for +10 points.
+
+All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.
+
+This option replaces the Multi-Melta it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="e994-9262-b0c5-ae65" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Armourbane (Melta)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c20e-aad6-93c3-2202" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -5244,6 +5339,54 @@ This option replaces the weapon it is taken on.</description>
         </infoLink>
         <infoLink id="562c-0269-397e-af00" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="9ef4-43d8-db4e-7797" name="Exchange for Conflagration Melta Cannon" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c64a-da57-6615-6825" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="80b7-ef64-bb58-344e" name="Conflagration Melta Cannon" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-Linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="8f57-9cb1-bf22-839a" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+              <description>Any model with the Legiones Astartes (Salamanders) Special Rule may exchange a Gravis Melta Cannon for a Conflagration Melta Cannon for +10 points.
+
+All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.
+
+This option replaces the Gravis Melta Cannon it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="3dae-0d87-fc4e-5dd4" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Armourbane (Melta)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="8b56-6d0d-3f7b-9ae2" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -5289,6 +5432,53 @@ This option replaces the weapon it is taken on.</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="d946-a310-a693-0384" name="Exchange for Conflagration Melta Lance" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7e6-c0f0-6695-bb21" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="21f4-f466-c810-de6d" name="Conflagration Melta Lance" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Armourbane (Melta)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="6b05-5c07-c7e7-c35c" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+              <description>Any model with the Legiones Astartes (Salamanders) Special Rule may exchange a Cyclonic Melta Lance for a Conflagration Melta Lance for +10 points.
+
+All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.
+
+This option replaces the Cyclonic Melta Lance it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="91fe-c4d5-c611-d113" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Armourbane (Melta)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
