@@ -5,6 +5,7 @@
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="e8a8-0342-427a-b659"/>
         <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="aa34-5919-4850-914c" name="HQ"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="e811-0960-6abb-d590" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="115"/>
@@ -75,10 +76,18 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18eb-4788-40fd-a834"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Melta Bomb" hidden="false" type="selectionEntry" targetId="e55d-d31b-46a9-aeb6" id="79d5-c4ec-1289-1ff3">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Melta Bombs"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c603-08f5-57b1-df9d"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17ba-9594-4cec-a395"/>
-              </constraints>
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Melta Bombs
 	 Checked under Melta Bombs</comment>
@@ -206,6 +215,14 @@ Could not find wargear Melta Bombs
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab7a-7b2f-4640-abb9"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Servo-Arm" hidden="false" type="selectionEntry" targetId="fbef-812d-4d20-9285" id="feed-fc05-7424-b97a">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="992d-cc10-85e5-f16f"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b407-a820-4fc0-b600"/>
@@ -221,6 +238,98 @@ Could not find wargear Servo Arm
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Master-Crafted
 	 Checked under Master-Crafted</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Master-Crafted" hidden="false" id="75b0-f730-a084-234a">
+                  <infoLinks>
+                    <infoLink name="Master-crafted" hidden="false" type="rule" targetId="6de0-55b0-bf21-48b9" id="d974-da93-8d26-08c3"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0ad-7d4b-a8fc-7c89"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Magos Prime may take one of the following additional weapon options (a Magos Prime with the Myrmidae Order of Lesser Techno-arcana may take up to two selections from the list instead, but may not select a Rad Furnace):" hidden="false" id="90cd-ac55-4661-c848">
+              <entryLinks>
+                <entryLink name="Rotor Cannon" hidden="false" type="selectionEntry" targetId="5ce3-3aa5-3f5e-9ead" id="bcf0-df75-72ef-8e74">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="703c-fe00-6c90-ceb4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Graviton Gun" hidden="false" type="selectionEntry" targetId="ea9f-c901-465b-aaaf" id="8665-1ed3-33f3-e646">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b052-ea6c-5fd5-5d6e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Meltagun" hidden="false" type="selectionEntry" targetId="4ebd-57e0-3560-e568" id="983c-c999-8789-5e62">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="418b-d947-6fa0-e6ae"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Magnarail Lance" hidden="false" type="selectionEntry" targetId="713b-8d52-4f43-a02a" id="2a68-add8-a4fe-d001">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4486-eab2-b9b8-bc94"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Irad-Cleanser" hidden="false" type="selectionEntry" targetId="dd83-3692-49b4-ab89" id="d402-0820-ccb3-6cb7">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de05-52e1-472c-8eba"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Phased Plasma-Fusil" hidden="false" type="selectionEntry" targetId="9acd-cea9-4564-92bf" id="d794-30c7-9003-3e3d">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c29a-5dc0-fa0e-9124"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Transonic Cannon" hidden="false" type="selectionEntry" targetId="d4ed-9618-452a-97d1" id="6b02-eef4-79c6-5786">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce13-4ff0-5db3-4655"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Photon Thruster" hidden="false" type="selectionEntry" targetId="3519-b118-7c6e-2343" id="f530-a436-2896-3bbf">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db96-8fc6-27a7-722d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Rad Furnace" hidden="false" type="selectionEntry" targetId="18da-a26c-bdd4-8a5f" id="93e3-2c1d-3ca4-c72d">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7caf-6e4e-ec85-6f16"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b241-5495-d0a0-1c46"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -255,6 +364,7 @@ Could not find rule: The Orders of Lesser Techno-Arcana</comment>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="2bc8-fe02-494e-99e2"/>
         <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="ebc2-2dac-4307-b646" name="HQ"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b08e-e9ec-0cba-764d" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="145"/>
@@ -326,9 +436,6 @@ Could not find rule: The Orders of Lesser Techno-Arcana</comment>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8137-81fb-4967-bbf4"/>
-              </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="The Magos Prime on Abeyant may exchange either their Laspistol and/or Power Weapon each for one of the following options:" id="7627-998a-4fac-a9ef">
               <entryLinks>
@@ -453,6 +560,14 @@ Could not find rule: The Orders of Lesser Techno-Arcana</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b77b-59ba-45ce-8afb"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Servo-Arm" hidden="false" type="selectionEntry" targetId="fbef-812d-4d20-9285" id="7925-cffb-134f-c4d1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4731-0e82-0dbe-98c1"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67dd-27e0-419a-9962"/>
@@ -468,6 +583,98 @@ Could not find wargear Servo Arm
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Master-Crafted
 	 Checked under Master-Crafted</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Master-Crafted" hidden="false" id="682d-a330-f41e-8646">
+                  <infoLinks>
+                    <infoLink name="Master-crafted" hidden="false" type="rule" targetId="6de0-55b0-bf21-48b9" id="e5f0-48dc-94d4-5a18"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67f9-0aa7-cfa2-2715"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Magos Prime on Abeyant may take one of the following additional weapon options (a Magos Prime with the Myrmidae Order of Lesser Techno-arcana may take up to two selections from the list instead, but may not select a Rad Furnace):" hidden="false" id="1a75-1ac6-d451-30bf">
+              <entryLinks>
+                <entryLink name="Rotor Cannon" hidden="false" type="selectionEntry" targetId="5ce3-3aa5-3f5e-9ead" id="1e8a-6659-97a5-03ac">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a58f-8b88-f173-f784"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Graviton Gun" hidden="false" type="selectionEntry" targetId="ea9f-c901-465b-aaaf" id="6b29-0291-63f3-e984">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b344-02b5-ecc9-c5f6"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Meltagun" hidden="false" type="selectionEntry" targetId="4ebd-57e0-3560-e568" id="c6fc-1dbc-bcb7-ebe0">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="958e-f585-52c1-1708"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Magnarail Lance" hidden="false" type="selectionEntry" targetId="713b-8d52-4f43-a02a" id="f44a-74c2-f2dd-76be">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6f6-01a3-f9c2-ad1e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Irad-Cleanser" hidden="false" type="selectionEntry" targetId="dd83-3692-49b4-ab89" id="6966-377c-1573-6cae">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3350-9006-a3bc-a252"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Phased Plasma-Fusil" hidden="false" type="selectionEntry" targetId="9acd-cea9-4564-92bf" id="e6cc-92aa-9a25-a116">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd32-a404-89e4-f805"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Transonic Cannon" hidden="false" type="selectionEntry" targetId="d4ed-9618-452a-97d1" id="3855-bf13-3c15-05cf">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad16-da59-72d4-779c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Photon Thruster" hidden="false" type="selectionEntry" targetId="3519-b118-7c6e-2343" id="267d-2f4b-4ddf-d71f">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f29-738b-e46c-836d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Rad Furnace" hidden="false" type="selectionEntry" targetId="18da-a26c-bdd4-8a5f" id="0bf4-3ba2-ee06-155b">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0896-3a16-3f40-38e3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7f71-b31b-1f9d-62f0"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -504,6 +711,7 @@ Could not find rule: The Orders of Lesser Techno-Arcana</comment>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="e519-c643-4d22-9f26"/>
         <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="3983-23a9-42eb-96cb" name="HQ"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="05d1-d79d-435e-4497" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
@@ -744,9 +952,6 @@ Could not find rule: The Orders of Lesser Techno-Arcana</comment>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a743-2651-4aaa-8801"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -794,6 +999,7 @@ Could not find rule: Command Protocols (Skitarius)</comment>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="f628-0b81-43d5-a612"/>
         <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="c664-f5b7-4ec8-8a23" name="HQ"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="9a33-93e2-487f-557d" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120"/>
@@ -839,6 +1045,32 @@ Could not find wargear Stealth Suite Module
 	 Checked under Stealth Suite Module
 Could not find wargear Aggression Stim-Injectors
 	 Checked under Aggression Stim-Injectors</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Stealth Suite Module" hidden="false" id="c355-9bb6-c834-8c42">
+                  <profiles>
+                    <profile name="Stealth Suite Module" hidden="false" id="0941-ff61-179c-5aca" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with a Stealth Suite Module gains the Infiltrate, Scout, Pathfinder, and Shrouded (5+) Special Rules.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dc2-3f70-e8d1-e101"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Aggression Stim-Injectors" hidden="false" id="a045-8dac-5f1a-6b29">
+                  <profiles>
+                    <profile name="Aggression Stim-Injectors" hidden="false" id="f8d4-ebdb-7b84-1b99" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                      <characteristics>
+                        <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with Aggression Stim-Injectors gains the Furious Charge (1), and Rage (2) Special Rules.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab31-01af-89a1-b25e"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="The Sicarian Clademaster may exchange their Taser Goad for one of the following:" id="5224-055a-481d-bd86">
               <entryLinks>
@@ -1039,9 +1271,6 @@ Could not find wargear Aggression Stim-Injectors
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe60-fc69-44f1-8a8f"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -1129,6 +1358,15 @@ Stubcarbine is in two option lists for Sicarian Clademaster, you will need to co
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9455-d0ac-4408-ba12"/>
               </constraints>
             </entryLink>
+            <entryLink name="Arcana Potentis (Melee)" hidden="false" type="selectionEntry" targetId="96c2-dc8d-4acb-b1cc" id="45dc-6dfb-4984-77f7">
+              <modifiers>
+                <modifier type="set" field="name" value="Arcana Potentis"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de1a-ed9a-83af-9482"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e110-8eb6-0184-62d7"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Praetorian Servitor may exchange their Power Fist for one of the following:" id="6eef-7a9e-4520-b89a">
@@ -1192,6 +1430,7 @@ Could not find wargear Arcana Potentis
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="b5e9-4c79-4c7f-aed2"/>
         <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="5a8b-2167-41d7-8c80" name="HQ"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="da4a-21eb-533c-b3fc" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
@@ -1244,6 +1483,12 @@ Could not find wargear Arcana Potentis
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c497-2746-4d48-b58a"/>
               </constraints>
             </entryLink>
+            <entryLink name="Solius Excinda" hidden="false" type="selectionEntry" targetId="8e1a-47dc-2469-fd73" id="974f-f934-db14-d419">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74d1-226e-2b6e-4420"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2ad-5a6a-efdb-b58f"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="4f70-45b6-4a29-a1e2" name="Infantry" primary="false"/>
@@ -1257,6 +1502,29 @@ Could not find wargear Solius Excinda
 	 Checked under Solius Excinda
 Could not find wargear Sapien
 	 Checked under Sapien</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Sapien" hidden="false" id="9d8e-403e-9041-75b6">
+              <profiles>
+                <profile name="Sapien&apos;s Sting" hidden="false" id="1e44-a739-2a03-0927" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="f856-58d6-ef02-7d3e" page="13">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Poisoned (3+), Reach (1)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Sapien" hidden="false" id="b42b-b72a-fb4b-68e6" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="f856-58d6-ef02-7d3e" page="13">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Sapien grants all the benefits of a Cyber-Familiar to Arkhan Land. In addition, Arkhan Land may make a single additional attack a turn with the profile shown below. No additional attacks may be made with this weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7376-b0d7-ff9d-1e33"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d216-3db7-9581-00b1"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1349,6 +1617,37 @@ Could not find wargear Mechadendrite Hive with in-built Prehensile Data-spike
 	 Checked under Mechadendrite Hive with in-built Prehensile Data-spike
 Could not find wargear Magno-Gravitic Thrusters
 	 Checked under Magno-Gravitic Thrusters</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Two Prenzlaur Null-Pistols" hidden="false" id="f1e4-c062-8b1e-2d9a">
+              <profiles>
+                <profile name="Prenzlaur Null-Pistol" hidden="false" id="f32d-bf1b-1239-bd70" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="f856-58d6-ef02-7d3e" page="14">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Null-Rounds</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce1e-af28-b544-5968"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a62-4116-5931-1838"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Magno-Gravitic Thrusters" hidden="false" id="cbef-8805-343c-d874">
+              <profiles>
+                <profile name="Magno-Gravitic Thrusters" hidden="false" id="5962-f201-3541-edcd" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="f856-58d6-ef02-7d3e" page="14">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with this Special Rule is not slowed by Difficult Terrain, and automatically passes any Dangerous Terrain Tests it is required to make.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd1b-0641-0d49-88c5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="890b-f7fb-7948-41fb"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1384,6 +1683,7 @@ Could not find rule: Warlord: The Science of Slaughter*</comment>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="90a4-775d-45f5-a577"/>
         <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="cf98-be42-45cd-ab9e" name="HQ"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="340a-b7f9-2f23-1177" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="240"/>
@@ -1430,6 +1730,12 @@ Could not find rule: Warlord: The Science of Slaughter*</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0cc-dcde-42ff-ac04"/>
               </constraints>
             </entryLink>
+            <entryLink name="Excoriator" hidden="false" type="selectionEntry" targetId="f481-ba8c-200c-dbea" id="9d62-8bff-7094-8200">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="769e-3008-068d-3626"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edbf-0d70-050d-f7bf"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="fd5d-5d13-4fab-9783" name="Infantry" primary="false"/>
@@ -1444,6 +1750,43 @@ Could not find wargear Electrocoil Whip
 	 Checked under Electrocoil Whip
 Could not find wargear Personal Void
 	 Checked under Personal Void</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Electrocoil Whip" hidden="false" id="964e-9ee6-c74c-b70a">
+              <profiles>
+                <profile name="Electroscourge Whip" hidden="false" id="b0ec-2633-e223-e9f3" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="f856-58d6-ef02-7d3e" page="15">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Disruption (6+), Reach (1), Reaping Blow (1)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Electrocoil Whip" hidden="false" id="54aa-91fb-7201-2ac5" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="f856-58d6-ef02-7d3e" page="15">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Electroscourge Whip counts as a ‘Power’ weapon for all rules which affect such weapons.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c1e-588b-1ced-d860"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="05d8-2e98-fb48-9973"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Personal Void" hidden="false" id="1636-a0c1-7888-5b4a">
+              <profiles>
+                <profile name="Personal Void" hidden="false" id="0f7a-7209-ff96-f5ae" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="f856-58d6-ef02-7d3e" page="15">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Koriel Zeth’s Personal Void grants her a 3+ Invulnerable Save, and allows her to ignore the first wound she suffers as the result of a failed Invulnerable Save during a battle.
+In addition, it allows her to re-roll failed Characteristic tests other than Leadership tests, Psychic checks, or failed Dangerous Terrain tests.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b5d3-39ba-b7cb-5c2b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2586-3868-f24f-f491"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1504,6 +1847,12 @@ Could not find rule: Warlord: The Logic of Victory*</comment>
                 <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Primarch (Monstrous, Antigrav, Corrupted, Cybertheurgist, Unique)</characteristic>
               </characteristics>
             </profile>
+            <profile name="Accursed Scrapcode" hidden="false" id="63e9-e3c9-b05d-62b8" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" publicationId="f856-58d6-ef02-7d3e" page="16">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If your Warlord has this Trait, the Controlling Player may give up to three units in their army from the same detachment as the Warlord which are composed entirely of models with the Infantry, Monstrous, or Automata Unit Types the Corrupted Sub-type for no additional points cost during list construction.
+In addition, an army whose Warlord has this Trait gains two additional reactions to use during the Opposing Player’s turn. They may use these in any combination (such as one each in the Movement and Shooting Phases, or both in the Assault Phase), but may only do so as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
           </profiles>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de61-fc8b-44b0-b877"/>
@@ -1534,6 +1883,12 @@ Could not find rule: Warlord: The Logic of Victory*</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06cf-4668-42f9-908f"/>
               </constraints>
             </entryLink>
+            <entryLink name="Disintegration Beamer" hidden="false" type="selectionEntry" targetId="fabb-0e0f-7dfb-f3c1" id="e4d3-1305-e018-3997">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3bec-f0e0-bdef-cb70"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f37-2d92-9a9f-1737"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="ad5f-31db-8bc7-5c46" id="09d2-9213-45c0-856e" name="Primarch" primary="false"/>
@@ -1548,6 +1903,29 @@ Could not find wargear Ruptor Heraldis
 	 Checked under Ruptor Heraldis
 Could not find wargear Disintegration Beamer
 	 Checked under Disintegration Beamer</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ruptor Heraldis" hidden="false" id="6182-71e2-ad45-c3ec">
+              <profiles>
+                <profile name="Ruptor Heraldis" hidden="false" id="1d26-7d67-7491-d40e" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="f856-58d6-ef02-7d3e" page="16">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Armourbane (Melee)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Ruptor Heraldis" hidden="false" id="b4e4-c2ab-34c9-ad88" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="f856-58d6-ef02-7d3e" page="16">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Ruptor Heraldis counts as a ‘Power’ weapon for all rules which affect such weapons.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c1c-9806-690f-9b2a"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52ff-40d6-53dd-04d8"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1644,12 +2022,11 @@ Could not find rule: Fabricatus-Primus</comment>
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="e535-cd33-4285-a724" name="Cybernetica" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="089c-fa6a-4c06-9cae" name="Skirmish" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="0208-9248-a9f8-647e" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
           </costs>
-          <comment>!BSC Errors from 20240406-1603
-Could not find type or subtype &apos;Automata&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1763,6 +2140,13 @@ Could not find type or subtype &apos;Automata&apos;</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5902-4dfd-4899-aff7"/>
                   </constraints>
                 </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0bf-36ae-4a48-8a89"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any model in the unit may take a:" hidden="false" id="68b2-5552-ca53-5cb0">
+              <entryLinks>
                 <entryLink name="Radium Jezzail" hidden="false" type="selectionEntry" targetId="6af0-4937-4646-b6b1" id="4e04-841f-4c02-be43">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -1773,19 +2157,18 @@ Could not find type or subtype &apos;Automata&apos;</comment>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0bf-36ae-4a48-8a89"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="838c-8c2b-f73b-6f1e"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="2107-c372-43e8-90bc" id="ab6b-e775-4568-8011" name="Skitarii" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="b727-24aa-4a9a-9141" name="Skirmish" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="ca36-b83e-214a-4e97" name="Cavalry Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
           </costs>
-          <comment>!BSC Errors from 20240406-1603
-Could not find type or subtype &apos;Cavalry&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -1799,6 +2182,13 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d5ee-a399-4579-a5a2"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d52c-7dd3-4251-ad59"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Cydonian Dragoon may take a:" hidden="false" id="f3f1-3e75-5cfa-04db">
+          <entryLinks>
             <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="fa1b-dd6b-476e-94e3">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -1810,6 +2200,13 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a61-07e0-4652-a541"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bf3-0bc0-9b18-e48a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Cydonian Dragoon may take a:" hidden="false" id="6198-1340-777e-4b80">
+          <entryLinks>
             <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="0933-61e0-4688-8ac3">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -1820,7 +2217,7 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d52c-7dd3-4251-ad59"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5912-43ff-3917-220b"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1910,6 +2307,9 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Marksman Teams" hidden="false" type="rule" targetId="059d-eb3e-4b80-81d2" id="539a-e1d2-f131-4390"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="model" name="Liquidator Alpha" id="b9a3-c438-44bd-8697" page="22" publicationId="f856-58d6-ef02-7d3e">
           <profiles>
@@ -2001,6 +2401,16 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d83-7ab1-416a-84df"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fc2-34be-4a81-8031"/>
+          </constraints>
+          <comment>!BSC Errors from 20240406-1603
+Could not find wargear Enhanced Data Tether
+	 Checked under Enhanced Data Tether</comment>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Vectorii Team may take a:" hidden="false" id="198f-2360-e131-6133">
+          <entryLinks>
             <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="584b-d6c9-45bb-8724">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -2012,6 +2422,13 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c10f-c619-47fd-a43b"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="094c-a12d-68b9-5af4"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Vectorii Team may take a:" hidden="false" id="dce2-490c-8a0c-ee24">
+          <entryLinks>
             <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="6d76-a52b-4646-a89e">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -2022,11 +2439,23 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fc2-34be-4a81-8031"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="433f-22c0-2485-9631"/>
           </constraints>
-          <comment>!BSC Errors from 20240406-1603
-Could not find wargear Enhanced Data Tether
-	 Checked under Enhanced Data Tether</comment>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Vectorii Team may take a:" hidden="false" id="c86b-974c-489c-8166">
+          <entryLinks>
+            <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="1db2-2992-0bf2-159a">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b144-bd73-a128-375f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d6a-fc55-9486-828f"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -2334,9 +2763,6 @@ Could not find rule: Marksman Teams (Vectorii Team only)</comment>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec8d-934c-4f8a-91fc"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2435,6 +2861,13 @@ Could not find wargear Aggression Stim-Injectors
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec0-a146-48bb-a5e5"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da75-ccbb-4ca1-b841"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Sicarian Stalker may take a:" hidden="false" id="095b-2dd4-9c59-5d74">
+          <entryLinks>
             <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="3e72-3a75-477d-a955">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -2448,7 +2881,7 @@ Could not find wargear Aggression Stim-Injectors
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da75-ccbb-4ca1-b841"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f9bb-a861-b693-97e6"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2519,6 +2952,14 @@ Stubcarbine is in two option lists for Sicarian Alpha, you will need to combine 
                 <entryLink name="Arc Claw" hidden="false" type="selectionEntry" targetId="a829-be48-4e2c-9442" id="9cf4-4f65-4b2e-8980">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bde-69c1-4c26-b672"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Hydraulic Claw" hidden="false" type="selectionEntry" targetId="85ae-5084-7d09-9121" id="7b92-2f78-b8be-ea27">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfc4-7892-5edc-e11f"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2672,6 +3113,17 @@ Could not find wargear in Any Kataphron Breacher may exchange their Arc Claw for
                   </costs>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56af-4350-4327-be0e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Eradication Beamer (1)" hidden="false" type="selectionEntry" targetId="2a1b-6d4e-45c8-941a" id="6554-8b7f-56e3-eb99">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Eradication Beamer"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bbb-4324-73c7-c04e"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -2856,6 +3308,19 @@ Could not find wargear Machinator Array with in-built Prehensile Data-spike
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Incunabulan Jet Packs
 	 Checked under Incunabulan Jet Packs</comment>
+          <entryLinks>
+            <entryLink name="Incunabulan Jet Pack" hidden="false" type="selectionEntry" targetId="9faf-7242-dc40-c3e5" id="e563-aab1-f059-bc44">
+              <modifiers>
+                <modifier type="set" field="name" value="Incunabulan Jet Packs"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2258-0ef0-eb09-e2e0"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -2954,12 +3419,22 @@ Could not find wargear in The unit may purchase:</comment>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="The Triaros Guardian may select:" id="d46e-5543-4ffa-8e79">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Additional Void Shield" hidden="false" id="1cfd-81a0-f00b-2137">
+                  <infoLinks>
+                    <infoLink name="Void Shields" hidden="false" type="rule" targetId="c503-f5b8-3da0-16e6" id="ad9b-2e93-aa3a-1a6b"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="b4ed-a4a3-9ab0-aac0"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71fb-fbda-499f-b830"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e646-d522-fe25-e465"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Up to four additional Void Shields
-	 Checked under Up to four additional Void Shields</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -2977,6 +3452,11 @@ Could not find wargear in The Triaros Guardian may select:</comment>
           </modifiers>
         </infoLink>
         <infoLink name="Defensor-Grid Projector" hidden="false" type="rule" targetId="246a-b015-4555-a7d5" id="b48e-8f0a-44f0-8de5"/>
+        <infoLink name="Void Shields" hidden="false" type="rule" targetId="c503-f5b8-3da0-16e6" id="1657-38ec-a2a5-edab">
+          <modifiers>
+            <modifier type="set" field="name" value="Void Shields (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Void Shields (1)
@@ -3133,6 +3613,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6bc-b941-4e1e-b4fa"/>
                   </constraints>
                 </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d815-7d25-45a9-bcb0"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Vanguard Alpha may take one of the following:" hidden="false" id="b0cf-2213-1627-2402">
+              <entryLinks>
                 <entryLink name="Radium Pistol" hidden="false" type="selectionEntry" targetId="c3ab-36d1-f521-7ff1" id="85e8-9836-4857-bce7">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
@@ -3159,7 +3646,7 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d815-7d25-45a9-bcb0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fe6-9f9f-0339-2cf6"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3208,6 +3695,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9fe0-4925-4731-a34d"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4458-c185-420e-8703"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Vanguard may take a:" hidden="false" id="a10f-575f-42cd-b834">
+          <entryLinks>
             <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="33f4-2d93-45af-a50d">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -3219,6 +3713,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aeb-2ced-4516-8fe3"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c985-9e40-c95e-452a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Vanguard may take a:" hidden="false" id="8a16-71ce-50a4-536a">
+          <entryLinks>
             <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="d462-7f6a-4766-afe7">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -3227,6 +3728,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3b4-cd7e-4222-8d51"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccd7-7c87-0196-ac36"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Vanguard may take a:" hidden="false" id="6b67-0ed6-4630-3428">
+          <entryLinks>
             <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="43e5-c60c-4c56-8f1d">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -3237,7 +3745,7 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4458-c185-420e-8703"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44bf-4eaa-f2d0-281b"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3396,6 +3904,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a696-8227-4de6-9986"/>
                   </constraints>
                 </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b1-d31b-4880-ac56"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="The Ranger Alpha may take one of the following:" hidden="false" id="bc74-f2e4-f2a2-5d69">
+              <entryLinks>
                 <entryLink name="Radium Pistol" hidden="false" type="selectionEntry" targetId="c3ab-36d1-f521-7ff1" id="5037-bc72-4214-8ed7">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
@@ -3422,7 +3937,7 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50b1-d31b-4880-ac56"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdf3-6676-56eb-950b"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3471,6 +3986,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e897-d290-4a3d-9e53"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="400d-cf0f-4428-8b4b"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Ranger may take a:" hidden="false" id="08e3-ace4-7de7-49ba">
+          <entryLinks>
             <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="6aad-620c-4048-b87b">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -3482,6 +4004,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1799-edbe-46ce-9ece"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f69-1683-ea75-a2e4"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Ranger may take a:" hidden="false" id="ce28-3bd0-6986-f88e">
+          <entryLinks>
             <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="37b8-7f01-4caa-879b">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -3490,6 +4019,13 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2818-8f00-4d77-badd"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1084-a52a-8838-65c3"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Ranger may take a:" hidden="false" id="1c4c-4c87-3a58-9f6e">
+          <entryLinks>
             <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="9ff0-7c81-4b58-9fed">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -3500,7 +4036,7 @@ The option &apos;Up to four additional Void Shields&apos; may need a &apos;multi
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="400d-cf0f-4428-8b4b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9339-f198-aa45-08ed"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -3650,33 +4186,6 @@ Could not find type or subtype &apos;Frag Grenades&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1997-9c61-4773-aede"/>
               </constraints>
             </entryLink>
-            <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="009a-d2ad-4551-a7cc">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" field="name" value="Nuncio Vox"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="984c-99e3-40ef-a617"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="d8ae-d675-4741-94f2">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e16-9974-4a82-93ec"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="096e-54ec-4b3a-94b8">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cea-2cfd-46f9-bf6b"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc0-f6a5-426c-9cfe"/>
@@ -3708,6 +4217,17 @@ Could not find type or subtype &apos;Frag Grenades&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="137f-5976-4d10-8fe4"/>
               </constraints>
             </entryLink>
+            <entryLink name="Arcana Potentis (Melee)" hidden="false" type="selectionEntry" targetId="96c2-dc8d-4acb-b1cc" id="a2fc-d856-9715-1e44">
+              <modifiers>
+                <modifier type="set" field="name" value="Arcana Potentis"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2886-b5ef-b9a2-f503"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e950-726e-46a8-b768"/>
@@ -3715,6 +4235,54 @@ Could not find type or subtype &apos;Frag Grenades&apos;</comment>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Arcana Potentis
 	 Checked under Arcana Potentis</comment>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Decimator may take a:" hidden="false" id="1b01-28a9-802a-3a46">
+          <entryLinks>
+            <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="009a-d2ad-4551-a7cc">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" field="name" value="Nuncio Vox"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="984c-99e3-40ef-a617"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62b8-eb35-ff19-94fe"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Decimator may take a:" hidden="false" id="31b7-9b5b-478a-6f92">
+          <entryLinks>
+            <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="d8ae-d675-4741-94f2">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e16-9974-4a82-93ec"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="584e-518f-79b0-48d3"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Skitarii Decimator may take a:" hidden="false" id="70aa-de35-4d1f-2af8">
+          <entryLinks>
+            <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="096e-54ec-4b3a-94b8">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cea-2cfd-46f9-bf6b"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a388-6f04-56a4-5038"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <comment>!BSC Errors from 20240406-1603
@@ -3806,6 +4374,49 @@ Could not find wargear Electrostatic Gauntlets &amp; Corpuscarii Electoo
 	 Checked under Electrostatic Gauntlets &amp; Corpuscarii Electoo
 Could not find wargear Electroleech Stave &amp; Fulgurite Electoo
 	 Checked under Electroleech Stave &amp; Fulgurite Electoo</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Electrostatic Gauntlets &amp; Corpuscarii Electoo" hidden="false" id="5fb3-cc85-4771-a767">
+              <entryLinks>
+                <entryLink name="Electrostatic Gauntlets (Ranged)" hidden="false" type="selectionEntry" targetId="573b-93e4-476c-911b" id="92ba-627e-58f9-ec51">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Electrostatic Gauntlets"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6702-4a04-8c38-c7d7"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b139-6bb4-4af5-e917"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Corpuscarii Electoo" hidden="false" type="selectionEntry" targetId="ac19-bbf6-40cc-a51b" id="e775-e594-3338-8027">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25fa-e26c-9fa2-fe3a"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ab9-7149-34ab-2ee4"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a3c-7a7c-3d42-c7fa"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Electroleech Stave &amp; Fulgurite Electoo" hidden="false" id="1cb4-435b-b953-4ae5">
+              <entryLinks>
+                <entryLink name="Electroleech Stave" hidden="false" type="selectionEntry" targetId="4537-10bd-4c91-bb54" id="812a-03ce-71aa-2f8b">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="790a-9284-9521-de9d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae36-5bd0-3acc-7f2c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Fulgurite Electoo" hidden="false" type="selectionEntry" targetId="855a-f595-4179-b961" id="947c-05e7-1615-b553">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d59-3b47-96d4-2394"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9af8-a843-72a9-5ec7"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50be-2984-b3e3-c113"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -3896,12 +4507,12 @@ Could not find wargear in The entire squad must select one of the following opti
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c78a-ce08-4e24-8895"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c78a-ce08-4e24-8895"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0777-9a67-4050-9e44"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0777-9a67-4050-9e44"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Kastelan may exchange its Phosphor Torch for:" id="3639-bd75-4e21-91b2">
@@ -3935,12 +4546,11 @@ Could not find wargear in The entire squad must select one of the following opti
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="5d17-1672-4048-86c1" name="Cybernetica" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="d038-f0e7-8523-e913" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="95"/>
           </costs>
-          <comment>!BSC Errors from 20240406-1603
-Could not find type or subtype &apos;Automata&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4011,6 +4621,15 @@ Could not find type or subtype &apos;Automata&apos;</comment>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23b8-0df3-49c5-a3ed"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e12-13a3-4f8e-b604"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Searchlights" hidden="false" type="selectionEntry" targetId="a280-c496-4014-aca3" id="7fd3-6eda-e704-7630">
+              <modifiers>
+                <modifier type="set" field="name" value="Searchlight"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d893-99d7-a88a-b669"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f68b-c608-677c-c2a7"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4121,13 +4740,21 @@ Could not find wargear Searchlight
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad59-0560-4e58-a85a"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Eradication Beam Cannon" hidden="false" type="selectionEntry" targetId="ba29-3e45-98be-39d8" id="3048-9a64-1067-63dc">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted Eradication Beam Cannon"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8de2-4324-86fb-fe58"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be68-182f-4d26-818b"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Turret Mounted Eradication Beam Cannon
-	 Checked under Eradication Beam Cannon</comment>
             </selectionEntryGroup>
             <selectionEntryGroup name="The Porphetian Armoured Carrier may select a:" id="5b61-35fa-4e98-8689">
               <entryLinks>
@@ -4153,6 +4780,17 @@ Could not find wargear Turret Mounted Eradication Beam Cannon
 Could not find wargear Searchlight
 	 Checked under Searchlight
 Could not find wargear in The Porphetian Armoured Carrier may exchange its Turret Mounted Mauler Bolt Cannon Array for:</comment>
+          <entryLinks>
+            <entryLink name="Searchlights" hidden="false" type="selectionEntry" targetId="a280-c496-4014-aca3" id="fee4-b5a6-f955-3b19">
+              <modifiers>
+                <modifier type="set" field="name" value="Searchlight"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d9c-e9b6-a578-339d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7c5-b203-a857-3d38"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -4317,6 +4955,74 @@ Could not find wargear Power Sword and Flechette Blaster
 	 Checked under Power Sword and Flechette Blaster
 Could not find wargear Transonic Blade and Flechette Blaster
 	 Checked under Transonic Blade and Flechette Blaster</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Taser Goad and Flechette Blaster" hidden="false" id="3235-5cf1-fda4-19ef">
+                  <entryLinks>
+                    <entryLink name="Taser Goad" hidden="false" type="selectionEntry" targetId="46b0-d3c2-4f87-8ca3" id="59b5-4a7f-313a-4774">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ff4d-3265-c8d7-beef"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ef3-fe50-e9b1-c2ed"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Flechette Blaster" hidden="false" type="selectionEntry" targetId="8fa0-1809-442f-9954" id="b22c-3e6b-70c2-f758">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80be-c90b-c4fc-74d0"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b41-1895-e292-6c6e"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ab0-c640-2dcf-ffb4"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Power Sword and Flechette Blaster" hidden="false" id="9617-d104-040f-2934">
+                  <entryLinks>
+                    <entryLink name="Power Sword" hidden="false" type="selectionEntry" targetId="0738-277d-4fdc-b7c5" id="c4cc-312b-703e-7203">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="43d3-45a7-4877-54e7"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8298-d79c-5109-4c2c"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Flechette Blaster" hidden="false" type="selectionEntry" targetId="8fa0-1809-442f-9954" id="0ea5-c20c-4eea-d85b">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2a31-95e4-292e-c128"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3e7-62a4-31f9-1690"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20ee-de97-e3e9-750a"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Transonic Blade and Flechette Blaster" hidden="false" id="0b54-347f-4e6f-2ae6">
+                  <entryLinks>
+                    <entryLink name="Transonic Blade" hidden="false" type="selectionEntry" targetId="2ad3-1e0b-4b48-a80c" id="ecf7-a0fe-33a6-6be2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a167-7697-b5f4-8f63"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cde1-5b7f-7551-cb8c"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Flechette Blaster" hidden="false" type="selectionEntry" targetId="8fa0-1809-442f-9954" id="dde1-7fc8-1ddb-384f">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a96-e3b4-0ca0-f5cd"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0608-57d3-c1eb-b524"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b80-7a56-984e-4087"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -4474,14 +5180,6 @@ Could not find wargear in Any model in the unit may exchange their Flechette Car
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c13-cea8-4250-85c8"/>
               </constraints>
             </entryLink>
-            <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="9607-b7c1-4a0c-b863">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2592-399e-4728-ba2a"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d900-b7ab-4899-bdd7"/>
@@ -4506,8 +5204,20 @@ Could not find wargear in Any model in the unit may exchange their Flechette Car
               </constraints>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Pteraxii Skyhunter may take a:" hidden="false" id="b0dc-7b89-89be-2dc0">
+          <entryLinks>
+            <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="9607-b7c1-4a0c-b863">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2592-399e-4728-ba2a"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d62-2e3a-42af-acb9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0954-35b7-3897-79f9"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4606,6 +5316,30 @@ Could not find wargear in Any model in the unit may exchange their Flechette Car
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Power Sword and Phosphor Serpenta
 	 Checked under Power Sword and Phosphor Serpenta</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power Sword and Phosphor Serpenta" hidden="false" id="595d-805b-a0d7-2c1c">
+                  <entryLinks>
+                    <entryLink name="Power Sword" hidden="false" type="selectionEntry" targetId="0738-277d-4fdc-b7c5" id="f62d-1b3c-505e-c4e5">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="70b6-c85d-8ddf-301a"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d7e-a90e-7d5f-b7ad"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Phosphor Serpenta" hidden="false" type="selectionEntry" targetId="3748-8051-42ad-a3db" id="57c7-1588-16b7-117a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e4c-9720-a62b-537a"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c361-3045-95b4-a609"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5b8-fb91-8cc5-293c"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -4745,10 +5479,10 @@ Could not find wargear Power Sword and Phosphor Serpenta
           <categoryLinks>
             <categoryLink targetId="2107-c372-43e8-90bc" id="2e74-3910-4d13-959a" name="Skitarii" primary="false"/>
             <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="4f22-1d1c-4958-b8d7" name="Character" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="7758-c042-8dfb-f4fd" name="Cavalry Unit-type:" primary="false"/>
           </categoryLinks>
           <comment>!BSC Errors from 20240406-1603
-Could not find wargear in Any model in the unit may exchange their Two Phosphor Serpentas for one of the following:
-Could not find type or subtype &apos;Cavalry&apos;</comment>
+Could not find wargear in Any model in the unit may exchange their Two Phosphor Serpentas for one of the following:</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4777,6 +5511,13 @@ Could not find wargear Preysight Cogitators
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6466-3bf9-48b0-83d4"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d64-3543-49ab-998a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Serberys Tormentor may take a:" hidden="false" id="5a5c-6c10-6715-4c80">
+          <entryLinks>
             <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="b33c-85dd-4e88-b597">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -4788,6 +5529,13 @@ Could not find wargear Preysight Cogitators
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee9e-573a-4e50-9ba4"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f65-2383-77c8-f1cc"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Serberys Tormentor may take a:" hidden="false" id="c451-c507-1436-75c6">
+          <entryLinks>
             <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="3dad-eb31-469b-a209">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -4796,6 +5544,13 @@ Could not find wargear Preysight Cogitators
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3f2-1271-40af-a6d2"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a1d-520c-2f14-2bee"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Serberys Tormentor may take a:" hidden="false" id="762c-2e6b-ebe3-c23e">
+          <entryLinks>
             <entryLink name="Enhanced Data-Tether" hidden="false" type="selectionEntry" targetId="466a-6e5b-4bb0-a9d1" id="37f0-6df9-4cc8-af2a">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -4806,7 +5561,7 @@ Could not find wargear Preysight Cogitators
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d64-3543-49ab-998a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9102-28bb-4675-3467"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4901,6 +5656,17 @@ Could not find wargear in The Conclave must select one of the following upgrades
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="395b-1390-488c-b45f"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Eradication Beamer (1)" hidden="false" type="selectionEntry" targetId="2a1b-6d4e-45c8-941a" id="b8b0-471e-b365-8b54">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Eradication Beamer"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae6b-e6b5-c305-cfe2"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9781-fb1a-4468-a320"/>
@@ -4916,6 +5682,17 @@ Could not find wargear Eradication Beamer
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0752-6ecd-4e60-a0e4"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Missile Launcher" hidden="false" type="selectionEntry" targetId="0ec3-6c91-952c-e0ea" id="f219-7f0f-a338-89e7">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Missile Launcher (with Frag, Krak, and Ignis Missiles)"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6ff-3d43-82a2-122d"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f98c-ff5c-4f07-8173"/>
@@ -4927,14 +5704,14 @@ Could not find wargear Missile Launcher (with Frag, Krak, and Ignis Missiles)
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="a83c-8f21-4f6d-bcf5" name="Cybernetica" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="a285-b490-af7a-8191" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
           </costs>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear in Any model in the unit may exchange their Mauler Bolt Cannon for:
-Could not find wargear in Any model in the unit may exchange their Havoc Launcher for:
-Could not find type or subtype &apos;Automata&apos;</comment>
+Could not find wargear in Any model in the unit may exchange their Havoc Launcher for:</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5062,6 +5839,44 @@ Could not find wargear Two Hull (Front) Mounted Sunfury Missiles
 	 Checked under Sunfury Missile
 Could not find wargear Two Hull (Front) Mounted Kraken Penetrator Missiles
 	 Checked under Kraken Penetrator Missile</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Sunfury Missiles" hidden="false" id="fb6e-bf9a-6521-dd19">
+                  <profiles>
+                    <profile id="80ed-2cc2-c76b-da06" name="Sunfury Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Breaching (4+), Gets Hot, One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fb0-72ef-a958-02d1"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Kraken Penetrator Missiles" hidden="false" id="710d-9821-ad40-caa0">
+                  <profiles>
+                    <profile id="feeb-1d5b-bd96-e7f8" name="Kraken Penetrator Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Ranged), One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d19-09cb-8c1c-99e3"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Mechanicum Lightning Strike Fighter may select one of the following:" id="7bff-fed2-43a8-bd54">
               <entryLinks>
@@ -5111,9 +5926,6 @@ Could not find wargear Two Hull (Front) Mounted Kraken Penetrator Missiles
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65c7-5a2b-4676-8cf2"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -5222,6 +6034,17 @@ Could not find wargear in A Mechanicum Lightning Strike Fighter may select up to
                     <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="377e-8714-459d-a294"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Twin-linked Multi-Laser" hidden="false" type="selectionEntry" targetId="2c14-d702-d599-06dc" id="722f-2f91-958e-f914">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Twin-Linked Multi-Lasers"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="68e8-bade-6ff9-63ae"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9dc4-af46-49ee-b0db"/>
@@ -5249,9 +6072,6 @@ Could not find wargear Hull (Front) Mounted Twin-Linked Multi-Lasers
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3131-0be1-4684-b184"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -5308,6 +6128,15 @@ Could not find wargear in A Mechanicum Avenger Strike Fighter may select up to t
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c78-6d06-43d6-88ba"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b06b-8d39-4a19-b71d"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Searchlights" hidden="false" type="selectionEntry" targetId="a280-c496-4014-aca3" id="65a6-caff-b292-d403">
+              <modifiers>
+                <modifier type="set" field="name" value="Searchlight"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b91c-f8f0-5516-0abb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4197-d654-ed23-09bb"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5388,6 +6217,15 @@ Could not find wargear Searchlight
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44af-b042-4299-b7c5"/>
               </constraints>
             </entryLink>
+            <entryLink name="Searchlights" hidden="false" type="selectionEntry" targetId="a280-c496-4014-aca3" id="9c77-62bf-5030-ce61">
+              <modifiers>
+                <modifier type="set" field="name" value="Searchlight"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b68-d9cb-c6cb-80d6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a691-0a4c-6812-b785"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Archaeopter Imperator may exchange their Hull (Front) Mounted Auto-Repeater Battery for:" id="665f-2c6b-407e-99f5">
@@ -5398,6 +6236,17 @@ Could not find wargear Searchlight
                   </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dce-aebc-42a5-bd0f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Twin-linked Phosphor Cannon" hidden="false" type="selectionEntry" targetId="9885-b693-693b-bddb" id="4761-473c-28ed-1b89">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Twin-Linked Phosphor Cannon"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d951-5bb9-bb73-b8d1"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -5587,9 +6436,19 @@ Could not find wargear in Any Archaeopter Imperator may exchange their Hull (Fro
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb45-5aff-4097-87c4"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Twin-Linked
-	 Checked under Twin-Linked</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Twin-Linked" hidden="false" id="f28c-935e-a3ce-3e42">
+                  <infoLinks>
+                    <infoLink name="Twin-linked" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe" id="18cd-9430-a645-a3c5"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c91e-90e7-b7a3-b38a"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="An Arvus Lighter may take any of the following options:" id="8f3f-af42-4c0d-abea">
               <entryLinks>
@@ -5717,12 +6576,11 @@ Could not find wargear in An Arvus Lighter which selects a Hull (Front) Mounted 
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="0872-bc8f-4752-a7a8" name="Cybernetica" primary="false"/>
             <categoryLink targetId="9231-183c-b97b-63f9" id="f2a7-164e-46a8-a621" name="Heavy" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="a77e-54d8-d71e-f2a4" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="235"/>
           </costs>
-          <comment>!BSC Errors from 20240406-1603
-Could not find type or subtype &apos;Automata&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5805,6 +6663,15 @@ Could not find rule: Thanatar Maniple</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="078e-3e04-4b43-aa0a"/>
               </constraints>
             </entryLink>
+            <entryLink name="Hydraulic Claw" hidden="false" type="selectionEntry" targetId="85ae-5084-7d09-9121" id="7127-59ef-5246-b5c6">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hydraulic Claws"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e646-401f-e7d9-a0d7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a842-7711-01b7-9d2d"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Kharax may exchange either or both of its Hydraulic Claws for:" id="00e9-5add-4d48-89fb">
@@ -5814,21 +6681,39 @@ Could not find rule: Thanatar Maniple</comment>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22a2-f722-4388-808e"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22a2-f722-4388-808e"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09b1-f579-4384-9b95"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="09b1-f579-4384-9b95"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Kharax may exchange either or both of its Mauler Bolt Cannon Arrays for:" id="cc3c-ebb4-45bb-bc78">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b7a-2a6a-452d-9211"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b7a-2a6a-452d-9211"/>
               </constraints>
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear -Twin-Linked Plasma Culverin
 	 Checked under -Twin-Linked Plasma Culverin</comment>
+              <entryLinks>
+                <entryLink name="Twin-linked Plasma Culverin" hidden="false" type="selectionEntry" targetId="afe4-a0b0-866c-0283" id="e7a2-2140-e919-6f29">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bd30-0917-8804-6b0d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Twin-linked Photon Thruster" hidden="false" type="selectionEntry" targetId="084a-e44a-9679-d593" id="335a-d49e-bee5-144e">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="22cc-0f7a-3b52-4c78"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Kharax may exchange both of its Mauler Bolt Cannon Arrays for:" id="2f2c-8c76-40be-b8f8">
               <entryLinks>
@@ -5840,13 +6725,18 @@ Could not find wargear -Twin-Linked Plasma Culverin
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="596e-946b-4d60-b4b4"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Eradication Beam Cannon" hidden="false" type="selectionEntry" targetId="ba29-3e45-98be-39d8" id="24ff-96b9-9e12-e9b5">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51e8-91fb-58e2-ef23"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d26-52e2-42c6-8e80"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Eradication Beam Cannon
-	 Checked under Eradication Beam Cannon</comment>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any model in the unit may purchase:" id="0091-45d6-4fd8-8054">
               <entryLinks>
@@ -5867,6 +6757,7 @@ Could not find wargear Eradication Beam Cannon
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="828d-ce96-4667-8e6e" name="Cybernetica" primary="false"/>
             <categoryLink targetId="9231-183c-b97b-63f9" id="8332-8fc6-4833-873f" name="Heavy" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="fd3b-e712-a933-f530" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
@@ -5875,8 +6766,7 @@ Could not find wargear Eradication Beam Cannon
 Could not find wargear Two Hydraulic Claws
 	 Checked under Hydraulic Claw
 Could not find wargear in Any Kharax may exchange either or both of its Mauler Bolt Cannon Arrays for:
-Could not find wargear in Any Kharax may exchange both of its Mauler Bolt Cannon Arrays for:
-Could not find type or subtype &apos;Automata&apos;</comment>
+Could not find wargear in Any Kharax may exchange both of its Mauler Bolt Cannon Arrays for:</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5966,7 +6856,7 @@ Could not find type or subtype &apos;Automata&apos;</comment>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da59-da41-4806-b630"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="da59-da41-4806-b630"/>
                   </constraints>
                 </entryLink>
                 <entryLink name="Ferrumite Cannon" hidden="false" type="selectionEntry" targetId="7c64-07b0-4bb5-8616" id="4ee6-f892-4db6-9838">
@@ -5974,31 +6864,45 @@ Could not find type or subtype &apos;Automata&apos;</comment>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d8a-ee25-4173-be13"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d8a-ee25-4173-be13"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Siege Wrecker" hidden="false" type="selectionEntry" targetId="178d-8a3a-bfda-7443" id="073b-891b-df40-5f87">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Siege Wrecker (with in-built Heavy Flamer)"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fdde-d0ee-d177-23dc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Eradication Beam Cannon" hidden="false" type="selectionEntry" targetId="ba29-3e45-98be-39d8" id="083b-8350-90f0-474e">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d1ac-2c4f-7832-4563"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f5fa-32d6-444c-86d1"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f5fa-32d6-444c-86d1"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Eradication Beam Cannon
-	 Checked under Eradication Beam Cannon
-Could not find wargear Siege Wrecker (with in-built Heavy Flamer)
-	 Checked under Siege Wrecker (with in-built Heavy Flamer)</comment>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="4e51-2849-4f1a-82c5" name="Cybernetica" primary="false"/>
             <categoryLink targetId="9231-183c-b97b-63f9" id="fdf7-dc4c-476f-8700" name="Heavy" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="6c89-756e-6095-45ca" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215"/>
           </costs>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear in Any Sepketar may exchange either or both of their Fragstorm Petards for:
-Could not find wargear in Any Sepketar may exchange either or both of their Fragstorm Petards for:
-Could not find type or subtype &apos;Automata&apos;</comment>
+Could not find wargear in Any Sepketar may exchange either or both of their Fragstorm Petards for:</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6085,6 +6989,12 @@ Could not find type or subtype &apos;Automata&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99a6-138d-4804-ad97"/>
               </constraints>
             </entryLink>
+            <entryLink name="Twin-linked Autocannon" hidden="false" type="selectionEntry" targetId="6259-3de6-ffc5-61ba" id="6950-a673-cd4a-6025">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4268-8bc6-90b8-a7e5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="871b-4f91-488f-e084"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any model in the unit may take a:" id="0220-7945-4b50-8632">
@@ -6129,14 +7039,14 @@ Could not find type or subtype &apos;Automata&apos;</comment>
           <categoryLinks>
             <categoryLink targetId="2107-c372-43e8-90bc" id="ff40-487b-4238-bdad" name="Skitarii" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="1951-584e-41da-a7e1" name="Skirmish" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="8382-3a40-08b6-7127" name="Cavalry Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
           </costs>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Twin-Linked Autocannon
-	 Checked under Twin-Linked Autocannon
-Could not find type or subtype &apos;Cavalry&apos;</comment>
+	 Checked under Twin-Linked Autocannon</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6150,6 +7060,13 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b25-cdc2-43ff-a009"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf13-8d32-4f6b-bfab"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Ironstrider Ballistarii may take a:" hidden="false" id="8a12-cc26-df93-7cfa">
+          <entryLinks>
             <entryLink name="Nuncio-Vox" hidden="false" type="selectionEntry" targetId="005e-aae6-ddac-bb45" id="3882-2c34-4fd0-ad21">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -6161,6 +7078,13 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02a0-5629-4eb9-a7d8"/>
               </constraints>
             </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7134-4d9d-77ba-c2ed"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="One Ironstrider Ballistarii may take a:" hidden="false" id="b457-a169-d6a6-da4e">
+          <entryLinks>
             <entryLink name="Omnispex" hidden="false" type="selectionEntry" targetId="fbe6-bec1-4be0-9d46" id="bade-7f2a-4f0f-bbff">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -6171,7 +7095,7 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf13-8d32-4f6b-bfab"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd46-f8a4-9ff5-6d5b"/>
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -6251,13 +7175,41 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87ec-7abb-420e-823c"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Hull (Front) Mounted Eradication Beam Cannon
-	 Checked under Eradication Beam Cannon
-Could not find wargear Hull (Front) Mounted Icarus Array
-	 Checked under Icarus Array
-Could not find wargear Hull (Front) Mounted Neutron Spear (with co-axial Heavy Stubber)
-	 Checked under Neutron Spear (with co-axial Heavy Stubber)</comment>
+              <entryLinks>
+                <entryLink name="Icarus Array" hidden="false" type="selectionEntry" targetId="7bae-6011-1fd6-59fb" id="924c-fba4-c9f7-5a8f">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Icarus Array"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f52-8e03-fd3c-96ec"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Neutron Spear" hidden="false" type="selectionEntry" targetId="abef-7af0-4e7d-a334" id="b386-7725-4518-e0de">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Neutron Spear (with co-axial Heavy Stubber)"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f99-911c-3c9f-eeb0"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Eradication Beam Cannon" hidden="false" type="selectionEntry" targetId="ba29-3e45-98be-39d8" id="b823-72d9-3896-0228">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Eradication Beam Cannon"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="808e-523a-3eaf-0950"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any model in the unit may purchase:" id="e667-d4b6-4518-b0af">
               <entryLinks>
@@ -6348,6 +7300,15 @@ Could not find wargear in Any Onager Dunecrawler may exchange their Hull (Front)
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2171-84c2-4a90-a0ea"/>
               </constraints>
             </entryLink>
+            <entryLink name="Searchlights" hidden="false" type="selectionEntry" targetId="a280-c496-4014-aca3" id="2237-721d-26aa-9125">
+              <modifiers>
+                <modifier type="set" field="name" value="Searchlight"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e177-01f9-c040-ba2e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="909b-d377-2350-8582"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Skorpius Disintegrator may exchange their Turret Mounted Belleros Energy Cannon for:" id="b364-c0f4-4384-93ce">
@@ -6359,6 +7320,30 @@ Could not find wargear Turret Mounted Ferrumite Cannon (with co-axial Heavy Stub
 	 Checked under Ferrumite Cannon (with co-axial Heavy Stubber)
 Could not find wargear Turret Mounted Darkfire Annihilator (with co-axial Heavy Stubber)
 	 Checked under Darkfire Annihilator (with co-axial Heavy Stubber)</comment>
+              <entryLinks>
+                <entryLink name="Ferrumite Cannon" hidden="false" type="selectionEntry" targetId="7c64-07b0-4bb5-8616" id="3c0b-62a7-a4d0-3764">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted Ferrumite Cannon (with co-axial Heavy Stubber)"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adb4-9bac-8395-e689"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Darkfire Annihilator" hidden="false" type="selectionEntry" targetId="75d0-f69e-4a07-b7e6" id="d110-d47f-0329-c8da">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted Darkfire Annihilator (with co-axial Heavy Stubber)"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ffd-b935-767f-a144"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any model in the unit may purchase:" id="42df-95e2-4e83-8eda">
               <entryLinks>
@@ -6394,6 +7379,34 @@ Could not find wargear Turret Mounted Belleros Energy Cannon with co-axial Heavy
 	 Checked under Belleros Energy Cannon with co-axial Heavy Stubber
 Could not find wargear in Any Skorpius Disintegrator may exchange their Turret Mounted Belleros Energy Cannon for:
 Could not find wargear in Any Skorpius Disintegrator may exchange their Turret Mounted Belleros Energy Cannon for:</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Turret Mounted Belleros Energy Cannon with co-axial Heavy Stubber" hidden="false" id="052c-603f-f9a8-ddce">
+              <entryLinks>
+                <entryLink name="Belleros Energy Cannon" hidden="false" type="selectionEntry" targetId="01d0-61d9-4881-9628" id="c140-aacf-2814-b45b">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted Belleros Energy Cannon"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56f6-3b03-27fb-b081"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d000-1985-f208-164c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Heavy Stubber" hidden="false" type="selectionEntry" targetId="f227-a61a-3215-932b" id="1235-3af0-6ef0-f924">
+                  <modifiers>
+                    <modifier type="set" field="name" value="co-axial Heavy Stubber"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d925-c2a3-46a6-42a6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b601-4e9e-2bdd-6cfa"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fc5-b5bd-2874-a707"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65e3-2bee-d06c-6a31"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -6561,9 +7574,6 @@ Could not find wargear in Any Skorpius Disintegrator may exchange their Turret M
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e23f-62fa-491c-9b5e"/>
-              </constraints>
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Supercharged Reactor
 	 Checked under Supercharged Reactor
@@ -6647,19 +7657,43 @@ Could not find wargear in The Ordinatus-Exemplar may select any of the following
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2db-41ef-45c4-a283"/>
               </constraints>
             </entryLink>
+            <entryLink name="Twin-linked Accelerator Autocannon" hidden="false" type="selectionEntry" targetId="7f8b-8f31-27bc-d065" id="547e-b9ea-3986-2f07">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8cd-5759-43e7-b695"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75d8-e843-7d2e-48e6"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="309e-f441-48d3-ac63" name="Cybernetica" primary="false"/>
             <categoryLink targetId="7d95-f9d1-440a-67bd" id="c651-eb87-4c85-86f3" name="Monstrous" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="b30c-e799-4c41-b996" name="Unique" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="398a-f5d9-9bde-8847" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Twin-Linked Accelerator Autocannon
 	 Checked under Twin-Linked Accelerator Autocannon
 Could not find wargear Thermal Lance
 	 Checked under Thermal Lance
-Could not find type or subtype &apos;Automata&apos;
 Could not find type or subtype &apos;Paragon&apos;</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Thermal Lance" hidden="false" id="0e55-eff6-a9c8-d51e">
+              <profiles>
+                <profile id="d9c9-7495-814f-5481" name="Thermal Lance" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1eb6-6a10-6194-6949"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dff-6880-56cd-f205"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -6682,6 +7716,11 @@ Could not find type or subtype &apos;Paragon&apos;</comment>
         <infoLink name="Night Vision" hidden="false" type="rule" targetId="683e-b4f2-f032-d31b" id="8db5-22cd-4daa-a6f0"/>
         <infoLink name="Traitor" hidden="false" type="rule" targetId="eff2-8b0e-21da-2f0d" id="766e-5f59-4d76-8c05"/>
         <infoLink name="Split Fire" hidden="false" type="rule" targetId="dea8-564e-9d1b-c685" id="d42e-c0af-43c5-a07e"/>
+        <infoLink name="Void Shields" hidden="false" type="rule" targetId="c503-f5b8-3da0-16e6" id="1dbe-e413-b8ef-dd1f">
+          <modifiers>
+            <modifier type="set" field="name" value="Void Shields (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Void Shields (2)</comment>
@@ -6736,15 +7775,24 @@ Could not find rule: Void Shields (2)</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61ba-d2d8-4aba-972c"/>
               </constraints>
             </entryLink>
+            <entryLink name="Reaper Chainsword" hidden="false" type="selectionEntry" targetId="2164-1725-d032-ed49" id="6a96-1668-6a69-4bb5">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Reaper Chainswords (with in- built Flamestorm Cannons)"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7079-85a5-df65-bb92"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0211-e4a1-0bad-3783"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="8a53-1f5a-4460-87bc" name="Cybernetica" primary="false"/>
             <categoryLink targetId="f479-3c81-1e42-1b3a" id="3e6a-fce6-4d87-b298" name="Gargantuan" primary="false"/>
+            <categoryLink targetId="d8ab-8e21-e193-63ba" id="2f20-f97c-f33a-38fc" name="Automata Unit-type:" primary="false"/>
           </categoryLinks>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Two Reaper Chainswords (with in-built Flamestorm Cannons)
-	 Checked under Reaper Chainswords (with in-built Flamestorm Cannons)
-Could not find type or subtype &apos;Automata&apos;</comment>
+	 Checked under Reaper Chainswords (with in-built Flamestorm Cannons)</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -6959,6 +8007,92 @@ Could not find wargear Two Sponson Mounted Twin-Linked Heavy Flamers and Two Spo
 	 Checked under Twin-Linked Heavy Flamers and
 Could not find wargear Two Sponson Mounted Mauler Bolt Cannon Arrays and Two Sponson Mounted Lascannons
 	 Checked under Mauler Bolt Cannon Arrays and</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Twin-Linked Heavy Bolters and Two Sponson Mounted Lascannons" hidden="false" id="7027-5686-bc32-9dd0">
+                  <entryLinks>
+                    <entryLink name="Twin-linked Heavy Bolter" hidden="false" type="selectionEntry" targetId="d03c-9f7e-84fa-d6e8" id="897a-7b76-69a8-89d3">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Twin-Linked Heavy Bolters"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b981-8c9a-f597-d6e1"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0923-0bb0-ed6b-da80"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="b252-5a86-6e0f-218b" id="d0f6-025d-7e04-6626">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Lascannons"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cda8-11e2-efaf-beed"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55ae-f3d3-c965-53eb"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9c72-353c-8e05-5a0b"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Twin-Linked Heavy Flamers and Two Sponson Mounted Lascannons" hidden="false" id="0b2d-4e01-80f6-b61e">
+                  <entryLinks>
+                    <entryLink name="Twin-linked Heavy Flamer" hidden="false" type="selectionEntry" targetId="18ea-34ad-326b-281b" id="ae4e-a271-5dcb-4bab">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Twin-Linked Heavy Flamers"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee81-420c-a895-9182"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eca0-cf05-6207-3383"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="b252-5a86-6e0f-218b" id="e49d-49ba-7b7a-c2b7">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Lascannons"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bbdc-e17c-c3cc-1cec"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a260-2bf8-5783-3dcb"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4a92-8263-2fe5-f85b"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Mauler Bolt Cannon Arrays and Two Sponson Mounted Lascannons" hidden="false" id="18a3-df9d-c305-a42d">
+                  <entryLinks>
+                    <entryLink name="Mauler Bolt Cannon Array" hidden="false" type="selectionEntry" targetId="31f5-aa1d-470d-95c0" id="d016-97f2-345e-272f">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Mauler Bolt Cannon Arrays"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ce3d-363e-d5c7-94a9"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ab-e261-0e0d-c11e"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="b252-5a86-6e0f-218b" id="bd22-6333-5c3f-8447">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Lascannons"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="588c-4484-58b4-71ab"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2cfb-a352-bf61-16a5"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3631-657a-88b2-9200"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="An Oppressor Siege Tank may exchange its Hull (Front) Mounted Twin-Linked Heavy Bolter for one of the following options:" id="de24-9ec9-4a10-a6ff">
               <entryLinks>
@@ -6968,6 +8102,25 @@ Could not find wargear Two Sponson Mounted Mauler Bolt Cannon Arrays and Two Spo
                   </modifiers>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c22-b7fb-40ce-9ce9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Twin-linked Heavy Flamer" hidden="false" type="selectionEntry" targetId="18ea-34ad-326b-281b" id="1457-50e2-8686-11e6">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Twin-Linked Heavy Flamer"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7615-d6f7-3260-f47d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Twin-linked Mauler Bolt Cannon" hidden="false" type="selectionEntry" targetId="ac88-bcf4-d7b4-5c56" id="ff5c-7a2f-58c6-f57b">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Twin-Linked Mauler Bolt Cannon"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba2b-09e8-9044-15a3"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -7077,13 +8230,11 @@ Could not find wargear Void Shield (1)
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe69-ddcc-4d99-8aa2"/>
-              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="e2b6-b770-784c-9e95" id="7f0b-f310-49c0-a52b" name="Vehicle" primary="false"/>
+            <categoryLink targetId="7381-1130-ca6e-1806" id="cde9-9efb-c90b-a28f" name="Super-heavy Sub-type:" primary="false"/>
           </categoryLinks>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear in An Oppressor Siege Tank may select up to two of the following options (if two choices are selected, these must be the same):
@@ -7092,8 +8243,7 @@ Could not find wargear in An Oppressor Siege Tank may select up to two of the fo
 Could not find wargear in An Oppressor Siege Tank may exchange its Hull (Front) Mounted Twin-Linked Heavy Bolter for one of the following options:
 Could not find wargear in An Oppressor Siege Tank may exchange its Hull (Front) Mounted Twin-Linked Heavy Bolter for one of the following options:
 Could not find wargear in An Oppressor Siege Tank may take up to two of the following:
-Could not find wargear in An Oppressor Siege Tank may take up to two of the following:
-Could not find type or subtype &apos;Super-Heavy&apos;</comment>
+Could not find wargear in An Oppressor Siege Tank may take up to two of the following:</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -7142,6 +8292,15 @@ Could not find type or subtype &apos;Super-Heavy&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b67b-ba87-4f05-9c4d"/>
               </constraints>
             </entryLink>
+            <entryLink name="Volkite Culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="451d-a555-1911-5c2b">
+              <modifiers>
+                <modifier type="set" field="name" value="One Hull (Rear) Mounted Volkite Culverin"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dca1-0c07-b775-076f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da7b-3ecb-ff8d-4945"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="An Ordinatus-Minoris must select one of the following options:" id="0edf-6cd4-4ad0-a6c8">
@@ -7178,6 +8337,14 @@ Could not find type or subtype &apos;Super-Heavy&apos;</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8228-8523-421a-8a45"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Macro-Gatling Blaster" hidden="false" type="selectionEntry" targetId="2c0d-36ba-7cfa-6915" id="88a9-8543-78de-720a">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Macro Gatling Blaster"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e174-d386-8782-721d"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c94c-2d67-416f-b801"/>
@@ -7189,12 +8356,27 @@ Could not find wargear Hull (Front) Mounted Macro Gatling Blaster
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="e2b6-b770-784c-9e95" id="0512-96ea-41db-8fa3" name="Vehicle" primary="false"/>
+            <categoryLink targetId="7381-1130-ca6e-1806" id="06b4-5646-dfea-8078" name="Super-heavy Sub-type:" primary="false"/>
           </categoryLinks>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Ordinatus Dispersion Shield
 	 Checked under Ordinatus Dispersion Shield
-Could not find wargear in An Ordinatus-Minoris must select one of the following options:
-Could not find type or subtype &apos;Super-Heavy&apos;</comment>
+Could not find wargear in An Ordinatus-Minoris must select one of the following options:</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ordinatus Dispersion Shield" hidden="false" id="69df-442e-5340-a4f7">
+              <profiles>
+                <profile id="174e-bb7a-af69-5eea" name="Ordinatus Dispersion Shield" publicationId="bde1-6db1-163b-3b76" page="126" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">For the duration of the first Game Turn, all Shooting Attacks made against a model with an Ordinatus dispersion shield that target the model’s Front or Side Armour values, or any indirect Shooting Attacks (such as those with the Barrage special rule) are reduced by -2 Strength, and any Explodes results on the Vehicle Damage table are ignored. In subsequent Game Turns after the first, the Ordinatus Dispersion Shield counts as a Flare Shield.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c19d-ebb9-e3d4-2811"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3e9-b61f-5bdf-75b6"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -7209,6 +8391,205 @@ Could not find type or subtype &apos;Super-Heavy&apos;</comment>
           </modifiers>
         </infoLink>
         <infoLink name="Reinforced Structure" hidden="false" type="rule" targetId="5b0d-5362-e961-f3b0" id="113b-6979-4fe2-be56"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Solius Excinda" hidden="false" id="8e1a-47dc-2469-fd73" publicationId="f856-58d6-ef02-7d3e" page="13">
+      <comment>Weapon profile from Liber Ingenium v1.3</comment>
+      <profiles>
+        <profile id="b5c1-cf63-5961-2ab0" name="Solius Excinda" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Sunder, Instant Death</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Excoriator" hidden="false" id="f481-ba8c-200c-dbea" publicationId="f856-58d6-ef02-7d3e" page="15">
+      <comment>Weapon profile from Liber Ingenium v1.3</comment>
+      <profiles>
+        <profile id="6620-b2ca-52c3-c9c4" name="Excoriator" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Breaching (5+) an invention would echo the ages, outlasting even the knowledge of her name.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Disintegration Beamer" hidden="false" id="fabb-0e0f-7dfb-f3c1" publicationId="f856-58d6-ef02-7d3e" page="16">
+      <comment>Weapon profile from Liber Ingenium v1.3</comment>
+      <profiles>
+        <profile id="ef94-ac90-4eb6-fade" name="Disintegration Beamer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Molecular Dissonance, Instant Death, Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hydraulic Claw" hidden="false" id="85ae-5084-7d09-9121" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Weapon profile from Liber Ingenium v1.3</comment>
+      <profiles>
+        <profile id="87bd-f696-0b0d-d29c" name="Hydraulic Claw - Battering Strikes" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Concussive (1)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f08-40af-0711-b876" name="Hydraulic Claw - Iron Grasp" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Makeshift Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Multi-Laser" hidden="false" id="2c14-d702-d599-06dc" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Twin-linked version of Multi-Laser (adds the Twin-linked special rule)</comment>
+      <profiles>
+        <profile id="5fd5-11c6-1790-75a7" name="Twin-linked Multi-Laser" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Phosphor Cannon" hidden="false" id="9885-b693-693b-bddb" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Twin-linked version of Phosphor Cannon (adds the Twin-linked special rule)</comment>
+      <profiles>
+        <profile name="Twin-linked Phosphor Cannon" typeName="Weapon" hidden="false" typeId="1a1a-e592-2849-a5c0" id="34d4-b4af-3166-cfaa" page="96" publicationId="f856-58d6-ef02-7d3e">
+          <characteristics>
+            <characteristic typeId="95ba-cda7-b831-6066" name="Range">36"</characteristic>
+            <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">6</characteristic>
+            <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Heavy 3, Ignores Cover, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Plasma Culverin" hidden="false" id="afe4-a0b0-866c-0283" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Twin-linked version of Plasma Culverin (adds the Twin-linked special rule)</comment>
+      <profiles>
+        <profile name="Twin-linked Plasma Culverin" typeName="Weapon" hidden="false" typeId="1a1a-e592-2849-a5c0" id="55fe-3d6c-eb8e-9166" page="99" publicationId="f856-58d6-ef02-7d3e">
+          <characteristics>
+            <characteristic typeId="95ba-cda7-b831-6066" name="Range">24"</characteristic>
+            <characteristic typeId="24d9-b8e1-a355-2458" name="Strength">7</characteristic>
+            <characteristic typeId="f7a6-e0d8-7973-cd8d" name="AP">4</characteristic>
+            <characteristic typeId="2f86-c8b4-b3b4-3ff9" name="Type">Heavy 2, Blast (3"), Breaching (5+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Photon Thruster" hidden="false" id="084a-e44a-9679-d593" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Twin-linked version of Photon Thruster (adds the Twin-linked special rule)</comment>
+      <profiles>
+        <profile id="cbb5-da93-e465-55a3" name="Twin-linked Photon Thruster" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Blind, Lance, Gets Hot, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Autocannon" hidden="false" id="6259-3de6-ffc5-61ba" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Twin-linked version of Autocannon (adds the Twin-linked special rule)</comment>
+      <profiles>
+        <profile id="d1d7-45d6-ca2c-dd2e" name="Twin-linked Autocannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (6+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Icarus Array" hidden="false" id="7bae-6011-1fd6-59fb" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Weapon profile from Liber Ingenium v1.3</comment>
+      <profiles>
+        <profile id="fdfd-bdf3-0769-a3ed" name="Icarus Array - Daedalus Missile Pod" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3029-ed41-d0be-dff0" name="Icarus Array - Gatling Rocket Launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d57-f552-54bd-b542" name="Icarus Array - Icarian-Pattern Autocannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Accelerator Autocannon" hidden="false" id="7f8b-8f31-27bc-d065" publicationId="f856-58d6-ef02-7d3e">
+      <comment>Twin-linked version of Accelerator Autocannon (adds the Twin-linked special rule)</comment>
+      <profiles>
+        <profile id="6021-6a14-3fdf-4725" name="Twin-linked Accelerator Autocannon" publicationId="a716-c1c4-7b26-8424" page="128" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Rending (6+), Exoshock (6+), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eradication Beam Cannon" hidden="false" id="ba29-3e45-98be-39d8">
+      <!-- Weapon profile from Liber Ingenium v1.3 (Eradication Beam Weapons) -->
+      <profiles>
+        <profile name="Eradication Beam Cannon (Up to 12&quot;)" hidden="false" id="8ac3-e9d3-f9da-33ea" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Eradication Beam Cannon (12-24&quot;)" hidden="false" id="e282-bff3-57f8-31fd" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12-24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Eradication Beam Cannon (24-36&quot;)" hidden="false" id="730f-e462-7b1a-3da3" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24-36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5"), Blind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blind" hidden="false" type="rule" targetId="d836-747d-07d6-2b63" id="6399-2bd9-86ad-5aa9"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
