@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2204" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2205" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -71201,6 +71201,36 @@ A model equipped with an Angelus Pattern Jump Pack gains the Bulky (3), Deep Str
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5366-0273-de1d-040f" name="Achea Force Stave" publicationId="3970-79bb-bdc6-9599" page="179" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e94c-c562-a1fe-4e8a" name="Achea Force Stave" publicationId="3970-79bb-bdc6-9599" page="179" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Achaen Force</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="1ca5-99a0-6bba-97c2" name="Achea Force Stave" publicationId="3970-79bb-bdc6-9599" page="179" hidden="false">
+          <description>Any model which would be eligible to select an Achea Pattern Force Weapon may choose to select an Achea Force Stave instead of the options found in Liber Hereticus, in the Achea Pattern Force Weapons section.
+
+An Achea Force Stave counts as a ‘Force’ weapon for all rules which affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="1663-f302-76ff-62df" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="af37-60fe-6093-f12d" name="Achean Force" hidden="false" targetId="c56f-80ff-5d8e-1af4" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -71587,6 +71617,7 @@ A model equipped with an Angelus Pattern Jump Pack gains the Bulky (3), Deep Str
         <entryLink id="d318-cd01-df4a-e800" name="Raven&apos;s Talon" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry"/>
         <entryLink id="fe26-b662-8be3-d7ce" name="Achea Force Axe" hidden="false" collective="false" import="true" targetId="d27f-9247-2c27-4450" type="selectionEntry"/>
         <entryLink id="dc8e-eb68-af6b-7513" name="Achea Force Maul" hidden="false" collective="false" import="true" targetId="126d-534d-dcb0-e931" type="selectionEntry"/>
+        <entryLink id="5a36-3264-99e1-5941" name="Achea Force Stave" hidden="false" collective="false" import="true" targetId="5366-0273-de1d-040f" type="selectionEntry"/>
         <entryLink id="7e1f-511b-64de-7fae" name="Achea Force Sword" hidden="false" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry"/>
         <entryLink id="93b8-cd3d-05c7-80bd" name="Axe Of Perdition" hidden="false" collective="false" import="true" targetId="0478-8201-90fc-bfd5" type="selectionEntry"/>
         <entryLink id="15db-58d0-9db9-e91e" name="Blade Of Perdition" hidden="false" collective="false" import="true" targetId="7830-e9d6-7e07-ad2f" type="selectionEntry"/>
@@ -73679,6 +73710,30 @@ In addition, for the purposes of the Rite of War: Creeping Death, a Legion Centu
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="8962-8ba1-bd21-1f6a" name="Achea Force Stave" hidden="true" collective="false" import="true" targetId="5366-0273-de1d-040f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="21c3-2f28-7820-e51a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="f75a-d5c1-59ba-5c5a" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="21c3-2f28-7820-e51a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4f07-3d45-4f28-a0c6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink id="533c-6b0e-4646-9af8" name="Achea Force Sword" hidden="true" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -74251,6 +74306,7 @@ In addition, for the purposes of the Rite of War: Creeping Death, a Legion Centu
         <entryLink id="b8a2-e0ad-bcec-9861" name="Achea Force Sword" hidden="false" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry"/>
         <entryLink id="e65d-3d7a-a10f-5e05" name="Achea Force Axe" hidden="false" collective="false" import="true" targetId="d27f-9247-2c27-4450" type="selectionEntry"/>
         <entryLink id="203d-c8fd-c806-faa2" name="Achea Force Maul" hidden="false" collective="false" import="true" targetId="126d-534d-dcb0-e931" type="selectionEntry"/>
+        <entryLink id="18a7-0630-bdcc-d936" name="Achea Force Stave" hidden="false" collective="false" import="true" targetId="5366-0273-de1d-040f" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="87f6-1951-d3b4-37dd" name="Chainsword (all)" hidden="false" collective="false" import="true" defaultSelectionEntryId="8c6c-7028-af50-2cdd">
