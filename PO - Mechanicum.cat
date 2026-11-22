@@ -331,6 +331,39 @@ Could not find wargear Master-Crafted
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b241-5495-d0a0-1c46"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="The Orders of Lesser Techno-Arcana" hidden="false" id="935a-b12f-0095-06da">
+              <entryLinks>
+                <entryLink name="Order of Lesser Techno-Arcana: Lachrimallion" hidden="false" type="selectionEntry" targetId="6f0f-b92d-4285-a96a" id="0a8f-4650-0176-dec2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9aef-ad9e-3882-bae4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Macroteknia" hidden="false" type="selectionEntry" targetId="3493-afdd-1cfd-dd1b" id="9576-5e7f-5d32-63ce">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5daf-1f1a-754e-86fe"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Malaghrae" hidden="false" type="selectionEntry" targetId="38c9-bee0-4bd9-d5df" id="3438-ea85-9757-23b8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40b5-d88b-da98-20c4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Myrmidae" hidden="false" type="selectionEntry" targetId="742d-a196-f79d-ece5" id="4e23-cc9e-2387-33eb">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9370-6440-2f95-db2d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Ruinor" hidden="false" type="selectionEntry" targetId="8ebb-63cd-9d1b-93ec" id="7c3a-087d-2e37-7ccd">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f60f-eda0-1b50-6635"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5d1-9472-21fe-ce54"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="10b7-7d12-c818-bd54"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3f41-70d2-4ba3-acfd" name="Infantry" primary="false"/>
@@ -359,6 +392,12 @@ Could not find wargear in The Magos Prime may upgrade a single weapon to have th
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Independent Character
 Could not find rule: The Orders of Lesser Techno-Arcana</comment>
+      <rules>
+        <rule name="The Orders of Lesser Techno-Arcana" id="00dc-78ab-440a-8408" publicationId="f856-58d6-ef02-7d3e" page="85" hidden="false">
+          <description>All Magos Primes and Magos Primes on Abeyant have The Orders of Lesser Techno-Arcana Special Rule – this requires them to select a single Lesser Techno-Arcana upgrade during army selection. However, no Magos Prime or Magos Prime on Abeyant may take more than one such upgrade, and some upgrades may not be available to all types of Magos Prime. If certain upgrades are available to only certain Magos Primes, it will be noted in their description along with any other benefits or restrictions. Note that no Lesser Order of Techno-arcana may be chosen more than once in a single army, regardless of the number of Detachments.
+Each Lesser Techno-arcana upgrade grants the model a number of additional Special Rules or items of additional Wargear. They may also modify the model’s Unit Type, Unit Sub-type or Characteristics. In all cases, the Lesser Techno-Arcana type’s description will indicate all changes, benefits and restrictions.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Magos Prime On Abeyant" type="unit" id="6ef6-3412-4083-82ca" page="8" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -676,6 +715,39 @@ Could not find wargear Master-Crafted
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7f71-b31b-1f9d-62f0"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="The Orders of Lesser Techno-Arcana" hidden="false" id="b0bc-f9dc-8845-8bcf">
+              <entryLinks>
+                <entryLink name="Order of Lesser Techno-Arcana: Lachrimallion" hidden="false" type="selectionEntry" targetId="6f0f-b92d-4285-a96a" id="8e00-8bfa-067e-1507">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0aa7-1700-68b3-e14a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Macroteknia" hidden="false" type="selectionEntry" targetId="3493-afdd-1cfd-dd1b" id="b67e-33a1-38b3-6cc2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="229e-b06f-5550-894d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Malaghrae" hidden="false" type="selectionEntry" targetId="38c9-bee0-4bd9-d5df" id="d6f6-3100-a0cf-1b94">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b36b-2cb3-bcd2-2350"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Myrmidae" hidden="false" type="selectionEntry" targetId="742d-a196-f79d-ece5" id="16c8-beca-22d9-5049">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d6c-16c7-d617-74f9"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Order of Lesser Techno-Arcana: Ruinor" hidden="false" type="selectionEntry" targetId="8ebb-63cd-9d1b-93ec" id="fb53-172c-de65-0d78">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17e0-3bd5-d3ff-c1c5"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a409-b7bd-968f-d0ca"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0f3-4844-615b-9f14"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="d9cc-077e-4392-b34f" name="Infantry" primary="false"/>
@@ -706,6 +778,12 @@ Could not find wargear in The Magos Prime on Abeyant may upgrade a single weapon
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Independent Character
 Could not find rule: The Orders of Lesser Techno-Arcana</comment>
+      <rules>
+        <rule name="The Orders of Lesser Techno-Arcana" id="9bf5-594d-2efc-48c0" publicationId="f856-58d6-ef02-7d3e" page="85" hidden="false">
+          <description>All Magos Primes and Magos Primes on Abeyant have The Orders of Lesser Techno-Arcana Special Rule – this requires them to select a single Lesser Techno-Arcana upgrade during army selection. However, no Magos Prime or Magos Prime on Abeyant may take more than one such upgrade, and some upgrades may not be available to all types of Magos Prime. If certain upgrades are available to only certain Magos Primes, it will be noted in their description along with any other benefits or restrictions. Note that no Lesser Order of Techno-arcana may be chosen more than once in a single army, regardless of the number of Detachments.
+Each Lesser Techno-arcana upgrade grants the model a number of additional Special Rules or items of additional Wargear. They may also modify the model’s Unit Type, Unit Sub-type or Characteristics. In all cases, the Lesser Techno-Arcana type’s description will indicate all changes, benefits and restrictions.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Skitarii Centurius" type="unit" id="3283-a0b5-40b2-b42b" page="10" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -7450,7 +7528,7 @@ Could not find wargear in Any Skorpius Disintegrator may exchange their Turret M
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="The Ordinatus-Exemplar must select one of the following Motive Systems:" id="6189-3eae-44c8-9762">
+            <selectionEntryGroup name="The Ordinatus-Exemplar must select one of the following Motive Systems:" id="6189-3eae-44c8-9762" defaultSelectionEntryId="90ca-3832-4151-bbaa">
               <entryLinks>
                 <entryLink name="Track Units" hidden="false" type="selectionEntry" targetId="47e8-82ab-407b-ab67" id="90ca-3832-4151-bbaa">
                   <constraints>
@@ -7465,20 +7543,37 @@ Could not find wargear in Any Skorpius Disintegrator may exchange their Turret M
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aac9-be1a-438d-8745"/>
                   </constraints>
                 </entryLink>
-                <entryLink name="Hover Nacelles" hidden="false" type="selectionEntry" targetId="39ad-47b8-4d58-87af" id="2958-62e2-45ce-a42c">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                  </costs>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0b1-f75b-c1dd-e3c0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74bb-9121-58b5-c0d2"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hover Nacelles" hidden="false" id="71a4-c09b-8200-31b0">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fad0-d607-465b-9075"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd20-1fc0-4869-b58e"/>
-              </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Hover Nacelles" hidden="false" type="selectionEntry" targetId="39ad-47b8-4d58-87af" id="2958-62e2-45ce-a42c">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2731-5df4-d350-4aa3"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f86-1c5f-3ed1-4fed"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="c641-d668-4211-f4e2">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23ee-5d6d-5c2c-1b47"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb3d-bf8a-0218-0cdb"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="The Ordinatus-Exemplar must select one of the following Primary Weapon Systems:" id="2171-6c06-47a2-a798">
+            <selectionEntryGroup name="The Ordinatus-Exemplar must select one of the following Primary Weapon Systems:" id="2171-6c06-47a2-a798" defaultSelectionEntryId="8999-42f2-4bb2-9a99">
               <entryLinks>
                 <entryLink name="Anbaric Vaporizor" hidden="false" type="selectionEntry" targetId="754f-ffb6-4e90-bf1b" id="8999-42f2-4bb2-9a99">
                   <modifiers>
@@ -7499,86 +7594,200 @@ Could not find wargear in Any Skorpius Disintegrator may exchange their Turret M
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67fd-43aa-4d78-a602"/>
                   </constraints>
                 </entryLink>
-                <entryLink name="Strato-Cannon" hidden="false" type="selectionEntry" targetId="0fbc-7bd4-4d97-84ad" id="5dc1-5f26-42f8-9538">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Centreline Mounted Strato-Cannon"/>
-                  </modifiers>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2de8-73ef-8a65-4cd6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ccd-3a22-a3fa-6616"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Centreline Mounted Strato-Cannon" hidden="false" id="710e-a4b2-c3ef-2efd">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c644-fad0-470f-bda9"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4294-68db-4d77-8805"/>
-              </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Strato-Cannon" hidden="false" type="selectionEntry" targetId="0fbc-7bd4-4d97-84ad" id="5dc1-5f26-42f8-9538">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Centreline Mounted Strato-Cannon"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="101d-348d-6d38-38fd"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d940-1d4e-9ca4-be5a"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="d6f1-0e71-0e09-2742">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="506a-919b-1916-4a1c"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f626-2ab4-60d4-4058"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="The Ordinatus-Exemplar may select up to two of the following Secondary Weapon Systems:" id="754d-b956-406d-84f7">
-              <entryLinks>
-                <entryLink name="Volkite Culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="d13e-8410-4ac1-a74e">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Two Sponson Mounted Volkite Culverins"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d5dc-6497-4434-ac73"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Mauler Bolt Cannon Array" hidden="false" type="selectionEntry" targetId="31f5-aa1d-470d-95c0" id="b750-7f2c-4572-b26d">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Two Sponson Mounted Mauler Bolt Cannon Arrays"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2ddc-3306-4461-b263"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="8621-4e12-b3d2-116f" id="99f9-7493-4d76-8c05">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Two Sponson Mounted Lascannons"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9416-7b9b-4d04-9fb0"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="272a-b236-4e13-b3cd"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Volkite Culverins" hidden="false" id="e543-e232-5b08-8898">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d5dc-6497-4434-ac73"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Volkite Culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="d13e-8410-4ac1-a74e">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Volkite Culverins"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d509-90f3-7d69-2945"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb81-b182-1938-6c7e"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="c4a6-4a64-b45e-311f">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bd0-58d9-8e0e-792a"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b20-0b69-ed89-b498"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Mauler Bolt Cannon Arrays" hidden="false" id="39e3-dd7f-d083-9f30">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2ddc-3306-4461-b263"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Mauler Bolt Cannon Array" hidden="false" type="selectionEntry" targetId="31f5-aa1d-470d-95c0" id="b750-7f2c-4572-b26d">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Mauler Bolt Cannon Arrays"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f68b-57f3-a966-729f"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8386-ffbf-5577-3af0"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="1788-de71-c002-fb5a">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4847-3a76-5563-7f22"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4f5-fcff-c3de-6c4c"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted Lascannons" hidden="false" id="9bbe-ba6e-da98-fbe1">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9416-7b9b-4d04-9fb0"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="8621-4e12-b3d2-116f" id="99f9-7493-4d76-8c05">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Two Sponson Mounted Lascannons"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8ee-f045-0fa7-03fe"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="32cc-f0f6-1ddb-939b"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="4444-3cf1-4c4c-8bbb">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ae99-1221-441a-7d79"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0337-7b50-d323-1457"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="The Ordinatus-Exemplar may select any of the following Auxiliary Systems:" id="c4d4-180c-4693-a4bf">
-              <entryLinks>
-                <entryLink name="Self-Repair Systems" hidden="false" type="selectionEntry" targetId="8fa8-3be9-4ea5-9313" id="bb87-efe4-4f34-b994">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Supercharged Reactor" hidden="false" id="22bf-3a76-c75b-a82a">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="134c-f26f-af7e-a23d"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="0af5-ab0e-b81a-7eba">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8b47-0ee0-e536-e36b"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="59cc-23a6-249d-0f8b"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Reinforced Superstructure" hidden="false" id="fa00-58d2-591c-aaf2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa45-fdf0-40a1-9e99"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="a0bc-acf7-173e-f5b0">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b1b2-0a85-804d-40e2"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ebbd-d475-dead-fc64"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Self-Repair Systems" hidden="false" id="a3b7-0980-fd5c-d893">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d3a-234c-474a-9560"/>
                   </constraints>
-                </entryLink>
-                <entryLink name="Cascade Shield Projector" hidden="false" type="selectionEntry" targetId="a175-4741-4bd6-b808" id="1a51-a28f-481b-a922">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink name="Self-Repair Systems" hidden="false" type="selectionEntry" targetId="8fa8-3be9-4ea5-9313" id="bb87-efe4-4f34-b994">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f5e5-10fa-b874-d0b1"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f2c-91b3-8c28-6ad3"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="d94e-1e34-6836-8553">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1f92-cb75-d125-873d"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a63d-0a30-742e-a763"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Cascade Shield Projector" hidden="false" id="fb45-1f6f-4d61-3f3f">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="494d-bb81-4641-8a36"/>
                   </constraints>
-                </entryLink>
-              </entryLinks>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Supercharged Reactor
-	 Checked under Supercharged Reactor
-Could not find wargear Reinforced Superstructure
-	 Checked under Reinforced Superstructure</comment>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Cascade Shield Projector" hidden="false" type="selectionEntry" targetId="a175-4741-4bd6-b808" id="1a51-a28f-481b-a922">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0f1-7ddb-0806-1dd7"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7d6-1095-8a10-5a9b"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="9593-c410-7f26-dd74">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="654e-1c82-5f98-b282"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fd2f-be3b-352a-cfce"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -7591,6 +7800,14 @@ Could not find wargear Four Module Slots
 	 Checked under Four Module Slots
 Could not find wargear in The Ordinatus-Exemplar may select any of the following Auxiliary Systems:
 Could not find wargear in The Ordinatus-Exemplar may select any of the following Auxiliary Systems:</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Four Module Slots" hidden="false" id="fcfd-873f-a941-d5c9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fbb4-b329-0c17-4faa"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67d1-baa4-d1fd-df2a"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -8194,11 +8411,56 @@ Could not find wargear Hull (Front) Twin-Linked Mauler Bolt Cannon
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="579b-ad80-4169-ac81"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Pintle Mounted Combi-Weapon (Any Type)
-	 Checked under Combi-Weapon (Any Type)
-Could not find wargear Void Shield (1)
-	 Checked under Void Shield (1)</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted Combi-Weapon (any type)" hidden="false" id="9a01-0898-a7ac-b9da">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="214e-c5b1-593c-0ac3"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Combi-Weapon type" hidden="false" id="9906-8428-ac2c-b934" defaultSelectionEntryId="324a-85a8-ee8e-8957">
+                      <entryLinks>
+                        <entryLink name="Minor Combi-Weapon - Flamer" hidden="false" type="selectionEntry" targetId="8dee-b436-0afd-c70a" id="324a-85a8-ee8e-8957">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8fbb-c5d3-ffe9-3510"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Grenade Launcher" hidden="false" type="selectionEntry" targetId="dd06-55b3-1c77-1e1d" id="8364-799e-abbb-f735">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7819-10d3-3fe9-e273"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Volkite Charger" hidden="false" type="selectionEntry" targetId="8720-32c4-0099-63f4" id="ca12-2912-4c52-2ef8">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f96a-6469-34af-a8ad"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Meltagun" hidden="false" type="selectionEntry" targetId="59c3-2af5-ebe5-d512" id="aa20-be33-fefa-6fc7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0642-50b6-8799-d860"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Plasma Gun" hidden="false" type="selectionEntry" targetId="5ed9-1bc3-4d8f-0826" id="52e4-1af5-e0f9-362c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dd2-0982-6003-54bc"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Disintegrator" hidden="false" type="selectionEntry" targetId="9417-90a9-e0f0-d395" id="4470-c147-14da-261f">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b4c-5711-0a75-cc17"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea3c-150f-6140-50bc"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5995-dd8a-42c4-5925"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="An Oppressor Siege Tank may take any of the following:" id="13fe-eda8-434a-ae54">
               <entryLinks>
@@ -8591,6 +8853,65 @@ Could not find wargear in An Ordinatus-Minoris must select one of the following 
       <infoLinks>
         <infoLink name="Blind" hidden="false" type="rule" targetId="d836-747d-07d6-2b63" id="6399-2bd9-86ad-5aa9"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Order of Lesser Techno-Arcana: Lachrimallion" hidden="false" id="6f0f-b92d-4285-a96a" publicationId="f856-58d6-ef02-7d3e" page="85">
+      <rules>
+        <rule name="Order of Lesser Techno-Arcana: Lachrimallion" id="eaf3-e2be-84df-2466" publicationId="f856-58d6-ef02-7d3e" page="85" hidden="false">
+          <description>A model with this Special Rule gains the Opus Viscera and Incorruptible Flesh Special Rules (see page 99 of Liber Mechanicum).</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="790d-5df6-023c-c931" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Order of Lesser Techno-Arcana: Macroteknia" hidden="false" id="3493-afdd-1cfd-dd1b" publicationId="f856-58d6-ef02-7d3e" page="85">
+      <rules>
+        <rule name="Order of Lesser Techno-Arcana: Macroteknia" id="b66e-ea41-9445-21e6" publicationId="f856-58d6-ef02-7d3e" page="85" hidden="false">
+          <description>A model with this Special Rule gains the Rector Aedificii (see page 100 of Liber Mechanicum) and the Machinatus Primus Special Rules.
+Machinatus Primus: Before deployment, the Controlling Player may select a single vehicle from the same detachment as a model with this Special Rule. If the vehicle is part of a squadron, only a single model gains the bonus – this must be clearly marked somehow. The vehicle may not have the Knight or Titan Sub-types.
+That vehicle gains +2 to its Movement Characteristic, and +1 to its Hull Points Characteristic.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bd1b-8db4-401d-7cb2" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Order of Lesser Techno-Arcana: Malaghrae" hidden="false" id="38c9-bee0-4bd9-d5df" publicationId="f856-58d6-ef02-7d3e" page="85">
+      <rules>
+        <rule name="Order of Lesser Techno-Arcana: Malaghrae" id="1c09-4039-2b60-3768" publicationId="f856-58d6-ef02-7d3e" page="85" hidden="false">
+          <description>A model with this Special Rule gains Mech-Assassin Special Rule.
+Mech-Assassin: A model with this Special Rule gains the Preferred Enemy (Characters), Precision Strikes (6+), and the Monster Hunter Special Rules.
+In addition, a model with this special rule increases their Weapon Skill Characteristic to 5 and Attacks Characteristic to 3, and is equipped with a Prehensile Dataspike. A model with this Special Rule may exchange a single Power Weapon they are armed with for a Paragon Blade for +20 points.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ef9b-d809-f2cb-41f8" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Order of Lesser Techno-Arcana: Myrmidae" hidden="false" id="742d-a196-f79d-ece5" publicationId="f856-58d6-ef02-7d3e" page="85">
+      <rules>
+        <rule name="Order of Lesser Techno-Arcana: Myrmidae" id="2c13-1a29-50d5-8a65" publicationId="f856-58d6-ef02-7d3e" page="85" hidden="false">
+          <description>A model with this Special Rule gains the Hatred (Everything!), Bulky (3), Firing Protocols (3), and Precision Shots (6+) Special Rules. In addition, a model with this Order of Lesser Techno-Arcana changes its Wounds Characteristic to 4.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="fe6a-92b8-c268-6f2d" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Order of Lesser Techno-Arcana: Ruinor" hidden="false" id="8ebb-63cd-9d1b-93ec" publicationId="f856-58d6-ef02-7d3e" page="85">
+      <rules>
+        <rule name="Order of Lesser Techno-Arcana: Ruinor" id="92f2-038a-2fba-bc4c" publicationId="f856-58d6-ef02-7d3e" page="85" hidden="false">
+          <description>A model with this Special Rule gains the Wrecker, Sunder, and Secrets of Annihilation Special Rules (see page 101 of Liber Mechanicum), and also gains the Cybertheurgist Sub-type. In addition, any unit a model with this Lesser Order of Techno-Arcana joins also gains the benefit of the Wrecker and Sunder Special Rules for as long as they are in the unit.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="59fa-e4bb-46fa-3d5a" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Module Slot (used)" hidden="false" id="e654-fa8e-57ef-fef7">
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="3142-53ad-4a7d-8790" shared="true" id="c63e-46e7-e17b-907d" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>

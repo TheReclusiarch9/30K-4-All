@@ -5063,9 +5063,56 @@ Could not find wargear in Any Auxilia Verticalis Drop Sentinel may select up to 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6004-4c96-457a-811a"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Pintle Mounted Combi-Weapon (any type)
-	 Checked under Combi-Weapon (any type)</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted Combi-Weapon (any type)" hidden="false" id="cd50-82ca-258b-1b2e">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eca-2414-b7db-f1f2"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Combi-Weapon type" hidden="false" id="5b51-cf57-5bf1-78fe" defaultSelectionEntryId="6730-2f7a-88f9-e64d">
+                      <entryLinks>
+                        <entryLink name="Minor Combi-Weapon - Flamer" hidden="false" type="selectionEntry" targetId="8dee-b436-0afd-c70a" id="6730-2f7a-88f9-e64d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3127-7699-b9d4-40b5"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Grenade Launcher" hidden="false" type="selectionEntry" targetId="dd06-55b3-1c77-1e1d" id="c080-5d4a-1220-5831">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b30-1738-2224-3004"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Volkite Charger" hidden="false" type="selectionEntry" targetId="8720-32c4-0099-63f4" id="2f8d-6a36-005b-1683">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8949-aac3-c6a6-9ea6"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Meltagun" hidden="false" type="selectionEntry" targetId="59c3-2af5-ebe5-d512" id="9a1e-fe77-dee4-f915">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a124-6860-aaea-a072"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Plasma Gun" hidden="false" type="selectionEntry" targetId="5ed9-1bc3-4d8f-0826" id="c1b6-04bc-a757-aecb">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3f3-8d7a-494f-fec3"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Disintegrator" hidden="false" type="selectionEntry" targetId="9417-90a9-e0f0-d395" id="1606-9fe9-4a84-f6d4">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6720-7044-e398-5645"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5d8-7e98-f098-48cd"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="788d-c372-ad58-b7fa"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Salamander Command Vehicle may select any of the following options:" id="ee8b-362b-47bd-8237">
               <entryLinks>
@@ -5255,9 +5302,56 @@ Could not find wargear in A Salamander Command Vehicle may select one of the fol
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11db-a335-431d-acc2"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Pintle Mounted Combi-Weapon (any type)
-	 Checked under Combi-Weapon (any type)</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted Combi-Weapon (any type)" hidden="false" id="2737-cf41-54fc-4ccd">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4af2-92fb-2df7-bc1f"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Combi-Weapon type" hidden="false" id="073f-b242-f2da-f43e" defaultSelectionEntryId="59f9-474c-4d09-353f">
+                      <entryLinks>
+                        <entryLink name="Minor Combi-Weapon - Flamer" hidden="false" type="selectionEntry" targetId="8dee-b436-0afd-c70a" id="59f9-474c-4d09-353f">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c92-33e3-07a2-8296"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Grenade Launcher" hidden="false" type="selectionEntry" targetId="dd06-55b3-1c77-1e1d" id="5989-711c-a7ca-5514">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83f6-b37b-e9f8-342e"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Volkite Charger" hidden="false" type="selectionEntry" targetId="8720-32c4-0099-63f4" id="2176-6642-fddf-2d6d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95c6-1be0-181c-3193"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Meltagun" hidden="false" type="selectionEntry" targetId="59c3-2af5-ebe5-d512" id="2f5c-7881-38cf-97af">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d58-2f5e-37dd-dad8"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Plasma Gun" hidden="false" type="selectionEntry" targetId="5ed9-1bc3-4d8f-0826" id="018e-5897-a285-3411">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ae1-b669-a880-6679"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Disintegrator" hidden="false" type="selectionEntry" targetId="9417-90a9-e0f0-d395" id="3704-759b-88ad-36e3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="661a-ba21-b76a-53b7"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c663-0512-e11e-aaf1"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bec-394a-e57c-031c"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Salamander Scout Vehicle may select any of the following options:" id="e5ea-2480-45c1-9878">
               <entryLinks>

@@ -3115,6 +3115,56 @@ Could not find wargear Two Sponson Mounted Lasgun Arrays
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="40ab-dda1-25b3-0eaa"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted Combi-Weapon (any type)" hidden="false" id="eabf-0887-90ca-97ec">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3be9-b307-325e-ef42"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Combi-Weapon type" hidden="false" id="41b7-dbff-c462-f241" defaultSelectionEntryId="5696-b303-dcd7-fa42">
+                      <entryLinks>
+                        <entryLink name="Minor Combi-Weapon - Flamer" hidden="false" type="selectionEntry" targetId="8dee-b436-0afd-c70a" id="5696-b303-dcd7-fa42">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36ab-b337-c584-0b17"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Grenade Launcher" hidden="false" type="selectionEntry" targetId="dd06-55b3-1c77-1e1d" id="cf33-7d9c-e01a-1adf">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2669-1dc7-1c3e-a872"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Volkite Charger" hidden="false" type="selectionEntry" targetId="8720-32c4-0099-63f4" id="d21f-4a65-a28d-6962">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acdf-44b0-1f57-fa66"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Meltagun" hidden="false" type="selectionEntry" targetId="59c3-2af5-ebe5-d512" id="bdc7-212d-bf45-b19c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6c2-f136-e951-dcb0"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Plasma Gun" hidden="false" type="selectionEntry" targetId="5ed9-1bc3-4d8f-0826" id="1efb-a641-584e-eb43">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="867d-1586-c9df-cf00"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Disintegrator" hidden="false" type="selectionEntry" targetId="9417-90a9-e0f0-d395" id="c3b4-6094-69ae-0eab">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="849b-8d84-f80f-85c8"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf04-e9c9-a8f0-fb63"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="632c-45a7-4df9-d391"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Militia Rhino Transport may exchange its Pintle Mounted Twin-Linked Bolter for one of the following options:" hidden="false" id="c88f-0b00-e582-3723" defaultSelectionEntryId="8560-6bbf-424b-9d38">
               <entryLinks>
@@ -3327,6 +3377,56 @@ Could not find wargear Two Sponson Mounted Lasgun Arrays
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e8ac-e025-9f22-997b"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted Combi-Weapon (any type)" hidden="false" id="8c2b-06f9-2447-196b">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="065d-348f-b215-771c"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Combi-Weapon type" hidden="false" id="0e51-aaa0-c6be-e74b" defaultSelectionEntryId="8243-ed94-42ee-1db5">
+                      <entryLinks>
+                        <entryLink name="Minor Combi-Weapon - Flamer" hidden="false" type="selectionEntry" targetId="8dee-b436-0afd-c70a" id="8243-ed94-42ee-1db5">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4bb7-41a1-9fe2-aff0"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Grenade Launcher" hidden="false" type="selectionEntry" targetId="dd06-55b3-1c77-1e1d" id="fdac-f8f9-0dbf-113c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0060-067a-a93f-961e"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Volkite Charger" hidden="false" type="selectionEntry" targetId="8720-32c4-0099-63f4" id="4fef-2a86-7673-a05a">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9948-6339-ed3a-2ea4"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Meltagun" hidden="false" type="selectionEntry" targetId="59c3-2af5-ebe5-d512" id="6b1a-0ee8-f1a1-06e4">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a11-8422-ba77-f12b"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Plasma Gun" hidden="false" type="selectionEntry" targetId="5ed9-1bc3-4d8f-0826" id="36e0-b25c-386d-fa6f">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a42-e511-b32a-d147"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Disintegrator" hidden="false" type="selectionEntry" targetId="9417-90a9-e0f0-d395" id="1b71-6f7a-1507-9f22">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ede-87d7-6f71-e46e"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="166c-9841-60be-d568"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4513-fd21-39f2-9f2e"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Militia Rhino Advancer may exchange its Pintle Mounted Twin-Linked Bolter for one of the following options:" hidden="false" id="8190-cd74-46f1-c60a" defaultSelectionEntryId="6a00-1f82-479e-957e">
               <entryLinks>
@@ -3701,6 +3801,56 @@ Could not find wargear Two Sponson Mounted Lasgun Arrays
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e2e-32b3-ea95-0a83"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted Combi-Weapon (any type)" hidden="false" id="9724-f173-b075-8e97">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c6dd-eb60-e987-de1b"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Combi-Weapon type" hidden="false" id="4cbd-8421-7606-94d5" defaultSelectionEntryId="80ce-e91b-5b81-8d74">
+                      <entryLinks>
+                        <entryLink name="Minor Combi-Weapon - Flamer" hidden="false" type="selectionEntry" targetId="8dee-b436-0afd-c70a" id="80ce-e91b-5b81-8d74">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3855-6db6-1ead-7e87"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Grenade Launcher" hidden="false" type="selectionEntry" targetId="dd06-55b3-1c77-1e1d" id="b773-b539-361c-af2b">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="004b-9515-8c24-4fcf"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Volkite Charger" hidden="false" type="selectionEntry" targetId="8720-32c4-0099-63f4" id="bd3a-02ec-db2d-9bf4">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65c4-bc53-cd65-5751"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Meltagun" hidden="false" type="selectionEntry" targetId="59c3-2af5-ebe5-d512" id="5002-0738-dc40-6a69">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e893-7962-11c3-8eb7"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Plasma Gun" hidden="false" type="selectionEntry" targetId="5ed9-1bc3-4d8f-0826" id="0723-44bb-b12f-3aaa">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e186-039c-0955-b459"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Disintegrator" hidden="false" type="selectionEntry" targetId="9417-90a9-e0f0-d395" id="a17f-174c-1605-3052">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="915d-6fed-b643-c0e1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1dc0-ba5c-fde0-80d8"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b958-fed7-e843-b16d"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="A Militia Land Raider Proteus Carrier may select any of the following options:" hidden="false" id="fd3a-8246-82ea-6afe">
               <entryLinks>
@@ -8455,31 +8605,56 @@ Could not find wargear in Any Goliath Heavy Vehicle may replace its Turret-Mount
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af66-f47a-47a4-90b5"/>
               </constraints>
-              <comment>!BSC Errors from 20240406-1603
-Could not find wargear Pintle Mounted Mounted Grenade Launcher (with Frag and Krak rounds)
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Bolter
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Combi-Bolter
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Twin-Linked Heavy Stubber
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Heavy Flamer
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Impaler Harpoon
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Combi-Weapon (any type)
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Multi-Laser
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Autocannon
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Heavy Bolter
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Seismic Cannon
-	 Checked under
-Could not find wargear Pintle Mounted Mounted Multi-Melta
-	 Checked under</comment>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Pintle Mounted Combi-Weapon (any type)" hidden="false" id="d5aa-4008-c68c-af4a">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="637d-20b8-abf6-f0c7"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Combi-Weapon type" hidden="false" id="19a5-a8f9-8f9b-bb1e" defaultSelectionEntryId="d4d7-2030-0720-f3d0">
+                      <entryLinks>
+                        <entryLink name="Minor Combi-Weapon - Flamer" hidden="false" type="selectionEntry" targetId="8dee-b436-0afd-c70a" id="d4d7-2030-0720-f3d0">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8aa6-d528-bfbf-6739"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Grenade Launcher" hidden="false" type="selectionEntry" targetId="dd06-55b3-1c77-1e1d" id="c9ac-105c-2758-2fe4">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1272-5078-f0c7-415b"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Minor Combi-Weapon - Volkite Charger" hidden="false" type="selectionEntry" targetId="8720-32c4-0099-63f4" id="15cc-5149-9297-d7a7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f76a-65da-1a0f-dd57"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Meltagun" hidden="false" type="selectionEntry" targetId="59c3-2af5-ebe5-d512" id="463c-217e-3264-aa44">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2054-9e1f-6088-7de2"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Plasma Gun" hidden="false" type="selectionEntry" targetId="5ed9-1bc3-4d8f-0826" id="b606-e370-9da9-0d6b">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c48e-846b-cb98-053a"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Magna Combi-Weapon - Disintegrator" hidden="false" type="selectionEntry" targetId="9417-90a9-e0f0-d395" id="aec3-c6fa-2fac-af2c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="44df-8c1f-9949-459d"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a173-87e3-55da-744a"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6a6-3480-3dc5-760d"/>
+                      </constraints>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Any Militia Ironcrawler may select any of the following options:" id="32f8-2458-4b62-be94">
               <entryLinks>
