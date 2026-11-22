@@ -105,10 +105,25 @@ Could not find type or subtype &apos;Armiger&apos;</comment>
         <infoLink name="Move Through Cover" hidden="false" type="rule" targetId="2b6f-bfec-759e-1746" id="6e0b-95cd-452a-b2c0"/>
         <infoLink name="Night Vision" hidden="false" type="rule" targetId="683e-b4f2-f032-d31b" id="1d72-bdc8-4402-9e30"/>
         <infoLink name="Support Squad" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae" id="ea09-79f5-465a-a05c"/>
+        <infoLink name="Armiger and Moirax Talons" hidden="false" type="rule" targetId="d840-fbd0-352e-b33e" id="3827-5610-646c-a565"/>
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Greuso Protocol
 Could not find rule: Moirax Talon</comment>
+      <rules>
+        <!-- Copied from 2022 - Mechanicum.cat: that catalogue cannot be linked from here without a new catalogue link -->
+        <rule id="2714-6df8-5cac-7d29" name="Greuso Protocol" publicationId="bde1-6db1-163b-3b76" page="105" hidden="false">
+          <description>A unit that includes one or more models with this special rule may make use of the Greuso Protocol Advanced Reaction.</description>
+        </rule>
+      </rules>
+      <profiles>
+        <!-- Copied from 2022 - Mechanicum.cat: that catalogue cannot be linked from here without a new catalogue link -->
+        <profile id="8193-ccd2-e059-143b" name="Greuso Protocol" publicationId="bde1-6db1-163b-3b76" page="105" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction may be made whenever an enemy unit declares a Charge targeting a friendly unit with the Automata Unit Type or Knight Unit Sub-type which is within 12" of another friendly unit that includes at least one model with the Greuso Protocol special rule and is not itself locked in combat. The unit with the Greuso Protocol special rule may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Greuso Protocol Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and Vehicles may only fire Defensive Weapons. Template weapons used as part of a Greuso Protocol Reaction use the Wall of Death rule instead of firing normally. The unit targeted by the Greuso Protocol Reaction may not take Cover Saves against Wounds inflicted as part of that Reaction.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry name="Knight Maeliviax" type="unit" id="1a0b-82a7-4c82-9fe0" page="72" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -181,7 +196,7 @@ Could not find rule: Moirax Talon</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9422-6bf8-4bbf-8559"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="A Knight Maeliviax may exchange its Arm Mounted Avenger Gatling Cannon for one of the following Arm Mounted weapons:" id="599e-adb6-41aa-9280">
+            <selectionEntryGroup name="A Knight Maeliviax may exchange its Arm Mounted Avenger Gatling Cannon for one of the following Arm Mounted weapons:" id="599e-adb6-41aa-9280" defaultSelectionEntryId="d9de-329f-487e-b666">
               <entryLinks>
                 <entryLink name="Avenger Gatling Cannon" hidden="false" type="selectionEntry" targetId="13f4-be52-e1a7-4e51" id="d9de-329f-487e-b666">
                   <modifiers>
@@ -210,6 +225,7 @@ Could not find rule: Moirax Talon</comment>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6518-82bd-4c6a-ac53"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0f23-0cbd-a00e-1bc5"/>
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="The Knight Maeliviax may exchange its Hull (Front) Mounted Heavy Stubber with:" id="c18a-25c5-4c8f-863b">
