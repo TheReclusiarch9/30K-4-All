@@ -12406,7 +12406,10 @@ Limitations
 Limitations (THIS MUST BE CHECKED MANUALLY)
 • All units in a Detachment using this Cohort Doctrine with the option to select a Dedicated Transport must select that option, or have purchased a Defence Line, at the normal cost in points – If a Dedicated Transport was purchased for a unit, it does not have to start the battle Embarked on that Dedicated Transport.
 • A Detachment using this Cohort Doctrine may only be selected for an
-army’s Primary Detachment.</description>
+army’s Primary Detachment.
+
+Liber Imperatus additions (p.125):
+• Any unit which is eligible to purchase an Aurox Transport may instead purchase a Solar Auxilia Termite Assault Drill, and any unit which is eligible to purchase a Dracosan Armoured Transport may instead purchase an Auxilia Hades Breaching Drill.</description>
             </rule>
           </rules>
           <costs>
@@ -12424,7 +12427,10 @@ army’s Primary Detachment.</description>
 
 Limitations
 • A Detachment using this Cohort Doctrine may not include more than a single Auxilia Armoured Tercio.
-• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Artillery Tercio.</description>
+• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Artillery Tercio.
+
+Liber Imperatus additions (p.125):
+• Enginseer Auxilia Sections selected in a Detachment using this Cohort Doctrine gains the Line Unit Sub-type, and may optionally select a Triaros Armoured Conveyor as a Dedicated Tranport (see Liber Mechanicum for rules and points cost).</description>
             </rule>
           </rules>
           <costs>
@@ -12468,6 +12474,200 @@ The 2nd bullet point about Veletaris Assault Squadrons getting Outflank is not i
               <description>In Recon Cohort it says &quot;Solar Auxilia Veletaris Assault Squadrons in this Detachment gain the Outflank special rule.&quot; This seems to be the closest unit to this description as it is a sentinel based Cohort and this is the only Veletaris one.</description>
             </rule>
           </rules>
+        </selectionEntry>
+        <selectionEntry id="8e98-af41-1be4-4c64" name="Apostle Pattern Cohorts^" publicationId="892-6266-f55f-1b9d" page="122" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97a6-43d7-1062-9676" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="141d-f422-8636-8cfc" name="Apostle Pattern Cohorts" publicationId="892-6266-f55f-1b9d" page="122" hidden="false">
+              <description>Effects
+• A Detachment using this Cohort Doctrine may select Possessed Auxilia as Troop choices.
+• A Detachment using this Cohort Doctrine may select Mutated Spawn as Fast Attack choices (see page 227).
+• Auxilia Battle Psykers in a Detachment using this Cohort Doctrine may select the Anathemata Psychic Discipline instead of a Core Psychic Discipline.
+• Any unit in a Detachment using this Cohort Doctrine made up entirely of models with the Infantry, Cavalry, Dreadnought or Mechanised Type may be given the Corrupted Unit Sub-Type for a cost of +25 points per unit – models that are attached to units, such as Medicae, must be upgraded separately. In addition, any unit upgraded in this way loses the Close-Order Unit Sub-type if they had it.
+• Any Character in a Detachment using this Cohort Doctrine may exchange a Power Weapon for a Tainted Blade, Tainted Axe or Tainted Maul for +5 points each.
+
+Limitations
+• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Armoured Tercio.
+• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Artillery Tercio.
+• A Detachment using this Cohort Doctrine must have the Traitor Allegiance.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ec9e-16a0-cafd-b7ee" name="Echoes of Lost Glory^" publicationId="892-6266-f55f-1b9d" page="122" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66d3-63b6-28b0-554f" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="1e52-5efd-5438-e10b" name="Echoes of Lost Glory" publicationId="892-6266-f55f-1b9d" page="122" hidden="false">
+              <description>Effects
+• All units selected as part of Detachment using this Cohort Doctrine gain the Advanced Weapons Special Rule.
+•  Advanced Weapons A unit with this Special Rule increases the strength of any Rotor Cannons, Laspistols, or Lasrifles they are equipped with by +1, to a maximum of Strength 4.
+• Any Infantry Unit without the Monstrous Unit Sub-Type in a Detachment using this Cohort Doctrine may be upgraded to replace their Void Armour or Reinforced Void Armour with Heavy Void Armour at a cost of +30 points per unit.
+• Any model in a Detachment using this Cohort Doctrine may exchange a Blast Pistol for a Needle Pistol at no additional points cost, a Heavy Bolter with a Needle Cannon at a cost of +5 points each, or a Volkite Culverin at a cost of +10 points each.
+• Any Infantry model in a Detachment using this Cohort Doctrine equipped with a Volkite Charger may exchange it for an Assault Needler at a cost of +2 points per model, and any model equipped with a Rotor Cannon may exchange it for a Needle Cannon at a cost of +10 points per model. If this option is selected, then all models in a unit must exchange their weapon in the same way.
+
+Limitations
+• A Warlord in an army using this Cohort Doctrine must be a model with the Cohort Doctrines Special Rule.
+• All Tercios in a Detachment using this Cohort Doctrine that have the ability to include a Command Section of any kind must do so.
+• If a Warlord in an army using this Cohort Doctrine is ever removed as a casualty then all units in the Detachment which are not locked in close combat must immediately take a Morale test. Units which do not take Morale Checks, such as units with the Vehicle Unit Type, or models with any ability to automatically pass them, such as the Fearless Special Rule, ignore this Restriction.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9a13-583c-5864-eee3" name="Legion-Sworn Cohorts^" publicationId="892-6266-f55f-1b9d" page="123" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f901-4466-4dcf-eb38" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="9e7c-65fd-2aab-9eae" name="Legion-Sworn Cohorts" publicationId="892-6266-f55f-1b9d" page="123" hidden="false">
+              <description>Effects
+• Detachments using this Cohort Doctrine are classed as one level higher on the Levels of Alliance by a single Space Marines Legion Faction.
+• Any model in a Detachment using this Cohort Doctrine may exchange a Lasrifle for a Bolter for free.
+• Any model in a Detachment using this Cohort Doctrine may exchange a Laspistol for a Bolt Pistol for +2 points per model.
+
+Limitations
+• This Cohort Doctrine may only be taken by an Allied Detachment.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="186d-a4cd-b389-dfa1" name="Linebreaker Pattern Cohorts^" publicationId="892-6266-f55f-1b9d" page="123" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb2-8785-beb7-84a1" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="df7a-81ce-9fca-9ff7" name="Linebreaker Pattern Cohorts" publicationId="892-6266-f55f-1b9d" page="123" hidden="false">
+              <description>Effects
+• A Detachment using this Cohort Doctrine may select Solar Auxilia Furibundus Dreadnought Talons as Troop Choices.
+• A Detachment using this Cohort Doctrine may select Solar Auxilia Extremis Boarding Rig Sections as Troops.
+• Solar Auxilia Furibundus Dreadnought Talons and Solar Auxilia Extremis Boarding Rig Sections selected as Compulsory Troops in a Detachment using this Cohort Doctrine gain the Line Sub-Type.
+
+Limitations
+• A Detachment using this Cohort Doctrine may not include any Auxilia Armoured Tercios, Solar Auxilia Praetorian Heavy Tank Squadrons, Solar Auxilia Macharius Omega Heavy Tank units, or Solar Auxilia Macharius Heavy Tank Squadron.
+• A Detachment using this Cohort Doctrine may not select any Fortification choices.
+• An army whose Primary Detachment is using this Cohort Doctrine may not roll to Seize the Initiative.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6181-4def-ed5e-eab2" name="Pioneer Companies^" publicationId="892-6266-f55f-1b9d" page="123" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="601f-79a0-0a0e-939a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="17fe-9c3f-7f0a-0a28" name="Pioneer Companies" publicationId="892-6266-f55f-1b9d" page="123" hidden="false">
+              <description>Effects
+• Solar Auxilia Pioneer Sections gain the Line Unit Sub-Type and Infiltrate Special Rule in a Detachment using this Cohort Doctrine.
+• Auxilia Infantry Support Tercios composed entirely of Solar Auxilia Ancillary Command Sections and/or Solar Auxilia Pioneer Sections may be taken as Compulsory Troops Choices in a Detachment using this Cohort Doctrine.
+• All units selected as part of an Auxilia Veletaris Tercio in a Detachment using this Cohort Doctrine gain the Scout Special Rule.
+• Aethon Heavy Sentinel Squadrons may be taken as Non-Compulsory Troops choices in a Detachment using this Cohort Doctrine.
+• A player whose army includes a Primary Detachment using this Cohort Doctrine may re-roll any dice they roll to see which player takes the first turn, or when attempting to Seize the Initiative.
+
+Limitations
+• A Detachment using this Cohort Doctrine may not select any Fortification choices except those purchased in place of Dedicated Transports for Solar Auxilia Pioneer Sections.
+• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Armoured Tercio.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="41e3-117e-b33c-03dc" name="Scourge Pattern Cohorts^" publicationId="892-6266-f55f-1b9d" page="124" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea2-cc4d-d269-eb25" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="b77d-0e09-fa58-b6f9" name="Scourge Pattern Cohorts" publicationId="892-6266-f55f-1b9d" page="124" hidden="false">
+              <description>Effects
+• A Detachment using this Cohort Doctrine may select Solar Auxilia Hellhound Squadrons as Non-Compulsory Troop choices.
+• Any model in a Detachment using this Cohort Doctrine may exchange a Flamer or Heavy Flamer with a Toxiferran Flamer for Free.
+• Any Character in a Detachment using this Cohort Doctrine may be equipped with Rad Grenades for +10 points per model.
+• Any Auxilia Rapier Carrier with Quad Launchers in a Detachment using this Cohort Doctrine may be upgraded to have Phospex Canister Shot at a cost of +20 points per model.
+• Any Auxilia Malcador Infernus in a Detachment using this Cohort Doctrine may replace its Centreline Mounted Inferno Cannon with a Centreline Mounted Chem Destroyer at a cost of +25 points per model.
+
+Limitations
+• This Cohort Doctrine may only be selected for a Primary Detachment.
+• An army whose Primary Detachment is using this Cohort Doctrine may not select an Allied Detachment.
+• A Detachment using this Cohort Doctrine may not select any Fortification choices.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8c37-4ccc-ba51-00a5" name="Steel Fury Pattern Cohorts^" publicationId="892-6266-f55f-1b9d" page="124" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aece-621b-9883-782e" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="f8a4-87e9-c0c4-2b85" name="Steel Fury Pattern Cohorts" publicationId="892-6266-f55f-1b9d" page="124" hidden="false">
+              <description>Effects
+• A Detachment using this Cohort Doctrine must select a Lord of War in place of a Primarch on the Crusade Force Organisation Chart. This Lord of War gains the Cohort Doctrines Special Rule and must be selected as the army’s Warlord regardless of any rules which would require a model to be selected as the army’s Warlord and must use the Super-Heavy Armoured Legate Warlord Trait (see below).
+• A Detachment using this Cohort Doctrine may select Solar Auxilia Macharius Heavy Tank Squadrons as Elite choices.
+Warlord: Super-Heavy Armoured Legate A Warlord with this Warlord Trait gains the Dictatii Armoured Marshal upgrade at no additional points cost, and also increases its Ballistic Skill Characteristic by +1 in addition to any other bonuses.
+
+Limitations
+• All Lords of War Detachments in an army with this Cohort Doctrine must belong to the Solar Auxilia Sub-Faction.
+• A Detachment using this Cohort Doctrine must contain more units with the Vehicle Unit Type than units without.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9fe2-5526-680f-165e" name="Valkyria Pattern Cohorts^" publicationId="892-6266-f55f-1b9d" page="124" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b1a-9868-0636-3c7f" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="d389-a187-6861-35ec" name="Valkyria Pattern Cohorts" publicationId="892-6266-f55f-1b9d" page="124" hidden="false">
+              <description>Effects
+• A Detachment using this Cohort Doctrine may select Solar Auxilia Aello Gunship Squadrons as Heavy Support choices.
+• All units in a Detachment using this Cohort Doctrine eligible to take an Aurox Transport as a Dedicated Transport may instead select an Arvus Transport as a Dedicated Transport.
+• All units in a Detachment using this Cohort Doctrine eligible to take a Chimera Transport as a Dedicated Transport may instead select an Auxilia Kelaino or Auxilia Aello as a Dedicated Transport.
+• For any model with the Vehicle Unit Type and both the Flyer and Transport Sub-Types in a Detachment that is using this Cohort Doctrine, and that is in Reserve, the Controlling Player may choose to automatically have them enter play at the start of their First Turn without making a Reserves roll. If they are not brought into play on Turn One then Reserves rolls are made for the models normally from Turn Two onwards.
+
+Limitations
+• All units composed entirely of models with the Infantry Unit Type must begin the battle Embarked on a model with the Transport Unit Sub-Type or in Reserves.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
