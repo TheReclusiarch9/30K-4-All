@@ -6584,7 +6584,7 @@ Fulgrim Transfigured is counted as having a Legion Warhawk Jump Pack for rules 
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6703,7 +6703,7 @@ Additionally, an army with Fabius Bile as its Warlord may make an additional Rea
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6828,7 +6828,7 @@ Martyrs of Isstvan (as in the existing data, Liber Hereticus p.152): A Warlord w
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6993,7 +6993,7 @@ Stimulant Overdrive: The unit adds +1 to its Strength Characteristic, and gains 
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
