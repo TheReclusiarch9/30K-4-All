@@ -1529,6 +1529,9 @@ Could not find wargear in Any model may select one of the following options:</co
       </selectionEntries>
       <comment>!BSC Errors from 20240406-1603
 Could not find profile for Servo-automata in [&apos;Enginseer Adept&apos;, &apos;Servo-Automata&apos;]</comment>
+      <infoLinks>
+        <infoLink name="Techno-Arcana: Enginseer" hidden="false" type="rule" targetId="6ea0-bda5-48cc-98dd" id="2ae1-f826-b332-d515"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Solar Auxilia Breacher Command Section" type="unit" id="3310-b0ef-4e41-9a06" page="144" publicationId="892-6266-f55f-1b9d">
       <categoryLinks>

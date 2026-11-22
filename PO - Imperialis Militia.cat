@@ -1008,6 +1008,15 @@ Could not find wargear Militia Cavalry Mount
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Household Retinue</comment>
+      <rules>
+        <!-- Copied from 2022 - Imperialis Militia.cat: that catalogue cannot be linked from here without a new catalogue link -->
+        <rule id="b7c1-747c-ef9b-2e41" name="Militia Cavalry Mount" publicationId="48c2-d023-0069-001a" page="37" hidden="false">
+          <description>A model with a Militia cavalry mount that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
+
+
+A model with the Infantry Unit Type that selects a Militia cavalry mount as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Imperialis Militia Demagogue Cadre" type="unit" id="78ac-7086-4f68-966c" page="208" publicationId="f505-5fc8-ee53-1cec">
       <categoryLinks>
@@ -1443,6 +1452,15 @@ Could not find wargear in Any Demagogue or Mounted Demagogue may exchange their 
               <constraints>
                 <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="22be-09a9-cdfe-fb4a"/>
               </constraints>
+              <rules>
+                <!-- Copied from 2022 - Imperialis Militia.cat: that catalogue cannot be linked from here without a new catalogue link -->
+                <rule id="5b69-5c27-d1b2-4165" name="Militia Cavalry Mount" publicationId="48c2-d023-0069-001a" page="37" hidden="false">
+                  <description>A model with a Militia cavalry mount that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
+
+
+A model with the Infantry Unit Type that selects a Militia cavalry mount as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had.</description>
+                </rule>
+              </rules>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1838,6 +1856,7 @@ Could not find wargear Grenade Launcher (with Frag and Krak Rounds)
             <modifier type="set" field="name" value="Battlesmith (6+) (Enginseer Adept only)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Techno-Arcana: Enginseer" hidden="false" type="rule" targetId="6ea0-bda5-48cc-98dd" id="bf9f-78e3-cebe-3b48"/>
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find wargear in Any Engineer Adept may take any of the following options:
@@ -2138,6 +2157,12 @@ Could not find profile for Exo-Driller in [&apos;Exo-Driller*&apos;]</comment>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Beastmasters (Ogryn Handler only)
 Could not find rule: Stubborn (Ogryn Handler only)</comment>
+      <rules>
+        <!-- Copied from 2022 - Imperialis Militia.cat: that catalogue cannot be linked from here without a new catalogue link -->
+        <rule id="e3ec-8ec0-534d-2de8" name="Beastmasters" publicationId="48c2-d023-0069-001a" page="28" hidden="false">
+          <description>If all of the models in a Militia Beastmaster unit with this special rule are removed as casualties, then any remaining War Beasts remain in play, but when selected during the Movement phase must move along a path of the controlling player’s choice towards the enemy unit that is closest to the Militia Beastmaster unit – only units that are in line of sight are counted when deciding which unit is closest. If there are no units within line of sight then the Militia Beastmaster unit becomes Pinned until the beginning of the controlling player’s next turn. During the Assault phase, a Militia Beastmaster unit in which all of the Militia Handlers have been removed must make a Charge if any enemy units are within 12" and eligible targets for a Charge, but the controlling player may select which enemy unit is the target of the Charge. If the unit is locked in combat then it fights as normal.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Imperialis Militia Voidjumpers" type="unit" id="1b54-66fa-45cd-9fbd" page="218" publicationId="f505-5fc8-ee53-1cec">
       <categoryLinks>
@@ -5512,6 +5537,15 @@ Could not find wargear in The Militia Heavy Outrider Sergeant may exchange their
           </modifiers>
         </infoLink>
       </infoLinks>
+      <rules>
+        <!-- Copied from 2022 - Imperialis Militia.cat: that catalogue cannot be linked from here without a new catalogue link -->
+        <rule id="c74e-58c4-06b4-42b5" name="Militia Cavalry Mount" publicationId="48c2-d023-0069-001a" page="37" hidden="false">
+          <description>A model with a Militia cavalry mount that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
+
+
+A model with the Infantry Unit Type that selects a Militia cavalry mount as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Imperialis Militia Achilles Light Vehicle Squadron" type="unit" id="ba1b-6b50-4ed7-8ac6" page="237" publicationId="f505-5fc8-ee53-1cec">
       <categoryLinks>

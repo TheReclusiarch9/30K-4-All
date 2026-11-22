@@ -1397,6 +1397,12 @@ Stubcarbine is in two option lists for Sicarian Clademaster, you will need to co
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <rules>
+        <rule name="Command Protocols (Kill-Clade)" id="bad1-a128-616c-6ffe" hidden="false" publicationId="f856-58d6-ef02-7d3e" page="90">
+          <description>This model, and any unit it has joined, may re-roll the dice for determining Charge distances.
+In addition, if a model with this Special Rule is your Warlord, all Sicarian Kill-Clades in the same Detachment gain the Line Sub-type for as long as they have not been removed as a casualty.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Praetorian Servitor Maniple" type="unit" id="3ad7-7e46-47b0-a70d" page="12" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -1603,6 +1609,9 @@ Could not find wargear Sapien
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <infoLinks>
+            <infoLink name="Ever-vigilant" hidden="false" type="profile" targetId="fae0-5913-3ee9-a799" id="35f7-68b4-157d-7456"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1725,7 +1734,30 @@ Could not find wargear Magno-Gravitic Thrusters
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="890b-f7fb-7948-41fb"/>
               </constraints>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mechadendrite Hive with in-built Prehensile Data-spike" hidden="false" id="0706-ec88-a6b0-b0f6">
+              <entryLinks>
+                <entryLink name="Mechadendrite Hive" hidden="false" type="selectionEntry" targetId="9c99-9e6e-4e40-8654" id="327b-b8d6-96c7-5554">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26d3-8d7f-f7ca-08eb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3bb-6263-5789-3214"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Prehensile Dataspike" hidden="false" type="selectionEntry" targetId="dc95-1744-94e2-2c52" id="8fef-0bec-96d4-35c4">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dba0-6570-14c9-806e"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c36-e9ea-259c-7aa3"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bcd-cc6e-7e26-139b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afa0-6ddc-9a58-5ca1"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
+          <infoLinks>
+            <infoLink name="The Science of Slaughter" hidden="false" type="profile" targetId="dd61-a29c-8f79-6d8e" id="7765-92ca-30da-d8a2"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1865,6 +1897,9 @@ In addition, it allows her to re-roll failed Characteristic tests other than Lea
               </constraints>
             </selectionEntry>
           </selectionEntries>
+          <infoLinks>
+            <infoLink name="The Logic of Victory" hidden="false" type="profile" targetId="3333-c7c5-db36-cc43" id="c005-8e4a-29c0-249b"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -3366,6 +3401,28 @@ Could not find wargear in Any Kataphron Destructor may exchange their Graviton I
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Machinator Array with in-built Prehensile Data-spike
 	 Checked under Machinator Array with in-built Prehensile Data-spike</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Machinator Array with in-built Prehensile Data-spike" hidden="false" id="d9a4-7cae-6624-13d1">
+              <entryLinks>
+                <entryLink name="Machinator Array" hidden="false" type="selectionEntry" targetId="16dc-7363-417f-85bd" id="a977-8d25-6467-fa02">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b37-a431-be75-9d0d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8004-f234-5eb4-0b53"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Prehensile Dataspike" hidden="false" type="selectionEntry" targetId="dc95-1744-94e2-2c52" id="70d3-7302-fb45-c75d">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0598-4373-7226-0e85"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d58c-e893-d18e-7e9f"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6667-04f6-38ed-b3ef"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b906-c2ea-0d35-46f4"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5821,6 +5878,12 @@ Could not find wargear in Any model in the unit may exchange their Havoc Launche
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Surveillance Protocols</comment>
+      <rules>
+        <!-- Copied from 2022 - Mechanicum.cat: that catalogue cannot be linked from here without a new catalogue link -->
+        <rule id="e0c6-e718-be62-9930" name="Surveillance Protocols" publicationId="bde1-6db1-163b-3b76" page="108" hidden="false">
+          <description>A model with this special rule and the Cybernetica Unit Sub-type may ignore the Programmed Behaviour provision described as part of that Sub-type during the Charge sub-phase.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry name="Mechanicum Lightning Strike Fighter" type="unit" id="3352-b09c-4de6-b9f6" page="46" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -6684,6 +6747,7 @@ Could not find wargear in An Arvus Lighter which selects a Hull (Front) Mounted 
             <modifier type="set" field="name" value="Hammer of Wrath (2)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Thanatar Maniple" hidden="false" type="rule" targetId="c149-a9f6-4cbe-aa10" id="cf99-2158-7027-4112"/>
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Thanatar Maniple</comment>
