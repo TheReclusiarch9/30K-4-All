@@ -101,6 +101,7 @@
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="e854-5ebd-434f-af02"/>
         <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="6fb1-130a-485f-9012" name="HQ"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="a50b-3198-8a76-99ed" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
@@ -222,14 +223,35 @@
               </constraints>
             </selectionEntryGroup>
             <selectionEntryGroup name="The Troupe Master may select any of the following:" id="1fc1-59a0-49ba-8e4a">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9b2-0885-4ae9-940b"/>
-              </constraints>
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Haywire Grenades
 	 Checked under Haywire Grenades
 Could not find wargear One Vortex Grenade
 	 Checked under One Vortex Grenade</comment>
+              <entryLinks>
+                <entryLink name="Haywire Grenade" hidden="false" type="selectionEntry" targetId="9eab-36bd-453e-b49d" id="af56-c337-4624-cfb9">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Haywire Grenades"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a39-f4c5-9c4c-66a5"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Vortex Grenade" hidden="false" type="selectionEntry" targetId="e06b-19f0-4465-a328" id="064f-ccad-67bf-80f6">
+                  <modifiers>
+                    <modifier type="set" field="name" value="One Vortex Grenade"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e24a-4809-c581-514f"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -243,6 +265,21 @@ Could not find wargear Mask of Many Faces
 	 Checked under Mask of Many Faces
 Could not find wargear in The Troupe Master may select any of the following:
 Could not find wargear in The Troupe Master may select any of the following:</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mask of Many Faces" hidden="false" id="4d01-b069-c8aa-3be0">
+              <profiles>
+                <profile name="Mask of Many Faces" hidden="false" id="0c18-2efd-65c1-071b" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="a368-64f0-10c7-c49d" page="114">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model equipped with The Mask of Many Faces adds +2 to the Wounds score used to determine if they win a Combat in the Assault phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="12fd-2cca-3180-04d4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4192-0c9e-25cf-1aa2"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -271,6 +308,7 @@ Could not find rule: Independent Character</comment>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="24b4-26de-4323-bfad"/>
         <categoryLink targetId="7aee-565f-b0ae-294e" primary="true" id="884a-23ff-4e05-9be1" name="Elites"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="3bf7-392f-bf1f-dbe8" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
@@ -352,6 +390,19 @@ Could not find rule: Independent Character</comment>
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Haywire Grenades
 	 Checked under Haywire Grenades</comment>
+              <entryLinks>
+                <entryLink name="Haywire Grenade" hidden="false" type="selectionEntry" targetId="9eab-36bd-453e-b49d" id="0f09-c688-f0f6-1551">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Haywire Grenades"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4402-47c0-5c72-9871"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -380,6 +431,7 @@ Could not find rule: Independent Character</comment>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="b8ab-7388-42b9-b262"/>
         <categoryLink targetId="7aee-565f-b0ae-294e" primary="true" id="d890-73a1-465c-8216" name="Elites"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="275d-9a4c-d777-447d" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100"/>
@@ -426,6 +478,12 @@ Could not find rule: Independent Character</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3658-76c9-4e4c-82ac"/>
               </constraints>
             </entryLink>
+            <entryLink name="Shrieker Cannon" hidden="false" type="selectionEntry" targetId="1ac2-b0dd-1b7f-207b" id="e73c-5549-d342-e0b2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b579-a692-2a7e-6a78"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e0c-0812-b7f3-1dc8"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="A Death Jester exchange their Shrieker Cannon for one of the following:" id="fccb-3473-4c6c-a444">
@@ -460,6 +518,27 @@ Could not find rule: Independent Character</comment>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d709-f4f2-4b80-a7ff"/>
                   </constraints>
                 </entryLink>
+                <entryLink name="Aeldari Missile Launcher" hidden="false" type="selectionEntry" targetId="fb23-41e7-e8ee-7106" id="4ebf-e696-ce44-c6ab">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Aeldari Missile Launcher (with Sunburst, Starshot, and Starhawk Missiles)"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a0e-9c93-3c03-3f6f"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Prism Rifle" hidden="false" type="selectionEntry" targetId="d2d4-3526-1218-e77e" id="c9b9-1665-ca48-0298">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67e3-35b4-a0e1-b375"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Reaper Missile Launcher" hidden="false" type="selectionEntry" targetId="afd7-410f-23c1-0fd7" id="acd0-dd3b-c8d8-496a">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c426-08c8-785f-5762"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" field="name" value="Reaper Launcher (with Starswarm, Starshot, and Starhawk Missiles)"/>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eea4-c1a5-4029-ac03"/>
@@ -483,6 +562,19 @@ Could not find wargear Reaper Launcher (with Starswarm, Starshot, and Starhawk M
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Haywire Grenades
 	 Checked under Haywire Grenades</comment>
+              <entryLinks>
+                <entryLink name="Haywire Grenade" hidden="false" type="selectionEntry" targetId="9eab-36bd-453e-b49d" id="0306-d7cd-318b-6bad">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Haywire Grenades"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd74-150d-497e-a35a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -528,6 +620,7 @@ Could not find rule: Independent Character</comment>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="12cc-25c8-48fc-80d2"/>
         <categoryLink targetId="7aee-565f-b0ae-294e" primary="true" id="f764-ecdd-485b-8f03" name="Elites"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="67c8-dc9d-19d8-4f07" name="Independent Character" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
@@ -590,6 +683,15 @@ Could not find rule: Independent Character</comment>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a7f-ae2a-43b4-aa8a"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bf5-d56b-4046-9df9"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Haywire Grenade" hidden="false" type="selectionEntry" targetId="9eab-36bd-453e-b49d" id="e100-fab2-6afb-e75e">
+              <modifiers>
+                <modifier type="set" field="name" value="Haywire Grenades"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dadb-bfe7-1dd4-5f1c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7fc-a589-532a-7782"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -893,6 +995,19 @@ Could not find rule: Independent Character</comment>
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Haywire Grenades
 	 Checked under Haywire Grenades</comment>
+              <entryLinks>
+                <entryLink name="Haywire Grenade" hidden="false" type="selectionEntry" targetId="9eab-36bd-453e-b49d" id="a4dc-7172-9520-47ab">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Haywire Grenades"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b0d-728b-0d6d-6ab9"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
@@ -990,17 +1105,26 @@ Power Sword is in two option lists for Lead Player, you will need to combine the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50af-f9b7-457a-90a9"/>
               </constraints>
             </entryLink>
+            <entryLink name="Mirage Launcher" hidden="false" type="selectionEntry" targetId="f35d-7ef9-444a-80bd" id="5f67-6109-5d3d-8562">
+              <modifiers>
+                <modifier type="set" field="name" value="Mirage Launchers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6969-866b-5637-a1a7"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f1c-64cc-5aa1-df17"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="4303-1348-cce4-9501" id="5f14-a31b-4efb-991e" name="Antigrav" primary="false"/>
             <categoryLink targetId="e9cf-bae1-4a9a-8d47" id="f77d-ed49-429a-b5db" name="Rillietann" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="06f4-1782-4cf9-bd5d" name="Skirmish" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="92d8-681a-67cc-875b" name="Cavalry Unit-type:" primary="false"/>
+            <categoryLink targetId="7b0a-a743-a8da-3a39" id="a4c2-645f-d6b6-2fe0" name="Transport Sub-type:" primary="false"/>
           </categoryLinks>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Mirage Launchers
-	 Checked under Mirage Launchers
-Could not find type or subtype &apos;Cavalry&apos;
-Could not find type or subtype &apos;Transport*&apos;</comment>
+	 Checked under Mirage Launchers</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1102,6 +1226,15 @@ Could not find type or subtype &apos;Transport*&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41d4-a08c-4c42-ba4d"/>
               </constraints>
             </entryLink>
+            <entryLink name="Mirage Launcher" hidden="false" type="selectionEntry" targetId="f35d-7ef9-444a-80bd" id="0aff-217e-e462-b92e">
+              <modifiers>
+                <modifier type="set" field="name" value="Mirage Launchers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c594-fb13-7e33-c53e"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e61-a417-1603-9b83"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any model in the unit may replace its Skyweaver Jetbike’s Shuriken Cannon with the following:" id="920c-ec3c-420c-991a">
@@ -1139,14 +1272,14 @@ Could not find type or subtype &apos;Transport*&apos;</comment>
             <categoryLink targetId="4303-1348-cce4-9501" id="984a-4cc0-4746-8255" name="Antigrav" primary="false"/>
             <categoryLink targetId="e9cf-bae1-4a9a-8d47" id="625c-52e0-4833-8804" name="Rillietann" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="fd87-dd3c-4cd9-b7d8" name="Skirmish" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="054d-94f1-f0ec-4c8e" name="Cavalry Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
           </costs>
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Mirage Launchers
-	 Checked under Mirage Launchers
-Could not find type or subtype &apos;Cavalry&apos;</comment>
+	 Checked under Mirage Launchers</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1249,6 +1382,15 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0965-bed6-4a75-9ed4"/>
               </constraints>
             </entryLink>
+            <entryLink name="Mirage Launcher" hidden="false" type="selectionEntry" targetId="f35d-7ef9-444a-80bd" id="6f4b-f264-5b5c-03c4">
+              <modifiers>
+                <modifier type="set" field="name" value="Mirage Launchers"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d4d-0439-3651-88f5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe56-3ae3-2897-52cd"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any model in the unit may replace their Haywire Cannon with the following:" id="88c6-e999-4a5d-9563">
@@ -1258,12 +1400,23 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
               <comment>!BSC Errors from 20240406-1603
 Could not find wargear Prismatic Cannon
 	 Checked under Prismatic Cannon</comment>
+              <entryLinks>
+                <entryLink name="Prismatic Cannon" hidden="false" type="selectionEntry" targetId="8edf-23bb-ecdd-1914" id="fbe2-bee9-ceb3-f772">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7378-755f-f38e-e4ae"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="4303-1348-cce4-9501" id="fb81-6204-4eeb-99ac" name="Antigrav" primary="false"/>
             <categoryLink targetId="e9cf-bae1-4a9a-8d47" id="dc8c-2bfe-4b54-9370" name="Rillietann" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="f0a5-6ec6-4d23-aca4" name="Skirmish" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="4cc7-206f-c1e2-6283" name="Cavalry Unit-type:" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90"/>
@@ -1271,8 +1424,7 @@ Could not find wargear Prismatic Cannon
           <comment>!BSC Errors from 20240406-1603
 Could not find wargear Mirage Launchers
 	 Checked under Mirage Launchers
-Could not find wargear in Any model in the unit may replace their Haywire Cannon with the following:
-Could not find type or subtype &apos;Cavalry&apos;</comment>
+Could not find wargear in Any model in the unit may replace their Haywire Cannon with the following:</comment>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
@@ -1301,6 +1453,135 @@ Could not find type or subtype &apos;Cavalry&apos;</comment>
         </infoLink>
         <infoLink name="Deep Strike" hidden="false" type="rule" targetId="f1e1-986f-c783-ca9e" id="4a08-6bb6-4786-a6ee"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shrieker Cannon" hidden="false" id="1ac2-b0dd-1b7f-207b" publicationId="a368-64f0-10c7-c49d">
+      <comment>Weapon profile from Liber Antiquia v1.6</comment>
+      <profiles>
+        <profile id="c516-2295-2246-827d" name="Shrieker Cannon - Shuriken Volley" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 4, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e527-b6ee-cdbd-a604" name="Shrieker Cannon - Shrieker Fusillade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Rending (5+), Poisoned (2+), Bio-Explosive</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aeldari Missile Launcher" hidden="false" id="fb23-41e7-e8ee-7106" publicationId="a368-64f0-10c7-c49d">
+      <comment>Weapon profile from Liber Antiquia v1.6</comment>
+      <profiles>
+        <profile id="5276-5074-7707-afb0" name="Aeldari Missile Launcher - Sunburst" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c08c-88f0-9e05-2723" name="Aeldari Missile Launcher - Starshot" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="715a-60b9-769c-d528" name="Aeldari Missile Launcher - Starhawk" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Prism Rifle" hidden="false" id="d2d4-3526-1218-e77e" publicationId="a368-64f0-10c7-c49d">
+      <comment>Weapon profile from Liber Antiquia v1.6</comment>
+      <profiles>
+        <profile id="10dc-6361-d572-2f68" name="Prism Rifle - Dispersed" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3"), Ghostlight</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4e54-8eac-5c5a-5ca2" name="Prism Rifle - Focused" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Lance, Ghostlight</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reaper Missile Launcher" hidden="false" id="afd7-410f-23c1-0fd7" publicationId="a368-64f0-10c7-c49d">
+      <comment>Weapon profile from Liber Antiquia v1.6</comment>
+      <profiles>
+        <profile id="5db5-aafa-d0a6-624f" name="Reaper Missile Launcher - Starswarm" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82bf-c6bb-12ab-6d5d" name="Reaper Missile Launcher - Starshot" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e115-cc05-778f-10be" name="Reaper Missile Launcher - Starhawk" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Prismatic Cannon" hidden="false" id="8edf-23bb-ecdd-1914" publicationId="a368-64f0-10c7-c49d">
+      <comment>Weapon profile from Liber Antiquia v1.6</comment>
+      <profiles>
+        <profile id="1f8b-b740-58dc-4377" name="Prismatic Cannon - Dispersed" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Large Blast (5")</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3a27-b393-d480-feda" name="Prismatic Cannon - Focused" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3")</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ad1e-e3ae-e061-0e83" name="Prismatic Cannon - Lance" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
