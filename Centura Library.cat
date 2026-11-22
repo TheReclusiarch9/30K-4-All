@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="d76-4e81-2fef-caa1" name="[Centura] Legiones Astartes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="d76-4e81-2fef-caa1" name="[Centura] Legiones Astartes" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="6" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink id="cd67-43ed-908c-1921" name="Legion Assault Veteran Squad" hidden="false" collective="false" import="true" targetId="bbbd-1956-4682-9ea4" type="selectionEntry"/>
     <entryLink id="8dc9-9253-6dc8-c594" name="Legion Contemptor-Cortus Dreadnought Talon" hidden="false" collective="false" import="true" targetId="970a-bd04-4d61-ae08" type="selectionEntry"/>
@@ -37,6 +37,32 @@
     <entryLink id="ce5d-9206-651b-815f" name="Legion Doomhammer" hidden="false" collective="false" import="true" targetId="ac9d-af7c-4709-a6d2" type="selectionEntry"/>
     <entryLink id="b10d-2472-21ec-ce34" name="Legion Orthrus Destroyer Squadron" hidden="false" collective="false" import="true" targetId="4b16-34fb-4262-95a2" type="selectionEntry"/>
     <entryLink id="7b04-eb69-e800-89b8" name="Basilisk Anti-Air Emplacement Battery" hidden="false" collective="false" import="true" targetId="ca32-4dab-4bf6-b3ed" type="selectionEntry"/>
+    <entryLink id="f0b2-4d49-26f8-dd2e" name="Legion Assault Veteran Squad" hidden="true" collective="false" import="true" targetId="bbbd-1956-4682-9ea4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c52b-ed0c-07d4-3f51" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="36ee-33ff-fe63-7ac4" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2894-139d-121a-18ab" name="Legion Contemptor-Cortus Dreadnought Talon" hidden="true" collective="false" import="true" targetId="970a-bd04-4d61-ae08" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="127d-9ca1-5b51-ad7f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="389d-1120-f654-6f32" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry name="Legion Indomitus Praetor" type="unit" id="0293-aa91-4e32-bd5f" page="6" publicationId="3970-79bb-bdc6-9599">
