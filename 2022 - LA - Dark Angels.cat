@@ -3316,7 +3316,7 @@
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3346,7 +3346,7 @@
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4583,7 +4583,7 @@ special rule.</description>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4658,7 +4658,7 @@ special rule.</description>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6684,7 +6684,7 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">5</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6809,7 +6809,7 @@ Additionally, an army with Luther as its Warlord may make an additional Reaction
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6953,7 +6953,7 @@ Additionally, an army with Astelan as its Warlord may make a single additional R
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7049,7 +7049,7 @@ Additionally, an army with Astelan as its Warlord may make a single additional R
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
