@@ -6692,19 +6692,19 @@ The in-built Volkite Culverin replaces the Heavy Bolter normally in-built to a L
                 <entryLink id="32e7-333a-6e7d-71a9" name="Missile Launcher (with Rad Missiles only)" hidden="false" collective="false" import="true" targetId="0ec3-6c91-952c-e0ea" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Missile Launcher (with Rad Missiles only)"/>
-                    <modifier type="increment" field="f98e-653b-52aa-e689" value="1">
+                    <modifier type="increment" field="597b-bff3-8e93-af11" value="1">
                       <repeats>
-                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="422a-786d-a676-c1bc" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
-                    <modifier type="increment" field="f98e-653b-52aa-e689" value="1">
+                    <modifier type="decrement" field="597b-bff3-8e93-af11" value="1">
                       <repeats>
-                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d47-0382-6bdc-b336" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea80-9ffc-d860-c843" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="7c5b-726d-e664-cc03" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f98e-653b-52aa-e689" type="max"/>
+                    <constraint field="selections" scope="7c5b-726d-e664-cc03" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="597b-bff3-8e93-af11" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -6819,19 +6819,19 @@ The in-built Volkite Culverin replaces the Heavy Bolter normally in-built to a L
                 <entryLink id="ea80-9ffc-d860-c843" name="Missile Launcher (with Rad Missiles only)" hidden="false" collective="false" import="true" targetId="0ec3-6c91-952c-e0ea" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Missile Launcher (with Rad Missiles only)"/>
-                    <modifier type="increment" field="f98e-653b-52aa-e689" value="1">
+                    <modifier type="increment" field="21d0-17a1-4099-41ce" value="1">
                       <repeats>
-                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="422a-786d-a676-c1bc" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
-                    <modifier type="increment" field="f98e-653b-52aa-e689" value="1">
+                    <modifier type="decrement" field="21d0-17a1-4099-41ce" value="1">
                       <repeats>
-                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d47-0382-6bdc-b336" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="7c5b-726d-e664-cc03" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="32e7-333a-6e7d-71a9" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="7c5b-726d-e664-cc03" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f98e-653b-52aa-e689" type="max"/>
+                    <constraint field="selections" scope="7c5b-726d-e664-cc03" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21d0-17a1-4099-41ce" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
