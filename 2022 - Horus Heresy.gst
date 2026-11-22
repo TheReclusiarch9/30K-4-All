@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2019" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2020" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -10894,6 +10894,64 @@ Note that this is an exception to the normal rules for Fortifications, and if as
       <entryLinks>
         <entryLink id="cf56-2470-b3af-54ab" name="Power Weapon" hidden="false" collective="false" import="true" targetId="5ff5-48c0-b9f1-5a05" type="selectionEntryGroup"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="9b63-15b2-65e8-816d" name="Exchange for Medusan Zweihander" publicationId="3970-79bb-bdc6-9599" page="151" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5367-153e-9900-87d9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7b18-b392-dead-6757" name="Medusan Zweihander" publicationId="3970-79bb-bdc6-9599" page="151" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Reach (1), Rending (6+), Murderous Strike (6+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="cb60-69a5-a32f-1064" name="Medusan Zweihander" publicationId="3970-79bb-bdc6-9599" page="151" hidden="false">
+              <description>Any model with the Legiones Astartes (Iron Hands) Special Rule and the Character Sub-type may exchange a Power Weapon for a Medusan Zweihander for +10 points.
+
+The Medusan Zweihander counts as a ‘Power’ weapon for all rules which affect such weapons.
+
+This option replaces the Power Weapon it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="65d5-6159-5d07-cb97" name="Two-Handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="6f76-e0c9-a7aa-8056" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reach (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c56e-bb68-0b7a-b25e" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (6+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="98c1-f295-6bd0-b23a" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
