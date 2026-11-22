@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2013" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2014" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -13875,7 +13875,10 @@ Limitations
 • A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer Sub-type.
 • A Detachment using this Rite of War may not select any Fortification choices.
 
-^Manually check restrictions and limitations</description>
+^Manually check restrictions and limitations
+
+Liber Centura additions (p.66):
+• Any unit in a Detachment using this Rite of War eligible to take a Legion Land Raider Proteus Carrier as a Dedicated Transport may instead take a Legion Caestus Assault Ram as a Dedicated Transport.</description>
             </rule>
           </rules>
           <costs>
@@ -13907,7 +13910,10 @@ Limitations
 • All units in a Detachment using this Rite of War composed entirely of models with the Infantry Unit Type must begin the battle Embarked upon a model with both the Flyer and Transport Sub-types.
 • A Detachment using this Rite of War may not include any models with the Dreadnought Unit Type.
 • An Allied Detachment may not use this Rite of War.
-• A Detachment using this Rite of War may not select any Fortification choices.</description>
+• A Detachment using this Rite of War may not select any Fortification choices.
+
+Liber Centura additions (p.66):
+• Any Legion Sky-Seeker Squadrons in a Detachment using this Rite of War do not have the Support Squad Special Rule.</description>
             </rule>
           </rules>
           <costs>
@@ -13975,7 +13981,12 @@ Limitations
 • A Detachment using this Rite of War may only select a single Heavy Support choice and a single Fast Attack choice.
 • An Allied Detachment may not use this Rite of War.
 • An army using this Rite of War may not select any Fortification choices.
-• An army using this Rite of War may not include more non-Infantry units than it does Infantry units.</description>
+• An army using this Rite of War may not include more non-Infantry units than it does Infantry units.
+
+Liber Centura additions (p.66):
+• Legion Assault Veteran Squads may be selected as Troops Choices in a Detachment using this Rite of War.
+• Legion Assault Veteran Squads taken as Compulsory Troops Choices in a Detachment using this Rite of War gain the Line Sub-type.
+• Legion Terminator Saturnine Squads may be selected as Heavy Support Choices in a Detachment using this Rite of War.</description>
             </rule>
           </rules>
           <costs>
@@ -14117,7 +14128,13 @@ Limitations
 • A Detachment using this Rite of War may not select a Lords of War Detachment.
 • This Rite of War may only be selected for an army’s Primary Detachment.
 • An army whose Primary Detachment is using this Rite of War may not roll to Seize the Initiative.
-• Any model with the Dreadnought Unit Type selected in a Detachment using this Rite of War is worth an additional +1 Victory Point when destroyed by an Opposing Player.</description>
+• Any model with the Dreadnought Unit Type selected in a Detachment using this Rite of War is worth an additional +1 Victory Point when destroyed by an Opposing Player.
+
+Liber Centura additions (p.66):
+• In a Detachment using this Rite of War, Legion Castra Ferrum Dreadnought Talons may be taken as Troops choices, and selected as Compulsory Troops choices.
+• In a Detachment using this Rite of War, Legion Contemptor-Cortus Talons may be taken as Troops choices.
+• Legion Castra Ferrum Dreadnought Talons taken as Troops Choices in a Detachment using this Rite of War gain the Line Sub-type.
+• You may take a unit with the Dreadnought Unit Type and Character Sub-type as your Warlord, instead of a Legion Contemptor Dreadnought with the Venerable Ancient Upgrade.</description>
             </rule>
           </rules>
           <costs>
