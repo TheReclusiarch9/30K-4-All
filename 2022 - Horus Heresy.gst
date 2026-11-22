@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2016" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2017" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -3629,6 +3629,66 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <infoLink id="655c-b014-5b25-eeea" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="e5d6-1a81-1ff0-4254" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="fa04-612e-f629-73b9" name="Exchange for Sonic Decimator" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a218-5e3d-b703-aef3" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d02-1299-b2a4-ad99" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d594-544e-5568-52d0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="782e-21f3-eca5-e32a" name="Sonic Decimator" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Gets Hot, Pinning, Shell Shock (1), Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="84dd-1f53-1893-9251" name="Choir of Screams" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange all Heavy Bolters in the unit for Sonic Blasters, at a cost of +5 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Bolt Cannon for a Sonic Pulveriser for +10 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Heavy Bolter Battery or Anvilus Autocannon Battery for a Sonic Decimator for +10 points per weapon.
+
+This option replaces the weapon it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="b9bd-480f-05ac-0c10" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+            <infoLink id="fad4-55aa-e77d-b5d0" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="4de0-f0ce-8815-f5af" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shell Shock (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="abdc-1b1e-f57b-c215" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -4009,6 +4069,64 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="e2d1-8dcd-7dcb-055e" name="Exchange for Sonic Blaster" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a218-5e3d-b703-aef3" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d02-1299-b2a4-ad99" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7843-ead2-55ba-72f6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9d94-7881-28bf-a21d" name="Sonic Blaster" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Gets Hot, Pinning, Shell Shock (1), Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="e090-7216-aa02-dc6e" name="Choir of Screams" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange all Heavy Bolters in the unit for Sonic Blasters, at a cost of +5 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Bolt Cannon for a Sonic Pulveriser for +10 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Heavy Bolter Battery or Anvilus Autocannon Battery for a Sonic Decimator for +10 points per weapon.
+
+This option replaces the weapon it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4cd4-4958-c2bd-7e02" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+            <infoLink id="99eb-d19c-c064-801a" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="08b6-33ee-6b25-886a" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shell Shock (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="e398-1439-ccda-b4bb" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4071,6 +4189,64 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="ea91-69a9-6356-38a8" name="Exchange for Sonic Pulveriser" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a218-5e3d-b703-aef3" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d02-1299-b2a4-ad99" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2123-9441-8b5b-1db8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1248-05a7-41b2-936b" name="Sonic Pulveriser" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Gets Hot, Pinning, Shell Shock (1), Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="0f87-cb50-c3ab-6fb1" name="Choir of Screams" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange all Heavy Bolters in the unit for Sonic Blasters, at a cost of +5 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Bolt Cannon for a Sonic Pulveriser for +10 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Heavy Bolter Battery or Anvilus Autocannon Battery for a Sonic Decimator for +10 points per weapon.
+
+This option replaces the weapon it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="142d-5858-c457-3687" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+            <infoLink id="0472-daf0-a487-bec6" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="c1ed-67ef-ba79-c300" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shell Shock (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="7da9-642e-03ef-9717" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4131,6 +4307,64 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="de7b-d7a0-1fd7-a0e7" name="Exchange for Sonic Decimator" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a218-5e3d-b703-aef3" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d02-1299-b2a4-ad99" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc6-31df-8f32-f445" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2e1d-48c9-aa5a-cb8c" name="Sonic Decimator" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 8, Gets Hot, Pinning, Shell Shock (1), Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="5cfd-f8ca-eebc-0ed7" name="Choir of Screams" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange all Heavy Bolters in the unit for Sonic Blasters, at a cost of +5 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Bolt Cannon for a Sonic Pulveriser for +10 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Heavy Bolter Battery or Anvilus Autocannon Battery for a Sonic Decimator for +10 points per weapon.
+
+This option replaces the weapon it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="c4fb-b8bf-55b1-4516" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+            <infoLink id="4dc2-147a-853d-1eec" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="7ebf-4ed0-9a16-4897" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shell Shock (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="54cf-eff6-aa5c-7002" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9361,6 +9595,64 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b65a-951f-4f46-101b" name="Exchange for Sonic Blaster" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a218-5e3d-b703-aef3" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d02-1299-b2a4-ad99" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4a-d9db-d7fc-05f9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="436a-b23a-6bd1-c76b" name="Sonic Blaster" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Gets Hot, Pinning, Shell Shock (1), Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="6e6e-8dde-44e5-cb25" name="Choir of Screams" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false">
+              <description>Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange all Heavy Bolters in the unit for Sonic Blasters, at a cost of +5 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Bolt Cannon for a Sonic Pulveriser for +10 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Heavy Bolter Battery or Anvilus Autocannon Battery for a Sonic Decimator for +10 points per weapon.
+
+This option replaces the weapon it is taken on.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="1fe5-68bc-edb9-6ce8" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+            <infoLink id="3132-84d5-7584-9728" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="ba25-f522-9a20-6d40" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shell Shock (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="a7ef-10e3-a96e-b11f" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

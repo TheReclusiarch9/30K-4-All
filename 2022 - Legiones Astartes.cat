@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2197" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2198" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -72420,6 +72420,85 @@ For Caliban and Terra!: Once per battle, at the start of one of the Controlling 
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a218-5e3d-b703-aef3" name="Kakophonix Prime" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="8f89-d92d-d77a-3396" name="Kakophonix Prime" publicationId="3970-79bb-bdc6-9599" page="104" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (Emperor’s Children) Special Rule and the Traitor Allegiance may be upgraded to a Kakophonix Prime Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules: The Kakophonix Prime gains the Rising Crescendo, Choir of Screams, and Fearless Special Rules. The Kakophonix Prime also gains the Heavy Sub-type, and increases his Leadership Characteristic to 10.
+
+Wargear: The Kakophonix Prime gains the Sonic Shrieker Surgical Augment and a Cacophony weapon (see Liber Hereticus page 161) at no additional points cost. The Kakophonix Prime may not select a Bike or Jetbike.
+
+Rising Crescendo: A Kakophoni Squad containing the Kakophonix Prime may ignore the effect of the Gets Hot Special Rule, and gain the Shell Shock (2) Special Rule when using their Cacophony weaponry.
+
+Choir of Screams: Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange all Heavy Bolters in the unit for Sonic Blasters, at a cost of +5 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Bolt Cannon for a Sonic Pulveriser for +10 points per weapon.
+
+Any unit composed entirely of models with the Legiones Astartes (Emperor’s Children) Special Rule in a Detachment that contains a Kakophonix Prime may exchange a Gravis Heavy Bolter Battery or Anvilus Autocannon Battery for a Sonic Decimator for +10 points per weapon.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="9c42-9e63-3b75-f621" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="1550-12b5-7c6e-0540" name="Cacophony" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39dc-5046-87da-28c8" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed97-c63e-0ebf-2756" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4523-700f-2284-e0e5" name="Cacophony" publicationId="09c5-eeae-f398-b653" page="161" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Gets Hot, Pinning, Shell Shock (1), Deflagrate</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="6f5d-c895-f89e-1d12" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+                <infoLink id="6b7d-c6cb-03c2-239c" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                <infoLink id="8409-58e6-e133-1dc7" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Shell Shock (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="9360-c034-d5f1-04ba" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="d584-2cb5-294d-d39c" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="3f61-86fe-eecf-aed7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d583-21d7-39d7-fb39" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6574-d820-28ec-5832" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink id="958e-cf9f-1d23-bbeb" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
