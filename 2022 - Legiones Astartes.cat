@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2205" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2206" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -71231,6 +71231,128 @@ An Achea Force Stave counts as a ‘Force’ weapon for all rules which affect s
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f3aa-f314-9f0f-8ba5" name="Conflagration Meltagun" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="32f3-5968-e728-2ca1" name="Conflagration Meltagun" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8cb8-a0bb-e6fd-ba63" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+          <description>All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="f45b-2ea2-590f-5e2d" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47ff-aa65-0187-e269" name="Conflagration Multi-Melta" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="827c-91ae-35ef-4f18" name="Conflagration Multi-Melta" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Melta), Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a673-b0e7-8277-26f1" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+          <description>All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="609c-e0a0-ba5c-e9a1" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7e75-5e82-ef03-eb2e" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff64-bf13-cd56-0f2c" name="Conflagration Melta Cannon" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5eea-8bf3-69a9-f244" name="Conflagration Melta Cannon" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Armourbane (Melta), Twin-Linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="c116-9e8b-e2d2-6e3a" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+          <description>All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5b15-7dd0-c300-119e" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0007-bde0-06ba-0d24" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7086-31e4-e9c6-fbc7" name="Conflagration Melta Lance" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3069-7ff5-411a-3650" name="Conflagration Melta Lance" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="9a7b-7aa9-7041-496b" name="Conflagration Melta Weapons" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+          <description>All Conflagration Melta weapons count as ‘Melta’ weapon for all rules which affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b17a-a348-9aa0-9f8d" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f9cc-e816-6cf7-5b67" name="Magma Plating" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="c5c2-2db8-f9d0-c1e2" name="Magma Plating" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+          <description>Any model with the Legiones Astartes (Salamanders) Special Rule and the Vehicle Unit Type may purchase Magma Plating for +15 points.
+
+Models equipped with Magma Plating gain a 5+ Invulnerable Save against any Hull Points of damage inflicted by a weapon of the Flamer, Plasma, Melta, or Volkite Types.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -73473,6 +73595,59 @@ In addition, for the purposes of the Rite of War: Creeping Death, a Legion Centu
           </entryLinks>
           <categoryLinks>
             <categoryLink id="dcc1-18c6-3bc4-a0f1" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6c99-8161-e907-92d4" name="Pyre Guard" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="6ec8-2c2f-722d-8e1b" name="Pyre Guard" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+              <description>A Legion Centurion, Legion Cataphractii Centurion, Legion Indomitus Centurion, or Legion Tartaros Centurion with the Legiones Astartes (Salamanders) Special Rule may be upgraded to Pyre Guard Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules: The Pyre Guard gains +1 to their Weapon Skill Characteristic, as well as the Never Back Down Special Rule (See Liber Astartes page 108). The Pyre Guard may apply the Master-Crafted Special Rule to a single Melee Weapon they are armed with at no additional points cost. For the purposes of Rites of War, the Pyre Guard is counted as a Legion Champion.
+
+Wargear: The Pyre Guard replaces their Refractor Field for an Iron Halo, and their Bolter for a Minor or Magna Combi-Weapon, at no additional points cost. The Pyre Guard may purchase a Dragonscale Storm Shield for +10 points.</description>
+            </rule>
+            <rule id="62b6-7e55-b54d-7578" name="Never Back Down" publicationId="3970-79bb-bdc6-9599" page="196" hidden="false">
+              <description>If possible, a unit that includes a model with this special rule must issue a Challenge when Engaged in combat, and if an enemy player issues a Challenge to a unit including one or more models with special rule then a model with this special rule must accept. In addition, during any Assault phase where this model begins the Fight sub-phase Engaged in a Challenge, or enters into a Challenge with an enemy model, this model and all friendly models in the same combat gain the Fearless special rule until the end of that Assault phase.
+
+(Text as in the existing Legiones Astartes data.)</description>
+            </rule>
+          </rules>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f447-a3fd-78f0-e964" name="Combi-Weapon (replaces the Bolter)" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c17-ba8e-f26b-c554" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="044c-a7cf-9899-7603" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="f6d2-b598-0582-99a6" name="Minor Combi-Weapon" hidden="false" collective="false" import="true" targetId="605e-1b86-ca08-9226" type="selectionEntry"/>
+                <entryLink id="bfa6-e024-291d-2725" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="e5b1-83e5-7272-a59e" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="cee0-6312-e67c-42df" name="Iron Halo (replaces the Refractor Field)" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a450-f255-5c2a-7e71" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfe8-b04c-2185-754b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink id="af5f-43d9-f612-a649" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
