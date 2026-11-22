@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2201" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2202" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -60905,6 +60905,7 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec62-5835-5c93-bc30" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="fe49-bf68-fb7e-7cae" name="The Keys of Hel" hidden="false" collective="false" import="true" targetId="3fee-aee9-f8fe-23c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
@@ -71183,6 +71184,23 @@ A model equipped with an Angelus Pattern Jump Pack gains the Bulky (3), Deep Str
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3fee-aee9-f8fe-23c6" name="The Keys of Hel" publicationId="3970-79bb-bdc6-9599" page="150" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beed-a964-9346-cae1" type="max"/>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e4c5-8e8f-855d-736b" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="4d4e-2da5-c814-2134" name="The Keys of Hel (upgrade)" publicationId="3970-79bb-bdc6-9599" page="150" hidden="false">
+          <description>A Legion Praetor, Legion Cataphractii Praetor, Legion Indomitus Praetor, or Legion Tartaros Praetor with the Legiones Astartes (Iron Hands) Special Rule which has selected the Iron-Father upgrade may take The Keys of Hel. Only a model which is your Warlord may select this upgrade; if this upgrade is selected you may not include Ferrus Manus in a Detachment which includes a model with this upgrade. A model with the Keys of Hel gains the Keys of Hel Special Rule.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="8c9b-384e-896d-4e58" name="Keys of Hel" hidden="false" targetId="1f40-169f-162c-0e2e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -75634,6 +75652,22 @@ When included in a Shattered Legions Detachment, this model must represent the L
 Note that this is an exception to the normal rules for Fortifications, and if assigned in this way, you may choose to select a Hammerfall Bunker in a Rite of War: Drop Pod Assault detachment.
 
 (Honorifica: Saturnine refers to Legacies of the Age of Darkness: Legiones Astartes p.99 for this rule. Text copied from the Hammerfall Bunker entry in this data.)</description>
+    </rule>
+    <rule id="23db-777d-56dd-06f9" name="Ghola Sub-type" publicationId="3970-79bb-bdc6-9599" page="151" hidden="false">
+      <description>The following rules apply to all models with the Ghola Sub-type:
+• A model with the Ghola Sub-type suffers a -1 penalty to their Movement and Initiative Characteristics.
+• A model with the Ghola Sub-type also gains the Heavy Unit Sub-type.
+• A model with the Ghola Sub-type gains the Feel No Pain (5+) and Stubborn Special Rules.
+• Successful Wounds scored by attacks with the Poisoned or Fleshbane Special Rules must be re-rolled against models with the Ghola Sub-type.</description>
+    </rule>
+    <rule id="1f40-169f-162c-0e2e" name="Keys of Hel" publicationId="3970-79bb-bdc6-9599" page="150" hidden="false">
+      <description>A model with the Keys of Hel Special Rule may join a unit with the Ghola Sub-type even if they would normally be prevented from doing so by any Special Rule.
+
+During army selection, the Controlling Player may select any units with the Infantry Unit Type in the same Detachment as a model with this Special Rule which also have the Legions Astartes (Iron Hands) Special Rule, and which do not already have the Ghola Unit Sub-type, and were not selected as a HQ choice.
+
+Units selected in this way may be given the Ghola Sub-type at a cost of +5 points per model. All models in a unit selected in this fashion must be so upgraded.
+
+Any Legion Techmarine Covenant or Legion Apothecarion Detachment may not be selected to gain this upgrade. Legion Techmarines may be attached to a unit with the Ghola Subtype, and do not gain the Ghola Sub-type or any associated benefits as normal, apart from the Bitter Duty Special Rule. Legion Apothecaries may never a join a unit with the Ghola Sub-type.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
