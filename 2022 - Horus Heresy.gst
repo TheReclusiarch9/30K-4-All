@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2012" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="66e4-4610-1d0e-3c25" name="Horus Heresy (Panoptica)" revision="2013" battleScribeVersion="2.03" authorName="Panoptica Development Team (Imported by LeonisAstra)" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="3780-2e0c-1c08-df47" name="Campaigns of the Age of Darkness - The Martian Civil War" shortName="CotAoD - MCW"/>
     <publication id="e2a4-ac85-1bef-22f5" name="Github" shortName="LeonisAstra/horus-heresy-panoptica" publisherUrl="https://github.com/LeonisAstra/horus-heresy-panoptica/"/>
@@ -15702,6 +15702,178 @@ Limitations
 • A Detachment using this Rite of War may not include any models with the Dreadnought or Automata Unit Type.
 • An Allied Detachment may not use this Rite of War.
 • A Detachment using this Rite of War may not select any Fortification choices.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a24-9caf-0fa5-5905" name="The Iron Without^ (IW)" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="7b9b-71f3-badd-61ea" name="The Iron Without^" publicationId="3970-79bb-bdc6-9599" page="112" hidden="false">
+              <description>Effects
+• Legion Heavy Support Squads may be taken as non-Compulsory Troops choices in a Detachment using this Rite of War.
+• Before the game begins, you must assign at least 3 Infantry or Cavalry units in a Detachment using this Rite of War to a Flanking Assault. Any models assigned in this way automatically gain the Outflank Special Rule. You cannot assign a Lord of War to a Flanking Assault in this way.
+• All Infantry and Dreadnought units in a Detachment using this Rite of War gain the Hatred (Traitors) whilst within 18” of the Detachment’s Warlord.
+
+Limitations
+• A Detachment using this Rite of War must include either a Warsmith, a Siege Breaker Consul, or Barabas Dantioch, and this model must be the army’s Warlord.
+• A Detachment with this Rite of War may only take a single Fast Attack choice.
+• This Rite of War may only be selected for Detachments with the Loyalist allegiance.
+• Any models in a Detachment using this Rite of War may not be assigned to a Deep Strike Assault or a Subterranean Assault.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8fcc-2037-3ece-dae2" name="Bolt From Blue Skies^ (WS)" publicationId="3970-79bb-bdc6-9599" page="124" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="c3b4-e9ce-6f06-3bb1" name="Bolt From Blue Skies^" publicationId="3970-79bb-bdc6-9599" page="124" hidden="false">
+              <description>Effects
+• All models in a Detachment using this Rite of War with the Legiones Astartes (White Scars) Special Rule may add +1” to their Charge distance if the unit they are in ends its move its maximum Movement distance from its starting position in the preceding Movement phase.
+• All models in a Detachment using this Rite of War with the Legiones Astartes (White Scars) Special Rule may re-roll rolls of 1 to Wound and failed Armour Penetration rolls, if the unit ends its move its maximum Movement distance from its starting position in the preceding Movement phase.
+• Legion Outrider Squadrons and Legion Sky-Hunter Squadrons may be selected as Troops choices in a Detachment using this Rite of War.
+• Legion Outrider Squadrons and Legion Sky-Hunter Squadrons taken as Compulsory Troops gain the Line Unit Sub-Type in a Detachment using this Rite of War.
+• All units with the Cavalry Unit Type and the Antigrav Unit Sub-type taken in a Detachment using this Rite of War gain the Shrouded (6+) Special Rule if they moved in the preceding Movement Phase.
+
+Limitations
+• All units with the Independent Character Special Rule must take a Legion Scimitar Jetbike, Shamshir Jetbike, Sojutsu Pattern Voidbike, or Legion Spatha Combat Bike.
+• If all units with the Cavalry Unit Type in a Detachment using this Rite of War are removed from play, your Opponent gains an additional +D3 Victory Points.
+• You may only select Heavy Support or Lords of War choices if they have a Movement Characteristic of 16 or higher in a Detachment using this Rite of War.
+• Legion Outrider Squadrons or Legion Sky-Hunter Squadrons must be selected as Compulsory Troops choices in a Detachment using this Rite of War.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7ccd-566a-4778-2bb4" name="The Gates of Hel^ (IH)" publicationId="3970-79bb-bdc6-9599" page="150" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="2769-21a3-d7fe-acba" name="The Gates of Hel^" publicationId="3970-79bb-bdc6-9599" page="150" hidden="false">
+              <description>Effects
+• Iron Revenants may be selected as Troops choices in a Detachment using this Rite of War.
+• Iron Revenants taken as Compulsory Troops gain the Line Unit Sub-Type and the Heart of the Legion Special Rule in a Detachment using this Rite of War.
+• Any unit with the Ghola Sub-type in a Detachment using this Rite of War that has at least a single model within 12” of a Legion Techmarine or a model with the Independent Character Special Rule as well as the Legiones Astartes (Iron Hands) Special Rule may re-roll Feel No Pain rolls of 1.
+• Thallax Cohorts (see Liber Mechanicum) may be selected as non-compulsory Troops choices in an Detachment using this Rite of War.
+
+Limitations
+• A Detachment using this Rite of War must include a model with the Keys of Hel upgrade, or Lord Crius, as the Warlord.
+• A Detachment using this Rite of War may not include the Primarch Ferrus Manus.
+• A Detachment using this Rite of War may not select an Allied Detachment.
+• In a Detachment using this Rite of War, all Compulsory Troops must be Iron Revenants.
+• A Detachment using this Rite of War may not select any Fortification choices.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab68-9caf-7bfa-6765" name="The Red Marked^ (UM)" publicationId="3970-79bb-bdc6-9599" page="166" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="5a75-548d-021a-f766" name="The Red Marked^" publicationId="3970-79bb-bdc6-9599" page="166" hidden="false">
+              <description>Effects
+• All models in a Detachment using this Rite of War with the Legiones Astartes (Ultramarines) Special Rule gain the Hatred (Traitors) Special Rule.
+• Red-Marked Squads may be selected as Troops choices in a Detachment using this Rite of War.
+• Red-Marked Squads taken as Compulsory Troops gain the Line Unit Sub-Type in a Detachment using this Rite of War.
+• Models with the Independent Character Special Rule in a Detachment using this Rite of War may purchase the Brothers in Censure Special Rule for +10 points (see the Red-Marked Squad for the Brothers in Censure Special Rule).
+
+Limitations
+• A Detachment using this Rite of War may not include the Primarch Roboute Guilliman.
+• A Detachment using this Rite of War may not select an Allied Detachment.
+• In a Detachment using this Rite of War, you must select Aeonid Thiel as your Compulsory HQ choice, and he must be your Warlord.
+
+^Manually check restrictions and limitations</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5f18-e7f7-d9f8-ae92" name="Rukal Breacher Battalion^ (SoH)" publicationId="3970-79bb-bdc6-9599" page="184" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="6bda-2e1f-f1b4-164f" name="Rukal Breacher Battalion^" publicationId="3970-79bb-bdc6-9599" page="184" hidden="false">
+              <description>Effects
+• Models with the Legiones Astartes (Sons of Horus) Special Rule taken as part of a Detachment using this Rite of War gain the Rage (2) Special Rule when they successfully Charge an enemy unit which is already locked in combat with one or more units or an enemy unit that is the target of at least one other Charge in the same Charge sub-phase.
+• Rukal Breacher Squads may be selected as Troops choices for Detachments using this Rite of War.
+• Rukal Breacher Squads selected as Compulsory Troops choices for Detachments using this Rite of War gain the Line Sub-type.
+• Any unit with the Infantry (Heavy) Sub-type equipped with Boarding Shields gains the Chosen Warriors Special Rule.
+• Any unit with the Infantry (Heavy) Sub-type equipped with Boarding Shields gains the Heart of the Legion Special Rule.
+
+Limitations
+• A Detachment using this Rite of War must take a Legion Centurion with the Legiones Consularis: Dark Emissary upgrade as a HQ choice, in addition to the Legion Praetor or other characters whose presence allows for the use of a Rite of War.
+• A Detachment with this Rite of War must be of the Traitor Allegiance.
+• A Detachment using this Rite of War must include more units with the Heavy Sub-type than without.
 
 ^Manually check restrictions and limitations</description>
             </rule>
