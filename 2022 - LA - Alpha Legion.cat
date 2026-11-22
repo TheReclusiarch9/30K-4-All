@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1967-627b-83d8-12ce" name="LA - XX: Alpha Legion" revision="2056" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1967-627b-83d8-12ce" name="LA - XX: Alpha Legion" revision="2057" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -5548,6 +5548,20 @@
         <categoryLink id="4c5e-d1c0-ab37-a524" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="acc9-111c-b684-e5a1" name="Omegon" hidden="false" collective="false" import="false" targetId="fe07-45f4-11d9-9878" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a6c1-11f7-6557-9b5a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2029-70a5-d324-7a17" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="true"/>
+        <categoryLink id="6ccb-25c5-e36a-8dd7" name="Primarch Unit Type" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6161-d387-f086-0958" name="Lernaean Terminator Squad" publicationId="09c5-eeae-f398-b653" page="338" hidden="false" collective="false" import="true" type="unit">
@@ -6786,7 +6800,15 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e56e-40d5-e362-0e1c" name="Alpharius" publicationId="09c5-eeae-f398-b653" page="336" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="74fc-8325-aa28-0fee" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe07-45f4-11d9-9878" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="74fc-8325-aa28-0fee" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7786-10b0-f222-2c4e" type="max"/>
       </constraints>
       <rules>
@@ -7379,6 +7401,260 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75fd-1e94-0a59-ecbf" name="The Pale Sword" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1280-3100-864a-b27e" name="The Pale Sword" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Fleshbane, Instant Death, Duellist’s Edge (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="601f-c9d3-d6fe-8c9a" name="The Pale Sword" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false">
+          <description>The weapon listed here is counted as a ‘Power’ weapon for those rules that affect such weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="03f9-15d4-59be-1038" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink id="70ab-e032-9f68-6ba5" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="a1c9-d584-2b1d-4e2f" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af01-8e81-adc4-c037" name="The Whispering Death" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="dbf8-8074-f8b1-8d22" name="The Whispering Death" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3, Sniper, Sunder, Pinning, Shell Shock (2), Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="3472-03af-42d8-07a7" name="The Whispering Death" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false">
+          <description>The weapon listed here is counted as a ‘Bolt’ weapon for those rules that affect such weapons. The Whispering Death may not be fired in any Shooting Attacks made as part of a Reaction.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="a3bf-2492-998a-c09a" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="b468-f15f-aba4-b36c" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="ac05-ccaf-0689-1b93" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="7af9-1e39-5d9c-6909" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ac37-e905-960a-16f4" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70dc-6182-b7c2-21a0" name="The Hydra’s Spite" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="25f0-326b-1bc8-5bdd" name="The Hydra’s Spite" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Rending (4+), Master-crafted</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6fcd-5d45-4f9c-255c" name="The Hydra’s Spite" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false">
+          <description>Liber Centura (p.213) points to page 336 of the Liber Hereticus for this weapon. This profile is copied from the existing Alpharius entry.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="85bb-8b63-8723-8dd1" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8218-4253-85f3-c0b4" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82e9-9897-4a0c-483a" name="The Basilisk’s Raiment" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c70f-be70-1147-1464" name="The Basilisk’s Raiment" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Basilisk’s Raiment provides Omegon with a 2+ Armour Save and a 4+ Invulnerable Save. In addition, whenever Omegon makes a Cover Save, add +1 to the roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fe07-45f4-11d9-9878" name="Omegon" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="250b-78be-42ca-4224" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e56e-40d5-e362-0e1c" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="250b-78be-42ca-4224" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a932-2dea-5517-6858" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+        <categoryLink id="c72e-7616-2292-0bf9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5cab-c151-024f-d5d3" name="Omegon" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4a4-69e5-9be5-7ee8" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7417-11b0-cd43-e372" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="56b9-8be7-03ae-7c84" name="Omegon" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Skirmish, Unique*)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">7</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2a26-4fff-b205-8aef" name="Walker in Shadow" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false">
+              <description>This Special Rule grants Omegon the Deep Strike, Scout, and Infiltrate Special Rules. These Special Rules may be conferred to a single unit which must join Omegon via the chosen deployment method. On the turn in which a unit which uses this Special Rule enters the battle, they also gain the Shrouded (4+) Special Rule for the duration of the turn.</description>
+            </rule>
+            <rule id="1171-4fe7-ee43-5061" name="Marksman’s Tutelage" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false">
+              <description>Whenever Omegon, or any member of a unit he has joined, makes any attacks as part of a Shooting Attack, the range of any Weapons is not restricted or affected by the Night Fighting rules, Shroud Bombs, or any other Special Rule. In addition, no model may make Shrouded rolls to negate Wounds inflicted by Omegon’s Shooting attacks.</description>
+            </rule>
+            <rule id="b8ee-abd9-22c9-16b4" name="Unique*" publicationId="3970-79bb-bdc6-9599" page="213" hidden="false">
+              <description>*Omegon is Unique – but dare not walk the field of battle openly where Alpharius also treads, for fear of revealing their greatest secret. As a result, an army that contains Alpharius may never also contain Omegon, and visa versa.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="f9a3-ad3a-d6c4-277f" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="2a9e-be1f-d6c1-0ec4" type="rule"/>
+            <infoLink id="8bd6-1b35-06b2-b8b4" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
+            <infoLink id="6549-43ec-fe84-f374" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Adamantium Will (3+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="dac5-e354-fc9d-912d" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+            <infoLink id="0d4b-d220-a5b0-7d47" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
+            <infoLink id="0e9e-b801-40ea-68fe" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Shrouded (5+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="cb35-4e4b-3302-3155" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0514-5b87-6603-9d8d" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96d5-5fcc-e2db-01a8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0059-f1e9-f730-75d3" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9bb-1b27-9a54-14c6" type="min"/>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b910-ac2e-d8d1-d218" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink id="f415-43a4-0f68-41e6" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+            <categoryLink id="b6eb-3eda-93b2-6fa3" name="Primarch Unit Type" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false"/>
+            <categoryLink id="11de-80ca-3e73-3710" name="Unique Sub-type" hidden="false" targetId="aa94-5c65-d1f1-46a4" primary="false"/>
+            <categoryLink id="11dd-abd9-34c5-f208" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="672a-83a1-e7dd-f2be" name="The Basilisk’s Raiment" hidden="false" collective="false" import="true" targetId="82e9-9897-4a0c-483a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f6f-449f-3e7e-1ba3" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b84e-2899-3d08-e4cf" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4032-b931-b511-f0a0" name="The Whispering Death" hidden="false" collective="false" import="true" targetId="af01-8e81-adc4-c037" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a883-d558-56ed-c800" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8a9-d660-f28b-7f2d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bbdc-9d48-3b8f-c9f5" name="The Pale Sword" hidden="false" collective="false" import="true" targetId="75fd-1e94-0a59-ecbf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9542-f863-a87e-fa0f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7364-81d0-1a08-b4ae" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8d6d-4efa-2de8-c0ba" name="The Hydra’s Spite" hidden="false" collective="false" import="true" targetId="70dc-6182-b7c2-21a0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c92-3248-02cf-6724" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f43-6f20-6120-e42c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="670a-250d-b39d-9381" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bde5-ce55-3094-841f" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="377f-5004-1aab-8639" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e474-412c-8675-7644" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3bb-d4a1-c8b0-2991" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f95c-2006-3aeb-f2c8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6557-a295-9ffc-e642" name="Melta Bomb" hidden="false" collective="false" import="true" targetId="e55d-d31b-46a9-aeb6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf1-3bb0-b32f-5816" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c38-c35f-713e-7081" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0432-7110-95d5-fda3" name="Shroud Bombs" hidden="false" collective="false" import="true" targetId="5d4d-36b7-6bf5-fc92" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1264-06e1-ea3b-b0b2" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ccf-c916-2a54-2d3f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9089-4c7c-031b-41ac" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f586-1ded-0ad6-5de4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="eaa5-73cc-0c43-2905" name="Retinue" hidden="false" collective="false" import="true" targetId="09f9-933c-a88e-6e38" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
