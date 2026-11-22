@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="e960-66e8-21db-ebb4" name="[Imperatus] Solar Auxilia" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="e960-66e8-21db-ebb4" name="[Imperatus] Solar Auxilia" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="3" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry name="Lord Marshal Ireton Masade" type="unit" id="bbfc-3ecc-4d10-b3de" page="130" publicationId="892-6266-f55f-1b9d">
       <categoryLinks>
@@ -403,6 +403,9 @@ Could not find wargear in An Auxilia Battle Psyker may select any of the followi
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Independent Character</comment>
+      <entryLinks>
+        <entryLink id="b989-23d6-1ce6-e0d2" name="Solar Auxilia Warlord Traits (Liber Imperatus)" hidden="false" collective="false" import="true" targetId="5bf1-98c9-c739-81c8" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Solar Auxilia Furibundus Dreadnought Talon" type="unit" id="2266-8662-4610-adab" page="136" publicationId="892-6266-f55f-1b9d">
       <categoryLinks>
@@ -8639,6 +8642,63 @@ Could not find wargear in The Auxilia Marauder Destroyer may exchange its eight 
       </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="5bf1-98c9-c739-81c8" name="Solar Auxilia Warlord Traits (Liber Imperatus)" publicationId="892-6266-f55f-1b9d" page="120" hidden="false" collective="false" import="true">
+      <comment>If your Warlord is of the Solar Auxilia Sub-faction it may take one of these instead of a Core Rulebook Warlord Trait.</comment>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f482-b6e3-d03e-5e67" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8e8-dbf0-6122-0d30" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="8adc-a65e-6820-bc4f" name="Void Master" publicationId="892-6266-f55f-1b9d" page="120" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e8a1-0f8e-8284-2b71" name="Void Master" publicationId="892-6266-f55f-1b9d" page="120" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Warlord Trait gains the Stubborn and Move Through Cover Special Rules, and in addition may ignore the Movement Penalty imposed by Debris Terrain. They may also choose to re-roll any failed Dangerous Terrain or Hazardous Debris tests. If this Warlord is a model with the Independent Character Special Rule and has joined a unit with the Tercio Special Rule then these bonuses apply to all models in that unit, as well as to all models which are part of that Tercio and are ‘In Formation’ with the unit containing the Warlord.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Opposing Player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0646-1dfa-c2b5-6920" name="Co-Ordinated Devastation" publicationId="892-6266-f55f-1b9d" page="120" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="690b-b673-31b0-1bac" name="Co-Ordinated Devastation" publicationId="892-6266-f55f-1b9d" page="120" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Warlord Trait increases the range of all Ranged Weapons they are equipped with by +6”.
+
+At the start of the Controlling Player’s Shooting Phase, a Warlord with this Warlord Trait may nominate a single enemy unit within 30” and Line of Sight. A Warlord with this Warlord Trait, and any unit they have joined with the Tercio Special Rule and any other squads ‘In Formation’ with that unit, add +1 to their To-Hit rolls when making Shooting Attacks against that unit until the end of the Phase.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Opposing Player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dc68-c7be-7a6e-111a" name="Bitter Blood" publicationId="892-6266-f55f-1b9d" page="120" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="6bc6-5cb0-6bea-5319" name="Bitter Blood" publicationId="892-6266-f55f-1b9d" page="120" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Warlord Trait increases their Weapon Skill by +1 and gains the Hatred (Everything!) and Fleet (1) Special Rule.
+
+A Warlord with this Warlord Trait and the Independent Character Special Rule may elect to purchase a single unit of Solar Auxilia Companion Sections or Solar Auxilia Tactical Command Sections as a retinue - if selected in this manner, the unit loses the Tercio Special Rule. This unit is designated the ‘Household Retinue’, and all models in that unit increase their Weapon Skill Characteristic by +1, gain the Hatred (Everything!) and Fleet (1) Special Rules, and in addition gain the Line Unit Sub-Type for as long as the Warlord is part of that unit. The Warlord with this Trait must be deployed as part of the ‘Household Retinue’ unit and may not voluntarily leave that unit during play.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Opposing Player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="5f24-4626-0547-71c3" name="Panoptica Library" targetId="69b7-3f60-9f7f-8ce5" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="5f24-4242-71c3-0547" name="Mech Library" targetId="7265-8b7a-50ae-51ec" type="catalogue" importRootEntries="true"/>

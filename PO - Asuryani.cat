@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="faad-692f-723b-fbb4" name="[Antiquia] Asuryani" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="faad-692f-723b-fbb4" name="[Antiquia] Asuryani" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="3" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="d899-0621-4c1e-9a7b" name="Asuryani" hidden="false" collective="false" import="true" type="upgrade">
       <comment>Army faction marker. The Crusade and Allied charts expect two Allegiance selections: Loyalist/Traitor plus the army's faction.</comment>
@@ -158,6 +158,9 @@
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Independent Character</comment>
+      <entryLinks>
+        <entryLink id="80ff-306c-c508-0c5e" name="Asuryani Warlord Traits (Liber Antiquia)" hidden="false" collective="false" import="true" targetId="a57c-e8a5-cbb3-9e70" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Aspect Exarchs" type="unit" id="ee1a-07fa-45ce-947c" page="29" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
@@ -225,6 +228,9 @@ Could not find rule: Independent Character</comment>
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 This unit has an extra special option not yet handled.</comment>
+      <entryLinks>
+        <entryLink id="6f86-ef86-67c2-0003" name="Asuryani Warlord Traits (Liber Antiquia)" hidden="false" collective="false" import="true" targetId="a57c-e8a5-cbb3-9e70" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Farseer" type="unit" id="d27e-b782-40c3-9f57" page="30" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
@@ -462,6 +468,9 @@ Could not find wargear Witch Weapon
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b8ef-c658-8f11-45ea" name="Asuryani Warlord Traits (Liber Antiquia)" hidden="false" collective="false" import="true" targetId="a57c-e8a5-cbb3-9e70" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Wraith Guide" type="unit" id="4952-5d86-4bfc-bf65" page="31" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
@@ -575,6 +584,9 @@ Could not find wargear Witch Weapon
       </infoLinks>
       <comment>!BSC Errors from 20240406-1603
 Could not find rule: Independent Character</comment>
+      <entryLinks>
+        <entryLink id="ec39-aac7-ca8f-c744" name="Asuryani Warlord Traits (Liber Antiquia)" hidden="false" collective="false" import="true" targetId="a57c-e8a5-cbb3-9e70" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Eldrad Ulthran" type="unit" id="9007-5ead-4e48-9c5f" page="32" publicationId="a368-64f0-10c7-c49d">
       <categoryLinks>
@@ -8796,6 +8808,59 @@ Could not find profile for Double Holo-Field Sections in [&apos;Holo-Field Defen
       </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="a57c-e8a5-cbb3-9e70" name="Asuryani Warlord Traits (Liber Antiquia)" publicationId="a368-64f0-10c7-c49d" page="13" hidden="false" collective="false" import="true">
+      <comment>If your Warlord has the Asuryani Sub-type it may take one of these instead of a Common Warlord Trait.</comment>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31fd-e2da-463e-bf51" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b5e0-ed2c-71fc-d87b" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="3dd9-5869-9f66-76f2" name="Falcon’s Swiftness" publicationId="a368-64f0-10c7-c49d" page="13" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="21b9-92ec-8e1b-718a" name="Falcon’s Swiftness" publicationId="a368-64f0-10c7-c49d" page="13" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord, and any unit they have joined, increase the value of the Fleet (X) Special Rule by +1, if they already possess it, If the Warlord, or any unit they have joined, does not have the Fleet (X) Special Rule, they gain they gain the Fleet (1) Special Rule instead. In addition, the Warlord gains the Pathfinder Special Rule.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Opposing Player’s Movement phase so long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0e10-c5bd-0f84-a60a" name="Seer Of The Shifting Vector" publicationId="a368-64f0-10c7-c49d" page="13" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="84c8-ef21-2937-2626" name="Seer Of The Shifting Vector" publicationId="a368-64f0-10c7-c49d" page="13" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">While a Warlord with this Trait is in reserves, or deployed on the battlefield, the Controlling Player may choose to re-roll failed Reserves rolls.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase so long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eed6-df97-eece-e275" name="Ambush Of Blades" publicationId="a368-64f0-10c7-c49d" page="13" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5532-1eb7-4db2-9f72" name="Ambush Of Blades" publicationId="a368-64f0-10c7-c49d" page="13" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per battle, the Controlling Player of a Warlord of this Trait may declare the use of this Trait at the start of any phase. For the duration of that phase only, the Warlord and any unit they have joined gain the Preferred Enemy (Everything!) Special Rule.
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase so long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="38a-c90-44da-9571" name="Panoptica Library" targetId="69b7-3f60-9f7f-8ce5" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
