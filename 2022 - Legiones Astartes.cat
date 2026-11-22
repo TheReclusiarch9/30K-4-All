@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2202" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2203" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -73334,6 +73334,73 @@ Bloodlust of the Damned: When a unit containing a Seraphim Majoris successfully 
           </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3259-748b-4e56-b5f4" name="Lanistus" publicationId="3970-79bb-bdc6-9599" page="160" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="587a-4199-b5dd-c181" name="Lanistus" publicationId="3970-79bb-bdc6-9599" page="160" hidden="false">
+              <description>A Legion Centurion with the Legiones Astartes (World Eaters) Special Rule may be upgraded to a Lanistus Consul instead of selecting any of the standard Consul upgrades, gaining the benefits listed below:
+
+Special Rules: The Lanistus gains the Familia Gladiatorium Special Rule.
+
+Wargear: The Lanistus replaces his Chainsword with a Cadere Weapon (or a pair of Falax Blades) at no additional points cost. The Lanistus may not select a Legion Spatha Combat Bike, Legion Scimitar Jetbike, Legion Warhawk Jump Pack, Bolter, or a Minor or Magna Combi-Weapon.
+
+Caedere Weapon: this entry offers the Barb-Hook Lash, Excoriator Chainaxe and Meteor Hammer as the Caedere weapons (as defined in Liber Hereticus).</description>
+            </rule>
+            <rule id="c923-18da-3f68-61aa" name="Familia Gladiatorium" publicationId="3970-79bb-bdc6-9599" page="160" hidden="false">
+              <description>During Army Creation, a Detachment that includes a Legiones Consularis Lanistus may select a single Legion Tactical Squad or Legion Despoiler Squad with the Legiones Astartes (World Eaters) Special Rule in the same Detachment as the Lanistus. The Lanistus must join this unit before the game begins and may not leave it for any reason during the battle. No other models with the Independent Character Special Rule may join the unit. The unit loses the Line Sub-type.
+
+Whilst the Lanistus is alive, all models in the unit (including the Lanistus) gain the Furious Charge (1) and Counter Attack (1) Special Rules. The unit also gains the Savage Arsenal Special Rule.
+
+Savage Arsenal: Any model in a unit with this Special Rule may exchange a Chainsword for a Single Cadere Weapon, at a cost of +10 points per weapon.</description>
+            </rule>
+          </rules>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9b8e-fc4a-25d6-2d98" name="Cadere Weapon (replaces the Chainsword)" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089d-8899-d1f1-d0ef" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af86-0963-9c94-2738" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0f4b-cd9c-ad82-e6a5" name="Barb-Hook Lash" hidden="false" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a79c-fee2-7d27-5bd8" name="Excoriator Chainaxe" hidden="false" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="38cb-0995-1d25-0a86" name="Meteor Hammer" hidden="false" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="956c-815d-90f3-6c0a" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink id="21d6-dff6-b51a-52a4" name="Legion Consularis:" hidden="false" targetId="4171-e276-e90d-b8e5" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
