@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="19ea-eb9d-4ccb-e3c0" name="LA -  XIV: Death Guard" revision="2037" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="19ea-eb9d-4ccb-e3c0" name="LA -  XIV: Death Guard" revision="2038" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="e305-49d1-2181-fc53" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -3142,6 +3142,58 @@
           <comment>template_id_fd26-8e6b-4521-92b9</comment>
         </categoryLink>
         <categoryLink name="Heavy Support:" hidden="false" id="e479-b8dc-802a-a21b" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="65ca-1a01-febc-b0ab" name="Destroyer Assault Squad" hidden="true" collective="false" import="false" targetId="d30b-59bb-8ae0-36d1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ed-8ac3-4e6f-ebe5" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="885d-15a2-f029-5ff5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="78d2-4b1e-8586-1eed" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da56-77cf-0aaf-82ce" name="Mortalis Destroyer Squad" hidden="true" collective="false" import="false" targetId="dbd4-930e-e003-9449" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="03ed-8ac3-4e6f-ebe5" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="debb-820c-eac2-eba3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="c91c-1eb6-b9b6-bc41" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4600-c1a8-e630-9556" name="Outrider Squadron" hidden="true" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab24-8ce4-3b0e-b58a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2693-5f51-9d0a-fffe" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7742-c9f4-10a8-bca1" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a541-55ec-8c39-c23c" name="Spatha Attack Bike Squadron" hidden="true" collective="false" import="false" targetId="4d72-1cc1-8bee-aa88" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab24-8ce4-3b0e-b58a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1677-db97-6e55-3997" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ff65-db14-4328-bef5" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
