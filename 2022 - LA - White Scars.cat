@@ -6638,7 +6638,7 @@ The in-built Volkite Culverin replaces the Heavy Bolter normally in-built to a L
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6780,7 +6780,7 @@ The in-built Volkite Culverin replaces the Heavy Bolter normally in-built to a L
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
