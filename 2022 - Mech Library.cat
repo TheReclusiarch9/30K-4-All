@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2051" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2052" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -1124,6 +1124,13 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </constraints>
               <entryLinks>
                 <entryLink id="e134-8a55-0bb8-c02f" name="Apocalypse Missile Launcher" hidden="false" collective="false" import="true" targetId="e127-4c28-1a5b-e372" type="selectionEntry"/>
+                <entryLink id="2060-26c9-2594-ac2e" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="aa57-fc73-86fe-217c" type="selectionEntry"/>
+                <entryLink id="ce32-ff0a-c268-300a" name="Volkite Eradicator" hidden="false" collective="false" import="true" targetId="e28d-12b7-e120-2785" type="selectionEntry"/>
+                <entryLink id="ac39-7994-294d-0ce4" name="Graviton Destructor" hidden="false" collective="false" import="true" targetId="6262-d084-d668-bdbd" type="selectionEntry"/>
+                <entryLink id="942f-5695-8bb5-c947" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
+                <entryLink id="293c-2b72-b659-63d1" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry"/>
+                <entryLink id="0f56-e8ca-fbe1-fd35" name="Twin-linked Turbo Laser-Destructor" hidden="false" collective="false" import="true" targetId="f947-d7f1-40bd-f425" type="selectionEntry"/>
+                <entryLink id="383a-409a-5bd5-457f" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="6d6f-5264-ca63-de0c" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1454,6 +1461,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="d7e1-874e-679e-bb26" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
                 <entryLink id="b277-877d-220d-a685" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry"/>
                 <entryLink id="bff0-1ef8-6b6f-e6a7" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="aa57-fc73-86fe-217c" type="selectionEntry"/>
+                <entryLink id="29a0-1107-5b91-207d" name="Ursus Claw" hidden="false" collective="false" import="true" targetId="b067-2e32-87b7-a33c" type="selectionEntry"/>
+                <entryLink id="aaf0-c78f-2dcd-c7d8" name="Volkite Eradicator" hidden="false" collective="false" import="true" targetId="e28d-12b7-e120-2785" type="selectionEntry"/>
+                <entryLink id="ad42-1360-e5d4-b08d" name="Graviton Destructor" hidden="false" collective="false" import="true" targetId="6262-d084-d668-bdbd" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2b18-4de0-85f9-e89b" name="Right Arm Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="10b6-946d-d13e-c214">
@@ -1466,6 +1476,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="10b6-946d-d13e-c214" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
                 <entryLink id="bc1f-f183-99db-a90b" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry"/>
                 <entryLink id="7be4-7cd1-2c01-4cb4" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="aa57-fc73-86fe-217c" type="selectionEntry"/>
+                <entryLink id="a68d-31b2-ad7e-ec4e" name="Ursus Claw" hidden="false" collective="false" import="true" targetId="b067-2e32-87b7-a33c" type="selectionEntry"/>
+                <entryLink id="19e5-5f6f-95e5-8a0c" name="Volkite Eradicator" hidden="false" collective="false" import="true" targetId="e28d-12b7-e120-2785" type="selectionEntry"/>
+                <entryLink id="dbf0-e301-588d-ad79" name="Graviton Destructor" hidden="false" collective="false" import="true" targetId="6262-d084-d668-bdbd" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1580,6 +1593,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <entryLinks>
                     <entryLink id="facb-e9d7-0bc8-69cf" name="Arioch Power Claw" hidden="false" collective="false" import="true" targetId="c1d2-77e3-5d1c-5297" type="selectionEntry"/>
                     <entryLink id="5dc4-9ee1-8eaf-752b" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
+                    <entryLink id="5cbe-f68b-4095-eac0" name="Twin-linked Graviton Ruinator" hidden="false" collective="false" import="true" targetId="5ac6-5881-96de-09e5" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -1603,6 +1617,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <entryLinks>
                     <entryLink id="5dad-b6a3-29c0-a989" name="Arioch Power Claw" hidden="false" collective="false" import="true" targetId="c1d2-77e3-5d1c-5297" type="selectionEntry"/>
                     <entryLink id="b54a-92d4-5480-9a3d" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="b953-83d7-6cc1-5695" type="selectionEntry"/>
+                    <entryLink id="6dc2-0099-dcbb-4d35" name="Twin-linked Graviton Ruinator" hidden="false" collective="false" import="true" targetId="5ac6-5881-96de-09e5" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -1630,6 +1645,31 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <entryLink id="ed34-aff7-21b6-270b" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="1071-7d27-420c-07b9" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Two Laser Blasters"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7c63-49c9-639f-cb41" name="Twin-linked Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="fd23-4dfd-ed56-3b15" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Twin-linked Vulcan Mega-Bolters"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="70d7-383f-443c-1d56" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="c666-29f6-42da-2e07" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Plasma Blastguns"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="cb51-75dc-f4b0-de34" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="7a16-0e23-c633-c668" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Melta Cannons"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="5598-452e-9255-004f" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="12c4-10db-40e2-04c4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Gatling Blasters"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7579-74da-9352-a1d7" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="6d6f-5264-ca63-de0c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Two Vortex Missiles"/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
@@ -7852,6 +7892,157 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b067-2e32-87b7-a33c" name="Ursus Claw" publicationId="f856-58d6-ef02-7d3e" page="98" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6948-3def-90b2-4b9c" name="Ursus Claw" publicationId="f856-58d6-ef02-7d3e" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">11</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Destructor, Sniper, Prey-Snare (Maxima)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7db1-15a2-9708-dad5" name="Destructor" hidden="false" targetId="1f93-c765-f7b2-a025" type="rule"/>
+        <infoLink id="aeee-cd1c-973b-73ed" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="85ed-7dde-59e6-1524" name="Prey-Snare (X)" hidden="false" targetId="82fe-c765-31fb-dc71" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Prey-Snare (Maxima)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e28d-12b7-e120-2785" name="Volkite Eradicator" publicationId="f856-58d6-ef02-7d3e" page="99" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="5462-835d-e97a-58a7" name="Volkite Eradicator" publicationId="f856-58d6-ef02-7d3e" page="99" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Heavy Beam, Breaching (5+), Deflagrate, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="474d-d049-e5d9-6aa5" name="Heavy Beam" hidden="false" targetId="24e7-27da-9bf7-f096" type="rule"/>
+        <infoLink id="94d2-b657-80a2-a2f7" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8ee7-022e-6f9a-4872" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink id="a036-cec6-026c-ebeb" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6262-d084-d668-bdbd" name="Graviton Destructor" publicationId="f856-58d6-ef02-7d3e" page="98" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="973f-b248-1534-b977" name="Graviton Destructor" publicationId="f856-58d6-ef02-7d3e" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Massive Blast (7&quot;), Gravitic Implosion*, Concussive (3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a6d3-4511-ccf7-69da" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Massive Blast (7&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="829b-9c4e-3cc4-0d3e" name="Gravitic Implosion" hidden="false" targetId="0d5c-1bb8-3bc9-d943" type="rule"/>
+        <infoLink id="656a-7b50-ffe6-c3f9" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d6f-5264-ca63-de0c" name="Vortex Missile" publicationId="f856-58d6-ef02-7d3e" page="99" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3203-0331-543a-4b15" name="Vortex Missile" publicationId="f856-58d6-ef02-7d3e" page="99" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36 - 240&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">16</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Destructor, Instant Death, Massive Blast (7&quot;), Vortex, One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9b68-883b-e018-7177" name="Destructor" hidden="false" targetId="1f93-c765-f7b2-a025" type="rule"/>
+        <infoLink id="3b6d-29ff-e365-9a78" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="7707-1652-1128-33ce" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Massive Blast (7&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="225e-9e61-3103-51dc" name="Vortex" hidden="false" targetId="a0d8-9118-002e-613d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ac6-5881-96de-09e5" name="Twin-linked Graviton Ruinator" publicationId="f856-58d6-ef02-7d3e" page="98" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="aef3-bcbe-c45e-98f7" name="Twin-linked Graviton Ruinator" publicationId="f856-58d6-ef02-7d3e" page="98" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10&quot;), Gravitic Implosion*, Concussive (3), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6a91-cc14-ec29-5557" name="Gravitic Implosion" hidden="false" targetId="0d5c-1bb8-3bc9-d943" type="rule"/>
+        <infoLink id="deee-a925-fd47-1ae9" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0831-6a17-886c-5115" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd23-4dfd-ed56-3b15" name="Twin-linked Vulcan Mega-Bolter" publicationId="f856-58d6-ef02-7d3e" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ff0c-337b-e963-27bb" name="Twin-linked Vulcan Mega-Bolter" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 15, Pinning, Shell Shock (1), Reactor Overload, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="83d2-ce40-950a-7ee5" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="47e0-e004-5507-6982" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9260-ea2d-4131-7e6c" name="Reactor Overload" hidden="false" targetId="a073-b86c-7bc1-d3f9" type="rule"/>
+        <infoLink id="0069-2e25-cf2e-f269" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
@@ -8932,6 +9123,18 @@ This area of terrain does not confer a Cover Save and no model within its bounda
     </rule>
     <rule id="ce3-9a6b-4e7b-3614" name="The Rite of Pure Thought" publicationId="bde1-6db1-163b-3b76" page="108" hidden="false">
       <description>A unit with this special rule may not make any Reactions or Sweeping Advance moves.</description>
+    </rule>
+    <rule id="82fe-c765-31fb-dc71" name="Prey-Snare (X)" publicationId="f856-58d6-ef02-7d3e" page="92" hidden="false">
+      <description>If a weapon with this Special Rule successfully hits a target, but the target model is not removed from play, the target model and the firing model must both immediately roll a D6, and add their Strength Characteristic to the roll. The wielder does not use their Strength Characteristic, but instead uses the weapon’s Strength. The target should use their unmodified Strength value - models with no Strength value use their highest Armour Value instead. Compare the results, with the model with the highest result being the winner. If the target loses the test, it is immediately placed in base-to-base contact with the firing model by the shortest route, and is counted as if the firing model had just charged it in the following Assault phase. If the target wins the Strength test, it is freed from the harpoon, and no further effects occur. In the case of a drawn result, both players should re-roll their D6 and compare the results again.
+Buildings and Zooming Flyers can never be affected by this Special Rule. In addition, if a model is pulled from unit coherency, its unit must move into coherency with it as soon as it is able. The whole unit counts as locked as in combat. If fired as part of an Overwatch Reaction, and a model is Snared and thus moved, the rest of the unit from which the model came may still make a Charge move, with the whole unit counted as having made a Disordered charge, and the Snared model as being the initial model for purposes of base-to-base contact.
+In addition, all variants of this Special Rule will have a qualifier in brackets after the rule. These apply certain restrictions on what can or cannot be snared - or targeted - and can be found below:
+Minoris: This Special Rule cannot affect units with the Knight, Titan, or Gargantuan Unit Type or Sub-type.
+Majoris: A weapon with this Special Rule may only use it to affect a model that does not have a starting Hull Points or Wounds Characteristic of more than double the Firing Model’s Hull Point or Wounds Characteristic.
+Maxima: A weapon with this Special Rule may only target units with the Vehicle Unit Type or models with a Wounds Characteristic of 8 or greater. In addition, this Special Rule has no effect on any model with a starting Hull Points or Wounds Characteristic of more than double the Firing Model’s Hull Point or Wounds Characteristic.</description>
+    </rule>
+    <rule id="0d5c-1bb8-3bc9-d943" name="Gravitic Implosion" publicationId="f856-58d6-ef02-7d3e" page="91" hidden="false">
+      <description>Instead of rolling To Wound normally with this weapon, any non- Vehicle model that suffers a Hit from a weapon with this Special Rule must instead roll under their Strength on a 2D6 or suffer a Wound (a roll of double ‘6’ always counts as a failure). Armour Saves and Damage Mitigation rolls may be taken as normal - except Shrouded rolls which may not be used. Against targets with an Armour Value, the attacking player rolls 4D6 for Armour Penetration instead.
+If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the start of the next turn of the player that made the attack.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

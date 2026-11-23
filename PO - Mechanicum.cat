@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="4f40-72d0-2942-778b" name="[Ingenium] Mechanicum" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="4f40-72d0-2942-778b" name="[Ingenium] Mechanicum" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry name="Magos Prime" type="unit" id="9a5a-a411-463d-b98a" page="6" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -7789,6 +7789,12 @@ Could not find wargear in Any Skorpius Disintegrator may exchange their Turret M
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="134c-f26f-af7e-a23d"/>
                   </constraints>
                   <entryLinks>
+                    <entryLink name="Super-Charged Reactor" hidden="false" type="selectionEntry" targetId="8032-7ecc-4e1d-be0f" id="9dbb-239a-54bb-cb9f">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="334a-555a-e2a3-faf4"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33a5-e5ee-6886-d0a7"/>
+                      </constraints>
+                    </entryLink>
                     <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="0af5-ab0e-b81a-7eba">
                       <constraints>
                         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8b47-0ee0-e536-e36b"/>
