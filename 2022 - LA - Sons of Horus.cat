@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="db61-af86-a1bc-6c06" name="LA -  XVI: Sons of Horus" revision="2044" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="db61-af86-a1bc-6c06" name="LA -  XVI: Sons of Horus" revision="2045" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="681d-068a-2569-899e" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -4148,6 +4148,20 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="46e2-dc7f-0c7b-a587" name="Land Raider Phobos" hidden="true" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                        <condition field="selections" scope="8b29-bf2a-a814-5642" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atMost"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="ffb2-23c7-9acf-8ec2" name="Termite Assault Drill" hidden="true" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -4896,6 +4910,7 @@
       </rules>
       <infoLinks>
         <infoLink id="486d-d2b0-1c78-9d56" name="Legiones Astartes (Sons of Horus)" hidden="false" targetId="f4a2-e4ca-b8b2-35a1" type="rule"/>
+        <infoLink id="668f-7530-2e13-b5ba" name="Shattered Legionary" hidden="false" targetId="c945-2e01-a167-7734" type="rule"/>
         <infoLink id="1603-a22b-5c84-710e" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -5356,6 +5371,21 @@
           </modifiers>
           <entryLinks>
             <entryLink id="2bfa-ade8-2fc1-e615" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="c45d-ade3-6b28-68a2" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8845-1de3-e61b-ddc7" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -7119,6 +7149,7 @@ In addition, an army with Tarik Torgaddon as its Warlord may make an additional 
           <entryLinks>
             <entryLink id="0025-4006-ac53-ed44" name="Legion Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry"/>
             <entryLink id="6fe4-b03a-7db3-9fc2" name="Legion Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
+            <entryLink id="c381-1161-d72c-aea1" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

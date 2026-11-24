@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3ecd-fb2c-3822-1e2a" name="LA -   IV: Iron Warriors" revision="2049" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3ecd-fb2c-3822-1e2a" name="LA -   IV: Iron Warriors" revision="2050" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="6695-3c3d-1ee7-cb99" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -3632,6 +3632,18 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5382-32c3-faf7-929b" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="2cd3-91ab-4fd6-2812" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae90-b468-b486-adba" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8693-30b2-930d-dc41" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e71e-5b9a-e3f4-3a12" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bdc-4b69-34ff-e721" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d254-1769-1d47-6cc9" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4217,6 +4229,21 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="db00-5754-0e90-25b5" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="795a-5698-a1bc-6ec6" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="2001-9982-37bd-48a7" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -4578,8 +4605,8 @@
         </selectionEntry>
         <selectionEntry id="5463-1794-887b-ba25" name="Sponson (Left/Right) Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c199-ad8b-1d15-2e74" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb06-6a8e-03b1-7bbe" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c199-ad8b-1d15-2e74" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb06-6a8e-03b1-7bbe" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink id="6dd3-ada3-fc1c-d047" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
@@ -4595,8 +4622,8 @@
         </selectionEntry>
         <selectionEntry id="4d05-9483-8cdf-69a2" name="Sponson (Left/Right) Mounted Twin-Linked Shrapnel Cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6e1-f774-13f9-edc4" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4e2-82b-bafe-d4c1" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6e1-f774-13f9-edc4" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4e2-82b-bafe-d4c1" type="max"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Shrapnel Cannon" hidden="false" id="7a7a-2e98-948b-cc75" type="selectionEntry" targetId="975e-14eb-caed-4b5b"/>
@@ -5145,6 +5172,19 @@ Kyr Vhalen counts as a Warsmith.”</characteristic>
           </constraints>
           <entryLinks>
             <entryLink id="0175-4999-cdb3-4218" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="1bfa-2413-beb9-5f32" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="9d39-08f2-d5f3-d94f" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -5860,6 +5900,19 @@ In addition, an army with Warsmith Toramino as the warlord gains an additional r
           </constraints>
           <entryLinks>
             <entryLink id="bd23-5f2d-6ee6-1874" name="Legion Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="62c5-50bf-82a9-64a1" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b11-c929-2f88-c323" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1232-24b9-3cdb-7b7f" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
