@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="88c9-63e-51f3-80f1" name="LA -  XIII: Ultramarines" revision="2046" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="88c9-63e-51f3-80f1" name="LA -  XIII: Ultramarines" revision="2047" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="42bc-bca7-7e58-b8e9" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -3426,6 +3426,20 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="e6d6-8b02-c635-2e01" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink import="true" name="Rhino Transport" hidden="false" id="ddde-493f-3422-d43a" type="selectionEntry" targetId="03f1-8ed9-9867-8d18"/>
             <entryLink import="true" name="Legion Rhino Advancer" hidden="false" id="2f1b-6eed-17c3-7b82" type="selectionEntry" targetId="83d6-bbaa-416c-9de9"/>
             <entryLink import="true" name="Termite Assault Drill" hidden="false" id="5470-2f45-4576-1a23" type="selectionEntry" targetId="cb30-307a-f0d7-3b13"/>
@@ -3473,7 +3487,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
               <categoryLinks>
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="69f6-f1f7-4e32-9043" name="Infantry:" primary="false"/>
@@ -3498,7 +3512,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="82e5-c9d6-b73e-be28" targetId="3514-22be-3c77-f1d7"/>
@@ -3529,7 +3543,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="371a-fa0-a81-f6fc" targetId="3514-22be-3c77-f1d7"/>
@@ -3557,7 +3571,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
               </costs>
               <infoLinks>
                 <infoLink name="Suzerain" hidden="false" type="profile" id="5510-b560-7d5f-dfb9" targetId="3514-22be-3c77-f1d7"/>
@@ -3602,7 +3616,7 @@
                     </entryLink>
                   </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Suzerain" hidden="false" type="profile" id="99f6-2332-dc2f-e054" targetId="3514-22be-3c77-f1d7"/>
@@ -3630,7 +3644,7 @@
                     </entryLink>
                   </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
                   </costs>
                   <infoLinks>
                     <infoLink name="Suzerain" hidden="false" type="profile" id="a79b-e7a9-4c6-d2f3" targetId="3514-22be-3c77-f1d7"/>
@@ -3861,6 +3875,20 @@
           </constraints>
           <entryLinks>
             <entryLink id="de52-02be-cf09-921f" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="82e4-c1e1-8c21-66ac" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -4167,6 +4195,21 @@
               </modifiers>
             </entryLink>
             <entryLink id="655a-7b92-4437-f057" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="7fb0-6302-d46f-029d" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8379-9530-4d47-9c3d" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -5199,6 +5242,21 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="6767-17b4-cbb1-b88c" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="32d1-29a6-9023-142c" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="8506-2fb3-ad41-7358" name="Storm Eagle Gunship" hidden="true" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -6043,6 +6101,19 @@ The Aegis of Wisdom (text as in the existing Ultramarines data): Any friendly un
               </modifiers>
             </entryLink>
             <entryLink id="92d6-c840-2579-56e5" name="Legion Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="a383-02fa-372e-2b56" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d661-283c-1f6e-c3a8" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="36db-2757-3dbc-ca32" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>

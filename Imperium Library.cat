@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="4ab9-6c13-4d80-2f7d" name="Imperium Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2002" revision="2" authorName="LeonisAstra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="4ab9-6c13-4d80-2f7d" name="Imperium Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2002" revision="3" authorName="LeonisAstra" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="523c-d7fb-5288-fe13" name="Heavy Void Armour" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -499,7 +499,7 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Gets Hot</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout, Twin-linked</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -511,6 +511,12 @@
         </infoLink>
         <infoLink id="e25d-41a3-441d-b3e3" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="ef9e-7b9a-f808-9cf2" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="adc1-3616-d27f-5812" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5ec3-ef2a-c8c9-c178" name="Ejector Blowout" hidden="false" targetId="ea57-fd15-eeae-e084" type="rule"/>
         <infoLink id="22ba-5bb6-673f-dc73" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
@@ -1327,7 +1333,10 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <description>Models with this special rule may only be selected as part of a Tercio (see the rules for Tercios on page 68). When a Reaction is declared for a unit with this rule that allows it to make a Shooting Attack or Move, then all units from the same Tercio that are ‘In Formation’ with the Reacting unit may also Move or make a Shooting Attack as described in the Reaction being made (all units that Move or Shoot are counted as having made a Reaction, and thus cannot make further Reactions in the same Phase, and must target the same unit with any Shooting Attacks made). A unit is ‘In Formation’ when that unit is in unit coherency and has at least one model within 3&quot; of a model from a different unit in the same Tercio that is also in unit coherency.</description>
     </rule>
     <rule id="bf74-20ed-ddc9-8ea1" name="Solar Auxilia Command Tank" publicationId="15a4-fc68-502d-48a9" page="136" hidden="false">
-      <description>A model with this special rule is selected as a separate unit, but during deployment must be assigned to another unit and may not be deployed as a separate unit. If multiple appropriate units are available, the controlling player chooses which unit a model with this special rule is assigned to. Once assigned to a unit, a model with this special rule counts as a part of that unit and may not leave the unit during play for any reason. A Leman Russ Command Tank must be assigned to a Leman Russ Strike Squadron or a Leman Russ Assault Squadron.</description>
+      <description>A model with this special rule is selected as a separate unit, but during deployment must be assigned to another unit and may not be deployed as a separate unit. If multiple appropriate units are available, the controlling player chooses which unit a model with this special rule is assigned to. Once assigned to a unit, a model with this special rule counts as a part of that unit and may not leave the unit during play for any reason.
+A model with this Special Rule must be assigned to another unit made up entirely of models with the Vehicle Unit Type purchased as part of the same Tercio.
+An Armoured Legate may nominate a single Auxilia Armoured Tercio in the same Detachment, and may use their Solar Auxilia Command Tank Special Rule to join squads within that Tercio as if they were purchased as part of it.
+In addition, a model with this Special Rule may still make Shooting Attacks as normal in a turn in which they use their Cognis-Signum to provide +1 Ballistic Skill to all other models in their unit, even though this would normally be prevented by using this Wargear.</description>
     </rule>
     <rule id="1d8d-3038-9267-6f1b" name="Silent Sisterhood (X)" publicationId="15a4-fc68-502d-48a9" page="39" hidden="false">
       <description>The notation in brackets that is included as part of the Silent Sisterhood (X) special rule defines which Chamber Militant the model belongs to. This Chamber Militant may grant the model some additional rules or effects and influences how it may be selected when building an army that incorporates a Detachment with the Sisters of Silence Faction.

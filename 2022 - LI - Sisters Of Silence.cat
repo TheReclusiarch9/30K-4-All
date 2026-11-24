@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee0f-23d3-8682-53c4" name="LI - Sisters of Silence" revision="2024" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee0f-23d3-8682-53c4" name="LI - Sisters of Silence" revision="2025" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="7e5d-d73e-8ff4-7345" name="Anathema Sub-type" publicationId="15a4-fc68-502d-48a9" page="129" hidden="false">
       <rules>
@@ -2379,110 +2379,6 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
         <categoryLink id="5526-deb2-d4aa-dff7" name="Anathema Sub-type" hidden="false" targetId="7e5d-d73e-8ff4-7345" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="63c8-c778-befe-4cb5" name="The entire unit may exchange their Vratine bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="129a-c1a9-4c42-49c2">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c532-dc0a-182a-b57c" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82cf-0de9-a9c2-814a" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="ed01-9d1d-6827-68bc" name="Two Pistols (default Bolt Pistols)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f7c-9941-e2d1-00b4" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="9094-b7f2-a68e-dc3a" name="Assault Needler" hidden="false" collective="false" import="true" targetId="e017-f671-bcf1-0179" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="f611-cb6b-d269-2dcf" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="2cc0-f036-4545-8565" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="181f-1c11-f7ed-1942" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="2f90-3c24-59e8-4a25" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="31a1-b9e1-2fd9-a7c5" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="f9bb-0d1b-2fcc-8031" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="74f6-2aa1-4a52-57c8" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="fb22-cfd0-73c4-7877" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
-                  <repeats>
-                    <repeat field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="129a-c1a9-4c42-49c2" name="Vratine Bolter" hidden="false" collective="false" import="true" targetId="b48a-f5cb-983d-3832" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dfe-c54d-977a-dcd5" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="eb84-e14a-dc5b-9bcd" name="1) Questora" hidden="false" collective="false" import="true" defaultSelectionEntryId="687d-f5f7-0bf4-a89f">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6363-347a-80a0-a798" type="min"/>
@@ -2494,64 +2390,7 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
             </rule>
           </rules>
           <selectionEntries>
-            <selectionEntry id="687d-f5f7-0bf4-a89f" name="1) Questora w/ Unit Option" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="name" value="Questora w/ Charnabal Sabre">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="30c2-57eb-5bbe-be0b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Power Axe">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c066-2ace-f68c-e440" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Vratine Bolter">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b48a-f5cb-983d-3832" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Power Lance">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4c8-c8ff-87f2-1ac9" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Charnabal Tabar">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4611-c33e-f360-7246" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Assault Needler">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e017-f671-bcf1-0179" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Charnabal Glaive">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c07c-35e6-4616-ef25" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Power Sword">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a3cd-aa97-a148-2309" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Power Maul">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0df4-c67e-cf64-82e0" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="name" value="Questora w/ Flamer">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f41-82e2-90f6-973a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed01-9d1d-6827-68bc" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
+            <selectionEntry id="687d-f5f7-0bf4-a89f" name="1) Questora" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a55-08d6-0507-c618" type="max"/>
               </constraints>
@@ -2636,6 +2475,91 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
                 <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b746-2c0a-4785-b50b" name="Infantry:" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
+                <selectionEntryGroup id="670a-ace4-0e2e-7d36" name="Any model in the unit may exchange their Vratine Bolter for one of the following options:" publicationId="9fab-fea7-a93c-2074" page="102" hidden="false" collective="false" import="true" defaultSelectionEntryId="66b2-e9a7-fcec-f4ea">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c69-580f-5cd2-7cef" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79c8-baec-4ad5-4ec2" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="58d2-ab98-1f73-cbf5" name="Assault Needler" hidden="false" collective="false" import="true" targetId="e017-f671-bcf1-0179" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3675-a364-658c-430d" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="5542-e099-a640-0943" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34fd-7601-ab77-1010" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="e50d-2f60-6d57-ef74" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71dd-9fcb-98ab-eabb" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="b778-563b-cd65-93e5" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fde-b8c8-dc2a-1a48" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d305-8ec1-70e2-5807" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5501-260b-451a-f28e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="2135-35c8-ae77-c798" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="008f-4906-9933-3f80" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="0fdb-f9f0-a5c1-7d66" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b33-1d02-f802-b8b8" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6f97-12e6-b4bc-355b" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a853-5ac9-5524-cc15" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="bd1c-606f-fd58-ce68" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76ed-1a0a-15fc-c5a9" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="66b2-e9a7-fcec-f4ea" name="Vratine Bolter" hidden="false" collective="false" import="true" targetId="b48a-f5cb-983d-3832" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a44-d1b5-a045-4d7c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
                 <selectionEntryGroup name="Any model in the unit may exchange a bolt pistol for one of the following:" id="7496-6493-5830-79f1" hidden="false" collective="false" import="true" defaultSelectionEntryId="7312-d7d7-7c7b-b0f2">
                   <constraints>
                     <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5306-6e1f-1fff-a3eb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2663,13 +2587,6 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
               </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry id="ab3d-ff19-d1d7-5aee" name="1) Questora w/ Pistols" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed01-9d1d-6827-68bc" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="185e-b4cd-9ca0-db2b" type="max"/>
               </constraints>
@@ -2799,13 +2716,6 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
               </categoryLinks>
             </selectionEntry>
             <selectionEntry id="ee7c-6dad-729c-2139" name="2) Questora w/ Special Options" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="693f-759a-8637-d6ea" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ed01-9d1d-6827-68bc" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba8-996c-d2ae-cc55" type="max"/>
               </constraints>
@@ -6701,15 +6611,18 @@ No more than one Knight Vestal may be assigned to any given unit. Once assigned
           <entryLinks>
             <entryLink id="90b8-aff7-0f92-1403" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
             <entryLink id="fc01-2529-ac53-3132" name="Snare Cannon" hidden="false" collective="false" import="true" targetId="d267-639b-ec89-95e2" type="selectionEntry"/>
-            <entryLink id="d9ad-fc98-bfca-6a83" name="Adrathic Destructor" hidden="false" collective="false" import="true" targetId="8339-4003-fe88-b536" type="selectionEntry">
+            <entryLink id="d9ad-fc98-bfca-6a83" name="Adrathic Devastator" hidden="false" collective="false" import="true" targetId="b054-ed51-e2f6-dd80" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
                   <repeats>
                     <repeat field="selections" scope="d748-5878-98f6-b592" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="set" value="Adrathic Destructor w/ Suspensor Web" field="name"/>
+                <modifier type="set" value="Adrathic Devastator w/ Suspensor Web" field="name"/>
               </modifiers>
+              <infoLinks>
+                <infoLink id="fdb4-e3da-6f55-3e22" name="Suspensor Web" hidden="false" targetId="733b-dd18-cf6a-a256" type="profile"/>
+              </infoLinks>
             </entryLink>
             <entryLink id="31c3-2bd3-2990-6899" name="Vratine Missile Launcher" hidden="false" collective="false" import="true" targetId="0ee4-7a2e-804a-a934" type="selectionEntry">
               <modifiers>

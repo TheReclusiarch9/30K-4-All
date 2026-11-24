@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="46c4-ffd6-affd-72f1" name="LI - Solar Auxilia" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="46c4-ffd6-affd-72f1" name="LI - Solar Auxilia" revision="2044" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -503,7 +503,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="11f9-5738-0e51-2256" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="3159-eaff-3539-97e4" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="3159-eaff-3539-97e4" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b543-b159-6b24-a64b" name="Stormhammer" hidden="false" collective="false" import="false" targetId="19c9-f8e8-edff-fa8e" type="selectionEntry">
@@ -866,7 +866,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="bebe-feb0-e8f8-09df" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="0aa1-a534-4cf1-f711" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="0aa1-a534-4cf1-f711" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b4a3-983c-1a89-e10f" name="Cults Abominatio" hidden="false" collective="false" import="false" targetId="4a00-03d4-a850-884b" type="selectionEntry">
@@ -936,6 +936,50 @@
         <categoryLink id="4dd3-ea95-7264-346e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_4448-a712-4dd7-bf6d</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Blood Slaughterer" hidden="true" type="selectionEntry" id="4a08-da54-924e-7d60" targetId="2d70-676d-68aa-1973">
+      <comment>Iron Pattern Cohort, Liber Panoptica v5.3 p.79: one unit with the Corrupted Engine Unit Sub-type</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0e8-1223-7794-2e95" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e841-0d84-5257-3342" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1a5-42a-a6ee-2223" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e841-0d84-5257-3342" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="ead7-451b-8270-3d35" primary="false" name="Unit:"/>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="3b3f-1c86-397d-1148" primary="true" name="Fast Attack:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Decimator" hidden="true" type="selectionEntry" id="6f93-5774-a317-da7d" targetId="b1a5-42a-a6ee-2223">
+      <comment>Iron Pattern Cohort, Liber Panoptica v5.3 p.79: one unit with the Corrupted Engine Unit Sub-type</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0e8-1223-7794-2e95" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="2ed7-bf22-6b8c-378a" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d70-676d-68aa-1973" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ed7-bf22-6b8c-378a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="469b-f5fd-dd05-c543" primary="false" name="Unit:"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="4ec5-8010-90da-839b" primary="true" name="Heavy Support:"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="7f2b-cb4a-f1c2-4f2d" targetId="3c5c-5bbf-cfc-e84e">
@@ -8764,7 +8808,7 @@ While at least one model with a Command Vox is present on the battlefield and n
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3388-068b-9209-4592" name="Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="2013-7e81-b563-e7ac" type="selectionEntry">
+                <entryLink id="3388-068b-9209-4592" name="Twin-linked Gravis Heavy Lascannon" hidden="false" collective="false" import="true" targetId="83a9-3ac4-904b-3c6f" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -8793,7 +8837,7 @@ While at least one model with a Command Vox is present on the battlefield and n
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3aef-f336-3b44-7f26" name="3) May exchange its Side (Left) &amp; Side (Right) Mounted heavy bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9020-c4fb-3589-9f16">
+            <selectionEntryGroup id="3aef-f336-3b44-7f26" name="3) May exchange its Hull (Left) &amp; Hull (Right) Mounted heavy bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9020-c4fb-3589-9f16">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b546-23b9-7c07-9d65" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c8-464e-3c0f-cffa" type="max"/>
@@ -9365,6 +9409,9 @@ While at least one model with a Command Vox is present on the battlefield and n
       </costs>
     </selectionEntry>
     <selectionEntry id="b0a8-0f45-9999-b893" name="Malcador Infernus Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="cdfa-1329-6a56-e35e" name="Independent Fire Control" hidden="false" targetId="64ca-719e-b563-e3df" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="2be0-c1f0-c1aa-8dee" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="e099-bd75-a34a-7a25" name="Reinforced Sub-type:" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
@@ -10667,7 +10714,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       <selectionEntries>
         <selectionEntry id="83fd-3959-0a1c-1815" name="Macharius Heavy Tank" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c92-9871-cb11-6f1e" type="max"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c92-9871-cb11-6f1e" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f1-9d79-2ce9-8793" type="min"/>
           </constraints>
           <profiles>
@@ -10783,7 +10830,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="235"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="335"/>
           </costs>
           <infoLinks>
             <infoLink name="Independent Fire Control" hidden="false" id="beea-bb7-2149-caf0" type="rule" targetId="64ca-719e-b563-e3df"/>
@@ -10792,7 +10839,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="1) Main Cannon" hidden="false" id="f63b-b35f-38f5-9de2" collective="false" import="true" defaultSelectionEntryId="4530-f4f8-699a-99d9">
@@ -12400,7 +12447,7 @@ Limitations
               <description>Effects (THIS MUST BE CHECKED MANUALLY)
 • A Detachment using this Cohort Doctrine may select Auxilia Artillery Tercios and Solar Auxilia Armoured Batteries as both Elites and Heavy Support choices. In addition, they may select Solar Auxilia Artillery Battery squads as both Heavy Support and Fortification choices.
 • When a model from a Detachment using this Cohort Doctrine makes a Shooting Attack with any weapon with the Barrage and/or Blast special rules, the controlling player may choose to re-roll the Scatter dice (but not any D6 rolled to determine the distance of any scatter).
-• Any unit eligible to purchase a Dedicated Transport may instead elect to purchase a Defence Line without occupying a Fortification Force Organisation slot, but the cost in points must be counted towards the army total as usual.
+• Any unit eligible to purchase a Dedicated Transport may instead elect to purchase a Defence Line without occupying a Fortification Force Organisation slot, but the cost in points must be counted towards the army total as usual. A unit which has selected a Defence Line in this way counts as having purchased a Dedicated Transport.
 • When a model from a Detachment using this Cohort Doctrine makes a Shooting Attack with any weapon with the Barrage Special Rule, if the enemy unit they are targeting is in Line of Sight of a friendly model equipped with a Command Vox then it should be counted as firing directly at that enemy unit, even if it is outside of Line of Sight of the firing model.
 
 Limitations (THIS MUST BE CHECKED MANUALLY)
@@ -12464,14 +12511,7 @@ Limitations
 
 Limitations
 • A Detachment using this Cohort Doctrine may not include more than a single Auxilia Armoured Tercio.
-• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Artillery Tercio.
-
-
-NOTE
-The 2nd bullet point about Veletaris Assault Squadrons getting Outflank is not implemented as no unit exists with that name, so it is unclear which unit it should go on.</description>
-            </rule>
-            <rule name="Outflank (Ambiguous Recon Cohorts)" id="bdd0-1f0c-cf43-37fb" hidden="false">
-              <description>In Recon Cohort it says &quot;Solar Auxilia Veletaris Assault Squadrons in this Detachment gain the Outflank special rule.&quot; This seems to be the closest unit to this description as it is a sentinel based Cohort and this is the only Veletaris one.</description>
+• A Detachment using this Cohort Doctrine may not include more than a single Auxilia Artillery Tercio.</description>
             </rule>
           </rules>
         </selectionEntry>

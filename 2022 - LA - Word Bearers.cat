@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9edf-435d-b09a-9dd3" name="LA -  XVII: Word Bearers" revision="2042" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9edf-435d-b09a-9dd3" name="LA -  XVII: Word Bearers" revision="2043" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="821c-0c83-5ed0-ff6b" name="Harbinger of Chaos Restriction" hidden="false">
       <modifiers>
@@ -7000,6 +7000,19 @@ Enslaved by Darkness (text as in the existing Word Bearers data): Any friendly u
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="cc8a-89db-2590-bb94" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="8710-e232-044a-a95b" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9526-bbc9-f886-e294" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="d72f-39dd-93b6-3989" name="Legion Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -7156,6 +7169,22 @@ A Warlord with this Trait modifies his Strength and Toughness by a value determi
         </entryLink>
         <entryLink id="c7ee-48e2-28ad-8039" name="Command Squad, Tartaros" hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
         <entryLink id="8464-3082-bdad-e73d" name="Command Squad" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
+        <entryLink id="3f11-7b25-ea92-e111" name="Procurators" hidden="true" collective="false" import="true" targetId="9cca-47d5-0779-79a2" type="selectionEntry">
+          <comment>Grim Purpose, Liber Panoptica v5.3 p.118: Retinue Squad only for a Word Bearers Independent Character with Harbinger of Chaos, Diabolism or Anathemata</comment>
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f621-6be1-13f9-4d5e" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7517-a238-aecb-60e9" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c6ec-edc0-034e-ed45" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

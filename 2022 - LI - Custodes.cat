@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1776" name="LI - Custodes" revision="2025" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1776" name="LI - Custodes" revision="2026" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
@@ -344,7 +344,7 @@
       <profiles>
         <profile id="981e-5353-dd39-e63a" name="Golden Exemplar" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
           <characteristics>
-            <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of a Warlord with this Trait, or a combat which includes a Warlord with this Train, gains a bonus of +1 to the number of Wounds caused for the purposes of deciding which side has won the combat during the Assault phase. In addition, while engaged in a Challenge a Warlord with this Trait adds a bonus of +1 to their Attacks and Initiative Characteristics.</characteristic>
+            <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of a Warlord with this Trait, or a combat which includes a Warlord with this Train, gains a bonus of +1 to the number of Wounds caused for the purposes of deciding which side has won the combat during the Assault phase. In addition, while engaged in a Challenge a Warlord with this Trait adds a bonus of +1 to their Attacks and Initiative Characteristics. Furthermore, the first Reaction made in each Game Turn by this Warlord and any unit he has joined does not use up a point of the Controlling Player’s Reaction Allotment.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2588,13 +2588,19 @@
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Gets Hot</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Breaching (4+), Gets Hot, Ejector Blowout</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="f970-b9a6-9bc1-1f10" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="42ab-9bd9-03a9-282d" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="12b1-ba2e-bb6f-2743" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e398-7759-6a38-29bc" name="Ejector Blowout" hidden="false" targetId="ea57-fd15-eeae-e084" type="rule"/>
         <infoLink id="0b45-1554-c64b-c431" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Ranged)"/>
@@ -2615,6 +2621,12 @@
         </infoLink>
         <infoLink id="50e6-bf83-2bdc-2445" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="a3c0-c554-95f8-f7ac" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="3a84-30ca-182e-f162" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bb79-c9fd-b866-3627" name="Ejector Blowout" hidden="false" targetId="ea57-fd15-eeae-e084" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

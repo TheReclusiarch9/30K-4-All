@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2045" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="765e-788c-dde3-4683" name="LA -  XVIII: Salamanders" revision="2046" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="049c-5f69-2ca1-4f94" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -3905,6 +3905,20 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="b683-1ef5-7aeb-b0fc" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="b01c-1988-33f8-69b1" name="Storm Eagle Gunship" hidden="true" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -4334,6 +4348,21 @@
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="f2eb-ce61-0a7d-9408" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="6775-8379-8d6b-9614" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="2b8f-162c-9c16-1768" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -4557,7 +4586,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
           </profiles>
           <infoLinks>
             <infoLink id="7d13-8a2a-aa1c-b384" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-            <infoLink id="d978-604d-a917-e108" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+            <infoLink id="b2bf-a91b-f818-755b" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4689,7 +4718,7 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
             <modifier type="set" value="It Will Not Die (5+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Flame in the Darkness" hidden="false" id="2d0-e217-e41c-4ec5" type="rule" targetId="753e-43cd-f3a0-f58d"/>
+        <infoLink name="Flame in the Darkness" hidden="false" id="2d0-e217-e41c-4ec5" type="rule" targetId="0636-a06c-08a4-a93b"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8e0a-7307-985f-50a6" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -5163,6 +5192,21 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="5c24-dbe1-34e8-0656" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="453a-db99-6a13-5f2a" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -5523,6 +5567,20 @@ In addition, if Cassian Dracos Reborn is selected as the army’s Warlord in a B
           </constraints>
           <entryLinks>
             <entryLink id="d0dc-e847-fcd4-7133" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="c62d-995b-039d-dee2" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -7098,6 +7156,9 @@ In addition, an army with Artellus Numeon as its Warlord may make an additional 
   <sharedRules>
     <rule name="Flame in the Darkness" hidden="false" id="753e-43cd-f3a0-f58d" publicationId="9fab-fea7-a93c-2074" page="135">
       <description>In addition, all models in a unit joined by Nomus Rhy’tan gain the Stubborn and Hatred (Everything) Special Rules.</description>
+    </rule>
+    <rule name="Flame in the Darkness (Xiaphas Jurr)" hidden="false" id="0636-a06c-08a4-a93b" publicationId="9fab-fea7-a93c-2074" page="95">
+      <description>In addition, all models in a unit joined by Xiaphas Jurr gain the Stubborn and Hatred (Everything) Special Rules.</description>
     </rule>
   </sharedRules>
 </catalogue>
