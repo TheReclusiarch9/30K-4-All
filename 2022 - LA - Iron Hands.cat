@@ -3962,7 +3962,7 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cdf8-3385-0215-ce60" name="2) Any Immortal with a Bolter may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="cdf8-3385-0215-ce60" name="2) Any Immortal with a Bolter may take:" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="increment" field="0a63-eb3b-2427-4dd3" value="1">
               <repeats>
@@ -4267,6 +4267,12 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0f86-6040-32d4-8b04" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1a0-062a-2e87-92fc" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8690-287d-eead-e9ca" name="Breacher Charge" hidden="false" collective="false" import="true" targetId="9622-f67e-4afe-09f3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f55d-5fda-ab7f-2a50" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a016-97b7-9d2a-e3ff" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="e7f7-0895-6c03-c9ad" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
@@ -6243,7 +6249,7 @@ A Warlord with this Trait, and all models in any friendly unit that Warlord join
               <profiles>
                 <profile id="3f91-3b60-998f-e5dd" name="Silver-iron Will" publicationId="817a-6288-e016-7469" page="276" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models in any unit he has joined are never affected by any special rule or effect that lowers a Characteristic – including the Fear (X) and Rad-phage special rules and due to losing an assault where the enemy has inflicted more Wounds. In addition, an army whose Warlord has this Trait may not make Reactions during the Movement phase, but may make an additional Reaction in either one of the opposing player’s Shooting or Assault phases (but not both). If the Warlord is removed as a casualty then this additional Reaction is lost, but the army may make Reactions in the Movement phase as normal in any appropriate Phases after the Warlord has been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models in any unit he has joined are never affected by any special rule or effect that lowers a Characteristic (other than Wounds) – including the Fear (X) and Rad-phage special rules and due to losing an assault where the enemy has inflicted more Wounds. In addition, an army whose Warlord has this Trait may not make Reactions during the Movement phase, but may make an additional Reaction in either one of the opposing player’s Shooting or Assault phases (but not both). If the Warlord is removed as a casualty then this additional Reaction is lost, but the army may make Reactions in the Movement phase as normal in any appropriate Phases after the Warlord has been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

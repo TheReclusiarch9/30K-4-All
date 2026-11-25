@@ -3494,7 +3494,7 @@ Could not find wargear Centreline Mounted Twin-Linked Spiculus Bolt Launcher
           <entryLinks>
             <entryLink import="true" name="Gravis Melta Cannon" hidden="false" id="c2-21c1-5a76-89c0" collective="false" targetId="ef6c-f656-171a-03e1" type="selectionEntry" publicationId="9fab-fea7-a93c-2074" page="145">
               <modifiers>
-                <modifier type="set" value="Hull (Front) Mounted multi-melta" field="name"/>
+                <modifier type="set" value="Hull (Front) Mounted Gravis Melta Cannon" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Hellion Heavy Cannon Array" hidden="false" id="ea89-1933-ef5f-fb37" collective="false" targetId="a17e-c567-c602-892e" type="selectionEntry">

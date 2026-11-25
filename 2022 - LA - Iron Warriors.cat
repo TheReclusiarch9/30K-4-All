@@ -3571,11 +3571,6 @@
                 <modifier type="set" field="name" value="Battlesmith (2+)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="56b1-985a-1362-c17d" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Firing Protocols (2)"/>
-              </modifiers>
-            </infoLink>
             <infoLink id="abe7-e8a3-554b-475b" name="Legiones Astartes (Iron Warriors)" hidden="false" targetId="c77b-f3fc-5dc8-1330" type="rule"/>
             <infoLink id="6faf-27cb-0543-72fe" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
           </infoLinks>

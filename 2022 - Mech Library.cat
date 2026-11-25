@@ -8164,7 +8164,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
           </modifiers>
           <rules>
             <rule id="78f9-6bee-4c5d-5802" name="Uhlan" publicationId="9fab-fea7-a93c-2074" page="139" hidden="false">
-              <description>A model with this upgrade increases its Movement Characteristic by +4 and gains the Character Unit Sub-type and the Scout and Outflank special rules. In addition, its Hull Points are increased by +1. An Acastus Knight Porphyrion may not be given this upgrade.</description>
+              <description>A model with this upgrade increases its Movement Characteristic by +4 and gains the Character Unit Sub-type and the Scout and Outflank special rules. In addition, its Hull Points are increased by +1. This upgrade may not be given to an Acastus Knight Asterius or an Acastus Knight Porphyrion.</description>
             </rule>
           </rules>
           <costs>

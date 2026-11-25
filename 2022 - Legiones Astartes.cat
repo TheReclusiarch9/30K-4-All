@@ -1419,7 +1419,7 @@ Power Weapon is in two option lists for Legion Saturnine Centurion, you will nee
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 6, Poison (3+), One Shot</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 6, Poisoned (3+), One Shot</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -25797,7 +25797,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
       <profiles>
         <profile id="d3cf-f143-b4e4-e567" name="Coriolis Pattern Power Shield" publicationId="817a-6288-e016-7469" page="259" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Reduce the result of all To Wound rolls made that target a model with a Coriolis pattern power shield by a weapon with the Melee type by -1</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Reduce the result of all To Wound rolls made that target a unit in which the majority of models have a Coriolis pattern power shield by a weapon with the Melee type by -1.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -42571,12 +42571,12 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
           <entryLinks>
             <entryLink id="51a5-60f2-ca61-f97e" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Turret Mounted twin-linked Heavy Bolter"/>
+                <modifier type="set" field="name" value="2x Turret Mounted twin-linked Heavy Bolter"/>
               </modifiers>
             </entryLink>
             <entryLink id="10c8-acbd-5b9d-e318" name="Twin-linked Heavy Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="8dbf-d9fa-6fbc-07af" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Turret Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
+                <modifier type="set" field="name" value="2x Turret Mounted twin-linked Heavy Dragon&apos;s Breath Flamer"/>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -48674,6 +48674,7 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
         <infoLink id="5b02-1343-3c4e-90a8" name="Dreadnought Transport" hidden="false" targetId="a0bf-fb7c-a9dc-72f0" type="rule"/>
         <infoLink id="75b4-00bf-dbcd-7956" name="Inertial Guidance System" hidden="false" targetId="d222-fde9-51b8-8739" type="rule"/>
         <infoLink id="141f-f300-6f10-9d89" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
+        <infoLink id="9f27-1d3b-a68e-487c" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
         <infoLink id="4fc0-d2f4-75a3-1c62" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
       </infoLinks>
       <categoryLinks>

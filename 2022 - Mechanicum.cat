@@ -4830,7 +4830,7 @@ At the beginning of each of the controlling player’s Shooting phases for the r
       <profiles>
         <profile id="9bab-26aa-a73d-50e5" name="Archmagos Anacharis Scoria" publicationId="bde1-6db1-163b-3b76" page="62" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Monstrous, Heavy, Unique, Cybertheurgist)</characteristic>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Monstrous, Heavy, Character, Unique, Cybertheurgist)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">9</characteristic>
             <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
             <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
@@ -4854,11 +4854,6 @@ In addition, Archmagos Anacharis Scoria provides all effects, benefits, and rul
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="0b1c-2ad2-7337-b78f" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Adamantium Will (5+)"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="ba28-ab7f-71e0-4aa8" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Battlesmith (3+)"/>
@@ -4868,11 +4863,6 @@ In addition, Archmagos Anacharis Scoria provides all effects, benefits, and rul
         <infoLink id="38b5-f285-16ac-9f4a" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Fear (2)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="ad1d-bb37-41e5-8b3e" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Firing Protocols (3)"/>
           </modifiers>
         </infoLink>
         <infoLink id="b47d-4e14-ffb2-4aec" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
@@ -4896,6 +4886,7 @@ In addition, Archmagos Anacharis Scoria provides all effects, benefits, and rul
         <categoryLink id="b65c-4e4f-9056-3390" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
         <categoryLink id="1048-d3fc-35af-c693" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="75ce-3f3b-dc4a-ecad" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="2004-694b-acba-e9af" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
         <categoryLink id="d4ac-5be1-aa59-90ad" name="Feudal Hierarchy (On Abeyant)" hidden="false" targetId="4c2b-03e9-abb7-7209" primary="false"/>
       </categoryLinks>
       <selectionEntries>

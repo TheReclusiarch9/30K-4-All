@@ -3458,8 +3458,8 @@
 
 If this option is used then Mortarion is removed from the battlefield, leaving any unit that he was part of. The controlling player must then redeploy Mortarion to any point on the battlefield that is within 10&quot; of his original position, as long as there is space for his model and the chosen position is not within 3&quot; of an enemy model. He may not be placed within Impassable Terrain or inside a Vehicle or Building. This is not counted as a move as such, and the intervening terrain does not affect him in any way. Mortarion may Charge normally in a turn that he is redeployed in this way, but counts as making a Disordered Charge if doing so.</description>
             </rule>
-            <rule id="6363-8841-1d61-e78a" name="Prenatural Resilience" hidden="false">
-              <description>Any Hits allocated to Mortarion with the Poisoned (X), Rending (X), or Fleshbane special rules only affect Mortarion on a D6 roll of a 6 instead of their usual effect.</description>
+            <rule id="6363-8841-1d61-e78a" name="Preternatural Resilience" hidden="false">
+              <description>Any Hits allocated to Mortarion with the Poisoned (X), Rending (X), or Fleshbane special rules only affect Mortarion on a D6 roll of a 6 instead of their usual effect. While Mortarion has joined a unit, this special rule has no effect.</description>
             </rule>
           </rules>
           <infoLinks>

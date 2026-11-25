@@ -3004,7 +3004,7 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
           </profiles>
           <rules>
             <rule id="e181-6e76-57bc-4118" name="Vigilant Covenant" publicationId="9fab-fea7-a93c-2074" page="145" hidden="false">
-              <description>A Vigilant Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins, all models in a Vigilant Covenant must be assigned to another unit from another unit from the same detachment if the army they were selected as part of. Knight Vestals may only be assigned to units entirely composed of models with the Infantry Unit Type and the Silent Sisterhood (X) Special Rule.
+              <description>A Knight Vestal Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each model in the Knight Vestal Covenant may leave this unit and join another unit from the same Detachment they were selected as part of. Knight Vestals may only be assigned to units entirely composed of models with the Infantry Unit Type and the Silent Sisterhood (X) Special Rule.
 
 
 A Knight Vestal cannot be assigned to any unit that includes one or more models with the Independent Character Special Rule or Unique Unit Sub-type (but such models may join a unit that includes a Knight Vestal as normal during either deployment or any following turn).
