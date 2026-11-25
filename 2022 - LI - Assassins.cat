@@ -1524,13 +1524,13 @@ Note that weapons selected to fire in this manner must still follow the rules a
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
             <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
             <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
             <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
             <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
