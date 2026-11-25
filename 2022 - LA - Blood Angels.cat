@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="38ec-5d74-5a4a-da90" name="LA -  IX: Blood Angels" revision="2050" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="38ec-5d74-5a4a-da90" name="LA -  IX: Blood Angels" revision="2051" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="ed38-6798-2e2a-d159" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -4903,7 +4903,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
                   <profiles>
                     <profile id="166b-761e-6f25-fe33" name="Silver-iron Will" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                       <characteristics>
-                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models in any unit he has joined are never affected by any special rule or effect that lowers a Characteristic - including the Fear (X) and Rad-phage special rules and due to losing an assault where the enemy has inflicted more Wounds. In addition, an army whose Warlord has this Trait may not make Reactions during the Movement phase, but may make an additional Reaction in either one of the opposing player&apos;s Shooting or Assault phases (but not both). If the Warlord is removed as a casualty then this additional Reaction is lost, but the army may make Reactions in the Movement phase as normal in any appropriate Phases after the Warlord has been removed as a casualty.</characteristic>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models in any unit he has joined are never affected by any special rule or effect that lowers a Characteristic (other than Wounds) – including the Fear (X) and Rad-phage special rules and due to losing an assault where the enemy has inflicted more Wounds. In addition, an army whose Warlord has this Trait may not make Reactions during the Movement phase, but may make an additional Reaction in either one of the opposing player&apos;s Shooting or Assault phases (but not both). If the Warlord is removed as a casualty then this additional Reaction is lost, but the army may make Reactions in the Movement phase as normal in any appropriate Phases after the Warlord has been removed as a casualty.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>

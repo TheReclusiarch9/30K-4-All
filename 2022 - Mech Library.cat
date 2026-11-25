@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2052" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7265-8b7a-50ae-51ec" name="Mech Library" revision="2053" battleScribeVersion="2.03" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -8164,7 +8164,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
           </modifiers>
           <rules>
             <rule id="78f9-6bee-4c5d-5802" name="Uhlan" publicationId="9fab-fea7-a93c-2074" page="139" hidden="false">
-              <description>A model with this upgrade increases its Movement Characteristic by +4 and gains the Character Unit Sub-type and the Scout and Outflank special rules. In addition, its Hull Points are increased by +1. An Acastus Knight Porphyrion may not be given this upgrade.</description>
+              <description>A model with this upgrade increases its Movement Characteristic by +4 and gains the Character Unit Sub-type and the Scout and Outflank special rules. In addition, its Hull Points are increased by +1. This upgrade may not be given to an Acastus Knight Asterius or an Acastus Knight Porphyrion.</description>
             </rule>
           </rules>
           <costs>

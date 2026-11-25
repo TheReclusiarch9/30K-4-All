@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f887-2c56-4cb0-2e9c" name="Imperialis Militia" revision="2043" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f887-2c56-4cb0-2e9c" name="Imperialis Militia" revision="2044" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -2810,7 +2810,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
               </characteristics>
@@ -9257,7 +9257,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
             <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">15</characteristic>
             <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
             <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">9</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">8</characteristic>
             <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">40</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Gorgon Heavy Transporter has one Access Point at the front.</characteristic>
           </characteristics>
@@ -9675,7 +9675,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="450"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e6d5-9f6a-b62b-c477" name="IM - Ogryn Brute Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="19ea-eb9d-4ccb-e3c0" name="LA -  XIV: Death Guard" revision="2040" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="19ea-eb9d-4ccb-e3c0" name="LA -  XIV: Death Guard" revision="2041" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="e305-49d1-2181-fc53" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -3458,8 +3458,8 @@
 
 If this option is used then Mortarion is removed from the battlefield, leaving any unit that he was part of. The controlling player must then redeploy Mortarion to any point on the battlefield that is within 10&quot; of his original position, as long as there is space for his model and the chosen position is not within 3&quot; of an enemy model. He may not be placed within Impassable Terrain or inside a Vehicle or Building. This is not counted as a move as such, and the intervening terrain does not affect him in any way. Mortarion may Charge normally in a turn that he is redeployed in this way, but counts as making a Disordered Charge if doing so.</description>
             </rule>
-            <rule id="6363-8841-1d61-e78a" name="Prenatural Resilience" hidden="false">
-              <description>Any Hits allocated to Mortarion with the Poisoned (X), Rending (X), or Fleshbane special rules only affect Mortarion on a D6 roll of a 6 instead of their usual effect.</description>
+            <rule id="6363-8841-1d61-e78a" name="Preternatural Resilience" hidden="false">
+              <description>Any Hits allocated to Mortarion with the Poisoned (X), Rending (X), or Fleshbane special rules only affect Mortarion on a D6 roll of a 6 instead of their usual effect. While Mortarion has joined a unit, this special rule has no effect.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -3683,7 +3683,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>

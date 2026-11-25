@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1967-627b-83d8-12ce" name="LA - XX: Alpha Legion" revision="2058" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1967-627b-83d8-12ce" name="LA - XX: Alpha Legion" revision="2059" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -6923,7 +6923,7 @@
           <profiles>
             <profile id="8efb-fc40-2740-83e0" name="The Pythian Scales" publicationId="09c5-eeae-f398-b653" page="337" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Pythian Scales provide Alpharius with a 2+ Armour Save and a 4+ Invulnerable Save. In addition, Hits caused by weapons with the Fleshbane or Poisoned (X) special rules gain no benefit when rolling To Wound and are resolved using the standard rules (if an attack with the Poisoned (X) or Fleshbane special rules that targets Alpharius has no Strength Characteristic, then treat it as Strength 1).</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Pythian Scales provide Alpharius with a 2+ Armour Save and a 4+ Invulnerable Save. In addition, if Alpharius is the only model in his unit when declared as the target of an attack, Hits caused by that attack with a weapon with the Fleshbane or Poisoned (X) special rules gain no benefit when rolling To Wound and are resolved using the standard rules (if an attack with the Poisoned (X) or Fleshbane special rules that targets Alpharius has no Strength Characteristic, then treat it as Strength 1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
