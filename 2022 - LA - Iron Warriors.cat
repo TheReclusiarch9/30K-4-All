@@ -3349,6 +3349,10 @@
         <categoryLink id="c5a1-366c-b60a-ca19" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="fa3b-028e-76f8-bf3e" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="1c73-b144-1a6f-3017" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="3447-379d-6e6b-6794" type="selectionEntryGroup"/>
+        <entryLink id="239d-0610-ee3e-5684" name="Retinue" hidden="false" collective="false" import="true" targetId="6590-c91a-fceb-8048" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -6400,9 +6404,14 @@ The primary weapon listed here is counted as a ‘Bolt’ weapon for those rules
         <entryLink id="9b82-c43c-3987-cea4" name="Iron Circle Maniple" hidden="true" collective="false" import="true" targetId="a6e3-baab-45b9-7fea" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f944-6641-a714-2fe8" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f944-6641-a714-2fe8" type="instanceOf"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7aa8-944b-864f-feb7" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
