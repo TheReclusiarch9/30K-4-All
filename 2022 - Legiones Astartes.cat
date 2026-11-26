@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2212" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -41189,6 +41189,11 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
                   </modifiers>
                 </entryLink>
                 <entryLink id="6754-4f19-8546-4d19" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="6c1e-1978-1487-6dc0" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="f03d-3b2c-06a5-85c1" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
@@ -52511,591 +52516,233 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink id="bc9a-a8db-6452-5063" name="Automated Artillery Sub-type" hidden="false" targetId="c036-66e2-4e07-c2b8" type="rule"/>
-        <infoLink id="126f-c78f-2f94-0bdd" name="Sentry Protocols" hidden="false" targetId="97aa-da60-3ccc-7152" type="rule"/>
-        <infoLink id="ee1c-585d-3d84-6db2" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+        <infoLink id="5415-1f63-d394-ab09" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Firing Protocols (2)"/>
+            <modifier type="set" field="name" value="Bulky (4)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="589a-1ebc-dee1-cdb6" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="b793-da2b-fa0b-f2c2" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
         <infoLink id="927c-e77d-16c5-ba78" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
-        <infoLink id="23fc-16e6-aa35-a363" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
-        <infoLink name="Immobile" hidden="false" id="cdf6-b6c5-56df-8b37" type="rule" targetId="a676-e911-8581-8a72"/>
       </infoLinks>
+      <rules>
+        <rule id="ef49-68c4-604b-df11" name="Sentry Gun" hidden="false">
+          <description>• A unit that includes one or more models with this special rule may not Run, declare or otherwise make Charge moves and may not make Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
+• A unit that contains one or more models with this special rule may never be joined by any other models.
+• A unit that includes one or more models with this special rule may never hold or deny an Objective.</description>
+        </rule>
+        <rule id="f565-75dd-20e8-6c8c" name="Automated Fire Protocols" hidden="false">
+          <description>Models with this Special Rule are restricted to only making Shooting Attacks as part of a Reaction. A model with this special rule may not be selected to make a Shooting Attack during the controlling player’s Shooting phase, and may only make the Overwatch Reaction and the Interceptor and Automated Fire (see as follows) Advanced Reactions.</description>
+        </rule>
+        <rule id="266a-142c-a218-93cc" name="Automated Fire (Advanced Reaction)" hidden="false">
+          <description>This Advanced Reaction may be made during the Movement phase if an enemy unit ends a move within 48&quot; of a unit that contains any models with the Sentry Gun special rule. Once the Active player has completely resolved their unit’s movement, the Reactive player may choose to have the unit that contains models with the Sentry Gun special rule make this Advanced Reaction without expending a point of the Reactive player’s Reaction Allotment. This does not allow the unit to make more than one Reaction per Phase, but does allow the controlling player to exceed the normal three Reactions limit in a given Phase.
+
+The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Advanced Reaction and following all the usual rules for Shooting Attacks. Shooting Attacks made as part of the Automated Fire Reaction do not cause Morale checks, regardless of the number of casualties inflicted.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="d336-17f0-8acd-e800" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="bca2-1860-4302-4477" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
+        <categoryLink id="268b-e1dc-13d5-bb7a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="390d-95c3-1ff6-a6a5" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2d6c-d5b2-c713-2f69" name="All Tarantula Sentry Guns in the unit may take:" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="8778-81e8-5a12-eacd" name="Tarantula Sentry Gun" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1944-813f-c536-c231" type="min"/>
+            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9646-92ce-a935-dd58" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="633b-ed59-22a7-663d" name="Tarantula Sentry Gun" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+                        <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">0</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>In Disgrace All Are Equal</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink id="3b29-fc97-2402-898d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+            <categoryLink id="eaec-03da-c6b9-ba81" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+          </categoryLinks>
           <entryLinks>
-            <entryLink id="28f7-e08a-07ec-5ff4" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+            <entryLink id="2e89-8f0d-5793-24a9" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f016-60b8-a3ef-4590" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5665-f511-809b-7f8b" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="553a-f1d1-2f92-5359" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32fb-b343-d47d-0ade" type="max"/>
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink id="3417-5053-6208-5700" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7e4-02f9-b2d1-d47d" type="max"/>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cf1-5b62-da32-16f7" type="min"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
             </entryLink>
           </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="d0e2-561d-728f-50c3" name="Tarantula Sentry Guns" hidden="false" collective="false" import="true" defaultSelectionEntryId="da1a-43e7-8cd4-e540">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d0e2-561d-728f-50c3" name="Weapon (all Tarantula Sentry Guns in the unit)" hidden="false" collective="false" import="true" defaultSelectionEntryId="d62c-5be3-bd12-c18e">
           <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a0-e438-76e3-11dc" type="min"/>
-            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cece-9a2e-79ae-d03d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fa5-877e-fb70-4250" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82c9-38f5-1e78-6a4c" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="da1a-43e7-8cd4-e540" name="Tarantula w/Heavy Bolters" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="68bb-9efd-18e3-4b23" name="Twin-linked Volkite Culverin" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15">
+                  <repeats>
+                    <repeat field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8778-81e8-5a12-eacd" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed8-ee55-7d65-322d" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b17-5b9a-08b4-bc18" type="max"/>
               </constraints>
               <profiles>
-                <profile id="633b-ed59-22a7-663d" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <modifiers>
-                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
+                <profile id="ea8b-21bf-d84a-fa6e" name="Twin-linked Volkite Culverin" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate, Twin-linked</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>In Disgrace All Are Equal</comment>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="2a44-cc97-3235-4b8b" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="333d-83c0-78f2-d61f" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="6024-6953-b8f4-ce63" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="name" value="2x Heavy Bolters"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2424-7f9d-274f-1c26" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68ce-b416-1f1e-ec31" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2708-d71b-c816-faa4" name="Tarantula w/Lascannons" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4655-8a7c-3459-744b" type="max"/>
-              </constraints>
               <infoLinks>
-                <infoLink id="df86-47d2-259f-ea7e" name="Tarantula Sentry Gun" hidden="false" targetId="633b-ed59-22a7-663d" type="profile"/>
+                <infoLink id="f48d-a2d7-98c4-e408" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+                <infoLink id="5b6d-44c3-40fa-343a" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="09dc-9427-6c58-5a7e" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="77a1-0831-d420-0699" name="Lascannon" hidden="false" collective="false" import="true" targetId="8621-4e12-b3d2-116f" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="name" value="2x Lascannons"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e942-c243-d650-8f66" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74b8-c978-9545-a77b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3f9d-5f61-5362-cc4b" name="Tarantula w/Hyperios Missile Launcher" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="c516-6c3c-8329-e0cb" name="Sentry Melta Array" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
+                  <repeats>
+                    <repeat field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8778-81e8-5a12-eacd" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3553-bbd8-7f10-f1cd" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d20-87a8-c49a-e935" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="a0ac-6a02-e0b7-45e4" name="Sentry Melta Array" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Melta), Twin-linked</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <infoLinks>
-                <infoLink id="6137-9714-c544-adca" name="Tarantula Sentry Gun" hidden="false" targetId="633b-ed59-22a7-663d" type="profile"/>
+                <infoLink id="c908-0118-2e4c-e30a" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Armourbane (Melta)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="6088-3871-92c0-a96b" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
               </infoLinks>
-              <categoryLinks>
-                <categoryLink id="97dc-4f30-fb2c-fac1" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="a6b4-5038-0850-7827" name="Hyperios Missile Launcher" hidden="false" collective="false" import="true" targetId="9346-19d2-3fa3-ad2a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5848-aea1-e399-894a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb1-772b-8a20-ef5f" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="4ad0-9ed0-b9fd-466a" name="Hyperios Command Platform" hidden="false" collective="false" import="true" targetId="7ef2-2755-dc78-9de0" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da1a-43e7-8cd4-e540" type="atLeast"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2708-d71b-c816-faa4" type="atLeast"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9da-16c0-be04-654f" type="atLeast"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6649-e4e3-2977-ee91" type="atLeast"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b404-7dc5-66f3-7755" type="atLeast"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a219-ac24-2d0c-d678" type="atLeast"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b971-f55f-d9fd-eb83" type="atLeast"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d76c-43e1-b871-a139" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d3f-43f7-5b7d-93fb" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b9da-16c0-be04-654f" name="Tarantula w/Gravis Heavy Flamer" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="c0d1-fff2-61f3-bd12" name="Two Orias Frag Missiles" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3c-1726-9f7c-1b4d" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b9-b10e-df01-31cd" type="max"/>
               </constraints>
               <profiles>
-                <profile id="aa66-1154-3db1-7e71" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <modifiers>
-                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
+                <profile id="1cd1-6bb6-0783-72a8" name="Orias Frag Launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Barrage, Pinning, One Use</characteristic>
                   </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>In Disgrace All Are Equal</comment>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
                 </profile>
               </profiles>
-              <categoryLinks>
-                <categoryLink id="6321-c6bd-d05d-abb0" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="442b-d71c-2baa-14c0" name="Gravis Heavy Flamer" hidden="false" collective="false" import="true" targetId="aa80-883b-e8f4-f1dd" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dd9-259b-eec0-37c5" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe9-53d1-c5e1-39ff" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
+              <infoLinks>
+                <infoLink id="f006-1f74-3098-b892" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                <infoLink id="c2bb-c113-3c9c-32d9" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+                <infoLink id="688d-8f2c-4f53-84dd" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                <infoLink id="fc7a-f9c5-1c57-8fd3" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+              </infoLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6649-e4e3-2977-ee91" name="Tarantula w/Two Multi-Lasers" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d2-1011-2fce-d967" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6c48-03c7-a13e-09b8" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <modifiers>
-                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>In Disgrace All Are Equal</comment>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="507c-6493-128f-5c04" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="8d93-ff83-975d-6a66" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5486-79bf-ed07-9001" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17a8-54d1-6ec9-2d41" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b404-7dc5-66f3-7755" name="Tarantula w/Two Twin-Linked Rotor Cannons" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de17-7953-19a3-86ff" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="f47b-f665-fd72-8c04" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <modifiers>
-                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>In Disgrace All Are Equal</comment>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="7bb7-ae3a-dccb-d336" name="Tarantula w/Two Twin-Linked Rotor Cannons" publicationId="3970-79bb-bdc6-9599" page="38" hidden="false">
-                  <description>Liber Centura (p.38) lists Two Twin-Linked Rotor Cannons. The data has no twin-linked Rotor Cannon, so this uses two Rotor Cannons: treat both as Twin-Linked.</description>
-                </rule>
-              </rules>
-              <categoryLinks>
-                <categoryLink id="3e0e-c6af-e180-b22d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="2401-f226-152d-d8d7" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a559-5b2f-57f6-382a" type="min"/>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e100-de08-c4c2-9827" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a219-ac24-2d0c-d678" name="Tarantula w/Multi-Melta and Searchlight" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15f0-0c73-120a-2193" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8e2c-bca2-701e-25cc" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <modifiers>
-                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>In Disgrace All Are Equal</comment>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="ae70-7d2e-4a72-6a58" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="3a3e-dacf-beee-d307" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="471a-bb34-2a92-cfa9" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4147-c93f-600f-76b9" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="d1c6-8322-7816-3712" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3813-8ebf-87cd-d57f" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7755-8b14-deb0-6b12" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="b971-f55f-d9fd-eb83" name="Tarantula w/Volkite Dual-Culverin" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d262-4a84-4bbf-ea36" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8304-bac2-928d-058a" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <modifiers>
-                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>In Disgrace All Are Equal</comment>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </profile>
-              </profiles>
-              <categoryLinks>
-                <categoryLink id="a481-0e3b-c205-b701" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="463a-34c7-ff93-c6cd" name="Volkite Dual-Culverin" hidden="false" collective="false" import="true" targetId="fead-f3b9-f7c7-1081" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9680-65a3-3135-01cb" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="793d-469b-3077-6433" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="d76c-43e1-b871-a139" name="Tarantula w/Quad Launcher" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba68-7c02-20af-1827" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b9b0-df09-ba9c-574d" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <modifiers>
-                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
-                            <condition field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Automated Artillery)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">-</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">-</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">-</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <comment>In Disgrace All Are Equal</comment>
-                      <modifiers>
-                        <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                    </modifierGroup>
-                  </modifierGroups>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="39e5-b20a-968c-15e0" name="Tarantula w/Quad Launcher" publicationId="3970-79bb-bdc6-9599" page="38" hidden="false">
-                  <description>Quad Launcher (with Frag and Shatter Shells).</description>
-                </rule>
-              </rules>
-              <categoryLinks>
-                <categoryLink id="b0d3-a024-9f7c-eda2" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-              </categoryLinks>
-              <entryLinks>
-                <entryLink id="33f6-6613-ccfa-d5ba" name="Quad Launcher - Frag" hidden="false" collective="false" import="true" targetId="333a-6c28-1031-9134" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28e3-0ae3-3967-ae32" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="368f-13f8-f7d5-1080" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="8c1f-9b86-fb18-321f" name="Quad Launcher - Shatter" hidden="false" collective="false" import="true" targetId="adb6-7963-11bd-e72b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1aa-e6b1-bd92-2599" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="814b-5e86-1099-9b53" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <modifierGroups>
-            <modifierGroup type="and">
+          <entryLinks>
+            <entryLink id="d62c-5be3-bd12-c18e" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2178-3db5-f10f-4f20" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4dc5-f93e-990c-9e12" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="3adf-7150-9ee6-b2de" type="selectionEntry">
               <modifiers>
-                <modifier type="remove" value="8b4f-bfe2-ce7b-f1b1" field="category">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="remove" value="6d79-a3e4-381f-7b0f" field="category">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="add" value="d8ab-8e21-e193-63ba" field="category">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20">
+                  <repeats>
+                    <repeat field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8778-81e8-5a12-eacd" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
-              <comment>The Flesh Is Weak</comment>
-            </modifierGroup>
-          </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="329f-5e1e-c21c-0fa4" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2883-a7f5-3180-1f34" name="Hyperios Missile Launcher" hidden="false" collective="false" import="true" targetId="c146-e91a-872d-60fd" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+                  <repeats>
+                    <repeat field="selections" scope="124f-0ced-9231-bba4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8778-81e8-5a12-eacd" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee4b-dd10-1b29-73c1" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c047-0fa8-d8c0-73ea" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
@@ -53168,31 +52815,9 @@ A model equipped with a Legion Spatha Attack Bike must change its Unit Type to 
             <entryLink id="5908-4378-65d6-5b3a" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5f0c-47b9-7758-f7b6" name="Deployment Option" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea20-de83-ddfa-7797" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2410-e4a8-ca20-09e8" name="Forward Deployment" hidden="false" collective="false" import="true" targetId="38e2-c36f-cfcd-1abf" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink id="2d49-8b6f-55c4-7cc0" name="Concealed Positions" hidden="false" collective="false" import="true" targetId="2671-2005-b479-b49b" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink id="0140-441c-a757-5b47" name="Drop Capsules" hidden="false" collective="false" import="true" targetId="9373-46db-b7e6-4b42" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9346-19d2-3fa3-ad2a" name="Hyperios Missile Launcher" hidden="false" collective="true" import="true" type="upgrade">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1344-db36-36c1-e861" name="LA -  XII: World Eaters" revision="2047" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1344-db36-36c1-e861" name="LA -  XII: World Eaters" revision="2048" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="9181-9b89-9a36-fb8f" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -506,7 +506,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="75ed-64c2-4675-9b83" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
+        <categoryLink id="75ed-64c2-4675-9b83" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f203-bc26-421f-b79e</comment>
         </categoryLink>
         <categoryLink id="bd9d-794a-47bd-8478" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">

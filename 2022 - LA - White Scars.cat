@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8b8a-6a95-2974-215a" name="LA -   V: White Scars" revision="2050" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8b8a-6a95-2974-215a" name="LA -   V: White Scars" revision="2051" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="2c00-0c71-1c89-97cf" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -2462,7 +2462,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="7868-650e-41a5-a0ad" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
+        <categoryLink id="7868-650e-41a5-a0ad" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f203-bc26-421f-b79e</comment>
         </categoryLink>
         <categoryLink id="b284-c2d4-4cb9-bd88" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
