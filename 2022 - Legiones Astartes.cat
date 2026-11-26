@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="25e4-c9e5-8165-1337" name="Legions Astartes" revision="2214" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -23663,32 +23663,38 @@ If one or more Wounds is discounted due to this special rule, and the unit that 
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="5a1e-7c3b-4d2f-9e81" name="Land Raiders:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9957-bf01-9adf-6e12">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5a1e-7c3b-4d2f-9e82" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5a1e-7c3b-4d2f-9e83" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9957-bf01-9adf-6e12" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e0c-5277-704f-309a" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7b2a-2caf-531a-d3e9" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
+              </costs>
+            </entryLink>
+            <entryLink id="2b1a-249a-8994-5fe2" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5cc-1ff8-3a16-f355" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="5ca0-6b5f-2608-d418" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9957-bf01-9adf-6e12" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e0c-5277-704f-309a" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8134-cef0-54f5-59dd" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="7b2a-2caf-531a-d3e9" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
-          </costs>
-        </entryLink>
-        <entryLink id="2b1a-249a-8994-5fe2" name="Land Raider Phobos" hidden="false" collective="false" import="true" targetId="4738-5b6e-cac0-5d14" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5cc-1ff8-3a16-f355" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="db7d-4f65-e64f-c160" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="5ca0-6b5f-2608-d418" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
-          </costs>
-        </entryLink>
         <entryLink id="0981-e696-6cd5-fcb3" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
