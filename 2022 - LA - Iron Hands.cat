@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d6af-8c96-7a52-cbfa" name="LA -  X: Iron Hands" revision="2050" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d6af-8c96-7a52-cbfa" name="LA -  X: Iron Hands" revision="2051" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" type="catalogue">
   <entryLinks>
     <entryLink id="d63b-a09a-df7b-fb46" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -2268,7 +2268,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="cab0-268a-4cc3-86c8" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
+        <categoryLink id="cab0-268a-4cc3-86c8" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f203-bc26-421f-b79e</comment>
         </categoryLink>
         <categoryLink id="b66e-bba9-40a9-b44a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">

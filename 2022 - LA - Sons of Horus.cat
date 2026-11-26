@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="db61-af86-a1bc-6c06" name="LA -  XVI: Sons of Horus" revision="2046" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="db61-af86-a1bc-6c06" name="LA -  XVI: Sons of Horus" revision="2047" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="681d-068a-2569-899e" name="Legion Indomitus Praetor" hidden="false" collective="false" import="false" targetId="0293-aa91-4e32-bd5f" type="selectionEntry">
       <categoryLinks>
@@ -2320,7 +2320,7 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="c0c5-001d-4ffc-abc9" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
+        <categoryLink id="c0c5-001d-4ffc-abc9" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>template_id_f203-bc26-421f-b79e</comment>
         </categoryLink>
         <categoryLink id="ce07-a5dd-45e6-a102" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">

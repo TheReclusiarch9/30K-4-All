@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="724d-13c4-628c-f642" name="Daemons - Daemons of the Ruinstorm" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2014" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="724d-13c4-628c-f642" name="Daemons - Daemons of the Ruinstorm" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="2015" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -100,10 +100,36 @@
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Ka’bandha Unbound" hidden="false" type="selectionEntry" id="d606-d66-9d34-6fb4" targetId="baa5-baed-1a62-c820">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d35b-5a50-20ce-8ab7" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5a84-831c-e73f-7391" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="8b06-8469-b53d-66f0" primary="true" name="Lords of War:"/>
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="4ff1-219d-774a-e2e7" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Ka’bandha" hidden="false" type="selectionEntry" id="9c81-f6f7-9d0f-e3a7" targetId="d35b-5a50-20ce-8ab7">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baa5-baed-1a62-c820" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa91-7f0d-cade-cbc5" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="7dc6-ab60-6f58-8308" primary="false" name="Unit:"/>
+        <categoryLink targetId="c658-dc6b-727b-c488" id="572e-8676-9638-e99b" primary="true" name="Lords of War:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="2dc6-4224-878e-48a2" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Cor’bax Utterblight Unbound" hidden="false" type="selectionEntry" id="957e-2292-544d-8031" targetId="ef9d-3ad6-1f39-b84b">
@@ -1835,6 +1861,169 @@ If Sanguinius is removed as a casualty while fighting in a Challenge against Ka&
         <modifier type="add" value="f75a-d5c1-59ba-5c5a" field="category"/>
         <modifier type="add" value="aa94-5c65-d1f1-46a4" field="category"/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ka’bandha" hidden="false" id="d35b-5a50-20ce-8ab7">
+      <modifiers>
+        <modifier type="add" value="e699-d9cd-e68e-46d9" field="category"/>
+        <modifier type="add" value="f479-3c81-1e42-1b3a" field="category"/>
+        <modifier type="add" value="f75a-d5c1-59ba-5c5a" field="category"/>
+        <modifier type="add" value="aa94-5c65-d1f1-46a4" field="category"/>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4868-5a71-3d90-f4e1" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Ka’bandha" hidden="false" id="8ad0-f779-59fa-37d3">
+          <profiles>
+            <profile id="4583-16bd-253a-4f56" name="Ka’bandha" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Daemon (Character, Gargantuan, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">8</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">7</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b9ac-21b4-3bce-4fc3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0af-0993-e322-d77b"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="e699-d9cd-e68e-46d9" id="bea6-2183-48c2-2719" name="Daemon Unit Type" primary="false"/>
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="067a-9db8-b987-fb62" name="Character" primary="false"/>
+            <categoryLink targetId="f479-3c81-1e42-1b3a" id="c77d-4cda-290f-afd6" name="Gargantuan Unit Sub-type" primary="false"/>
+            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="d17e-651e-7289-c0dc" name="Unique Sub-type" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="fc81-affa-c3ef-bc5f" name="Daemonic Wings" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cea-c553-4880-88cc" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ab2-ee93-7f17-4e63" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ede6-bdd1-6038-904a" name="Daemonic Wings" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of the controlling player’s Movement phase, or when deployed as part of a Ruinstorm Incursion, a model with Daemonic Wings may set its Movement Characteristic to a value of 14 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ this special rule). This allows a model with Daemonic Wings to move up to 14&quot;, regardless of the Movement Characteristic shown on their profile and gain any other benefits of a Movement Characteristic of 14 (including the bonus to Charge distance). In addition, models with Daemonic Wings that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain. A model with Daemonic Wings that have been activated treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1&quot; away from any model from another unit.
+
+A model with Daemonic Wings may still Run if it would normally be able to Run (this does not allow units that include any models with the Heavy Sub-type to Run). When making a Run move for a model with activated Daemonic Wings, add the Initiative Characteristic of the model to 14 to determine how far it may move – the model ignores terrain and models from other units while making a Run move with Daemonic Wings as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for Running.
+
+During a Reaction made in any Phase, a player may not choose to activate a model’s Daemonic Wings to gain any bonus to its Movement Characteristic. Any models with Daemonic Wings deployed as part of a Ruinstorm Incursion may activate their Daemonic Wings in the Movement Phase of the turn in which they enter play.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8390-bf95-99e7-93b7" name="The Armaments of Ka’bandha" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9b1-f688-92d7-0c3d" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1232-cc94-85ae-e602" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="643c-4e43-6f58-672e" name="Armaments of Ka’bandha (Melee)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+4</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Sunder</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="7c09-a317-f5d1-6ceb" name="Armaments of Ka’bandha (Ranged)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 7</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a76e-ecaf-b82c-bdc6" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="a57f-0241-cc70-a9d8" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="550"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="3148-b200-8bdb-ebcd" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
+        <infoLink id="8e68-fca1-f629-2333" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink id="f766-65c8-d75a-518e" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Adamantium Will (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a5fa-97df-38a8-ad9c" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="341a-6eae-a948-44e7" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (D3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="02b9-9f98-1d4b-5cf6" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Sanguinius)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="bc05-1d83-9b94-53b9" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <rules>
+        <rule id="f9e9-8334-128d-db0b" name="Eternal Rivalry" hidden="false">
+          <description>If any enemy army includes Sanguinius, the following Secondary Objective comes into effect:
+
+Eternal Rivalry: If Sanguinius is removed as a casualty while fighting in a Challenge against Ka&apos;bandha, Ka&apos;bandha&apos;s controlling player scores 2 Victory points – this is in addition to any points scored for Slay the Warlord. However, if Ka&apos;bandha is removed as a casualty while it is fighting in a Challenge against Sanguinius, the Daemons of the Ruinstorm player instead loses 1 Victory point.</description>
+        </rule>
+        <rule id="d8ad-29ad-1918-da3f" name="Miasma of Rage" hidden="false">
+          <description>Ka&apos;bandha and any models with the Rage (X) or Rampage (X) special rule within 12&quot; increase the value of those rules by 1 (for example, Rampage (D3) is increased to Rampage (D3+1)).
+
+Note that this rule affects the Rampage (D3) granted by the Crimson Fury Aetheric Dominion.</description>
+        </rule>
+        <rule id="70f6-5e40-f7e7-6482" name="Scythe of Hatred" hidden="false">
+          <description>At the end of any Assault phase, after the results of any combats have been worked out and Sweeping Advances and Consolidations have been completed, Ka&apos;bandha may make a special Scythe of Hatred attack. To resolve this attack, the controlling player places a Hellstorm template with the narrow end in contact with Ka&apos;bandha’s base. Any unit with models underneath the template suffers a number of automatic S6, AP- Hits equal to the number of unsaved Wounds caused by Melee Attacks made by Ka&apos;bandha during the preceding Assault phase.</description>
+        </rule>
+        <rule id="f92a-0763-1190-2407" name="Herald of Bloodshed" hidden="false">
+          <description>If chosen as the army’s Warlord, Ka&apos;bandha automatically has Skull Keeper as its Warlord Trait and may not select any other. In addition, the Crimson Fury Aetheric Dominion must be chosen for the Detachment which includes Ka&apos;bandha.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink id="d196-2360-469c-d434" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bd6-5536-f03c-9cfa" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e1ee-a8a4-30f2-d8a5" name="Warlord: Skull Keeper" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Skull Keeper – Ka&apos;bandha and any unit with the Daemon Unit Type and at least one model within 6&quot; of Ka&apos;bandha may add +D3 to the total number of successful Wounds caused for the purposes of resolving which side has won a combat (this does not stack with any other rules that increase the Assault result). In addition, an army whose Warlord has this Trait may make an additional Reaction in the Movement phase as long as Ka&apos;bandha has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="e699-d9cd-e68e-46d9" id="4581-d08c-609e-f4bd" primary="false" name="Daemon Unit Type"/>
+        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="ed1f-39ca-199c-563a" primary="false" name="Character"/>
+        <categoryLink targetId="f479-3c81-1e42-1b3a" id="a3aa-13c6-ca0a-ef5d" primary="false" name="Gargantuan Unit Sub-type"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="76e4-ce92-b9b3-6418" primary="false" name="Unique Sub-type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cor’bax Utterblight Unbound" hidden="false" id="ef9d-3ad6-1f39-b84b" publicationId="8775-88f5-cfdd-24f6" page="20">
       <selectionEntries>
