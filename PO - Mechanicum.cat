@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="4f40-72d0-2942-778b" name="[Ingenium] Mechanicum" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="4f40-72d0-2942-778b" name="[Ingenium] Mechanicum" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="7" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry name="Magos Prime" type="unit" id="9a5a-a411-463d-b98a" page="6" publicationId="f856-58d6-ef02-7d3e">
       <categoryLinks>
@@ -6508,6 +6508,13 @@ Could not find wargear in Any Archaeopter Imperator may exchange their Hull (Fro
         <selectionEntry type="model" name="Arvus Lighter" id="b608-c3e7-4781-ab63" page="50" publicationId="f856-58d6-ef02-7d3e">
           <profiles>
             <profile id="9a6a-4109-4a74-8c05" name="Arvus Lighter" typeId="2fae-b053-3f78-e7b2">
+              <modifiers>
+                <modifier type="set" field="0c90-79e2-f768-e547" value="-">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" shared="true" childId="d0e3-f2ac-4ff3-ac7d" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic typeId="3614-4a2d-bffb-90e4" name="Move">20</characteristic>
                 <characteristic typeId="51fb-b7d9-aa59-863d" name="BS">4</characteristic>
@@ -7573,6 +7580,28 @@ Could not find wargear in Any Skorpius Disintegrator may exchange their Turret M
         <selectionEntry type="model" name="Ordinatus-Exemplar" id="15b0-c515-4e00-90c2" page="60" publicationId="f856-58d6-ef02-7d3e">
           <profiles>
             <profile id="870b-53ea-4869-941c" name="Ordinatus-Exemplar" typeId="2fae-b053-3f78-e7b2">
+              <modifiers>
+                <modifier type="increment" field="0ef8-a648-01d0-08ee" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" shared="true" childId="fa00-58d2-591c-aaf2" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f150-c0dc-c192-9cb3" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" shared="true" childId="fa00-58d2-591c-aaf2" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="8d4e-2aea-fffc-d556" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" shared="true" childId="fa00-58d2-591c-aaf2" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="a76c-83b1-602f-9e62" value="1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" shared="true" childId="fa00-58d2-591c-aaf2" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic typeId="3614-4a2d-bffb-90e4" name="Move">10</characteristic>
                 <characteristic typeId="51fb-b7d9-aa59-863d" name="BS">4</characteristic>
@@ -7811,6 +7840,12 @@ Could not find wargear in Any Skorpius Disintegrator may exchange their Turret M
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa45-fdf0-40a1-9e99"/>
                   </constraints>
                   <entryLinks>
+                    <entryLink name="Reinforced Super-Structure" hidden="false" type="selectionEntry" targetId="ee32-5ff9-4c88-bab1" id="3edc-f0c3-5e80-281c">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50dd-5a02-2cf6-12f6"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59fe-c69a-7810-6687"/>
+                      </constraints>
+                    </entryLink>
                     <entryLink name="Module Slot (used)" hidden="false" type="selectionEntry" targetId="e654-fa8e-57ef-fef7" id="a0bc-acf7-173e-f5b0">
                       <constraints>
                         <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b1b2-0a85-804d-40e2"/>

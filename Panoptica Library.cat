@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="69b7-3f60-9f7f-8ce5" name="Panoptica Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="4" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="69b7-3f60-9f7f-8ce5" name="Panoptica Library" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="2001" revision="5" battleScribeVersion="2.03" type="catalogue">
   <sharedRules>
     <rule name="Emperor’s Chosen" id="ffcf-8b72-43dd-8009" page="165" publicationId="9fab-fea7-a93c-2074">
       <description>A model with this Special Rule that suffers an unsaved wound with the Instant Death Special Rule is not immediately removed as a casualty, but instead loses D3 wounds instead of one for each unsaved wound with the Instant Death Special Rule inflicted on it.</description>
@@ -619,6 +619,9 @@ The Repulsor Grid cannot be activated by any weapon which does not roll to Hit.<
     </rule>
     <rule name="Zenith Protocol" id="dcc4-e9a5-4289-b3e5" page="93" publicationId="f856-58d6-ef02-7d3e">
       <description>As long as the Praetorian Retinue’s Leader is alive, all Praetorian Servitors in the Maniple gain a bonus of +1 to their Weapon Skill and Ballistic Skill Characteristics.</description>
+    </rule>
+    <rule name="Ferromantic Invulnerability" hidden="false" id="2ff1-4309-9162-b3a8">
+      <description>The effects of any variant of the Armourbane Special Rule or the Lance Special Rule are ignored when resolving attacks made against a model with this Special Rule.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -5608,6 +5611,9 @@ In addition, when a model with an Atomantic Repulsor loses its last Wound or Hul
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Sunder" hidden="false" type="rule" targetId="20e2-75cf-bc16-cd8f" id="5cea-7d43-6382-8806"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Deredeo Atomantic Pavaise" type="upgrade" id="5ae8-a370-47da-b98b">
       <profiles>
@@ -10943,12 +10949,21 @@ Phaeton-Pattern Power Armour confers a 3+ Armour Save and a 6+ Invulnerable Save
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="It Will Not Die (X)" hidden="false" type="rule" targetId="2784-d0be-a4e2-890f" id="7415-2890-87aa-8d49">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Super-Charged Reactor" type="upgrade" id="8032-7ecc-4e1d-be0f">
       <profiles>
         <profile name="Super-Charged Reactor" typeName="Wargear Item" hidden="false" typeId="2a1f-7837-f0ef-be44" id="b6c2-93cb-4a83-a96c" page="104" publicationId="f856-58d6-ef02-7d3e">
           <characteristics>
-            <characteristic typeId="347e-ee4a-764f-6be3" name="Description">Once these shooting attacks are complete, the model immediately suffers D3 Hull Points of Damage with no Saves or Damage Mitigation Rolls of any kind allowed, and may not fire any of its ranged weapons until the end of the Controlling Player’s Next Game Turn.</characteristic>
+            <characteristic typeId="347e-ee4a-764f-6be3" name="Description">Once per game, the model may choose to fire all of its weapons twice during the Controlling Player’s Shooting Phase, selecting either the same target twice, or a two separate ones. These shooting attacks must be resolved consecutively.
+
+Once these shooting attacks are complete, the model immediately suffers D3 Hull Points of Damage with no Saves or Damage Mitigation Rolls of any kind allowed, and may not fire any of its ranged weapons until the end of the Controlling Player’s Next Game Turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10957,10 +10972,15 @@ Phaeton-Pattern Power Armour confers a 3+ Armour Save and a 6+ Invulnerable Save
       <profiles>
         <profile name="Reinforced Super-Structure" typeName="Wargear Item" hidden="false" typeId="2a1f-7837-f0ef-be44" id="eb65-75fb-4674-8490" page="104" publicationId="f856-58d6-ef02-7d3e">
           <characteristics>
-            <characteristic typeId="347e-ee4a-764f-6be3" name="Description">In addition, the model’s Hull Points value and Armour Facing Values are increased by one.</characteristic>
+            <characteristic typeId="347e-ee4a-764f-6be3" name="Description">The model gains the Ferromantic Invulnerability Special Rule (see page 24 of the Legacies of the Age of Darkness document).
+
+In addition, the model’s Hull Points value and Armour Facing Values are increased by one.</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Ferromantic Invulnerability" hidden="false" type="rule" targetId="2ff1-4309-9162-b3a8" id="156f-187f-fec1-0a54"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Cascade Shield Projector" type="upgrade" id="a175-4741-4bd6-b808">
       <profiles>
@@ -10970,6 +10990,21 @@ Phaeton-Pattern Power Armour confers a 3+ Armour Save and a 6+ Invulnerable Save
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" hidden="false" type="rule" targetId="c503-f5b8-3da0-16e6" id="746d-9567-7075-3ec5">
+          <modifiers>
+            <modifier type="set" field="name" value="Void Shields (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink name="Flare Shield" hidden="false" type="selectionEntry" targetId="0e77-6285-22bb-1534" id="16bc-81b2-fabd-900e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="95b6-3088-4068-9354"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6cc5-8365-64dd-28f2"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry name="Battle-Automata Cradles" type="upgrade" id="d0e3-f2ac-4ff3-ac7d">
       <profiles>
